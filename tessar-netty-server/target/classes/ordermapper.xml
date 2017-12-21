@@ -9,7 +9,7 @@
     </insert>
 
     <select id="findOneByID" resultMap="mr_order_one">
-       select 
+       select
             o.id OID,
             o.orderno OrderNO,
             o.price o_price,
@@ -18,9 +18,9 @@
             c.age cage
         from orders o left outer join customers c
         on o.cid = c.id
-        where o.id = #{id}    
-            
-      
+        where o.id = #{id}
+
+
     </select>
 
     <resultMap id="mr_order_one" type="_Order">

@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="customers">
+<mapper namespace="playerinfo">
     <!-- 定义insert语句 -->
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        insert into customers(name,age) values(#{name},#{age})
+        insert into playerinfo(name,age) values(#{name},#{age})
     </insert>
 
     <insert id="update">
@@ -28,15 +28,15 @@
         c.age cage,
         o.id oid,
         o.orderno oorderno,
-        o.price oprice 
-        from customers c left outer join orders o on c.id = o.cid 
+        o.price oprice
+        from customers c left outer join orders o on c.id = o.cid
         where c.id=#{id}
     </select>
     <resultMap id="rm_customer" type="_Customer">
         <id column="cid" property="id" />
         <result column="cname" property="name" />
         <result column="cage" property="age" />
-        <collection property="orders" ofType="_Order" column="cid" >
+        <collection property="orders" ofType="_Customer" column="cid" >
             <id column="oid" property="id" />
             <result column="oorderno" property="orderno"/>
             <result column="oprice" property="price" />

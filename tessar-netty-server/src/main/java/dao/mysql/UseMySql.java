@@ -7,6 +7,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,6 +21,8 @@ import java.util.Random;
  */
 public class UseMySql {
 
+
+ //   public  void insert() throws IOException {
     public static void insert(Object object) throws IOException {
 
         String resoure = "batis-conf.xml";
@@ -28,7 +31,12 @@ public class UseMySql {
         SqlSession ss = sf.openSession();
         String className = object.getClass().getName();
         System.out.println("className:"+className);
-        ss.insert(className+".insert", object);
+
+//        User uu = new User();
+//        uu.setAge(123);
+//        uu.setName("vova");
+
+        ss.insert(object.getClass().getSimpleName()+".insert", object);
 
         ss.commit();
         ss.close();
@@ -87,7 +95,6 @@ public class UseMySql {
 
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-
         //    Customer user = new Customer();
         // user.setId(1);
         ss.delete("customers.delete", 2);

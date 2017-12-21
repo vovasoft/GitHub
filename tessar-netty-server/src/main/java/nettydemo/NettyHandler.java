@@ -66,7 +66,7 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
 //            JSONObject ob = 
-            String jsonstr = gson .toJson(new User("vova",123));
+            String jsonstr = gson .toJson(new User(1,"vova",123));
             System.out.println(jsonstr);
             
         }

@@ -2,10 +2,19 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="User">
+<mapper namespace="PlayExistTable">
     <!-- 定义insert语句 -->
+
+
+    <!--Date playTableDate;-->
+    <!--int newIn;-->
+    <!--String arrayDays;-->
+    <!--String arrayWeeks;-->
+    <!--String arrayMonths;-->
+
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
-        insert into user (id,name,age) values(#{id},#{name},#{age})
+        insert into player_exist (dt,newin,arrayDays,arrayWeeks,arrayMonths,arrayOthers)
+        values(#{playTableDate},#{newIn},#{arrayDays},#{arrayWeeks},#{arrayMonths},#{others})
     </insert>
 
     <!--<resultMap id="user" type="_User">-->
