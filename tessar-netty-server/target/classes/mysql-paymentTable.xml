@@ -3,7 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--这个配置文件是配置mysql的相关信息-->
+
 <configuration>
+
     <properties>
         <property name="driver" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/vova02"/>
@@ -30,7 +32,5 @@
     <mappers>
         <mapper resource="customermapper.xml"/>
         <mapper resource="ordermapper.xml"/>
-        <mapper resource="mysql-leaveTable.xml"/>
-        <mapper resource="mysql-paymentTable.xml"/>
     </mappers>
 </configuration>
