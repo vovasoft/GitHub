@@ -1,5 +1,6 @@
-package dao.dbmodel;
+package util;
 
+import dao.dbmodel.PlayerInfo;
 import nettydemo.User;
 import org.junit.Test;
 import sun.util.calendar.LocalGregorianCalendar;
