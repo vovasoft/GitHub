@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="orders">
+    <!-- 定义insert语句 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into orders(orderno,price,cid) values(#{orderno},#{price},#{customer.id})
+    </insert>
+
+    <select id="findOneByID" resultMap="mr_order_one">
+       select 
+            o.id OID,
+            o.orderno OrderNO,
+            o.price o_price,
+            c.id  CID,
+            c.name cname,
+            c.age cage
+        from orders o left outer join customers c
+        on o.cid = c.id
+        where o.id = #{id}    
+            
+      
+    </select>
+
+    <resultMap id="mr_order_one" type="_Order">
+        <id column="OID" property="id"/>
+        <result column="OrderNO" property="orderno"/>
+        <result column="o_price" property="price"/>
+        <association property="customer" column="cid" javaType="_Customer">
+            <id column="CID" property="id"/>
+            <result column="cname" property="name"/>
+            <result column="cage" property="age"/>
+        </association>
+    </resultMap>
+
+</mapper>
