@@ -274,7 +274,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="55" />
     <option name="y" value="14" />
     <option name="width" value="1836" />
@@ -644,7 +644,7 @@
       <option name="presentableId" value="Default" />
       <updated>1513825540164</updated>
       <workItem from="1513825541777" duration="2029000" />
-      <workItem from="1513830141356" duration="27025000" />
+      <workItem from="1513830141356" duration="27055000" />
     </task>
     <servers />
   </component>
@@ -681,10 +681,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29054000" />
+    <option name="totallyTimeSpent" value="29084000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="14" width="1836" height="951" extended-state="0" />
+    <frame x="55" y="14" width="1836" height="951" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
