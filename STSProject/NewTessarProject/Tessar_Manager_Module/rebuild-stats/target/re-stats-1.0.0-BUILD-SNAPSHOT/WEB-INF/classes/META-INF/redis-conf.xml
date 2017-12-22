@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+		xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+  		<property name="maxTotal" value="20"/>
+  		<property name="maxIdle" value="5"/>
+  		<property name="maxWaitMillis" value="1000"/>
+  		<property name="testOnBorrow" value="false"/>
+  	</bean>
+
+  	<!-- apollo 机器上的redis 127.0.0.1-->
+  	<bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+  		<constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+  		<constructor-arg name="host" value="127.0.0.1"/>
+  		<constructor-arg name="port" value="6379"/>
+  	</bean>
+
+  	<bean id="redisApolloDao" class="com.xcloudeye.stats.dao.ApolloRedisDao">
+  		<constructor-arg name="jedisPool" ref="jedisPool"/>
+  		<constructor-arg name="passwd" value="Xcloud2015$!"/>
+  	</bean>
+
+	<!-- slave 机器上的redis 45.79.193.83-->
+	<bean id="jedisPoolSlave" class="redis.clients.jedis.JedisPool">
+		<constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+		<constructor-arg name="host" value="127.0.0.1"/>
+		<constructor-arg name="port" value="6379"/>
+	</bean>
+
+	<bean id="redisSlaveDao" class="com.xcloudeye.stats.dao.SlaveRedisDao">
+		<constructor-arg name="jedisPool" ref="jedisPoolSlave"/>
+		<constructor-arg name="passwd" value="Xcloud2015$!"/>
+	</bean>
+
+</beans>
+  

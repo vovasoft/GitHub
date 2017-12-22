@@ -17,6 +17,10 @@
         values(#{playTableDate},#{newIn},#{arrayDays},#{arrayWeeks},#{arrayMonths},#{others})
     </insert>
 
+    <update id="update_add_newIn" >
+        update player_exist set  newin VALUE (#{newIn})
+    </update>
+
     <!--<resultMap id="user" type="_User">-->
         <!--<id column="cid" property="id" />-->
         <!--<result column="name" property="name" />-->

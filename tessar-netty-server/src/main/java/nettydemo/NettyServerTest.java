@@ -19,7 +19,7 @@ import io.netty.handler.stream.ChunkedWriteHandler;
 
 
 public class NettyServerTest {
-    private static final int SERVER_PORT = 2360;
+    private static final int SERVER_PORT = 9999;
     private static final String DEFAULT_URL = "/";
 
     public void start(final String ip) throws Exception

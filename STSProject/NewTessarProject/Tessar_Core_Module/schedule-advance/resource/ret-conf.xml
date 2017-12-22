@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduler>
+	<apps>
+	    <app>
+		    <id>2</id>
+		    <name>bs</name>
+		    <timezoneoffset>3</timezoneoffset>
+	    </app>
+	    
+	    <app>
+		    <id>5</id>
+		    <name>naruto</name>
+		    <timezoneoffset>3</timezoneoffset>
+	    </app>
+		<app>
+			<id>6</id>
+			<name>herocraft</name>
+			<timezoneoffset>3</timezoneoffset>
+		</app>
+		<app>
+			<id>7</id>
+			<name>angels</name>
+			<timezoneoffset>3</timezoneoffset>
+		</app>
+		<app>
+			<id>8</id>
+			<name>bleach</name>
+			<timezoneoffset>3</timezoneoffset>
+		</app>
+	</apps>
+	
+	<redis>
+	    <server>
+	        <appid>2</appid>
+	        <host>127.0.0.1</host>
+	        <port>6379</port>
+	        <auth>Xcloud2015$!</auth>
+	    </server>
+	    
+	    <server>
+	        <appid>5</appid>
+	        <host>127.0.0.1</host>
+	        <port>6379</port>
+	        <auth>Xcloud2015$!</auth>
+	    </server>
+
+		<server>
+			<appid>6</appid>
+			<host>127.0.0.1</host>
+			<port>6379</port>
+			<auth>Xcloud2015$!</auth>
+		</server>
+		<server>
+			<appid>7</appid>
+			<host>127.0.0.1</host>
+			<port>6379</port>
+			<auth>Xcloud2015$!</auth>
+		</server>
+		<server>
+			<appid>8</appid>
+			<host>127.0.0.1</host>
+			<port>6379</port>
+			<auth>Xcloud2015$!</auth>
+		</server>
+	</redis>
+	
+	<mongodb>
+		<bsdatabase>
+		   <gid>2</gid>
+		   <name>bsadvance</name>
+		   <dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=bsadvance</dburi>
+		</bsdatabase>
+		
+		<!--<wondatabase>
+		   <gid>5</gid>
+		   <name>wonadvance</name>
+		   <dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=wonadvance</dburi>
+		</wondatabase>-->
+
+		<narutodatabase>
+			<gid>5</gid>
+			<name>narutoadvance</name>
+			<dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=narutoadvance</dburi>
+		</narutodatabase>
+
+		<herocraftdatabase>
+			<gid>6</gid>
+			<name>herocraftadvance</name>
+			<dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=herocraftadvance</dburi>
+		</herocraftdatabase>
+
+		<angelsdatabase>
+			<gid>7</gid>
+			<name>angelsadvance</name>
+			<dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=angelsadvance</dburi>
+		</angelsdatabase>
+
+		<bleachdatabase>
+			<gid>8</gid>
+			<name>bleachadvance</name>
+			<dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=bleachadvance</dburi>
+		</bleachdatabase>
+		
+		<userdatabase>
+		   <name>xcloudeye_user</name>
+		   <dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=xcloudeye_user</dburi>
+		</userdatabase>
+
+        <nativedatabase>
+            <gid>2</gid>
+            <name>bloodstrike</name>
+            <dburi>mongodb://stats:Xcloud2015Sts$!@127.0.0.1:27017/?authSource=bloodstrike</dburi>
+        </nativedatabase>
+    </mongodb>
+</scheduler>

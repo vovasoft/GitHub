@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+		http://www.springframework.org/schema/data/mongo 
+		http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+	<!-- 该 BeanPostProcessor 将自动起作用，对标注 @Autowired 的 Bean 进行自动注入 -->  
+	<!-- <bean class="org.springframework.beans.factory.annotation.  
+        AutowiredAnnotationBeanPostProcessor"/>  45.79.193.83 -->
+        
+    <bean id="userCredentials" class="org.springframework.data.authentication.UserCredentials">
+	    <constructor-arg name="username" value="stats" />
+	    <constructor-arg name="password" value="Xcloud2015Sts$!" />
+	</bean>
+	<!-- 从库，用于查询操作  45.79.193.83 -->
+	<mongo:mongo host="127.0.0.1" port="27017" id="mongoSlaveOption">
+	    <mongo:options connections-per-host="10"
+	                   threads-allowed-to-block-for-connection-multiplier="10"
+	                   connect-timeout="5000"
+	                   max-wait-time="1500"
+	                   auto-connect-retry="true"
+	                   socket-keep-alive="false"
+	                   socket-timeout="0"
+	                   slave-ok="true"
+	                   write-number="1"
+	                   write-timeout="0"
+	                   write-fsync="true" />
+  	</mongo:mongo>
+  	
+  	<!-- 主库，用于用户系统输入插入操作  45.79.206.82 -->
+	<mongo:mongo host="127.0.0.1" port="27017" id="mongoMasterOption">
+	    <mongo:options connections-per-host="10"
+	                   threads-allowed-to-block-for-connection-multiplier="10"
+	                   connect-timeout="5000"
+	                   max-wait-time="1500"
+	                   auto-connect-retry="true"
+	                   socket-keep-alive="false"
+	                   socket-timeout="0"
+	                   slave-ok="true"
+	                   write-number="1"
+	                   write-timeout="0"
+	                   write-fsync="true" />
+  	</mongo:mongo>
+  	
+  
+  	<bean id="mongoPlatformTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="platform"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+  	</bean>
+  	
+  	<!-- temp interface beans  -->
+  	
+  	<!-- bloodstrik临时接口 -->
+  	<bean id="mongoBloodTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bloodstrike"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="loginfoBsDao" class="com.xcloudeye.stats.dao.LogInfoDao">
+  		<constructor-arg name="mongoPlatformOps" ref="mongoPlatformTemplate"/>
+  		<constructor-arg name="mongoBloodstrikeOps" ref="mongoBloodTemplate"/>
+  	</bean>
+  	
+  	<!-- won临时接口 -->
+  	<bean id="mongoWONTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="won"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="loginfoWonDao" class="com.xcloudeye.stats.dao.LogInfoDao">
+  		<constructor-arg name="mongoPlatformOps" ref="mongoPlatformTemplate"/>
+  		<constructor-arg name="mongoBloodstrikeOps" ref="mongoWONTemplate"/>
+  	</bean>
+  	
+  	<!-- 重构数据钱 对 parse数据库操作的dao 层接口 -->
+  	
+  	<!-- bs二级数据查询 -->
+  	<bean id="mongoBSPsparseTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bsparse"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="bsInterfaceDao" class="com.xcloudeye.stats.dao.AppInterfaceDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoBSPsparseTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+  	
+  	<!-- pf二级数据查询 -->
+  	<bean id="mongoPFPsparseTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="pfparse"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="pfInterfaceDao" class="com.xcloudeye.stats.dao.AppInterfaceDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoPFPsparseTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+  	
+  	<!-- won二级数据查询 -->
+  	<bean id="mongoWONPsparseTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="wonparse"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="wonInterfaceDao" class="com.xcloudeye.stats.dao.AppInterfaceDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoWONPsparseTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+  	
+  	<!-- user system beans -->
+  	
+  	<!-- user system 数据操作 -->
+  	<bean id="mongoUserSystemTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoMasterOption" />
+		<constructor-arg name="databaseName" value="xcloudeye_user"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="userSystemDao" class="com.xcloudeye.stats.dao.UserSystemDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoUserSystemTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoMasterOption"/>
+  	</bean>
+  	
+  	<!-- 重构数据后，从　advance 中读取数据的  dao  层 接口 -->
+  	<!-- advance BS db 数据存储二次修改 -->
+  	<bean id="mongoBsAdvaceTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bsadvance"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="bsAdvanceDao" class="com.xcloudeye.stats.dao.AdvanceDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoBsAdvaceTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+  	
+  	<!-- advance NARUTO db 数据存储二次修改 -->
+  	<bean id="mongoNarutoAdvaceTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="narutoadvance"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+
+	<bean id="mongoHeroCraftAdvaceTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="herocraftadvance"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+	<bean id="leagueofangelsAdvaceTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="angelsadvance"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+	<bean id="bleachAdvaceTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bleachadvance"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+  	<bean id="narutoAdvanceDao" class="com.xcloudeye.stats.dao.AdvanceDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoNarutoAdvaceTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+
+	<bean id="herocraftAdvanceDao" class="com.xcloudeye.stats.dao.AdvanceDao">
+		<constructor-arg name="mongoBsparse" ref="mongoHeroCraftAdvaceTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+
+	<bean id="leagueofangelsAdvanceDao" class="com.xcloudeye.stats.dao.AdvanceDao">
+		<constructor-arg name="mongoBsparse" ref="leagueofangelsAdvaceTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+
+	<bean id="bleachAdvanceDao" class="com.xcloudeye.stats.dao.AdvanceDao">
+		<constructor-arg name="mongoBsparse" ref="bleachAdvaceTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+  	
+  	
+  	<!-- 重构数据后　操作源数据库的ｄａｏ层　接口  -->
+  	
+  	<!-- bs source dao接口  -->
+  	<bean id="mongoSrcBloodTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bloodstrike"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+	<bean id="mongoSrcNarutoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="naruto"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+
+	<bean id="mongoSrcherocraftTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="herocraft"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+	<bean id="mongoSrcleagueofangelsTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="angels"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+
+	<bean id="mongoSrcbleachTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="bleach"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/>
+	</bean>
+
+  	
+  	<bean id="bsSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoSrcBloodTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+
+	<bean id="naturoSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+		<constructor-arg name="mongoBsparse" ref="mongoSrcNarutoTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+
+	<bean id="herocraftSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+		<constructor-arg name="mongoBsparse" ref="mongoSrcherocraftTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+
+	<bean id="leagueofangelsSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+		<constructor-arg name="mongoBsparse" ref="mongoSrcleagueofangelsTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+
+	<bean id="bleachSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+		<constructor-arg name="mongoBsparse" ref="mongoSrcbleachTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+  	
+  	<!-- won source dao接口 -->
+  	<bean id="mongoSrcWONTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+  		<constructor-arg name="mongo" ref="mongoSlaveOption" />
+		<constructor-arg name="databaseName" value="won"/>
+		<!-- 增加用户权限验证 -->
+		<constructor-arg name="userCredentials" ref="userCredentials"/> 
+  	</bean>
+  	
+  	<bean id="wonSourceDao" class="com.xcloudeye.stats.dao.SourceDbDao">
+  		<constructor-arg name="mongoBsparse" ref="mongoSrcWONTemplate"/>
+  		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+  	</bean>
+
+	<bean id="paymentDao" class="com.xcloudeye.stats.dao.PaymentDao">
+		<constructor-arg name="mongoOps" ref="mongoBloodTemplate"/>
+		<constructor-arg name="mongo" ref="mongoSlaveOption"/>
+	</bean>
+  
+</beans>

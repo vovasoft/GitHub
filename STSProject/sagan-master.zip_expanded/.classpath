@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="sagan-master/sagan-common/src/main/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-common/src/test-util/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-common/src/test/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-indexer/src/it/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-indexer/src/main/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-indexer/src/test/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-site/src/it/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-site/src/main/java"/>
+	<classpathentry kind="src" path="sagan-master/sagan-site/src/test/java"/>
+	<classpathentry kind="lib" path="sagan-master/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

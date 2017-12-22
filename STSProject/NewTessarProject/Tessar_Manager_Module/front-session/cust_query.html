@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
+
+	<body style="overflow-x: hidden;">
+		<div class="ch-container">
+			<div class="row">
+
+				<div id="content" class="col-lg-10 col-sm-10">
+					<!-- content starts -->
+					<div>
+					</div>
+		<div class="row" style="height: 300px;">
+			<div class="box col-md-6" style="min-height: 100px;height: auto;">
+            <div class="box-inner" style="min-height: 100px;height: auto;">
+                <div class="box-header well" style="height: auto;" data-original-title="">
+                    <h2 id="id_userinfo"></h2>
+
+                    <div class="box-icon" style="height: auto">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content" style="min-height: 100px;height: auto;">
+                        <div class="box-content" style="text-align: center;height: auto;" id="id_cust_active_user_text"></div>
+						<div class="input-daterange input-group box-content" style="text-align: center;min-height: 100px;height: auto;" id="datepicker">
+								
+								<input type="text" class="actual_range" id="startDate" value="" />
+								<span class="add-on"> to </span>
+								<input type="text" class="actual_range" id="endDate" value="" />&nbsp;&nbsp;&nbsp;
+								<!--<button class="btn btn-primary btn-sm " id="confirm">确定</button>-->
+								<!--<button class="btn btn-primary btn-xs">Mini button</button>-->
+								<a class="btn btn-primary btn-sm" id="id_download" href="" >下载</a>
+						</div>
+                    </div>
+                </div>
+        </div>
+        
+		<div class="box col-md-6" style="min-height: 100px;height: auto;">
+            <div class="box-inner" style="min-height: 100px;height: auto;">
+                <div class="box-header well" style="height: auto;" data-original-title="">
+                    <h2 id="id_payer_info"></h2>
+
+                    <div class="box-icon" style="height: auto">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content" style="min-height: 100px;height: auto;">
+                	<div class="box-content" style="text-align: center;height: auto;" id="id_cust_payer_text"></div>
+						<div class="input-daterange input-group box-content" style="text-align: center;min-height: 100px;height: auto;" id="datepicker">
+								<a class="btn btn-primary btn-sm" id="id_download_copy" href="" ></a>
+						</div>
+                    </div>
+                </div>
+        </div>
+			
+	
+        </div>
+        
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+                     <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+				<hr>
+
+			</div>
+		</div>
+		
+		
+
+		
+		
+<!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/highcharts-4.1.5.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="cust/cust_query.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+	    <script src="cust/MemuForApp_i18n.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+		<!-- Clean Page caching-->
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
+
+	<body style="overflow:hidden ;">
+		<!-- topbar starts -->
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated flip">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs" />
+					<span>xcloud</span></a>
+
+				<!-- user dropdown starts -->
+				<div class="btn-group pull-right">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="personal.html" id="id_dashboard"></a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a onclick="logout()" id="id_logout"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- topbar ends -->
+
+		<div class="ch-container">
+			<div class="row">
+				<!-- left menu starts -->
+				<div class="col-sm-2 col-lg-2">
+					<div class="sidebar-nav">
+						<div class="nav-canvas">
+							<div class="nav-sm nav nav-stacked">
+
+							</div>
+							<ul class="nav nav-pills nav-stacked main-menu">
+								<li id="info" class="nav-header"></li>
+
+								<li name="menuid" class="" onclick="isActive(this)"><a class="ajax-link" href="datageneric.html" target="ifrPage" id="id_data_generic" class="mychildren"><i class="glyphicon glyphicon-home"></i> </a>
+								</li>
+								<li class="accordion">
+									<a href="#"><i class="glyphicon glyphicon-plus" id="id_app_trend"></i><span></span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="trend.html" name="new_user" target="ifrPage" id="id_new_user_copy" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="trend.html" name="active_user" target="ifrPage" id="id_active_user_copy" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="trend.html" name="payed_order" target="ifrPage" id="id_payed_order_copy" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="trend.html" name="payer" target="ifrPage" id="id_payer_copy" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="trend.html" name="income" target="ifrPage" id="id_total_income" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="accordion">
+									<a href="#"><i class="glyphicon glyphicon-plus" id="id_payment"></i><span></span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="pay.html" name="payer" target="ifrPage" id="id_payer_copy3" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay.html" name="new_payer" target="ifrPage" id="id_new_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay.html" name="income" target="ifrPage" id="id_total_income_copy" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="accordion">
+									<a href="#"><i class="glyphicon glyphicon-plus" id="id_channel"></i><span></span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="channel.html" name="new_user" target="ifrPage" id="id_new_user_copy2" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="channel.html" name="payed_order" target="ifrPage" id="id_payed_order_copy2" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="channel.html" name="income" target="ifrPage" id="id_total_income_copy1" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="accordion">
+									<a href="#"><i class="glyphicon glyphicon-plus" id="id_generic"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<!--<li>
+											<a href="app_rt.html" target="ifrPage" id="id_realtime_data" class="mychildren"></a>
+										</li>-->
+									<!--	<li class="accordion">
+									<a href="#"><i class="glyphicon glyphicon-plus" id="id_realtime_data"></i><span></span></a>
+									<ul class="nav nav-pills nav-stacked">-->
+										<li>
+											<a href="app_rt.html" name="new_user" target="ifrPage" id="id_RT_new_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_rt.html" name="active_user" target="ifrPage" id="id_RT_active_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_rt.html" name="payer" target="ifrPage" id="id_RT_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_rt.html" name="new_payer" target="ifrPage" id="id_RT_new_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_rt.html" name="income" target="ifrPage" id="id_RT_payed_money" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_rt.html" name="all_order" target="ifrPage" id="id_RT_order_number" class="mychildren"></a>
+										</li>
+								<!--	</ul>
+								</li>-->
+										<li>
+											<a href="fiveminutes_act.html" target="ifrPage" id="id_fiveminutes_active_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="five_newuser.html" target="ifrPage" id="id_five_new_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="app_trend.html" target="ifrPage" id="id_general_trend" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+								<li class="accordion">
+									<a href="#" id="id_user_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="user_new.html" target="ifrPage" id="id_new_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_pay.html" target="ifrPage" id="id_payer" name="payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_pay.html" target="ifrPage" id="id_new_payer_copy" name="new_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_active.html" target="ifrPage" id="id_active_user" name="dau" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_active.html" target="ifrPage" id="id_new_active" name="new_dau" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_active.html" target="ifrPage" id="id_old_active" name="old_dau"  class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_retention.html" target="ifrPage" id="id_user_retention" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="ret_query.html" target="ifrPage" id="id_ret_query" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+								<li class="accordion">
+									<a href="#" id="id_channel_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="ch_detail.html" target="ifrPage" id="id_hourly_data" class="mychildren"></a>
+										</li>
+										<!--<li class="accordion">
+											<a href="#" id="id_channel_list" class="glyphicon glyphicon-plus"><span> </span></a>
+											<ul class="nav nav-pills nav-stacked">-->
+										<li>
+											<a href="ch_list.html" target="ifrPage" name="new_user" id="id_ch_new_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="ch_list.html" target="ifrPage" name="dau" id="id_ch_active_user" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="ch_list.html" target="ifrPage" name="payer" id="id_ch_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="ch_list.html" target="ifrPage" name="income" id="id_ch_payed_money" class="mychildren"></a>
+										</li>
+										<!--</ul>
+										</li>-->
+										<li>
+											<a href="ch_trace.html" target="ifrPage" id="id_channel_track" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+								<li class="accordion">
+									<a href="#" id="id_payment_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="pay_top.html" target="ifrPage" id="id_top_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_top_ch.html" target="ifrPage" id="id_summary_channel_payment" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="detail_ch_order.html" target="ifrPage" id="id_detail_channel_payment" class="mychildren"></a>
+										</li>
+										<!--<li class="accordion">
+											<a href="#" id="id_payment_trend" class="glyphicon glyphicon-plus"><span> </span></a>
+											<ul class="nav nav-pills nav-stacked">-->
+										<li>
+											<a href="pay_trend.html" target="ifrPage" name="payer" id="id_trend_payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_trend.html" target="ifrPage" name="all_order" id="id_trend_order" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_trend.html" target="ifrPage" name="payed_order" id="id_trend_payed_order" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_trend.html" target="ifrPage" name="income" id="id_trend_dayly_income" class="mychildren"></a>
+										</li>
+										<!--		</ul>
+										</li>-->
+										<li>
+											<a href="pay_hobby.html" target="ifrPage" id="id_payer_copy2" name="payer" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_hobby.html" target="ifrPage" id="id_payed_order_copy1" name="order" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_hobby.html" target="ifrPage" id="id_total_income_copy2" name="income" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+								<li class="accordion">
+									<a href="#" id="id_query"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="user_query.html" target="ifrPage" id="id_user_query" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="user_order.html" target="ifrPage" id="id_order_query" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="order_track.html" target="ifrPage" id="id_order_track" class="mychildren"></a>
+										</li>
+										<li>
+											<a href="pay_order.html" target="ifrPage" id="id_payed_order" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+								<li class="accordion">
+									<a href="#" id="id_advance"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+									<ul class="nav nav-pills nav-stacked">
+										<li>
+											<a href="cust_query.html" target="ifrPage" id="id_cust_query" class="mychildren"></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+
+				<!--整体趋势-->
+				<!--<input type="hidden" id="hide_user_trend_id" name="hide" value="" />-->
+				<!--支付-->
+				<input type="hidden" id="hide_pay_id" name="hide" value="" />
+				<!--渠道-->
+				<input type="hidden" id="hide_channel_id" name="hide" value="" />
+				<!--应用趋势-->
+				<input type="hidden" id="hide_child_menu_id" name="hide" value="" />
+				<!--用户分析--支付用户-->
+				<input type="hidden" id="hide_payer_id" name="hide" value="" />
+				<!--用户分析--活跃用户-->
+				<input type="hidden" id="hide_active_user_id" name="hide" value="" />
+				<!--用户分析--支付习惯-->
+				<input type="hidden" id="hide_payer_user_id" name="hide" value="" />
+				<!--概况-->
+				<input type="hidden" id="hide_RT_id" name="hide" value="" />
+				<input type="hidden" id="hide" name="hide" value="">
+				<iframe id="ifrPage" align="center" name="ifrPage" height="800" width="83%" frameborder="0" src="">
+
+				</iframe>
+			</div>
+		</div>
+		<hr>
+		<footer class="row" id="foot">
+			<div class="col-md-3"></div>
+			<p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+	            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+		</footer>
+		<!--/.fluid-container-->
+
+		<!-- external javascript -->
+		<!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/tableExport.js"></script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="cust/index.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="cust/MemuForAll_i18n.js"></script>
+		<script src="cust/MemuForApp_i18n.js"></script>
+		<script scr="cust/MenuForVS_i18n.js"></script>
+	</body>
+
+</html>

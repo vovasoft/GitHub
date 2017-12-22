@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<style>
+			#user_admin {
+				display: none;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link href='css/jquery.dataTables.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+
+
+	</head>
+
+	<body>
+		<!-- topbar starts -->
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated flip">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs" />
+					<span>xcloud</span></a>
+				<div style="display: none;">
+					<input type="text" id="uid">
+				</div>
+				<div style="display: none;">
+					<input type="text" id="group">
+				</div>
+				<!-- user dropdown starts -->
+				<div class="btn-group pull-right">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="personal.html" id="id_dashboard"></a></li>
+						<li class="divider"></li>
+						<li><a onclick="logout()" id="id_logout"></a></li>
+					</ul>
+				</div>
+				<!-- user dropdown ends -->
+
+				<ul class="collapse navbar-collapse nav navbar-nav top-menu">
+					<li id="menu" style="display: none;"><a href="#" onclick="visit()" id="id_visit_stats"><i class="glyphicon glyphicon-globe"></i> </a></li>
+					<!--<li class="dropdown">
+                    <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> 选择应用 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="index.html">全部应用</a></li>
+                        <li class="divider"></li>
+                        <li><a href="app_rt.html">平台</a></li>
+                        <li><a href="app_rt.html">Blood Strike</a></li>
+                        <li><a href="app_rt.html">Steam City</a></li>
+                    </ul>
+                </li>-->
+				</ul>
+			</div>
+		</div>
+		<!-- topbar ends -->
+		<div class="ch-container">
+			<div class="row">
+
+				<!-- left menu starts -->
+				<div class="col-sm-2 col-lg-2">
+					<div class="sidebar-nav">
+						<div class="nav-canvas">
+							<div class="nav-sm nav nav-stacked">
+
+							</div>
+							<ul class="nav nav-pills nav-stacked main-menu">
+
+								<li><a class="ajax-link" href="personal.html" id="id_personal"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+								<li id="user_admin"><a class="ajax-link" href="admin_user.html" id="id_users"><i class="glyphicon glyphicon-home"></i><span> </span></a>
+								</li>
+								<li class="active"><a class="ajax-link" href="channel_user.html" id="id_channels"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+
+							</ul>
+							<!-- <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label> -->
+						</div>
+					</div>
+				</div>
+				<!--/span-->
+				<!-- left menu ends -->
+
+				<noscript>
+					<div class="alert alert-block col-md-12">
+						<h4 class="alert-heading">Warning!</h4>
+						<p>You need to have JavaScript enabled to use this site.</p>
+					</div>
+				</noscript>
+
+				<div id="content" class="col-lg-10 col-sm-10">
+					<!-- content starts -->
+					<div>
+					</div>
+
+					<div class="row">
+	<div class="col-md-4 col-sm-4 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-user blue"></i>
+
+            <div id="id_total_number"></div>
+            <div id="Total_number"></div>
+<!--             <span class="notification">6</span> -->
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-star green"></i>
+
+            <div id="id_payed_number"></div>
+            <div id="payed_number"></div>
+<!--             <span class="notification green">4</span> -->
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-shopping-cart yellow"></i>
+
+            <div id="id_income"></div>
+            <div id="Tincome"></div>
+<!--             <span class="notification yellow">$34</span> -->
+        </a>
+    </div>
+		<div class="control-group col-md-12">
+			<div class="row">
+				
+			<div class="col-xs-2">
+							<a href="#myModal" role="button" class="btn btn-success" data-toggle="modal" data-backdrop="static" id="id_add_channel" onclick="remData()">
+								<i class="glyphicon glyphicon-plus icon-white"></i> 
+							</a>
+				
+			</div>
+			<div class="col-xs-8">
+			</div>
+			<div class="col-xs-2" id = 'channelCheck' style="text-align: right;">
+							<!--<a href="ch_status.html" role="button" class="btn btn-success">
+								<i class="glyphicon icon-white"></i> Check Channels
+							</a>-->
+			</div>
+			</div>
+							<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">×</button>
+											<h3 id="span"></h3>
+										</div>
+										<div class="modal-body">
+											<fieldset>
+												<div class="alert alert-danger common" role="alert"></div>
+												<div class="input-group" id="dis">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_channel_text_copy"></span>
+													<input type="text" class="form-control" id="channel" onfocus="hiddenValidate()" onblur="getValue(this.value)" placeholder="example:xxx_xxx_xxx">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_parent"></span>
+													<input type="text" class="form-control" disabled id="parent" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_child"></span>
+													<input type="text" class="form-control" disabled id="child" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_sequence"></span>
+													<input type="text" class="form-control" id="seq" onfocus="hiddenValidate()" disabled>
+												</div>
+												<div class="input-group" id="time">
+												</div>
+												<div class="input-group" id="ctotal">
+												</div>
+												<div class="input-group" id="cpayed">
+												</div>
+												<div class="input-group" id="cincome">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_owner_copy"></span>
+													<input type="text" class="form-control" id="owner" disabled onfocus="hiddenValidate()">
+												</div>
+
+												<div class="clearfix"></div>
+												<br>
+
+												<div class="input-group">
+													<span class="input-group-addon" id="id_currency"></span>
+													<input type="text" class="form-control" id="currency" disabled>
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_url"></span>
+													<input type="text" class="form-control" id="url" disabled>
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_product"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="options" id="WON" value="5"> WON
+													</div>
+													<div class="col-md-4">
+														<input type="radio" name="options" id="BS" value="2"> BLOOD STRIKE
+													</div>
+
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_status"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" id="Active" value="1"> <font id="id_active"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" id="Banned" value="0"> <font id="id_banned"></font>
+													</div>
+												</div>
+												<!-- 
+                    <div class="input-prepend">
+                        <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                    </div> -->
+											</fieldset>
+											<div class="clearfix"></div>
+											<br>
+
+										</div>
+										<div class="modal-footer">
+											<a href="#" class="btn btn-default" data-dismiss="modal" id="id_cancel"></a>
+											<a id="saveuser" href="#" class="btn btn-primary"><font id="id_save"></font></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well" data-original-title="">
+										<h2 id="id_channel_info"></h2>
+										<div class="box-icon">
+                        			<a href="#" onClick="getExcel('channel_user')" class="btn btn-round btn-default"><i
+                                class="glyphicon glyphicon-download-alt"></i></a>
+                    				</div>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+
+										<table id="showData" class="display"  style="table-layout:fixed;">
+											
+										</table>
+										 <!--进度条 -->
+                    <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											<!--<button type="button" class="close" data-dismiss="modal">×</button>-->
+											<!--<h3 id="h3" style='text-align:center;'>Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'></h3>-->
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Ad, you can remove it -->
+					<!--     <div class="row">
+        <div class="col-md-9 col-lg-9 col-xs-9  hidden-xs">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-5108790028230107"
+                 data-ad-slot="3193373905"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div> -->
+					<!-- Ad ends -->
+
+					<hr>
+
+					<footer class="row" id="foot">
+						<div class="col-md-3"></div>
+						<p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+					</footer>
+				</div>
+			</div>
+		</div>
+        <!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/tableExport.js"></script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="cust/user.js"></script>
+		<script src="cust/channel_user.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="cust/MemuForVS_i18n.js"></script>
+	</body>
+
+</html>

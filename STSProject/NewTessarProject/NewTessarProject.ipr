@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tessar_Manager_Module/Test/Test.iml" filepath="$PROJECT_DIR$/Tessar_Manager_Module/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stats/src/main/main.iml" filepath="$PROJECT_DIR$/stats/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/src/main/main1.iml" filepath="$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tessar_Manager_Module/netty-stats/netty-stats.iml" filepath="$PROJECT_DIR$/Tessar_Manager_Module/netty-stats/netty-stats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tessar_Core_Module/schedule-advance/schedule-advance.iml" filepath="$PROJECT_DIR$/Tessar_Core_Module/schedule-advance/schedule-advance.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="lib">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/mongo-java-driver-2.13.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-context-support-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jcl-over-slf4j-1.7.10.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/log4j-1.2.17.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jackson-mapper-lgpl-1.9.13.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jsontools-core-1.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-data-commons-1.10.0.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/commons-logging-1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/slf4j-api-1.7.25.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/javacsv-2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jackson-core-lgpl-1.9.13.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/antlr-2.7.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jstl-1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/perf4j-0.9.16.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-data-mongodb-1.7.0.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/gson-2.8.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/slf4j-log4j12-1.7.25.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/spring-orm-4.3.8.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/stats/target/stats/WEB-INF/lib/jedis-2.9.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lib1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.6.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-tx-4.0.9.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/javacsv-2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/log4j-1.2.15.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jedis-2.7.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/mongo-java-driver-2.13.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-aop-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-context-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/aspectjrt-1.6.10.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-web-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-data-mongodb-1.7.0.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-beans-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/commons-pool2-2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jackson-mapper-lgpl-1.9.13.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jsontools-core-1.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-core-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-expression-4.0.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/gson-2.3.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jackson-core-lgpl-1.9.13.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.10.0.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/Tessar_Manager_Module/rebuild-stats/target/re-stats-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -16,6 +16,7 @@ import com.alibaba.fastjson.JSONObject;
 import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.QueryStringDecoder;
 
+import java.net.URI;
 import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
@@ -55,20 +56,25 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) //  
-            throws Exception {//函数执行次数？  
-        //解析get请求参数  
+    protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) throws Exception {
+        //函数执行次数？
+        //解析get请求参数
+        String uri = msg.uri();
 
-        System.out.println(msg.uri());
-                Gson gson = new Gson();
+        System.out.println("URI:"+uri);
+        if(!uri.equals("/tessar/statis/statis")){
+            System.out.println("return error url");
+            return;
+        }
+        Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
         Map<String, List<String>> parame = decoder.parameters();
         for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
 //            JSONObject ob = 
-            String jsonstr = gson .toJson(new User(1,"vova",123));
+            String jsonstr = gson.toJson(new User(1, "vova", 123));
             System.out.println(jsonstr);
-            
+
         }
         FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应  
         response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");

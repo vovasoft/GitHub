@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+		<link rel="stylesheet" href="css/jquery.dataTables.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
+
+	<body>
+		<!-- topbar starts -->
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated flip">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs" />
+					<span>xcloud</span></a>
+
+				<!-- user dropdown starts -->
+				<div class="btn-group pull-right">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="personal.html" id="id_dashboard"></a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a onclick="logout()" id="id_logout"></a>
+						</li>
+					</ul>
+				</div>
+				<!-- user dropdown ends -->
+
+				<ul class="collapse navbar-collapse nav navbar-nav top-menu">
+					<li id="menu" style="display: none;"><a href="#" onclick="visit()" id="id_visit_stats"><i class="glyphicon glyphicon-globe"></i> </a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- topbar ends -->
+		<div class="ch-container">
+			<div class="row">
+
+				<!-- left menu starts -->
+				<div class="col-sm-2 col-lg-2">
+					<div class="sidebar-nav">
+						<div class="nav-canvas">
+							<div class="nav-sm nav nav-stacked">
+
+							</div>
+							<ul class="nav nav-pills nav-stacked main-menu">
+
+								<li><a class="ajax-link" href="personal.html" id="id_personal"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+								<li id="user_admin"><a class="ajax-link" href="admin_user.html" id="id_users"><i class="glyphicon glyphicon-home"></i><span> </span></a>
+								</li>
+								<li><a class="ajax-link" href="channel_user.html" id="id_channels"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+								<li class="active"><a class="ajax-link" href="#" id="id_channels_info"><i class="glyphicon glyphicon-eye-open"> </i><span> </span></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<noscript>
+					<div class="alert alert-block col-md-12">
+						<h4 class="alert-heading">Warning!</h4>
+						<p>You need to have JavaScript enabled to use this site.</p>
+					</div>
+				</noscript>
+
+				<div id="content" class="col-lg-10 col-sm-10">
+					<!-- content starts -->
+					<div>
+					</div>
+
+					<div class="row">
+
+						<div class="control-group col-md-12">
+
+							<div>
+								<div class="input-daterange input-group" id="datepicker">
+									<input type="text" class="actual_range" id="startDate" value="" />
+									<span class="add-on"> to </span>
+									<input type="text" class="actual_range" id="endDate" value="" />
+									<span class="add-on">    </span>
+									<button class="btn btn-primary btn-sm " id="id_confirm"></button>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well">
+										<h2 id="id_newer_trend"><i class="glyphicon glyphicon-list-alt"></i> </h2>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+
+									<div class="box-content">
+										<div id="user-chart" style="min-width: 310px; height: 800px; margin: 0 auto"></div>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well" data-original-title="">
+										<h2 id="id_new_user_copy"></h2>
+										<div class="box-icon">
+											<a href="#" onClick="getExcel('user_new')" class="btn btn-round btn-default"><i
+                                class="glyphicon glyphicon-download-alt"></i></a>
+										</div>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+										<table id="showData" class="display" style="table-layout:auto">
+											<thead id="thead">
+
+											</thead>
+											<tbody id="tbody">
+
+											</tbody>
+										</table>
+										<!--  进度条-->
+										<div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header" style='text-align:center;' id="delprogressModal">
+														Loading...<img src='img/ajax-loaders/ajax-loader-7.gif'>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<footer class="row" id="foot">
+						<div class="col-md-3"></div>
+						<p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+					</footer>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/highcharts-4.1.5.js"></script>
+		<script src="js/jquery.resizableColumns.js"></script>
+		<!--<script src="js/store.js"></script>-->
+		<script src="cust/common.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="js/tableExport.js"></script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="cust/channel_info.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="cust/MemuForVS_i18n.js"></script>
+	</body>
+
+</html>

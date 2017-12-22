@@ -1,0 +1,16 @@
+.common{
+	display: none;
+}
+
+body{
+	display: none;
+}
+
+
+/**
+ * Xcloud 次级菜单高亮
+ */
+.child_menu_gaol{
+	background-color: #0088CC;
+}
+

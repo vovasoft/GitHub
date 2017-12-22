@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- Appenders -->
+	<appender name="time" class="org.apache.log4j.DailyRollingFileAppender">
+		<!--<param name="File" value="TessarSystemLog/system/閺冦儲婀�/source_received.log" />-->
+		<param name="File" value="/home/advancelog/tiem/time.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value=" %d %p (%c:%L)- %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="data" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/home/advancelog/date/data.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %p (%c:%L)- %m%n" />
+		</layout>
+	</appender>
+
+
+
+	<category name="com.xcloud.schedule.BSDailySchedule" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="com.xcloud.schedule.BSFifteenMinuteSchedule" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="com.xcloud.schedule.BSFiveMinuteSchedule" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="com.xcloud.schedule.BSRepeatFiveMinuteSchedule" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="com.xcloud.schedule.mongodao.BsparseDao" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="com.xcloud.schedule.mongodao.BsParseActiveDao" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+	<category name="org.springframework" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="time"/>
+	</category>
+
+
+	<!-- 3rdparty Loggers -->
+	<!--<logger name="org.springframework.core">
+		<level value="info" />
+	</logger>
+	<logger name="org.springframework.beans">
+		<level value="info" />
+	</logger>
+	<logger name="org.springframework.context">
+		<level value="info" />
+	</logger>
+	<logger name="org.springframework.web">
+		<level value="info" />
+	</logger>-->
+	<!-- Root Logger -->
+
+	<root>
+		<priority value="warn"/>
+		<appender-ref ref="time"/>
+		<appender-ref ref="data"/>
+	</root>
+
+</log4j:configuration>

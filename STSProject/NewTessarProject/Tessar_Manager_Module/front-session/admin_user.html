@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+		<!-- Clean Page caching-->
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link href='css/jquery.dataTables.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+
+	</head>
+
+	<body>
+		<!-- topbar starts -->
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated flip">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs" />
+					<span>xcloud</span></a>
+
+				<!-- user dropdown starts -->
+				<div class="btn-group pull-right">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="personal.html" id="id_dashboard"></a></li>
+						<li class="divider"></li>
+						<li><a onclick="logout()" id="id_logout"></a></li>
+					</ul>
+				</div>
+				<!-- user dropdown ends -->
+
+				<ul class="collapse navbar-collapse nav navbar-nav top-menu">
+					<li id="menu" style="display: none;"><a href="#" onclick="visit()" id="id_visit_stats"><i class="glyphicon glyphicon-globe"></i> </a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- topbar ends -->
+		<div class="ch-container">
+			<div class="row">
+
+				<!-- left menu starts -->
+				<div class="col-sm-2 col-lg-2">
+					<div class="sidebar-nav">
+						<div class="nav-canvas">
+							<div class="nav-sm nav nav-stacked">
+
+							</div>
+							<ul class="nav nav-pills nav-stacked main-menu">
+
+								<li><a class="ajax-link" href="personal.html" id="id_personal"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+								<li class="active"><a class="ajax-link" href="admin_user.html" id="id_users"><i class="glyphicon glyphicon-home"></i><span> </span></a>
+								</li>
+								<li><a class="ajax-link" href="channel_user.html" id="id_channels"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+
+							</ul>
+							<!-- <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label> -->
+						</div>
+					</div>
+				</div>
+				<!--/span-->
+				<!-- left menu ends -->
+
+				<noscript>
+					<div class="alert alert-block col-md-12">
+						<h4 class="alert-heading">Warning!</h4>
+						<p>You need to have JavaScript enabled to use this site.</p>
+					</div>
+				</noscript>
+
+				<div id="content" class="col-lg-10 col-sm-10">
+					<!-- content starts -->
+					<div>
+					</div>
+
+					<div class="row">
+
+						<div class="control-group col-md-12">
+							<a href="#myModal" role="button" class="btn btn-success" data-toggle="modal" data-backdrop="static" onclick="remData()" id="id_add_user">
+								<i class="glyphicon glyphicon-plus icon-white"></i> 
+							</a>
+							<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">x</button>
+											<h3 id='id_add_user_copy'></h3>
+										</div>
+										<div class="modal-body">
+											<fieldset>
+												<div class="alert alert-danger common" role="alert"></div>
+												<div class="form-group">
+													<input type="text" class="form-control" onblur="filterUserName()" id="username" placeholder="Username">
+												</div>
+												<div class="clearfix"></div>
+
+												<div class="form-group">
+													<input type="password" class="form-control" onblur="filterPassword()" id="password" placeholder="Password">
+												</div>
+												<div class="clearfix"></div>
+												<div class="form-group">
+													<input type="password" class="form-control" onblur="filterRePassword()" id="rePassword" placeholder="Confirm password">
+												</div>
+
+												<div class="clearfix"></div>
+												<div class="form-group">
+													<input type="email" class="form-control" onblur="filter(this.value)" id="email" placeholder="Email">
+												</div>
+												<div class="clearfix"></div>
+												<div class="form-group">
+													<input type="text" class="form-control" id="skype" placeholder="Skype">
+												</div>
+												<!-- 
+                    <div class="input-prepend">
+                        <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                    </div> -->
+
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_status"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" value="1" checked> <font id="id_active"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" value="0"> <font id="id_banned"></font>
+													</div>
+												</div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_group"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="options" value="admin"> <font id="id_admin"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="options" value="xcloud"> <font id="id_xcloud"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="options" value="ad" checked> <font id="id_ad"></font>
+													</div>
+													<div class="col-md-3">
+														<input type="radio" name="options" value="personal"> <font id="id_personal_permission"></font>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="modal-footer">
+											<a href="#" class="btn btn-default" data-dismiss="modal" id="id_cancel"></a>
+											<a href="#" class="btn btn-primary" onclick="return adduser()" id="id_save"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+		<div id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="editModal"
+         		aria-hidden="true">
+		
+		        <div class="modal-dialog" >
+		            <div class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal">×</button>
+		                    <h3 id="id_edit"></h3>
+		                </div>
+		                <div class="modal-body">
+		                    <fieldset>
+                	<div class="alert alert-danger common" role="alert"></div>
+                	<div class="input-group">
+                        <span class="input-group-addon" id="id_uid"></span>
+                        <input type="text" disabled="disabled" class="form-control" id="euid">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_user_en"></span>
+                        <input type="text" class="form-control error" onblur="filterEuserName()" id="eusername">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_new_pwd"></span>
+                        <input type="password" class="form-control" onblur="filterEpassword()" id="epassword">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_confirm_pwd"></span>
+                        <input type="password" class="form-control" onblur="filterErePassword()" id="erepassword">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_add_date"></span>
+                        <input type="text" disabled="disabled" class="form-control" id="eaddTime">
+                    </div>
+                    <div class="clearfix"></div><br>
+					<div class="input-group">
+                        <span class="input-group-addon" id="id_total_channels"></span>
+                        <input type="text" disabled="disabled" class="form-control" id="ech_total">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_total_reg_copy"></span>
+                        <input type="text" disabled="disabled" class="form-control" id="etotal">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_payed_number_copy"></span>
+                        <input type="text" disabled="disabled" class="form-control" id="epayed">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_email"></span>
+                        <input type="email" class="form-control" onblur="filterEemail(this.value)" id="eemail">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="id_skype"></span>
+                        <input type="text" class="form-control" id="eskype">
+                    </div>
+<!-- 
+                    <div class="input-prepend">
+                        <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                    </div> -->
+												<div class="clearfix"></div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_status_copy"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="esoptions" id="Active" value="1"> <font id="id_active_copy"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="esoptions" id="Banned" value="0"> <font id="id_banned_copy"></font>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_group_copy"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" id="admin" name="eoptions" value="admin"> <font id="id_admin_copy"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" id="xcloud" name="eoptions" value="xcloud"> <font id="id_xcloud_copy"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" id="ad" name="eoptions" value="ad"> <font id="id_ad_copy"></font>
+													</div>
+													<div class="col-md-3">
+														<input type="radio" id="personal" name="eoptions" value="personal"> <font id="id_personal_permission_copy"></font>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="modal-footer">
+											<a href="#" class="btn btn-default" data-dismiss="modal" id="id_cancel_copy"></a>
+											<a id="saveuser" href="#" class="btn btn-primary" onclick="return saveuser()"><font id="id_save_copy"></font></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well" data-original-title="">
+										<h2 id="id_user_list"></h2>
+										<div class="box-icon">
+                        			<a href="#" onClick="getExcel('admin_user')" class="btn btn-round btn-default"><i
+                                class="glyphicon glyphicon-download-alt"></i></a>
+                    				</div>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+										<table id="showData" class="display" style="table-layout:fixed;">
+											
+										</table>
+										<!--  进度条-->
+                     <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											<!--<button type="button" class="close" data-dismiss="modal">×</button>-->
+											<!--<h3 id="h3" style='text-align:center;'>Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'></h3>-->
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- controll -->
+					</div>
+				</div>
+				<hr>
+			</div>
+			<footer class="row" id="foot">
+				<div class="col-md-3"></div>
+				<p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+			</footer>
+		</div>
+		<!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="js/aes.js"></script>
+		<script src="js/md5-min.js"></script>
+		<script src="js/pad-zeropadding-min.js"></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="js/tableExport.js"></script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="cust/adduser.js"></script>
+		<script src="cust/user.js"></script>
+		<script src="cust/admin_user.js"></script>
+		<script src="cust/signup.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="cust/MemuForVS_i18n.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+	</body>
+
+</html>

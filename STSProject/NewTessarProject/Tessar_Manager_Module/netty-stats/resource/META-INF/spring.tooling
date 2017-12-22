@@ -1,0 +1,10 @@
+# Tooling related information for the aop namespace
+http\://www.springframework.org/schema/aop@name=aop Namespace
+http\://www.springframework.org/schema/aop@prefix=aop
+http\://www.springframework.org/schema/aop@icon=org/springframework/aop/config/spring-aop.gif
+http\://www.springframework.org/schema/data/mongo@name=Mongo Namespace
+http\://www.springframework.org/schema/data/mongo@prefix=mongo
+http\://www.springframework.org/schema/data/mongo@icon=org/springframework/jdbc/config/spring-jdbc.gif
+http\://www.springframework.org/schema/mvc@name=mvc Namespace
+http\://www.springframework.org/schema/mvc@prefix=mvc
+http\://www.springframework.org/schema/mvc@icon=org/springframework/web/servlet/config/spring-mvc.gif

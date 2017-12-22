@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="re-stats:war">
+    <output-path>$PROJECT_DIR$/rebuild-stats/target</output-path>
+    <root id="archive" name="re-stats-1.0.0-BUILD-SNAPSHOT.war">
+      <element id="artifact" artifact-name="re-stats:war exploded" />
+    </root>
+  </artifact>
+</component>

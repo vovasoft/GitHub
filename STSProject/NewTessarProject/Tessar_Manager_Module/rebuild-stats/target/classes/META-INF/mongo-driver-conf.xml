@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 主库，用于用户系统输入插入操作  45.79.206.82 -->
+	
+       <bean id="singleBsMongoConf" class="com.xcloudeye.stats.dao.driverdao.SingleBsMongoConf" >
+              <constructor-arg name="host" value="127.0.0.1"/>
+              <constructor-arg name="port" value="27017"/>
+              <constructor-arg name="dbName" value="bloodstrike"/>
+              <constructor-arg name="userName" value="stats"/>
+              <constructor-arg name="password" value="Xcloud2015Sts$!"/>
+              <constructor-arg name="poolsize" value="100"/>
+              <constructor-arg name="blocksize" value="10"/>
+       </bean>
+
+       <bean id="singleWonMongoConf" class="com.xcloudeye.stats.dao.driverdao.SingleWonMongoConf">
+              <constructor-arg name="host" value="127.0.0.1"/>
+              <constructor-arg name="port" value="27017"/>
+              <constructor-arg name="dbName" value="won"/>
+              <constructor-arg name="userName" value="stats"/>
+              <constructor-arg name="password" value="Xcloud2015Sts$!"/>
+              <constructor-arg name="poolsize" value="100"/>
+              <constructor-arg name="blocksize" value="10"/>
+       </bean>
+
+
+      <!-- db wonadvance bean confige  , slave db server-->
+       <bean id="singleBsAdvanceMongoConf" class="com.xcloudeye.stats.dao.driverdao.SingleBsAdvanceMongoConf">
+              <constructor-arg name="host" value="127.0.0.1"/>
+              <constructor-arg name="port" value="27017"/>
+              <constructor-arg name="dbName" value="bsadvance"/>
+              <constructor-arg name="userName" value="stats"/>
+              <constructor-arg name="password" value="Xcloud2015Sts$!"/>
+              <constructor-arg name="poolsize" value="100"/>
+              <constructor-arg name="blocksize" value="10"/>
+       </bean>
+
+       <!-- db nsadvance bean confige  , slave db server-->
+       <bean id="singleWonAdvanceMongoConf" class="com.xcloudeye.stats.dao.driverdao.SingleWonAdvanceMongoConf">
+              <constructor-arg name="host" value="127.0.0.1"/>
+              <constructor-arg name="port" value="27017"/>
+              <constructor-arg name="dbName" value="wonadvance"/>
+              <constructor-arg name="userName" value="stats"/>
+              <constructor-arg name="password" value="Xcloud2015Sts$!"/>
+              <constructor-arg name="poolsize" value="100"/>
+              <constructor-arg name="blocksize" value="10"/>
+       </bean>
+
+       <!--facebook infomation db-->
+       <bean id="singleFacebookMongoConf" class="com.xcloudeye.stats.dao.driverdao.SingleFacebookMongoConf">
+              <constructor-arg name="host" value="127.0.0.1"/>
+              <constructor-arg name="port" value="27017"/>
+              <constructor-arg name="dbName" value="facebook"/>
+              <constructor-arg name="userName" value="stats"/>
+              <constructor-arg name="password" value="Xcloud2015Sts$!"/>
+              <constructor-arg name="poolsize" value="100"/>
+              <constructor-arg name="blocksize" value="10"/>
+       </bean>
+
+</beans>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<style>
+			.common {
+				display: none;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+		<!-- Clean Page caching-->
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
+
+	<body style="overflow-x: hidden" onkeydown="return keyDown(event)" onload="loadPropertiesLogin()">
+		<div class="ch-container">
+			<div class="row">
+
+				<div class="row">
+					<div class="col-md-12 center login-header">
+						<h2 id="id_login"></h2>
+					</div>
+					<!--/span-->
+				</div>
+				<!--/row-->
+
+				<div class="row">
+					<div class="well col-md-5 center login-box">
+						<div class="alert alert-info" id="id_login_info">
+						</div>
+						<form class="form-horizontal" method="get">
+							<fieldset>
+								<div class="alert alert-danger common" role="alert"></div>
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
+									<input type="text" class="form-control" onblur="filterUserName()" id="username" placeholder="Username">
+								</div>
+								<div class="clearfix"></div>
+								<br>
+
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
+									<input type="password" class="form-control" onblur="filterPassword()" id="password" placeholder="Password">
+								</div>
+								<div class="clearfix"></div>
+
+								<p class="center col-md-5">
+									<button type="button" onclick="return login()" class="btn btn-primary" id="id_login_copy"></button>
+								</p>
+
+								<div class="clearfix"></div>
+								<div>
+									<a href="#" title="Please contact administrator." data-toggle="tooltip" class="text col-md-3" id="id_forget_password">Forget password?</a>
+									<a class="text col-md-6"></a>
+									<a href="signup.html" class="text col-md-3" id="id_signup"></a>
+								</div>
+
+							</fieldset>
+						</form>
+					</div>
+					<!--/span-->
+				</div>
+				<!--/row-->
+			</div>
+			<!--/fluid-row-->
+		</div>
+		<!--/.fluid-container-->
+		<!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="js/aes.js"></script>
+		<script src="js/md5-min.js"></script>
+		<script src="js/pad-zeropadding-min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="cust/login.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+</body>
+
+</html>

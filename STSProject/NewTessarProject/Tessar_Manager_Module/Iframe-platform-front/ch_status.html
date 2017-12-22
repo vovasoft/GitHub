@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+		<style>
+			#user_admin {
+				display: none;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Welcome to XcloudEye</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Data analytics for xcloud">
+		<meta name="author" content="xcloudgame.com">
+
+		<!-- The styles -->
+		<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+		<link href="css/xcloud-app.css" rel="stylesheet">
+		<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+		<link href='css/common.css' rel='stylesheet'>
+		<link href='css/jquery.dataTables.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+
+
+	</head>
+
+	<body>
+		<!-- topbar starts -->
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated flip">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs" />
+					<span>xcloud</span></a>
+				<div style="display: none;">
+					<input type="text" id="uid">
+				</div>
+				<div style="display: none;">
+					<input type="text" id="group">
+				</div>
+				<!-- user dropdown starts -->
+				<div class="btn-group pull-right">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="personal.html" id="id_dashboard"></a></li>
+						<li class="divider"></li>
+						<li><a onclick="logout()" id="id_logout"></a></li>
+					</ul>
+				</div>
+				<!-- user dropdown ends -->
+
+				<ul class="collapse navbar-collapse nav navbar-nav top-menu">
+					<li id="menu" style="display: none;"><a href="#" onclick="visit()" id="id_visit_stats"><i class="glyphicon glyphicon-globe"></i> </a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- topbar ends -->
+		<div class="ch-container">
+			<div class="row">
+
+				<!-- left menu starts -->
+				<div class="col-sm-2 col-lg-2">
+					<div class="sidebar-nav">
+						<div class="nav-canvas">
+							<div class="nav-sm nav nav-stacked">
+
+							</div>
+							<ul class="nav nav-pills nav-stacked main-menu">
+
+								<li><a class="ajax-link" href="personal.html" id="id_personal"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+								<li id="user_admin"><a class="ajax-link" href="admin_user.html" id="id_users"><i class="glyphicon glyphicon-home"></i><span> </span></a>
+								</li>
+								<li class="active"><a class="ajax-link" href="channel_user.html" id="id_channels"><i class="glyphicon glyphicon-eye-open"></i><span> </span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<noscript>
+					<div class="alert alert-block col-md-12">
+						<h4 class="alert-heading">Warning!</h4>
+						<p>You need to have JavaScript enabled to use this site.</p>
+					</div>
+				</noscript>
+						<div id="addchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">×</button>
+											<h3 id="id_add_channel"></h3>
+										</div>
+										<div class="modal-body">
+											<fieldset>
+												<div class="alert alert-danger common" role="alert"></div>
+												<div class="input-group" id="dis">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_channel_text"></span>
+													<input type="text" class="form-control" disabled id="channel" placeholder="">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_parent"></span>
+													<input type="text" class="form-control" id="parent" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+												<span class="input-group-addon" id="id_child"></span>
+												<input type="text" class="form-control" id="child" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+												<span class="input-group-addon" id="id_sequence"></span>
+												<input type="text" class="form-control" id="seq" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_owner"></span>
+													<input type="text" class="form-control" id="owner" onfocus="hiddenValidate()">
+												</div>
+
+												<div class="clearfix"></div>
+												<br>
+
+												<div class="input-group">
+													<span class="input-group-addon" id="id_currency"></span>
+													<input type="text" class="form-control" id="currency" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_url"></span>
+													<input type="text" class="form-control" id="url" disabled>
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_product"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="options" id="WON" value="5"> WON
+													</div>
+													<div class="col-md-4">
+														<input type="radio" name="options" id="BS" value="2"> BLOOD STRIKE
+													</div>
+
+												</div>
+												<div class="clearfix"></div>
+												<br>
+													<div class="row">
+													<div class="col-md-12">
+														<strong id="id_select_status"></strong>
+													</div>
+													<br>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" id="Active" value="1"> <font id="id_active"></font>
+													</div>
+													<div class="col-md-2">
+														<input type="radio" name="soptions" id="Banned" value="0"> <font id="id_banned"></font>
+													</div>
+												</div>
+											</div>
+											</fieldset>
+										<div class="modal-footer">
+											<a href="#" class="btn btn-default" data-dismiss="modal" id="id_cancel"></a>
+											<a id="savedown" href="#" class="btn btn-primary"><font id="id_save"></font></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">×</button>
+											<h3 id="id_edit_channel"></h3>
+										</div>
+										<div class="modal-body">
+											<fieldset>
+												<div class="alert alert-danger common" role="alert"></div>
+												<div class="input-group" id="dis">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_old_channel_name_copy"></span>
+													<input type="text" class="form-control" disabled id="oldname" placeholder="">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+												<div class="input-group">
+													<span class="input-group-addon" id="id_new_channel_name_copy"></span>
+													<input type="text" class="form-control" id="newname" onfocus="hiddenValidate()">
+												</div>
+												<div class="clearfix"></div>
+												<br>
+											</div>
+											</fieldset>
+										<div class="modal-footer">
+											<a href="#" class="btn btn-default" data-dismiss="modal" id="id_cancel_copy"></a>
+											<a id="savetop" href="#" class="btn btn-primary"><font id="id_save_copy"></font></a>
+										</div>
+									</div>
+								</div>
+							</div>
+				<div id="content" class="col-lg-10 col-sm-10">
+					<!-- content starts -->
+					<div>
+					</div>
+
+					<div class="row">
+						<div class="control-group col-md-12">
+							<a href="channel_user.html" class="btn btn-success" id="id_back"><i class="glyphicon icon-white"></i></a>
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well" data-original-title="">
+										<h2 id="id_formatted"></h2>
+										<div class="box-icon">
+					                        <a href="#" onClick="getExcel('Formatted')" class="btn btn-round btn-default"><i
+					                                class="glyphicon glyphicon-download-alt"></i></a>
+					                    </div>
+										<div class="box-icon">
+                    				</div>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+									<div>
+										<p class="listControls">
+								            <select id="selectCollection" onchange="selectAppShow()">
+									             <option value="1001">Blood Strike</option> 
+									             <option value="2001" >Won</option>
+								            </select>
+		       						    </p>
+									</div>
+									<br />
+										<table id="FchData" class="display">
+											
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="control-group col-md-12">
+							<div class="box">
+								<div class="box-inner">
+									<div class="box-header well" data-original-title="">
+										<h2 id="id_unFormatted"></h2>
+										<div class="box-icon">
+                    				</div>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+
+										<table id="UnFchData" class="display">
+											
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										 <!--进度条 -->
+                    <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+
+
+					<hr>
+
+					<footer class="row" id="foot">
+						<div class="col-md-3"></div>
+						<p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+					</footer>
+				</div>
+			</div>
+		</div>
+        <!-- jQuery -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+		<script src="js/jquery.iphone.toggle.js"></script>
+		<script src="js/jquery.autogrow-textarea.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/tableExport.js"></script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="cust/xcloudeye.js"></script>
+		<script src="cust/user.js"></script>
+		<script src="cust/ch_status.js"></script>
+		<script src="cust/menu.js"></script>
+		<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="cust/MemuForVS_i18n.js"></script>
+	</body>
+
+</html>

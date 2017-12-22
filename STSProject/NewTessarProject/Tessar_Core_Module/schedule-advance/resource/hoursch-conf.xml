@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:jaxws="http://cxf.apache.org/jaxws"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    <bean id="scheduleJob" class="com.xcloud.schedule.BSFifteenMinuteSchedule">
+
+    </bean>
+    <bean id="dailySchedule" class="com.xcloud.schedule.BSDailySchedule">
+
+    </bean>
+    <bean id="wonScheduleJob" class="com.xcloud.schedule.WonFifteenMinuteSchedule">
+
+    </bean>
+    <bean id="wondailySchedule" class="com.xcloud.schedule.WonDailySchedule">
+
+    </bean>
+
+    <bean id="bsFiveMinuteSchedule" class="com.xcloud.schedule.BSFiveMinuteSchedule">
+    </bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="fivejobtask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="bsFiveMinuteSchedule"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>getBSQuartzByFiveMinutes</value>
+        </property>
+
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="bsfivetime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="fivejobtask"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0/5 * * * ?</value>
+        </property>
+    </bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="jobtask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="scheduleJob"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>getBSQuartzByFifMinutes</value>
+        </property>
+
+    </bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="jobtaskByDay" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="dailySchedule"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>getBSQuartzByDaily</value>
+        </property>
+    </bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="wonjobtask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="wonScheduleJob"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>getWonQuartzByFifMinutes</value>
+        </property>
+    </bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="wonjobtaskByDay" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="wondailySchedule"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>getWonQuartzByDaily</value>
+        </property>
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="jobtask"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0/15 * * * ?</value>
+        </property>
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="doTimeByDay" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="jobtaskByDay"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0 3 * * ?</value>
+        </property>
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="wondoTime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="wonjobtask"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0/15 * * * ?</value>
+        </property>
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="wondoTimeByDay" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="wonjobtaskByDay"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0 22 * * ?</value>
+        </property>
+    </bean>
+    <!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序  -->
+    <bean id="scheduler" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="doTime"/>
+                <ref bean="doTimeByDay"/>
+                <ref bean="wondoTime"/>
+                <ref bean="wondoTimeByDay"/>
+                <ref bean="bsfivetime"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
+  

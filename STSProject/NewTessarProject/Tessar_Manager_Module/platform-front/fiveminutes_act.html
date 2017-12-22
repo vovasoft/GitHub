@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+    <meta charset="utf-8">
+    <title>Welcome to XcloudEye</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Data analytics for xcloud">
+    <meta name="author" content="xcloudgame.com">
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/xcloud-app.css" rel="stylesheet">
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/common.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/jquery.dataTables.css">
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+                <span>xcloud</span></a>
+
+            <!-- user dropdown starts -->
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs" id="UserInfo"> </span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="personal.html" id="id_dashboard"></a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="logout()" id="id_logout"></a></li>
+                </ul>
+            </div>
+            <!-- user dropdown ends -->
+
+            <ul class="collapse navbar-collapse nav navbar-nav top-menu" id="memu">
+               <!-- <li class="dropdown">
+                    <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> 选择应用 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="index.html">全部应用</a></li>
+                        <li class="divider"></li>
+                        <li><a href="app_rt.html">平台</a></li>
+                        <li><a href="app_rt.html">Blood Strike</a></li>
+                        <li><a href="app_rt.html">Steam City</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li id="info" class="nav-header"></li>
+
+                        <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-plus" id="id_generic"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="app_rt.html" id="id_realtime_data"></a></li>
+                                <li><a href="fiveminutes_act.html" id="id_fiveminutes_active_user"></a></li>
+                                <li><a href="five_newuser.html" id="id_five_new_user"></a></li>
+                                <li><a href="app_trend.html" id="id_general_trend"></a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion">
+                            <a href="#" id="id_user_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="user_new.html" id="id_new_user"></a></li>
+                                <li><a href="user_pay.html" id="id_payer"></a></li>
+                                <li><a href="user_active.html" id="id_active_user"></a></li>
+                                <li><a href="user_retention.html" id="id_user_retention"></a></li>
+                                <li><a href="ret_query.html" id="id_ret_query"></a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion">
+                            <a href="#" id="id_channel_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="ch_detail.html" id="id_hourly_data"></a></li>
+                                <li><a href="ch_list.html" id="id_channel_list"></a></li>
+                                <li><a href="ch_trace.html" id="id_channel_track"></a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion">
+                            <a href="#" id="id_payment_analyze"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="pay_top.html" id="id_top_payer"></a></li>
+                                <li><a href="pay_top_ch.html" id="id_summary_channel_payment"></a></li>
+                                <li><a href="detail_ch_order.html" id="id_detail_channel_payment"></a></li>
+                                <li><a href="pay_trend.html" id="id_payment_trend"></a></li>
+                                <li><a href="pay_hobby.html" id="id_payment_hobby"></a></li>
+<!--                                 <li><a href="pay_inv.html">付费转化率</a></li>
+                                <li><a href="pay_habit.html">付费习惯</a></li> -->
+                            </ul>
+                        </li>
+                         <li class="accordion">
+                            <a href="#" id="id_query"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="user_query.html" id="id_user_query"></a></li>
+                                <li><a href="user_order.html" id="id_order_query"></a></li>
+                                <li><a href="order_track.html" id="id_order_track"></a></li>
+                                <li><a href="pay_order.html" id="id_payed_order"></a></li>
+                            </ul>
+                        </li>
+						 <li class="accordion">
+                            <a href="#" id="id_advance"><i class="glyphicon glyphicon-plus"></i><span> </span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="cust_query.html" id="id_cust_query"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+                <p>You need to have JavaScript enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+            <div>
+            	
+</div>
+
+<div class="row">
+
+    <div class="control-group col-md-12">
+        <div class="input-daterange input-group" id="datepicker">
+                <input type="text" class="input-small actual_range" id="endDate" value="" />
+                <span class="add-on"> </span> 
+                <button class="btn btn-primary btn-sm " id="id_confirm"></button>
+        </div>
+
+        <div class="box">
+            <div class="box-inner">
+                <div class="box-header well">
+                    <h2 id="id_realtime"><i class="glyphicon glyphicon-list-alt"></i> </h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <!--<p class="graphControls center">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_new_user_copy" value="">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_active_user_copy" value="">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_payer_copy" value="">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_new_payer" value="">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_payed_money" value="">
+                    <input class="btn btn-inverse btn-default btn-sm" type="button" id="id_order_number" value="">
+                    </p>-->
+                    <div id="trend-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2 id="id_data_details"></h2>
+					<div class="box-icon">
+                        <a href="#" onClick="getExcel('fiveminutes_act')" class="btn btn-round btn-default"><i
+                                class="glyphicon glyphicon-download-alt"></i></a>
+                    </div>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                
+                	<div class="box-content">
+                    <table class="display" id="showData" style="table-layout:fixed;">
+                        <thead>
+                        
+                        </thead>
+                        <tbody id="tbody">
+                        
+                        </tbody>
+                    </table>
+                   </div>
+                    <!--  进度条-->
+                     <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											<!--<button type="button" class="close" data-dismiss="modal">×</button>-->
+											<!--<h3 id="h3" style='text-align:center;'>Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'></h3>-->
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+        </div>
+    </div> 
+    	</div>
+    <!-- Ad, you can remove it -->
+<!--     <div class="row">
+        <div class="col-md-9 col-lg-9 col-xs-9  hidden-xs">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-5108790028230107"
+                 data-ad-slot="3193373905"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div> -->
+    <!-- Ad ends -->
+
+    <hr>
+
+    <footer class="row" id="foot">
+        <div class="col-md-3"></div>
+        <p class="col-md-9 col-sm-9 col-xs-12 copyright">Copyright &copy; <a href="http://www.xcloudgame.com" target="_blank">
+            xcloudgame</a> 2015. Powered by : <a href="http://www.xcloudgame.com">xcloudgame.com</a></p>
+    </footer>
+
+</div>
+	</div>
+</div>
+ <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src='js/jquery.dataTables.min.js'></script>
+	<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+	<script src="js/jquery.iphone.toggle.js"></script>
+	<script src="js/jquery.autogrow-textarea.js"></script>
+	<script src="js/jquery.history.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/highcharts-4.1.5.js"></script>
+	<script src="cust/common.js"></script>
+	<script src="js/tableExport.js"></script>
+	<script src="js/jquery.base64.js"></script>
+	<script src="cust/menu.js"></script>
+	<script src="cust/xcloudeye.js"></script>
+	<script src="cust/fiveminutes_act.js"></script>
+	<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+	<script src="cust/MemuForApp_i18n.js"></script>
+</body>
+</html>

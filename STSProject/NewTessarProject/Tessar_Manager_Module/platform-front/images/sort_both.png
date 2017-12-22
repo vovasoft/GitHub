@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+
+<html>
+<head>
+<title>ace_on_rails - /trunk/app/assets/images/sort_both.png - Taocode</title> 
+
+
+
+<link rel="stylesheet" href="http://a.tbcdn.cn/p/global/1.0/global-min.css" />
+
+
+
+<script src="http://a.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js,p/global/1.0/global-min.js"></script>
+	<script type="text/javascript" src="/js/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="/js/utils.js"></script>
+	<script type="text/javascript" src="/js/ajaxcall.js"></script>
+	
+	<script type="text/javascript">
+     
+      $(document).ready(function() {
+      init_csrf();
+      
+      
+      
+      
+      
+      start_call();
+      
+      });
+       
+      KISSY.config({
+        packages:[
+            {
+                name:"js",
+                tag:"20130306",
+                path:"/"
+            }
+        ]
+   	  });
+   	 
+     KISSY.use('js/app/login/login');
+      
+      
+    </script>
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/code-min.css" />
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/zenburn.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+
+ 
+
+<script type="text/javascript">
+function watch_project(o) {
+q_get('prj/watch/ace_on_rails', {}, function(r){
+$(o).text(r[0]);
+$('#watch_text').text(r[1]);
+});
+
+}
+</script>
+
+
+
+
+
+
+</head>
+<body>
+	
+	<div class="d-m-nav">
+		<div class="d-m-nav-top layout">
+		
+			<a class="d-m-nav-logo" href="/fastregister/">Taocode</a>
+		
+
+			<ul class="d-m-main-nav">
+                          <li><a href="/project/explore" >项目</a></li>
+                          <li><a href="/p/taobaocode/wiki/" target="_blank">帮助</a></li>
+                        </ul>
+
+			<div class="d-m-search">
+
+
+
+<form id="search" action="/search/" method="POST">
+	
+	<input id="type" name="type" type="hidden" value="project" />
+	<input id="q" name="q" type="text" value="" placeholder='请输入搜索内容' class="search-text" ></input>
+	
+	   		  <span class="d-m-search-type">
+                   <ul class="d-m-search-type-list">
+                   			<li data-type="project" ><a href="javascript:void(0);">项目</a></li>
+	                   		<li data-type="user" ><a href="javascript:void(0);">用户</a></li>
+	                   			
+	                   		<li data-type="language" ><a href="javascript:void(0);">语言</a></li>
+                   </ul>
+              </span>
+              	
+	
+    <a id="btn-search" href="javascript:search.submit()" class="search-btn">搜索</a><b></b>
+
+<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='48bd270f45afd2d2cb8da81f83b1fb4f' /></div>
+
+			  <a href="/login/">登录</a>
+              <a href="/register/">注册</a>
+            <!--   <a href="/p/taobaocode/wiki/SiteHelp/">帮助</a> -->
+
+
+
+    
+
+
+
+</form>
+
+			</div>
+		</div>
+
+
+</div>
+
+	
+	
+	<div class="d-g-wrapper d-p-code">
+		<div class="d-p-project-top">
+			<h2 class="d-p-project-name">
+				    
+				    <a href="/project/explore">首页</a><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span> <a href="/u/amonlei/mypro/">amonlei</a> / ace_on_rails</h2>
+			   		<span class="d-p-project-lang">项目语言:RUBY</span>
+				    
+
+			  </h2>
+			  
+	 
+	
+	 
+	
+<ul class="layout d-p-project-tabs">
+	  
+	  
+	  <li class="d-p-project-tab">
+	    <a href="/p/ace_on_rails/src/" class="current">source</a>
+	  </li>
+	  
+	  
+	  
+	  <li class="d-p-project-tab">
+	    <a href="/p/ace_on_rails/issues/">issues</a>
+	  </li>
+	  
+	  
+	  
+	  <li class="d-p-project-tab">
+	    <a href="/p/ace_on_rails/wiki/">wiki</a>
+	  </li>
+	  
+	  
+</ul>
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	 
+	
+	
+<div class="d-p-project-content">
+            <div class="d-p-project-svn">
+                <span class="d-p-project-svnurl">
+                    <input type="text" readonly spellcheck="false"  value=http://code.taobao.org/svn/ace_on_rails/>
+                </span>
+                <span class="d-p-project-power">
+                
+                
+               	<b> 权限:read-only(如需更高权限请先加入项目)</b>
+                
+                
+                
+                
+                
+                	
+					
+				
+                
+                <!-- <a href="javascript:void(0);" class="d-p-project-join p-p-project-btn">申请加入</a> -->
+                </span>          
+			 </div> 	
+			 <h2 class="d-p-project-root">ace_on_rails/
+			 
+			
+
+
+
+	  
+	  
+			  <a href="/p/ace_on_rails/src/trunk/">trunk</a>
+			  <span>/</span>
+	  
+	  
+			  <a href="/p/ace_on_rails/src/trunk/app/">app</a>
+			  <span>/</span>
+	  
+	  
+			  <a href="/p/ace_on_rails/src/trunk/app/assets/">assets</a>
+			  <span>/</span>
+	  
+	  
+			  <a href="/p/ace_on_rails/src/trunk/app/assets/images/">images</a>
+			  <span>/</span>
+	      
+</h2>
+<!-- 
+
+ -->
+ 
+<p>
+  <pre><code class="diff">Index: sort_both.png
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: sort_both.png
+===================================================================
+--- sort_both.png	(revision 2)
++++ sort_both.png	(revision 3)
+
+Property changes on: sort_both.png
+___________________________________________________________________
+Added: svn:mime-type
+## -0,0 +1 ##
++application/octet-stream
+\ No newline at end of property
+</code></pre>
+<p>
+<script>hljs.initHighlightingOnLoad();</script>
+
+ 
+ 
+
+ 
+	
+	<div class="d-m-footer layout">
+		<div class="d-m-footer-main layout">
+			<dl>
+			  <dt>关于Taocode</dt>				
+			  <dd>
+			    <a href="/aboutus/">关于我们</a>
+			  </dd>
+			</dl>
+                        <dl>
+                          <dt>帮助中心</dt>
+                          <dd>
+                            <a href="/p/taobaocode/wiki/SiteHelp/">如何创建项目</a>
+			  </dd>
+                          <dd>
+                            <a href="/p/taobaocode/wiki/SiteHelp/">如何成为项目成员</a>
+                          </dd>
+                          <dd>
+                            <a href="/p/taobaocode/issues/">问题反馈</a>
+			  </dd>
+                        </dl>
+			<dl>
+			  <dt>联系我们</dt>
+			  <dd>
+			    <a class="d-m-email" href="mailto:opensource@taobao.com">邮箱</a> 
+			    <a class="d-m-weibo" href="http://e.weibo.com/taobaoopensource " target="_blank">微博</a> 
+			  </dd>
+			</dl>
+		</div>
+		<p class="d-m-right">©&nbsp;&nbsp;2013&nbsp;&nbsp;Alibaba&nbsp;&nbsp;Inc.&nbsp;&nbsp;All&nbsp;&nbsp;rights&nbsp;&nbsp;resvered.<span>
+		Powered by <a href="http://www.aliyun.com/?ref=3" target="_blank"><img src="http://static.aliyun.com/images/www-summerwind/logo.gif" alt="阿里云" /></span></a>
+</p>
+	</div>
+	
+
+<script src="http://s95.cnzz.com/z_stat.php?id=1254485675&web_id=1254485675" language="JavaScript"></script>
+
+</body>
+</html>

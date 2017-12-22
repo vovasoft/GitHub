@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/java" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <dependency>web appServlet servlet context</dependency>
+          <file>file://$MODULE_DIR$/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/resources/META-INF/appid-conf.xml</file>
+          <file>file://$MODULE_DIR$/resources/META-INF/redis-conf.xml</file>
+          <file>file://$MODULE_DIR$/resources/META-INF/mongo-config.xml</file>
+          <file>file://$MODULE_DIR$/resources/META-INF/mongo-driver-conf.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../../../out/production/stats" />
+    <output-test url="file://$MODULE_DIR$/../../../../out/test/stats" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="stats" level="project" />
+  </component>
+</module>

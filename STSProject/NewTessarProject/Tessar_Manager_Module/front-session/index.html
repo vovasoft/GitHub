@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+    <meta charset="utf-8">
+    <title>Welcome to XcloudEye</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Data analytics for xcloud">
+    <meta name="author" content="xcloudgame.com">
+   <!-- Clean Page caching-->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/xcloud-app.css" rel="stylesheet">
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/common.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body style="overflow-x:hidden ;">
+	<script language="javascript">parent.location.href= 'allmenu.html';</script>
+        <div id="content" class="col-lg-12 col-sm-11">
+            <!-- content starts -->
+        <div>
+</div>
+<div class=" row">
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-flag blue"></i>
+
+            <div id="id_total_user"></div>
+            <div id="user_total"></div>
+<!--             <span class="notification">6</span> -->
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-user green"></i>
+
+            <div id="id_total_payer"></div>
+            <div id="payer"></div>
+<!--             <span class="notification green">4</span> -->
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-fire yellow"></i>
+
+            <div id="id_month_active"></div>
+            <div id="mau"></div>
+<!--             <span class="notification yellow">$34</span> -->
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" class="well top-block">
+            <i class="glyphicon glyphicon-user red"></i>
+
+            <div id='id_week_active'></div>
+            <div id="wau"></div>
+            <!-- <span class="notification red">12</span> -->
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="box col-md-15">
+            <div class="box-inner">
+               
+               
+            </div>
+    </div>
+</div>
+<div class="row">
+    <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2 id="id_app_list"></h2>
+                    <!--<img src = 'img/ajax-loaders/ajax-loader-7.gif'>-->
+					<div class="box-icon">
+                        <a href="#" onClick="getExcel('index')" class="btn btn-round btn-default"><i
+                                class="glyphicon glyphicon-download-alt"></i></a>
+                    </div>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center;" id="id_app"></th>
+                            <th style="text-align: center;" id="id_today_newer"></th>
+                            <th style="text-align: center;" id="id_yesterday_newer"></th>
+                            <th style="text-align: center;" id="id_dau"></th>
+                            <th style="text-align: center;" id="id_yesterday_dau"></th>
+                            <th style="text-align: center;" id="id_total_income"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="tb2">
+                        
+                        </tbody>
+                    </table>
+                    <!--  进度条-->
+                     <div id="progressModal" style="top: 50%; margin:-100px 0 0 -150px;" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header" style='text-align:center;' id = "delprogressModal">
+											<!--<button type="button" class="close" data-dismiss="modal">×</button>-->
+											<!--<h3 id="h3" style='text-align:center;'>Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'></h3>-->
+											Loading...<img src = 'img/ajax-loaders/ajax-loader-7.gif'>
+										</div>
+								</div>
+							</div>
+                    </div>  
+                </div>
+            </div>
+    </div>
+</div>
+
+</div>
+    <hr>
+</div>
+</div>
+<!--/.fluid-container-->
+
+<!-- external javascript -->
+<!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src='js/jquery.dataTables.min.js'></script>
+	<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+	<script src="js/jquery.iphone.toggle.js"></script>
+	<script src="js/jquery.autogrow-textarea.js"></script>
+	<script src="js/jquery.history.js"></script>
+	<script src="js/tableExport.js"></script>
+	<script src="js/jquery.base64.js"></script>
+	<script src="cust/index.js"></script>
+	<script src="cust/menu.js"></script>
+	<script src="cust/xcloudeye.js"></script>
+	<script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+	<script src="cust/MemuForAll_i18n.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+</body>
+</html>
