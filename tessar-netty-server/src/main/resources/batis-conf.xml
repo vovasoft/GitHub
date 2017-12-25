@@ -6,15 +6,15 @@
 <configuration>
     <properties>
         <property name="driver" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/dd1"/>
         <property name="username" value="root"/>
-        <property name="password" value="123"/>
+        <property name="password" value="root"/>
     </properties>
     <!-- 定义类别名 -->
     <typeAliases>
         <typeAlias type="domain.Customer" alias="_Customer"/>
         <typeAlias type="domain.Order" alias="_Order"/>
-        <typeAlias type="nettydemo.User" alias="_User"/>
+        <typeAlias type="domain.User" alias="_User"/>
         <typeAlias type="domain.PlayExistTable" alias="_PlayExistTable"/>
     </typeAliases>
 

@@ -1,0 +1,84 @@
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=[s,c,d]
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://127.0.0.1:9999/tessar/statis/statis?aa=22&name=vova
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:9999/tessar/statis/statis%20
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8080/tessar/statis/statis%20
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8080/tessar/statis/statis
+Accept:*/*
+Cache-Control:no-cache
+
+###
+

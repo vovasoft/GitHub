@@ -2,7 +2,8 @@ package nettydemo;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import domain.User;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
@@ -16,7 +17,6 @@ import com.alibaba.fastjson.JSONObject;
 import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.QueryStringDecoder;
 
-import java.net.URI;
 import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
@@ -62,29 +62,35 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         String uri = msg.uri();
 
         System.out.println("URI:"+uri);
-        if(!uri.equals("/tessar/statis/statis")){
+        System.out.println("suburi:"+uri.substring(0,21));
+        if(!(uri.substring(0,21)).equals("/tessar/statis/statis")){
             System.out.println("return error url");
             return;
         }
         Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
         Map<String, List<String>> parame = decoder.parameters();
+
+
+
         for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
-//            JSONObject ob = 
-            String jsonstr = gson.toJson(new User(1, "vova", 123));
-            System.out.println(jsonstr);
+
+//            String jsonstr = gson.toJson(new User(1, "vova", 123));
+//            System.out.println(jsonstr);
 
         }
-        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应  
-        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
-        ByteBuf responseContentByteBuf = Unpooled.copiedBuffer(
-                JSON.toJSONString(jsonarray, SerializerFeature.DisableCircularReferenceDetect)
-                        .getBytes(Charset.forName("utf-8")));
-        response.headers().set("Access-Control-Allow-Origin", "*"); // 跨域  
-        response.headers().set(CONTENT_LENGTH, responseContentByteBuf.readableBytes());
-        response.content().writeBytes(responseContentByteBuf);
-        responseContentByteBuf.release();//zuoyong?  
-        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);//  
+//        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
+//        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
+//        ByteBuf responseContentByteBuf = Unpooled.copiedBuffer(
+//                JSON.toJSONString(jsonarray, SerializerFeature.DisableCircularReferenceDetect)
+//                        .getBytes(Charset.forName("utf-8")));
+//        response.headers().set("Access-Control-Allow-Origin", "*"); // 跨域
+//        response.headers().set(CONTENT_LENGTH, responseContentByteBuf.readableBytes());
+//        response.content().writeBytes(responseContentByteBuf);
+//        responseContentByteBuf.release();
+//        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);//
+
+
     }
 }

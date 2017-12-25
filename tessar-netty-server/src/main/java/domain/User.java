@@ -1,16 +1,21 @@
-package nettydemo;
+package domain;
 
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.annotation.Id;
+import org.springframework.stereotype.Component;
+
+import java.security.Key;
 
 /**
  * @author vova
  * @version Create in 上午1:27 2017/12/21
  */
 
-@TableName("user")
+
+
 public class User {
-    @Id
+
     private int id;
     private String name;
     private int age;

@@ -12,10 +12,10 @@
     </properties>
     <!-- 定义类别名 -->
     <typeAliases>
-        <typeAlias type="dao.dbmodel.Customer" alias="_Customer"/>
-        <typeAlias type="dao.dbmodel.Order" alias="_Order"/>
-        <typeAlias type="nettydemo.User" alias="_User"/>
-        <typeAlias type="dao.dbmodel.PlayExistTable" alias="_PlayExistTable"/>
+        <typeAlias type="domain.Customer" alias="_Customer"/>
+        <typeAlias type="domain.Order" alias="_Order"/>
+        <typeAlias type="domain.User" alias="_User"/>
+        <typeAlias type="domain.PlayExistTable" alias="_PlayExistTable"/>
     </typeAliases>
 
     <environments default="development">

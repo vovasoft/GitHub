@@ -1,10 +1,13 @@
 package domain;
 
 
+import org.apache.ibatis.annotations.Case;
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.jdbc.Null;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,15 +15,57 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Random;
 
+import static domain.EnumSQL.INSERT;
+import static domain.EnumSQL.UPDATE;
+
 /**
  * @author: Vova
  * @create: date 16:20 2017/12/21
  */
+
 public class UseMySql {
 
 
- //   public  void insert() throws IOException {
-    public static void insert(Object object) throws IOException {
+
+    //   public  void insert() throws IOException {
+    public void utilSQL(Object object,EnumSQL operate) throws IOException {
+        String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+
+
+        String className = object.getClass().getSimpleName();
+        switch (operate){
+            case INSERT:ss.insert(className+".insert", object);
+            case UPDATE:ss.insert(className+".update", object);
+        }
+
+        ss.commit();
+        ss.close();
+    }
+
+    public <T>Object utilSQL(Class<T> entityClass,EnumSQL operate,Object key) throws IOException, ClassNotFoundException {
+        String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+
+        T res= null;
+
+        switch (operate){
+            case SELECT:
+                 res= ss.selectOne(entityClass.getSimpleName()+".findById",key);
+        }
+
+        ss.commit();
+        ss.close();
+
+        return  res;
+
+    }
+
+    public void insert(Object object) throws IOException {
 
         String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
@@ -29,9 +74,6 @@ public class UseMySql {
         String className = object.getClass().getName();
         System.out.println("className:"+className);
 
-//        User uu = new User();
-//        uu.setAge(123);
-//        uu.setName("vova");
 
         ss.insert(object.getClass().getSimpleName()+".insert", object);
 
@@ -40,9 +82,22 @@ public class UseMySql {
 
 
     }
+    public void update(Object object) throws IOException {
+
+        String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+
+        ss.insert(object.getClass().getSimpleName()+".update", object);
+
+        ss.commit();
+        ss.close();
+    }
 
 
-    public static void insertOrd() throws IOException {
+
+    public void insertOrd() throws IOException {
 
         String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
@@ -66,24 +121,6 @@ public class UseMySql {
     }
 
 
-    public static void update() throws IOException {
-
-        String resoure = "batis-conf.xml";
-        InputStream inputStream = Resources.getResourceAsStream(resoure);
-        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
-
-        SqlSession ss = sf.openSession();
-        Customer user = new Customer();
-        user.setName("vo313131");
-        user.setAge(22);
-        user.setId(1);
-
-        ss.insert("customers.update", user);
-
-        ss.commit();
-        ss.close();
-
-    }
 
 
     public  static void delete() throws IOException {

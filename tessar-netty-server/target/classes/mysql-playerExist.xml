@@ -6,12 +6,6 @@
     <!-- 定义insert语句 -->
 
 
-    <!--Date playTableDate;-->
-    <!--int newIn;-->
-    <!--String arrayDays;-->
-    <!--String arrayWeeks;-->
-    <!--String arrayMonths;-->
-
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
         insert into player_exist (dt,newin,arrayDays,arrayWeeks,arrayMonths,arrayOthers)
         values(#{playTableDate},#{newIn},#{arrayDays},#{arrayWeeks},#{arrayMonths},#{others})

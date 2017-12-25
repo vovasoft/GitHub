@@ -11,7 +11,7 @@
             http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd
        ">
 
-    <!-- Default bean name is 'mongo' -->
+    <!-- Default bean name is 'dbmongo' -->
     <mongo:mongo host="127.0.0.1" port="27017"/>
 
     <!--mongodb 数据库账号和密码信息  -->
