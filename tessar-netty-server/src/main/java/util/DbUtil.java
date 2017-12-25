@@ -54,22 +54,22 @@ public class DbUtil {
     }
 
     //根据注册时间返回用户的留存
-    public static int getDayIndex(Player user) {
-
-        Calendar cRegister = Calendar.getInstance();
-        cRegister.setTimeInMillis(user.getrTime().getTime());
-
-        Calendar cLogin = Calendar.getInstance();
-        cLogin.setTimeInMillis(user.getLoginTime().getTime());
-
-        int days=0;
-        while(cRegister.before(cLogin)){
-            days++;
-            if (cRegister.getTime().equals(cLogin.getTime()))days--;
-            cRegister.add(Calendar.DAY_OF_YEAR, 1);
-        }
-        return days;
-    }
+//    public static int getDayIndex(Player user) {
+//
+//        Calendar cRegister = Calendar.getInstance();
+//        cRegister.setTimeInMillis(user.getrTime().getTime());
+//
+//        Calendar cLogin = Calendar.getInstance();
+//        cLogin.setTimeInMillis(user.getLoginTime().getTime());
+//
+//        int days=0;
+//        while(cRegister.before(cLogin)){
+//            days++;
+//            if (cRegister.getTime().equals(cLogin.getTime()))days--;
+//            cRegister.add(Calendar.DAY_OF_YEAR, 1);
+//        }
+//        return days;
+//    }
 
 //    //根据两个时间点，计算第二个时间点是第一个时间点的第几周（计算留存）。
 //    public static int getWeekIndex(PlayerInfo user) {

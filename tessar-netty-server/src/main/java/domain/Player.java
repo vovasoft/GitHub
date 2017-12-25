@@ -6,48 +6,28 @@ import java.util.Date;
  * @author: Vova
  * @create: date 11:03 2017/12/25
  */
+
+//"uid":10023722086,"regdate":1514185002,
+// "lastdate":1514185002,"channel_from":"ngBrazil"
+// ,"gid":"bloodstrke","sub":"lp-fb","sid":"0"
 public class Player {
     private String uid;
-    private Date rTime; //registerTime
-    private String ucID;  //user channel create id
-    private String gameID;
-    private Date grTime;//game registerTime
-    private String gcID; //game channel create id
+    private long regdate; //registerTime
+//    private String ucID;  //user channel create id
+//    private String gameID;
+    private long lastdate;//game registerTime
+    private String channel_from; //game channel create id
+    private String gid;
+    private String sub; //sid channel create id;
     private String sid;
-    private Date scID; //sid channel create id;
-    private Date loginTime;
-    private boolean fristDay;
-    private boolean fristweek;
-    private boolean fristMonth;
-    private long duration;
-    private String other1;
-    private String other2;
-    private String other3;
-    private String other4;
-
-    public Player(String uid, Date rTime, String ucID, String gameID,
-                  Date grTime, String gcID, String sid, Date scID,
-                  Date loginTime, boolean fristDay, boolean fristweek,
-                  boolean fristMonth, long duration, String other1,
-                  String other2, String other3, String other4) {
-        this.uid = uid;
-        this.rTime = rTime;
-        this.ucID = ucID;
-        this.gameID = gameID;
-        this.grTime = grTime;
-        this.gcID = gcID;
-        this.sid = sid;
-        this.scID = scID;
-        this.loginTime = loginTime;
-        this.fristDay = fristDay;
-        this.fristweek = fristweek;
-        this.fristMonth = fristMonth;
-        this.duration = duration;
-        this.other1 = other1;
-        this.other2 = other2;
-        this.other3 = other3;
-        this.other4 = other4;
-    }
+//    private boolean fristDay;
+//    private boolean fristweek;
+//    private boolean fristMonth;
+//    private long duration;
+//    private String other1;
+//    private String other2;
+//    private String other3;
+//    private String other4;
 
     public String getUid() {
         return uid;
@@ -57,44 +37,44 @@ public class Player {
         this.uid = uid;
     }
 
-    public Date getrTime() {
-        return rTime;
+    public long getRegdate() {
+        return regdate;
     }
 
-    public void setrTime(Date rTime) {
-        this.rTime = rTime;
+    public void setRegdate(long regdate) {
+        this.regdate = regdate;
     }
 
-    public String getUcID() {
-        return ucID;
+    public long getLastdate() {
+        return lastdate;
     }
 
-    public void setUcID(String ucID) {
-        this.ucID = ucID;
+    public void setLastdate(long lastdate) {
+        this.lastdate = lastdate;
     }
 
-    public String getGameID() {
-        return gameID;
+    public String getChannel_from() {
+        return channel_from;
     }
 
-    public void setGameID(String gameID) {
-        this.gameID = gameID;
+    public void setChannel_from(String channel_from) {
+        this.channel_from = channel_from;
     }
 
-    public Date getGrTime() {
-        return grTime;
+    public String getGid() {
+        return gid;
     }
 
-    public void setGrTime(Date grTime) {
-        this.grTime = grTime;
+    public void setGid(String gid) {
+        this.gid = gid;
     }
 
-    public String getGcID() {
-        return gcID;
+    public String getSub() {
+        return sub;
     }
 
-    public void setGcID(String gcID) {
-        this.gcID = gcID;
+    public void setSub(String sub) {
+        this.sub = sub;
     }
 
     public String getSid() {
@@ -105,83 +85,18 @@ public class Player {
         this.sid = sid;
     }
 
-    public Date getScID() {
-        return scID;
+    public Player() {
+
     }
 
-    public void setScID(Date scID) {
-        this.scID = scID;
-    }
+    public Player(String uid, long regdate, long lastdate, String channel_from, String gid, String sub, String sid) {
 
-    public Date getLoginTime() {
-        return loginTime;
-    }
-
-    public void setLoginTime(Date loginTime) {
-        this.loginTime = loginTime;
-    }
-
-    public boolean isFristDay() {
-        return fristDay;
-    }
-
-    public void setFristDay(boolean fristDay) {
-        this.fristDay = fristDay;
-    }
-
-    public boolean isFristweek() {
-        return fristweek;
-    }
-
-    public void setFristweek(boolean fristweek) {
-        this.fristweek = fristweek;
-    }
-
-    public boolean isFristMonth() {
-        return fristMonth;
-    }
-
-    public void setFristMonth(boolean fristMonth) {
-        this.fristMonth = fristMonth;
-    }
-
-    public long getDuration() {
-        return duration;
-    }
-
-    public void setDuration(long duration) {
-        this.duration = duration;
-    }
-
-    public String getOther1() {
-        return other1;
-    }
-
-    public void setOther1(String other1) {
-        this.other1 = other1;
-    }
-
-    public String getOther2() {
-        return other2;
-    }
-
-    public void setOther2(String other2) {
-        this.other2 = other2;
-    }
-
-    public String getOther3() {
-        return other3;
-    }
-
-    public void setOther3(String other3) {
-        this.other3 = other3;
-    }
-
-    public String getOther4() {
-        return other4;
-    }
-
-    public void setOther4(String other4) {
-        this.other4 = other4;
+        this.uid = uid;
+        this.regdate = regdate;
+        this.lastdate = lastdate;
+        this.channel_from = channel_from;
+        this.gid = gid;
+        this.sub = sub;
+        this.sid = sid;
     }
 }

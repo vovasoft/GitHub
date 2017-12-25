@@ -1,30 +1,37 @@
 package nettydemo;
 
-import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
+import domain.Player;
 import domain.User;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.FullHttpRequest;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.QueryStringDecoder;
+import io.netty.handler.codec.http.*;
 
-import java.nio.charset.Charset;
+import com.alibaba.fastjson.JSONArray;
+import io.netty.handler.codec.json.JsonObjectDecoder;
+import io.netty.util.CharsetUtil;
+
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import static io.netty.buffer.Unpooled.copiedBuffer;
+import static io.netty.handler.codec.http.HttpHeaderNames.COOKIE;
+import static io.netty.handler.codec.http.HttpHeaderValues.KEEP_ALIVE;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_LENGTH;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_TYPE;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
+import static io.netty.handler.codec.rtsp.RtspHeaders.Names.CONNECTION;
+import static sun.management.jmxremote.ConnectorBootstrap.PropertyNames.HOST;
 
 
 /**
@@ -59,19 +66,21 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) throws Exception {
         //函数执行次数？
         //解析get请求参数
-        String uri = msg.uri();
+        if (!(msg instanceof FullHttpRequest)) {
+            return;
+        }
 
-        System.out.println("URI:"+uri);
-        System.out.println("suburi:"+uri.substring(0,21));
-        if(!(uri.substring(0,21)).equals("/tessar/statis/statis")){
+        String uri = msg.uri();
+        System.out.println("URI:" + uri);
+        System.out.println("suburi:" + uri.substring(0, 21));
+        if (!(uri.substring(0, 21)).equals("/tessar/statis/statis")) {
             System.out.println("return error url");
             return;
         }
+
         Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
         Map<String, List<String>> parame = decoder.parameters();
-
-
 
         for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
@@ -79,6 +88,12 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 //            String jsonstr = gson.toJson(new User(1, "vova", 123));
 //            System.out.println(jsonstr);
 
+            String json = entry.getValue().toString();
+            System.out.println("json:" + json);
+            List<Player> players = gson.fromJson(json,  new TypeToken<List<Player>>() {
+            }.getType());
+//            System.out.println(player);
+            System.out.println("done");
         }
 //        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
 //        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
@@ -91,6 +106,29 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 //        responseContentByteBuf.release();
 //        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);//
 
-
+        ctx.writeAndFlush("OK").addListener(ChannelFutureListener.CLOSE);
+        return;
     }
+
+    //获取请求的内容
+    private String parseJosnRequest(FullHttpRequest request) {
+        ByteBuf jsonBuf = request.content();
+        String jsonStr = jsonBuf.toString(CharsetUtil.UTF_8);
+        return jsonStr;
+    }
+
+    private void ResponseJson(ChannelHandlerContext ctx, FullHttpRequest request, String jsonStr) {
+        // TODO Auto-generated method stub
+        boolean keepAlive = HttpUtil.isKeepAlive(request);
+        byte[] jsonByteByte = jsonStr.getBytes();
+        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(jsonByteByte));
+        response.headers().set(CONTENT_TYPE, "text/json");
+        response.headers().setInt(CONTENT_LENGTH, response.content().readableBytes());
+
+        if (keepAlive) {
+            response.headers().set(CONNECTION, KEEP_ALIVE);
+        }
+        ctx.writeAndFlush(response);
+    }
+
 }
