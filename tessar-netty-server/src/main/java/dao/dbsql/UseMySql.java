@@ -1,23 +1,20 @@
-package domain;
+package dao.dbsql;
 
 
-import com.google.gson.Gson;
-import org.apache.ibatis.annotations.Case;
+import domain.Customer;
+import domain.EnumSQL;
+import domain.Order;
+import domain.QueryDate;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.jdbc.Null;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Random;
-
-import static domain.EnumSQL.INSERT;
-import static domain.EnumSQL.UPDATE;
 
 /**
  * @author: Vova
@@ -29,7 +26,7 @@ public class UseMySql {
 
     //   public  void insert() throws IOException {
     public void utilSQL(Object object, EnumSQL operate) throws IOException {
-        //   String resoure = "batis-conf.xml";
+     //   String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
@@ -44,13 +41,13 @@ public class UseMySql {
         ss.close();
     }
 
-    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object key) throws IOException {
-        //    String resoure = "batis-conf.xml";
+    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object key )throws IOException{
+    //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         T res = null;
-        List<T> resList = null;
+        List<T> resList =null;
 
         switch (operate) {
             case SELECT:
@@ -61,13 +58,13 @@ public class UseMySql {
         return res;
     }
 
-    public <T> List<T> utilSQL(Class<T> entityClass, EnumSQL operate, QueryDate date) throws IOException {
-        //   String resoure = "batis-conf.xml";
+    public <T>List<T> utilSQL(Class<T> entityClass, EnumSQL operate, QueryDate date) throws IOException {
+     //   String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
 
-        List<T> resList = null;
+        List<T> resList=null;
         switch (operate) {
             case SELECTLIST:
                 resList = ss.selectList(entityClass.getSimpleName() + ".findByDate", date);

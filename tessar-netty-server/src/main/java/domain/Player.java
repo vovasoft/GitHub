@@ -7,9 +7,11 @@ import java.util.Date;
  * @create: date 11:03 2017/12/25
  */
 
+
+//PHP传输过来的json文件
 //"uid":10023722086,"regdate":1514185002,
-// "lastdate":1514185002,"channel_from":"ngBrazil"
-// ,"gid":"bloodstrke","sub":"lp-fb","sid":"0"
+// "lastdate":1514185002,"channel_from":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"
+
 public class Player {
     private String uid;
     private long regdate; //registerTime

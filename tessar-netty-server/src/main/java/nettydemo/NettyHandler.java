@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
+import dao.dbmongo.UseMyMongo;
 import domain.Player;
 import domain.User;
 import io.netty.buffer.ByteBuf;
@@ -17,6 +18,7 @@ import io.netty.handler.codec.http.*;
 import com.alibaba.fastjson.JSONArray;
 import io.netty.handler.codec.json.JsonObjectDecoder;
 import io.netty.util.CharsetUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Collections;
 import java.util.List;
@@ -43,6 +45,9 @@ import static sun.management.jmxremote.ConnectorBootstrap.PropertyNames.HOST;
 public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     StringBuilder sb = new StringBuilder();
     JSONArray jsonarray = new JSONArray();
+
+    @Autowired
+    UseMyMongo umm ;
 
     public NettyHandler() {
         jsonarray.add(getJsonObj("name", "ar.sear.ocalplay"));
@@ -92,6 +97,12 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             System.out.println("json:" + json);
             List<Player> players = gson.fromJson(json,  new TypeToken<List<Player>>() {
             }.getType());
+
+            //autoware 不好使
+        //    UseMyMongo umm =new UseMyMongo();
+            for (Player player : players) {
+                umm.insertMongo(player);
+            }
 //            System.out.println(player);
             System.out.println("done");
         }
