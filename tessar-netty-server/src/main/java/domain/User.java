@@ -1,11 +1,7 @@
 package domain;
 
-import com.baomidou.mybatisplus.annotations.TableName;
-import org.springframework.context.annotation.Primary;
-import org.springframework.data.annotation.Id;
-import org.springframework.stereotype.Component;
 
-import java.security.Key;
+
 
 /**
  * @author vova

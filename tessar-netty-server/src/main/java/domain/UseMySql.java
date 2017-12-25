@@ -33,8 +33,6 @@ public class UseMySql {
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-
-
         String className = object.getClass().getSimpleName();
         switch (operate) {
             case INSERT:
@@ -51,7 +49,6 @@ public class UseMySql {
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-
         T res = null;
         List<T> resList =null;
 
@@ -59,12 +56,9 @@ public class UseMySql {
             case SELECT:
                 res = ss.selectOne(entityClass.getSimpleName() + ".findByKey", key);
         }
-
         ss.commit();
         ss.close();
-
         return res;
-
     }
     public <T>List<T> utilSQL(Class<T> entityClass, EnumSQL operate, QueryDate date) throws IOException {
      //   String resoure = "batis-conf.xml";
@@ -77,12 +71,9 @@ public class UseMySql {
             case SELECTLIST:
                 resList = ss.selectList(entityClass.getSimpleName() + ".findByDate", date);
         }
-
         ss.commit();
         ss.close();
-
         return resList;
-
     }
 
     public void insert(Object object) throws IOException {
