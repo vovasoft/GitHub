@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="gs-accessing-data-mysql-initial"/>
-<aop-project name="webserver"/>
+<aop-project name="spring-mvc-showcase"/>
 <aop-project name="gs-accessing-data-mysql-complete"/>
-<aop-project name="gs-accessing-mongodb-data-rest-initial"/>
 <aop-project name="gs-accessing-mongodb-data-rest-complete"/>
-<aop-project name="gs-accessing-data-mongodb-initial"/>
-<aop-project name="gs-register-twitter-app-utility"/>
+<aop-project name="stats"/>
 <aop-project name="gs-accessing-data-mongodb-complete"/>
+<aop-project name="gs-register-twitter-app-utility"/>
 </aop-reference-model>

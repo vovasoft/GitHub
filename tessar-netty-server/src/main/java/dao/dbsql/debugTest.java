@@ -4,10 +4,13 @@ import dao.dbmongo.MongoTest;
 
 
 import domain.*;
+
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 
 
 import java.io.IOException;
@@ -106,21 +109,40 @@ public class debugTest {
     }
 
     @Test
-    public void insertMongo() {
-        MongoTest customer1 = new MongoTest("vov1a","wang");
-        MongoTest customer2 = new MongoTest("vov2a","wang");
-        MongoTest customer3 = new MongoTest("vov3a","wang");
+    public void insertMongo() throws ParseException {
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        MongoTest customer1 = new MongoTest("vov1a","wang",sdf.parse("2018-05-17"));
+        MongoTest customer2 = new MongoTest("vov2a","wang",sdf.parse("2018-05-18"));
+        MongoTest customer3 = new MongoTest("vov3a","wang",sdf.parse("2018-05-21"));
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         mongoTemplate.insert(customer1);
+        mongoTemplate.insert(customer2);
+        mongoTemplate.insert(customer3);
+    }
+
+    @Test
+    public void findMongo() throws ParseException {
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
+        Query query = new Query();
+        query.addCriteria(Criteria.where("date").gt(sdf.parse("2018-05-13")).lt(sdf.parse("2018-05-17")));
+        MongoTest mt = mongoTemplate.findOne(query, MongoTest.class);
+        List<MongoTest> mtList = mongoTemplate.find(query, MongoTest.class);
+        System.out.println("date::::"+sdf.format(mt.date));
+
+        for (MongoTest test : mtList) {
+            System.out.println("for::::"+sdf.format(test.date));
+        }
 
     }
 
 //    @Test
 //    public void insertMongoBigTable() throws ParseException {
 //        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//
+//ObjectId("5a  40  c2  67  70  70  93  40  48  20  52  65")
 //        Date time = new Date();
 //        System.out.println(time.getTime());
 //
