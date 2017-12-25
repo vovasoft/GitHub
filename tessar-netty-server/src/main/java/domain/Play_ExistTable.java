@@ -3,7 +3,7 @@ package domain;
 import java.util.Date;
 import java.util.ArrayList;
 
-public class PlayExistTable {
+public class Play_ExistTable {
     Date playTableDate;
     int newIn;
     String arrayDays;
@@ -44,7 +44,7 @@ public class PlayExistTable {
         this.arrayMonths = arrayMonths;
     }
 
-    public PlayExistTable(Date playTableDate, int newIn, String arrayDays, String arrayWeeks, String arrayMonths) {
+    public Play_ExistTable(Date playTableDate, int newIn, String arrayDays, String arrayWeeks, String arrayMonths) {
 
         this.playTableDate = playTableDate;
         this.newIn = newIn;

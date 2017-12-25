@@ -55,7 +55,7 @@ public class UseMySql {
 
         switch (operate){
             case SELECT:
-                 res= ss.selectOne(entityClass.getSimpleName()+".findById",key);
+                 res= ss.selectOne(entityClass.getSimpleName()+".findByKey",key);
         }
 
         ss.commit();

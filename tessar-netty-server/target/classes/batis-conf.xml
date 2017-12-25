@@ -15,7 +15,8 @@
         <typeAlias type="domain.Customer" alias="_Customer"/>
         <typeAlias type="domain.Order" alias="_Order"/>
         <typeAlias type="domain.User" alias="_User"/>
-        <typeAlias type="domain.PlayExistTable" alias="_PlayExistTable"/>
+        <typeAlias type="domain.User2" alias="_User2"/>
+        <typeAlias type="domain.Play_ExistTable" alias="_PlayExistTable"/>
     </typeAliases>
 
     <environments default="development">
@@ -33,6 +34,7 @@
         <mapper resource="customermapper.xml"/>
         <mapper resource="ordermapper.xml"/>
         <mapper resource="mysql-User.xml"/>
+        <mapper resource="mysql-User2.xml"/>
         <mapper resource="mysql-playerExist.xml"/>
     </mappers>
 </configuration>

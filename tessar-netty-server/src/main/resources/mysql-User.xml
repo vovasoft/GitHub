@@ -13,7 +13,7 @@
         update user set name=#{name},age=#{age} where id=#{id}
     </insert>
 
-    <select id="findById" resultType="_User">
+    <select id="findByKey" resultType="_User">
         select * from user where id=#{id}
     </select>
 

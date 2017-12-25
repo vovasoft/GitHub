@@ -6,7 +6,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 
-public class PayerExistTable {
+public class Pay_ExistTable {
     Date dateTime;
     int newIn;
     String days;//"xxx,xxx,xxx,xxxx,xxx"
@@ -14,7 +14,7 @@ public class PayerExistTable {
     String months;
     String others;
 
-    public PayerExistTable(Date dateTime, int newIn, String days, String weeks, String months, String others) {
+    public Pay_ExistTable(Date dateTime, int newIn, String days, String weeks, String months, String others) {
         this.dateTime = dateTime;
         this.newIn = newIn;
         this.days = days;
