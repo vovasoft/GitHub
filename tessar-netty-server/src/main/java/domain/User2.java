@@ -1,6 +1,8 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author vova
@@ -25,6 +27,13 @@ public class User2 {
         this.id = uid;
         this.name = uname;
         this.age = uage;
+    }
+
+    private List<User2> user2s = new ArrayList<User2>();
+
+
+    public List<User2> getOrders() {
+        return user2s;
     }
 
     public Date getDate() {

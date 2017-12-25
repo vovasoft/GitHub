@@ -9,19 +9,26 @@
     </insert>
 
 
-
     <!--<insert id="update">-->
-        <!--update user set name=#{name},age=#{age} where id=#{id}-->
+    <!--update user set name=#{name},age=#{age} where id=#{id}-->
     <!--</insert>-->
 
-    <select id="findByKey" resultType="_User2">
-        select * from user2 where date=#{date}
+    <select id="findByDate" resultType="_User2">
+        select * from user2
+        <where>
+            <if test="startDate !=null and startDate !='' ">
+                <![CDATA[ and date  >=  #{startDate}  ]]>
+            </if>
+            <if test="endDate !=null and endDate!='' "  >
+                <![CDATA[ and date <=  #{endDate}  ]]>
+            </if>
+        </where>
     </select>
 
     <!--<resultMap id="user" type="_User">-->
-        <!--<id column="cid" property="id" />-->
-        <!--<result column="name" property="name" />-->
-        <!--<result column="age" property="age" />-->
+    <!--<id column="cid" property="id" />-->
+    <!--<result column="name" property="name" />-->
+    <!--<result column="age" property="age" />-->
     <!--</resultMap>-->
 
 </mapper>

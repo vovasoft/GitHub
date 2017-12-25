@@ -8,5 +8,5 @@ public enum  EnumSQL {
     INSERT,
     UPDATE,
     SELECT,
-    SELECTALL
+    SELECTLIST,
 }

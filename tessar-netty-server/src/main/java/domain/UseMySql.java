@@ -1,6 +1,7 @@
 package domain;
 
 
+import com.google.gson.Gson;
 import org.apache.ibatis.annotations.Case;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.Null;
@@ -24,44 +25,63 @@ import static domain.EnumSQL.UPDATE;
  */
 
 public class UseMySql {
-
-
+    static String resoure = "batis-conf.xml";
 
     //   public  void insert() throws IOException {
-    public void utilSQL(Object object,EnumSQL operate) throws IOException {
-        String resoure = "batis-conf.xml";
+    public void utilSQL(Object object, EnumSQL operate) throws IOException {
+     //   String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
 
 
         String className = object.getClass().getSimpleName();
-        switch (operate){
-            case INSERT:ss.insert(className+".insert", object);
-            case UPDATE:ss.insert(className+".update", object);
+        switch (operate) {
+            case INSERT:
+                ss.insert(className + ".insert", object);
+            case UPDATE:
+                ss.insert(className + ".update", object);
         }
-
         ss.commit();
         ss.close();
     }
 
-    public <T>Object utilSQL(Class<T> entityClass,EnumSQL operate,Object key) throws IOException, ClassNotFoundException {
-        String resoure = "batis-conf.xml";
+    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object key )throws IOException{
+    //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
 
-        T res= null;
+        T res = null;
+        List<T> resList =null;
 
-        switch (operate){
+        switch (operate) {
             case SELECT:
-                 res= ss.selectOne(entityClass.getSimpleName()+".findByKey",key);
+                res = ss.selectOne(entityClass.getSimpleName() + ".findByKey", key);
         }
 
         ss.commit();
         ss.close();
 
-        return  res;
+        return res;
+
+    }
+    public <T>List<T> utilSQL(Class<T> entityClass, EnumSQL operate, QueryDate date) throws IOException {
+     //   String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+
+        List<T> resList=null;
+        switch (operate) {
+            case SELECTLIST:
+                resList = ss.selectList(entityClass.getSimpleName() + ".findByDate", date);
+        }
+
+        ss.commit();
+        ss.close();
+
+        return resList;
 
     }
 
@@ -72,16 +92,17 @@ public class UseMySql {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         String className = object.getClass().getName();
-        System.out.println("className:"+className);
+        System.out.println("className:" + className);
 
 
-        ss.insert(object.getClass().getSimpleName()+".insert", object);
+        ss.insert(object.getClass().getSimpleName() + ".insert", object);
 
         ss.commit();
         ss.close();
 
 
     }
+
     public void update(Object object) throws IOException {
 
         String resoure = "batis-conf.xml";
@@ -89,12 +110,11 @@ public class UseMySql {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
 
-        ss.insert(object.getClass().getSimpleName()+".update", object);
+        ss.insert(object.getClass().getSimpleName() + ".update", object);
 
         ss.commit();
         ss.close();
     }
-
 
 
     public void insertOrd() throws IOException {
@@ -121,9 +141,7 @@ public class UseMySql {
     }
 
 
-
-
-    public  static void delete() throws IOException {
+    public static void delete() throws IOException {
         String resource = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
 
@@ -139,7 +157,7 @@ public class UseMySql {
     }
 
 
-    public  static void findByID() throws Exception {
+    public static void findByID() throws Exception {
         String resource = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
@@ -157,7 +175,7 @@ public class UseMySql {
     }
 
 
-    public static  void findByOrderID() throws Exception {
+    public static void findByOrderID() throws Exception {
         String resource = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
@@ -180,12 +198,12 @@ public class UseMySql {
     }
 
 
-    public  static void findCustomerOrder() throws Exception {
+    public static void findCustomerOrder() throws Exception {
         String resource = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession s = sf.openSession();
-        Customer c = s.selectOne("customers.findCustomerOrder",4);
+        Customer c = s.selectOne("customers.findCustomerOrder", 4);
 
         List<Order> orderList = c.getOrders();
         for (Order order : orderList) {
@@ -196,7 +214,7 @@ public class UseMySql {
     }
 
 
-    public  static void findAll() throws Exception {
+    public static void findAll() throws Exception {
         String resource = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);

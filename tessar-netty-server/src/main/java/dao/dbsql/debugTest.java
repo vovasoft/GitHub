@@ -1,9 +1,6 @@
 package dao.dbsql;
 
-import domain.EnumSQL;
-import domain.UseMySql;
-import domain.User;
-import domain.User2;
+import domain.*;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -11,6 +8,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.TimeZone;
 
 
@@ -79,7 +77,7 @@ public class debugTest {
         useMySql.insert(user2);
     }
 
-    @Test
+    @Test  //find one by date
     public void fun4() throws IOException, ClassNotFoundException {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+8"));
 
@@ -88,5 +86,17 @@ public class debugTest {
         User2 user2 = (User2) useMySql.utilSQL(User2.class, EnumSQL.SELECT, "2017-11-25");
 
         System.out.println(sdf.format(user2.getDate()));
+    }
+
+    @Test   //find List
+    public void fun5() throws IOException, ClassNotFoundException {
+        QueryDate queryDate = new QueryDate("2017-5-12","2017-12-26");
+
+        UseMySql useMySql = new UseMySql();
+
+        List<User2> ulist =useMySql.utilSQL(User2.class,EnumSQL.SELECTLIST,queryDate);
+        for (User2 user2 : ulist) {
+            System.out.println(user2.getDate());
+        }
     }
 }
