@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NewAddDay">
+    <!-- 定义insert语句 -->
+
+    <!--private Date dayDate;-->
+    <!--private String cID;-->
+    <!--private String gID;-->
+    <!--private String sID;-->
+    <!--private long newAddNum;-->
+    <!--private long activeNum;-->
+    <!--private long loginCount;-->
+    <!--private long averageLogin;-->
+    <!--private long allPlayerNum;-->
+    
+    <insert id="insert" useGeneratedKeys="false" keyProperty="id">
+        insert into NewAddDay (dayDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
+        values (#{dayDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
+    </insert>
+
+
+
+    <!--<resultMap id="user" type="_User">-->
+        <!--<id column="cid" property="id" />-->
+        <!--<result column="name" property="name" />-->
+        <!--<result column="age" property="age" />-->
+    <!--</resultMap>-->
+
+</mapper>

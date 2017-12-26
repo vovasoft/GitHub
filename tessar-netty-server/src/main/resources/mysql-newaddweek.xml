@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NewAddDWeek">
+    <!-- 定义insert语句 -->
+
+
+    <insert id="insert" useGeneratedKeys="false" keyProperty="id">
+        insert into NewAddDWeek (weekDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
+        values (#{weekDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
+    </insert>
+
+
+
+    <!--<resultMap id="user" type="_User">-->
+        <!--<id column="cid" property="id" />-->
+        <!--<result column="name" property="name" />-->
+        <!--<result column="age" property="age" />-->
+    <!--</resultMap>-->
+
+</mapper>

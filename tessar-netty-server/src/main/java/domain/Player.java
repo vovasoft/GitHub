@@ -17,7 +17,7 @@ public class Player {
     private long regdate; //registerTime
 //    private String ucID;  //user channel create id
 //    private String gameID;
-    private long lastdate;//game registerTime
+    private long lastdate;//
     private String channel_from; //game channel create id
     private String gid;
     private String sub; //sid channel create id;

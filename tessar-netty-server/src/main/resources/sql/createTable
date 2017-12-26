@@ -1,0 +1,37 @@
+create table NewAddDDay
+(weekDate DATE PRIMARY KEY ,
+cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,activeNum INT
+,loginCount INT
+,averageLogin FLOAT
+,allPlayerNum INT
+)
+
+
+create table NewAddDWeek
+(weekDate PRIMARY KEY,
+cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,activeNum INT
+,loginCount INT
+,averageLogin FLOAT
+,allPlayerNum INT
+)
+
+
+create table NewAddMon
+(weekDate DATE PRIMARY KEY,
+cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,activeNum INT
+,loginCount INT
+,averageLogin FLOAT
+,allPlayerNum INT
+)

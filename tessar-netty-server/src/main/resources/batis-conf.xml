@@ -36,5 +36,8 @@
         <mapper resource="mysql-User.xml"/>
         <mapper resource="mysql-User2.xml"/>
         <mapper resource="mysql-playerExist.xml"/>
+        <mapper resource="mysql-newaddDay.xml"/>
+        <mapper resource="mysql-newaddWeek.xml"/>
+        <mapper resource="mysql-newaddMon.xml"/>
     </mappers>
 </configuration>

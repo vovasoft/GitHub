@@ -1,8 +1,9 @@
-package dao.dbsql;
+package dao.test;
 
 import dao.dbmongo.MongoTest;
 
 
+import dao.dbsql.UseMySql;
 import domain.*;
 
 import org.junit.Test;
@@ -37,7 +38,7 @@ public class debugTest {
 //        useMySql.insert(pet);
 
         User user = new User(1,"vova",123);
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new dao.dbsql.UseMySql();
         useMySql.insert(user);
     }
 
@@ -47,7 +48,7 @@ public class debugTest {
         User user = null;
 
 
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new dao.dbsql.UseMySql();
         user = (User) useMySql.utilSQL(User.class,EnumSQL.SELECT,1);
 
         System.out.println(user.getId()+",,,,,,,"+user.getName()+user.getAge());
@@ -69,7 +70,7 @@ public class debugTest {
 
         Date date = new Date(System.currentTimeMillis());
         User2 user2 = new User2(date,1,"name",11);
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new dao.dbsql.UseMySql();
         useMySql.insert(user2);
     }
     @Test
@@ -81,7 +82,7 @@ public class debugTest {
 
         Date date2 = sdf.parse(dstr);
         User2 user2 = new User2(date2,1,"name",11);
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new dao.dbsql.UseMySql();
         useMySql.insert(user2);
     }
 
@@ -90,7 +91,7 @@ public class debugTest {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+8"));
 
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new dao.dbsql.UseMySql();
         User2 user2 = (User2) useMySql.utilSQL(User2.class, EnumSQL.SELECT, "2017-11-25");
 
         System.out.println(sdf.format(user2.getDate()));
@@ -100,7 +101,7 @@ public class debugTest {
     public void fun5() throws IOException, ClassNotFoundException {
         QueryDate queryDate = new QueryDate("2017-5-12","2017-12-26");
 
-        UseMySql useMySql = new UseMySql();
+        dao.dbsql.UseMySql useMySql = new UseMySql();
 
         List<User2> ulist =useMySql.utilSQL(User2.class,EnumSQL.SELECTLIST,queryDate);
         for (User2 user2 : ulist) {
