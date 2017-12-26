@@ -14,18 +14,9 @@
     <!--private long loginCount;-->
     <!--private long averageLogin;-->
     <!--private long allPlayerNum;-->
-    
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
         insert into NewAddDay (dayDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
         values (#{dayDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
-
-
-
-    <!--<resultMap id="user" type="_User">-->
-        <!--<id column="cid" property="id" />-->
-        <!--<result column="name" property="name" />-->
-        <!--<result column="age" property="age" />-->
-    <!--</resultMap>-->
 
 </mapper>
