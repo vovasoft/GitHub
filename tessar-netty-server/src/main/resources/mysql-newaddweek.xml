@@ -11,10 +11,18 @@
         values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
-    <select id="findByKey" resultType="_NewAddWeek">
-        select * from NewAddWeek where id = #{id}
+    <select id="findByObject" resultType="_NewAddWeek">
+        select * from NewAddDWeek where dateID = #{dateID} AND cID = #{cID} AND gID = #{gID} AND sID = #{sID}
     </select>
 
+    <update id="update">
+        update NewAddDWeek set newAddNum=newAddNum+#{newAddNum},activeNum=activeNum+#{activeNum},loginCount=loginCount+#{loginCount},averageLogin=averageLogin+#{averageLogin},allPlayerNum=allPlayerNum+#{allPlayerNum}
+        where id=#{id}
+    </update>
+
+    <select id="findDayCount" resultType="java.lang.Integer">
+        select COUNT(dateID) from NewAddDWeek where cID = #{cID} AND gID = #{gID} AND sID = #{sID}
+    </select>
 
     <!--<resultMap id="user" type="_User">-->
         <!--<id column="cid" property="id" />-->

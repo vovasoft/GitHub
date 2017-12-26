@@ -1,6 +1,7 @@
 package domain;
 
 
+import dao.dbsql.EnumSQL;
 import domain.test.Customer;
 import domain.test.Order;
 import org.apache.ibatis.io.Resources;

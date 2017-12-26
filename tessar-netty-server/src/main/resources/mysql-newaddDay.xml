@@ -5,14 +5,25 @@
 <mapper namespace="NewAddDay">
     <!-- 定义insert语句 -->
 
+
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
         insert into NewAddDay (dateID,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
         values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
 
-    <select id="findByKey" resultType="_NewAddDay">
-        select * from NewAddDay where id = #{id}
+    <select id="findByObject" resultType="_NewAddDay">
+        select * from NewAddDay where dateID = #{dateID} AND cID = #{cID} AND gID = #{gID} AND sID = #{sID}
     </select>
+
+    <update id="update">
+        update NewAddDay set newAddNum=newAddNum+#{newAddNum},activeNum=activeNum+#{activeNum},loginCount=loginCount+#{loginCount},averageLogin=averageLogin+#{averageLogin},allPlayerNum=allPlayerNum+#{allPlayerNum}
+        where id=#{id}
+    </update>
+
+    <select id="findDayCount" resultType="java.lang.Integer">
+        select COUNT(dateID) from NewAddDay where cID = #{cID} AND gID = #{gID} AND sID = #{sID}
+    </select>
+
 
 </mapper>

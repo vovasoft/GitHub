@@ -1,4 +1,4 @@
-package domain;
+package dao.dbsql;
 
 /**
  * @author: Vova
@@ -9,4 +9,5 @@ public enum  EnumSQL {
     UPDATE,
     SELECT,
     SELECTLIST,
+    GETCOUNT
 }

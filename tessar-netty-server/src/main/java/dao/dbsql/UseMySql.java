@@ -2,7 +2,6 @@ package dao.dbsql;
 
 
 import domain.test.Customer;
-import domain.EnumSQL;
 import domain.test.Order;
 import domain.QueryDate;
 import org.apache.ibatis.io.Resources;
@@ -42,7 +41,7 @@ public class UseMySql {
         ss.close();
     }
 
-    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object key )throws IOException{
+    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object object )throws IOException{
     //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
@@ -52,7 +51,9 @@ public class UseMySql {
 
         switch (operate) {
             case SELECT:
-                res = ss.selectOne(entityClass.getSimpleName() + ".findByKey", key);
+                res = ss.selectOne(entityClass.getSimpleName() + ".findByObject", object);
+            case GETCOUNT:
+                res = ss.selectOne(entityClass.getSimpleName() + ".findDayCount", object);
         }
         ss.commit();
         ss.close();
