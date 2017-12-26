@@ -11,8 +11,8 @@
         values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
-    <select id="findOneByDate" resultType="_NewAddMon">
-        select 1 from NewAddMon where dateID = #{dateID}
+    <select id="findByKey" resultType="_NewAddMon">
+        select * from NewAddMon where id = #{id}
     </select>
 
     <!--<resultMap id="user" type="_User">-->

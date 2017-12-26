@@ -2,15 +2,18 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="NewAddDWeek">
+<mapper namespace="NewAddWeek">
     <!-- 定义insert语句 -->
 
 
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
-        insert into NewAddDWeek (weekDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
-        values (#{weekDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
+        insert into NewAddDWeek (dateID,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
+        values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
+    <select id="findByKey" resultType="_NewAddWeek">
+        select * from NewAddWeek where id = #{id}
+    </select>
 
 
     <!--<resultMap id="user" type="_User">-->

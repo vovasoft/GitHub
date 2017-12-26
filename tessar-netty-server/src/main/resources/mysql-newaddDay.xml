@@ -10,8 +10,9 @@
         values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
-    <select id="findOneByDate" resultType="_NewAddDay">
-        select * from NewAddDay where dateID = #{dateID}
+
+    <select id="findByKey" resultType="_NewAddDay">
+        select * from NewAddDay where id = #{id}
     </select>
 
 </mapper>

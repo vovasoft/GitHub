@@ -81,7 +81,7 @@ public class UseMySql {
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-
+        Object object = ss.selectOne(entityClass.getSimpleName()+"",date);
 
         return 0;
     }

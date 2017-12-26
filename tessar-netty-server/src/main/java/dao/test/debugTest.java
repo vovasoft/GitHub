@@ -6,8 +6,13 @@ import dao.dbmongo.MongoTest;
 import dao.dbsql.UseMySql;
 import domain.*;
 
+import domain.newadd.NewAddDay;
 import domain.test.User;
 import domain.test.User2;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,6 +23,7 @@ import util.Tools;
 
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -110,6 +116,17 @@ public class debugTest {
         for (User2 user2 : ulist) {
             System.out.println(user2.getDate());
         }
+    }
+    @Test   //find List
+    public void funExtend() throws IOException, ClassNotFoundException {
+        String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+        NewAddDay nn = new NewAddDay();
+        ss.insert("NewAddDay.insert",nn);
+        ss.commit();
+        ss.close();
     }
 
     @Test

@@ -1,7 +1,8 @@
 
 --以下是根据周期不同建立了三张新增表，用于新增，活跃等需求
 create table NewAddDay
-(dayDate DATE PRIMARY KEY
+(id int PRIMARY KEY auto_increment
+,dateID DATE
 ,cID VARCHAR (64)
 ,gID VARCHAR (64)
 ,sID VARCHAR (64)
@@ -14,7 +15,8 @@ create table NewAddDay
 
 
 create table NewAddWeek
-(weekDate DATE PRIMARY KEY
+(id int PRIMARY KEY auto_increment
+,dateID DATE
 ,cID VARCHAR (64)
 ,gID VARCHAR (64)
 ,sID VARCHAR (64)
@@ -27,7 +29,8 @@ create table NewAddWeek
 
 
 create table NewAddMon
-(monDate DATE PRIMARY KEY
+(id int PRIMARY KEY auto_increment
+,dateID DATE
 ,cID VARCHAR (64)
 ,gID VARCHAR (64)
 ,sID VARCHAR (64)

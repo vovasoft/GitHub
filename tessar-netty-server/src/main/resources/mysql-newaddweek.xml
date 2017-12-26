@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="NewAddDWeek">
+<mapper namespace="NewAddWeek">
     <!-- 定义insert语句 -->
 
 
@@ -11,8 +11,8 @@
         values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
-    <select id="findOneByDate" resultType="_NewAddMon">
-        select 1 from NewAddDWeek where dateID = #{dateID}
+    <select id="findByKey" resultType="_NewAddWeek">
+        select * from NewAddWeek where id = #{id}
     </select>
 
 
