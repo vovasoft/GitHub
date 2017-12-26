@@ -8,6 +8,7 @@ import domain.newadd.NewAddDay;
 import domain.newadd.NewAddMon;
 import domain.newadd.NewAddWeek;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import util.Tools;
 
 import java.io.IOException;
@@ -18,13 +19,14 @@ import java.util.Date;
  * @author: Vova
  * @create: date 13:49 2017/12/26
  */
+
+@Component
 public class ManageInput {
 
     @Autowired
     UseMyMongo umm;
     @Autowired
     UseMySql mys;
-
     public int HandPlayerDate(Player player) throws IOException {
         String uid = player.getUid();  //获取当前用户id
         Date uLoginDate = Tools.secToDate(player.getLastdate());//获取登录日期

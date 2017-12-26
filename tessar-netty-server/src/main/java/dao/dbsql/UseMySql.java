@@ -8,6 +8,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +22,7 @@ import java.util.Random;
  * @create: date 16:20 2017/12/21
  */
 
+@Component
 public class UseMySql {
     static String resoure = "batis-conf.xml";
 

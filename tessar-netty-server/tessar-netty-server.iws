@@ -26,86 +26,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customermapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/customermapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
-                <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
-                <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
-                <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
-                <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
-                <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="batis-conf.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="168" column="59" lean-forward="false" selection-start-line="168" selection-start-column="58" selection-end-line="168" selection-end-column="59" />
+            <state relative-caret-position="170">
+              <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddDay.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="11" />
-              <folding>
-                <marker date="1514290485215" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
-                <marker date="1514290485215" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
-                <marker date="1514290485215" expanded="true" signature="743:972" ph="update NewAddDay... " />
-                <marker date="1514290485215" expanded="true" signature="1058:1146" ph="select COUNT... NewAddDay" />
-              </folding>
+            <state relative-caret-position="93">
+              <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddMon.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml">
+      <file leaf-file-name="NettyServerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <marker date="1514290673942" expanded="true" signature="296:515" ph="insert into NewAddMon... " />
-                <marker date="1514290673942" expanded="true" signature="594:693" ph="select * fro... NewAddMon" />
-                <marker date="1514290673942" expanded="true" signature="692:693" ph="select * fro... NewAddMon" />
-                <marker date="1514290673942" expanded="true" signature="742:971" ph="update NewAddMon... " />
-                <marker date="1514290673942" expanded="true" signature="1057:1145" ph="select COUNT... NewAddMon" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddWeek.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml">
+      <file leaf-file-name="AutoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AutoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <marker date="1514290673930" expanded="true" signature="297:518" ph="insert into NewAddDWeek... " />
-                <marker date="1514290673930" expanded="true" signature="598:699" ph="select * fro... NewAddDWeek" />
-                <marker date="1514290673930" expanded="true" signature="698:699" ph="select * fro... NewAddWeek" />
-                <marker date="1514290673930" expanded="true" signature="748:979" ph="update NewAddDWeek... " />
-                <marker date="1514290673930" expanded="true" signature="1065:1155" ph="select COUNT... NewAddDWeek" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/JsonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManageInput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ManageInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,82 +89,43 @@
       <file leaf-file-name="debugTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/debugTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="175" column="49" lean-forward="false" selection-start-line="175" selection-start-column="49" selection-end-line="175" selection-end-column="49" />
+            <state relative-caret-position="322">
+              <caret line="264" column="36" lean-forward="true" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
               <folding>
-                <element signature="e#7665#7676#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlSession.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+      <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/UseMySql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="201" column="6" lean-forward="false" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="6" />
+            <state relative-caret-position="1258">
+              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateFormat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/text/DateFormat.java">
+      <file leaf-file-name="SpringConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/SpringConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="360" column="16" lean-forward="false" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAdd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/newadd/NewAdd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
               <folding>
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-                <element signature="e#1613#1614#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-                <element signature="e#1698#1699#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1787#1788#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-mongodb.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -230,6 +167,8 @@
       <find>where</find>
       <find>findByKey</find>
       <find>findByid</find>
+      <find>dao.dbsql.UseMySql</find>
+      <find>umm</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -257,10 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/mysqldao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nettydemo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controler/ControTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/ControTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-player.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/DbPlayer.java" />
@@ -277,11 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/MongoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/debugTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.Xml.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NewAddWeek.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NewAddDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NewAddMon.java" />
@@ -291,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/test/User2.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/createTable" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddweek.xml" />
@@ -301,13 +233,20 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/newadd/NewAddWeek.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-User.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/EnumSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ManageInput.java" />
         <option value="$PROJECT_DIR$/src/main/resources/batis-conf.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/test/debugTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.Xml.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AutoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/test/TestMain.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mongodb.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/test/debugTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ManageInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java" />
       </list>
     </option>
   </component>
@@ -352,9 +291,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="31" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="471" />
+    <option name="y" value="28" />
     <option name="width" value="1732" />
     <option name="height" value="1006" />
   </component>
@@ -1021,15 +960,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="dbmongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="dbsql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1048,6 +978,23 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nettydemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
@@ -1105,7 +1052,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.debugTest.updatedaytable">
+  <component name="RunManager" selected="Application.NettyServerTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1216,7 +1163,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="debugTest.funFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="debugTest.funManageInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.test.*" />
@@ -1228,7 +1175,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao.test" />
       <option name="MAIN_CLASS_NAME" value="dao.test.debugTest" />
-      <option name="METHOD_NAME" value="funFind" />
+      <option name="METHOD_NAME" value="funManageInput" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1307,19 +1254,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funExtend" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funFind" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.funExtend" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funManageInput" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NettyServerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funExtend" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funFind" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NettyServerTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funManageInput" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.funExtend" />
       </list>
     </recent_temporary>
   </component>
@@ -1348,65 +1295,64 @@
       <workItem from="1514109550628" duration="123000" />
       <workItem from="1514115629045" duration="1940000" />
       <workItem from="1514118250973" duration="487000" />
-      <workItem from="1514167721220" duration="63945000" />
+      <workItem from="1514167721220" duration="65978000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="debugTest_findByKey - 2017.12.26 at 20h 05m 38s.xml">
-      <configuration name="debugTest.findByKey" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 37m 26s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 07m 40s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 37m 54s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 08m 18s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 39m 52s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 09m 19s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 45m 54s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 10m 45s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 46m 25s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 11m 48s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 47m 23s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 15m 00s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 48m 43s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 16m 00s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 48m 57s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 17m 11s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 49m 15s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_updatedaytable - 2017.12.26 at 20h 17m 29s.xml">
-      <configuration name="debugTest.updatedaytable" configurationId="JUnit" />
+    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 51m 12s.xml">
+      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99077000" />
+    <option name="totallyTimeSpent" value="101110000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="31" width="1732" height="1006" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23286052" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23214285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2007435" sideWeight="0.50517464" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.032894738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27068558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34751773" sideWeight="0.49482536" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3470982" sideWeight="0.49482536" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17910448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24888393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25161707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1414,7 +1360,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3605201" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5401786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1430,176 +1376,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/buffer/ByteBufHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <marker date="1513830165484" expanded="false" signature="0:104" ph="/.../" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.41/fastjson-1.2.41.jar!/com/alibaba/fastjson/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <marker date="1513825461223" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1513825461223" expanded="true" signature="144:683" ph="..." />
-            <marker date="1513825461223" expanded="true" signature="979:990" ph=" { " />
-            <marker date="1513825461223" expanded="true" signature="1006:1012" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1060:1071" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1086:1092" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1132:1143" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1161:1167" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1211:1222" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1251:1257" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="1319:1489" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="1512:1523" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1546:1552" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1582:1593" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1619:1625" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1669:1680" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1713:1719" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="1767:1778" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="1815:1821" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="1857:2035" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="2085:2348" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="2396:2661" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="2718:2818" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="2870:2993" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3063:3235" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3279:3394" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3435:3548" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3597:3759" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3797:3886" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="3929:4072" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4112:4202" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4247:4395" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4439:4527" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4568:4710" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4748:4837" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="4880:5024" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5064:5154" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5199:5356" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5398:5489" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5536:5698" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5748:5843" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="5893:5988" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="6030:6131" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="6169:6258" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="6308:6400" ph="{...}" />
-            <marker date="1513825461223" expanded="true" signature="6448:6542" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="6591:6602" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="6634:6640" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="6700:6762" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="6829:6840" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="6859:6865" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="6945:7001" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="7026:7037" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7054:7060" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="7098:7152" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="7190:7201" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7229:7235" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="7284:7342" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="7375:7386" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7411:7417" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="7457:7468" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7493:7499" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="7549:7560" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7587:7593" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="7621:7755" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="7794:7805" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7833:7839" ph=" }" />
-            <marker date="1513825461223" expanded="false" signature="7866:7877" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="7904:7910" ph=" }" />
-            <marker date="1513825461223" expanded="true" signature="7998:11414" ph="{...}" />
-            <marker date="1513825461223" expanded="false" signature="11460:11471" ph=" { " />
-            <marker date="1513825461223" expanded="false" signature="11487:11493" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/handler/codec/http/FullHttpRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/handler/codec/http/HttpRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/handler/codec/http/QueryStringDecoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <marker date="1513830165484" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1513830165484" expanded="false" signature="151:633" ph="..." />
-            <marker date="1513830165484" expanded="true" signature="964:975" ph=" { " />
-            <marker date="1513830165484" expanded="true" signature="1016:1022" ph=" }" />
-            <marker date="1513830165484" expanded="false" signature="1082:1093" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="1143:1149" ph=" }" />
-            <marker date="1513830165484" expanded="false" signature="1209:1220" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="1245:1251" ph=" }" />
-            <marker date="1513830165484" expanded="false" signature="1328:1339" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="1373:1379" ph=" }" />
-            <marker date="1513830165484" expanded="true" signature="1472:1739" ph="{...}" />
-            <marker date="1513830165484" expanded="false" signature="1779:1790" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="1831:1837" ph=" }" />
-            <marker date="1513830165484" expanded="false" signature="1894:1905" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="1930:1936" ph=" }" />
-            <marker date="1513830165484" expanded="true" signature="2009:2442" ph="{...}" />
-            <marker date="1513830165484" expanded="false" signature="2472:2483" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="2501:2507" ph=" }" />
-            <marker date="1513830165484" expanded="false" signature="2532:2543" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="2559:2565" ph=" }" />
-            <marker date="1513830165484" expanded="true" signature="2592:2762" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="2814:2994" ph="{...}" />
-            <marker date="1513830165484" expanded="false" signature="3023:3034" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="3082:3088" ph=" }" />
-            <marker date="1513830165484" expanded="true" signature="3119:3244" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="3275:3420" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="3534:4806" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="4950:5578" ph="{...}" />
-            <marker date="1513830165484" expanded="false" signature="5630:5641" ph=" { " />
-            <marker date="1513830165484" expanded="false" signature="5698:5704" ph=" }" />
-            <marker date="1513830165484" expanded="true" signature="5774:5864" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="5977:8507" ph="{...}" />
-            <marker date="1513830165484" expanded="true" signature="8561:8787" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="395" column="10" lean-forward="false" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1612,22 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1680,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbmongo/MongoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1704,22 +1461,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.Xml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-734">
           <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1728,14 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="847">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="77" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/UseMySql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1777,14 +1518,14 @@
         <state relative-caret-position="206">
           <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
           <folding>
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="false" />
+            <element signature="e#1037#1038#0" expanded="false" />
+            <element signature="e#1081#1082#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1183#1184#0" expanded="false" />
+            <element signature="e#1229#1230#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1840,14 +1581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ManageInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1670">
-          <caret line="132" column="8" lean-forward="false" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/EnumSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1861,7 +1594,7 @@
         <state relative-caret-position="51">
           <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1886,9 +1619,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="e#2859#2860#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1907,21 +1638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
-            <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
-            <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
-            <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
-            <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
-            <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="168" column="59" lean-forward="false" selection-start-line="168" selection-start-column="58" selection-end-line="168" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1955,56 +1671,46 @@
         <state relative-caret-position="167">
           <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1698#1699#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/debugTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="175" column="49" lean-forward="false" selection-start-line="175" selection-start-column="49" selection-end-line="175" selection-end-column="49" />
-          <folding>
-            <element signature="e#7665#7676#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#534#535#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#671#672#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#821#822#0" expanded="false" />
+            <element signature="e#859#860#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#919#920#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#1235#1236#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1325#1326#0" expanded="false" />
+            <element signature="e#1360#1361#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+            <element signature="e#1443#1444#0" expanded="false" />
+            <element signature="e#1487#1488#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1559#1560#0" expanded="false" />
+            <element signature="e#1613#1614#0" expanded="false" />
+            <element signature="e#1661#1662#0" expanded="false" />
+            <element signature="e#1698#1699#0" expanded="false" />
+            <element signature="e#1733#1734#0" expanded="false" />
+            <element signature="e#1787#1788#0" expanded="false" />
+            <element signature="e#1835#1836#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2047,6 +1753,163 @@
             <marker date="1514290673930" expanded="true" signature="748:979" ph="update NewAddDWeek... " />
             <marker date="1514290673930" expanded="true" signature="1065:1155" ph="select COUNT... NewAddDWeek" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/runner/RunWith.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <marker date="1513830312398" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1513830312398" expanded="false" signature="140:293" ph="..." />
+            <marker date="1513830312398" expanded="true" signature="295:358" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.13.RELEASE/spring-test-4.3.13.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <marker date="1513650129242" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1513650129242" expanded="false" signature="163:1849" ph="..." />
+            <marker date="1513650129242" expanded="true" signature="2191:2973" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="3053:3344" ph="{...}" />
+            <marker date="1513650129242" expanded="false" signature="3419:3430" ph=" { " />
+            <marker date="1513650129242" expanded="false" signature="3467:3473" ph=" }" />
+            <marker date="1513650129242" expanded="false" signature="3537:3548" ph=" { " />
+            <marker date="1513650129242" expanded="false" signature="3579:3585" ph=" }" />
+            <marker date="1513650129242" expanded="true" signature="3627:3834" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="3878:4107" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="4172:4352" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="4416:4592" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="4645:4803" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="4888:5382" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="5453:6450" ph="{...}" />
+            <marker date="1513650129242" expanded="false" signature="5526:5624" ph="runReflectiveCall() → {" />
+            <marker date="1513650129242" expanded="false" signature="5707:5726" ph="}" />
+            <marker date="1513650129242" expanded="true" signature="6571:6713" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="6790:7004" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="7128:7343" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="7440:7603" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="7720:8726" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="8796:8946" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="9017:9100" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="9213:9450" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="9562:9795" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="9911:9986" ph="{...}" />
+            <marker date="1513650129242" expanded="true" signature="9999:10673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.Xml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/debugTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="264" column="36" lean-forward="true" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/UseMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AutoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ManageInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

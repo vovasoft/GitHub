@@ -86,8 +86,8 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             List<Player> players = gson.fromJson(json,  new TypeToken<List<Player>>() {
             }.getType());
 
-            //autoware 暂时不能用
-            UseMyMongo umm =new UseMyMongo();
+            //autoware 已经好使啦
+         //   UseMyMongo umm =new UseMyMongo();
             for (Player player : players) {
                 umm.insertMongo(player);
             }
