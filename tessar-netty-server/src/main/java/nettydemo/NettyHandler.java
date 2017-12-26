@@ -2,38 +2,30 @@ package nettydemo;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import dao.dbmongo.UseMyMongo;
 import domain.Player;
-import domain.User;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 
 import com.alibaba.fastjson.JSONArray;
-import io.netty.handler.codec.json.JsonObjectDecoder;
 import io.netty.util.CharsetUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import static io.netty.buffer.Unpooled.copiedBuffer;
-import static io.netty.handler.codec.http.HttpHeaderNames.COOKIE;
 import static io.netty.handler.codec.http.HttpHeaderValues.KEEP_ALIVE;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_LENGTH;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_TYPE;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 import static io.netty.handler.codec.rtsp.RtspHeaders.Names.CONNECTION;
-import static sun.management.jmxremote.ConnectorBootstrap.PropertyNames.HOST;
 
 
 /**
@@ -89,17 +81,13 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
         for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
-
-//            String jsonstr = gson.toJson(new User(1, "vova", 123));
-//            System.out.println(jsonstr);
-
             String json = entry.getValue().toString();
             System.out.println("json:" + json);
             List<Player> players = gson.fromJson(json,  new TypeToken<List<Player>>() {
             }.getType());
 
-            //autoware 不好使
-        //    UseMyMongo umm =new UseMyMongo();
+            //autoware 暂时不能用
+            UseMyMongo umm =new UseMyMongo();
             for (Player player : players) {
                 umm.insertMongo(player);
             }
@@ -116,9 +104,12 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 //        response.content().writeBytes(responseContentByteBuf);
 //        responseContentByteBuf.release();
 //        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);//
-
-        ctx.writeAndFlush("OK").addListener(ChannelFutureListener.CLOSE);
-        return;
+        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
+        response.headers().set(CONTENT_TYPE,"text/html; charset=UTF-8");
+        ByteBuf bb = Unpooled.copiedBuffer("OK".getBytes());
+        response.content().writeBytes(bb);
+        bb.release();
+        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
     }
 
     //获取请求的内容

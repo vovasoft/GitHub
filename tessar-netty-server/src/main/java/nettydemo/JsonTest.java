@@ -1,7 +1,7 @@
 package nettydemo;
 
 import com.google.gson.Gson;
-import domain.User;
+import domain.test.User;
 import org.junit.Test;
 
 /**

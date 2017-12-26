@@ -1,23 +1,18 @@
 package domain;
 
 
-import com.google.gson.Gson;
-import org.apache.ibatis.annotations.Case;
+import domain.test.Customer;
+import domain.test.Order;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.jdbc.Null;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Random;
-
-import static domain.EnumSQL.INSERT;
-import static domain.EnumSQL.UPDATE;
 
 /**
  * @author: Vova

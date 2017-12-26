@@ -7,7 +7,7 @@ import java.util.Date;
  * @create: date 11:20 2017/12/26
  */
 public class NewAddDay {
-    private Date dayDate;
+    private Date dateID;
     private String cID;
     private String gID;
     private String sID;
@@ -20,12 +20,12 @@ public class NewAddDay {
     public NewAddDay() {
     }
 
-    public Date getDayDate() {
-        return dayDate;
+    public Date getDateID() {
+        return dateID;
     }
 
-    public void setDayDate(Date dayDate) {
-        this.dayDate = dayDate;
+    public void setDateID(Date dateID) {
+        this.dateID = dateID;
     }
 
     public String getcID() {
@@ -92,8 +92,8 @@ public class NewAddDay {
         this.allPlayerNum = allPlayerNum;
     }
 
-    public NewAddDay(Date dayDate, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
-        this.dayDate = dayDate;
+    public NewAddDay(Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
+        this.dateID = dateID;
         this.cID = cID;
         this.gID = gID;
         this.sID = sID;

@@ -5,18 +5,13 @@
 <mapper namespace="NewAddDay">
     <!-- 定义insert语句 -->
 
-    <!--private Date dayDate;-->
-    <!--private String cID;-->
-    <!--private String gID;-->
-    <!--private String sID;-->
-    <!--private long newAddNum;-->
-    <!--private long activeNum;-->
-    <!--private long loginCount;-->
-    <!--private long averageLogin;-->
-    <!--private long allPlayerNum;-->
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
-        insert into NewAddDay (dayDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
-        values (#{dayDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
+        insert into NewAddDay (dateID,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
+        values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
+
+    <select id="findOneByDate" resultType="_NewAddDay">
+        select * from NewAddDay where dateID = #{dateID}
+    </select>
 
 </mapper>

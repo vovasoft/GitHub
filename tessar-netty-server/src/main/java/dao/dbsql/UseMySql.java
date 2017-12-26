@@ -1,9 +1,9 @@
 package dao.dbsql;
 
 
-import domain.Customer;
+import domain.test.Customer;
 import domain.EnumSQL;
-import domain.Order;
+import domain.test.Order;
 import domain.QueryDate;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -13,6 +13,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -74,6 +75,17 @@ public class UseMySql {
         return resList;
     }
 
+    public <T>int findOrInsert(Class<T> entityClass, Date date) throws IOException {
+        //判断字段是否存在，如果存在则修改数值，如果没有则插入新数据
+        String resoure = "batis-conf.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resoure);
+        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession ss = sf.openSession();
+
+
+        return 0;
+    }
+
     public void insert(Object object) throws IOException {
 
         String resoure = "batis-conf.xml";
@@ -88,8 +100,6 @@ public class UseMySql {
 
         ss.commit();
         ss.close();
-
-
     }
 
     public void update(Object object) throws IOException {

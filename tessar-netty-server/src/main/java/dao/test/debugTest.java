@@ -6,12 +6,15 @@ import dao.dbmongo.MongoTest;
 import dao.dbsql.UseMySql;
 import domain.*;
 
+import domain.test.User;
+import domain.test.User2;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import util.Tools;
 
 
 import java.io.IOException;
@@ -180,4 +183,21 @@ public class debugTest {
 //        mongoTemplate.insert(bt4);
 //
 //    }
+
+    @Test
+    public void weekDate(){
+        Date date = new Date(System.currentTimeMillis());
+
+        System.out.println(Tools.getSundayOfDate(date));
+        System.out.println(Tools.getMondayOfDate(date));
+    }
+
+    @Test
+    public void monDate() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf.parse("2026-1-1");
+
+        System.out.println(Tools.getFirstOfMonth(date));
+        System.out.println(Tools.getLastOfMonth(date));
+    }
 }

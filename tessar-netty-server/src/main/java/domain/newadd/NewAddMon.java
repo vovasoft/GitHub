@@ -7,7 +7,7 @@ import java.util.Date;
  * @create: date 11:20 2017/12/26
  */
 public class NewAddMon {
-    private Date monDate;
+    private Date dateID;
     private String cID;
     private String gID;
     private String sID;
@@ -17,13 +17,7 @@ public class NewAddMon {
     private long averageLogin;
     private long allPlayerNum;
 
-    public Date getMonDate() {
-        return monDate;
-    }
 
-    public void setMonDate(Date monDate) {
-        this.monDate = monDate;
-    }
 
     public String getcID() {
         return cID;
@@ -89,9 +83,17 @@ public class NewAddMon {
         this.allPlayerNum = allPlayerNum;
     }
 
-    public NewAddMon(Date monDate, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
+    public Date getDateID() {
+        return dateID;
+    }
 
-        this.monDate = monDate;
+    public void setDateID(Date dateID) {
+        this.dateID = dateID;
+    }
+
+    public NewAddMon(Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
+
+        this.dateID = dateID;
         this.cID = cID;
         this.gID = gID;
         this.sID = sID;

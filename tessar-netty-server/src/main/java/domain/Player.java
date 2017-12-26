@@ -92,7 +92,6 @@ public class Player {
     }
 
     public Player(String uid, long regdate, long lastdate, String channel_from, String gid, String sub, String sid) {
-
         this.uid = uid;
         this.regdate = regdate;
         this.lastdate = lastdate;

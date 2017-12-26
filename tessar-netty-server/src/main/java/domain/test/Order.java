@@ -1,4 +1,4 @@
-package domain;
+package domain.test;
 
 public class Order {
     private int id;

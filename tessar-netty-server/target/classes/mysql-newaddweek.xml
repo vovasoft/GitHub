@@ -7,13 +7,10 @@
 
 
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
-        insert into NewAddDWeek (dateID,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
-        values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
+        insert into NewAddDWeek (weekDate,cID,gID,sID,newAddNum,activeNum,loginCount,averageLogin,allPlayerNum)
+        values (#{weekDate},#{cID},#{gID},#{sID},#{newAddNum},#{activeNum},#{loginCount},#{averageLogin},#{allPlayerNum})
     </insert>
 
-    <select id="findOneByDate" resultType="_NewAddMon">
-        select 1 from NewAddDWeek where dateID = #{dateID}
-    </select>
 
 
     <!--<resultMap id="user" type="_User">-->
