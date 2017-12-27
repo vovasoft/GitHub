@@ -29,76 +29,39 @@
       <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
+      <file leaf-file-name="NewAddDay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/Player.java">
+      <file leaf-file-name="NewAddMon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="85" column="28" lean-forward="false" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
-              <folding>
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1155#1156#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#1769#1770#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="32" />
-              <folding>
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddDay.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+      <file leaf-file-name="NewAddWeek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddWeek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding>
-                <marker date="1514361065437" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
-                <marker date="1514361065437" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
-                <marker date="1514361065437" expanded="true" signature="595:703" ph="select * fro... NewAddDay" />
-                <marker date="1514361065437" expanded="true" signature="752:964" ph="update NewAddDay... " />
-                <marker date="1514361065437" expanded="true" signature="1050:1138" ph="select COUNT... NewAddDay" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="168" lean-forward="false" selection-start-line="12" selection-start-column="168" selection-end-line="12" selection-end-column="168" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,34 +83,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
+      <file leaf-file-name="NewAdd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="490">
+              <caret line="85" column="164" lean-forward="false" selection-start-line="85" selection-start-column="164" selection-end-line="85" selection-end-column="164" />
               <folding>
-                <element signature="e#4887#4962#0" expanded="false" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#2113#2114#0" expanded="true" />
+                <element signature="e#2161#2162#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+      <file leaf-file-name="createTable" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/createTable">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="181" lean-forward="true" selection-start-line="2" selection-start-column="181" selection-end-line="2" selection-end-column="181" />
+            <state relative-caret-position="323">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.7.RELEASE/spring-data-mongodb-1.10.7.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoTemplate.java">
+      <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="599" column="17" lean-forward="false" selection-start-line="599" selection-start-column="17" selection-end-line="599" selection-end-column="17" />
+            <state relative-caret-position="342">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql-newaddDay.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="27" />
+              <folding>
+                <marker date="1514361065437" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
+                <marker date="1514361065437" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
+                <marker date="1514361065437" expanded="true" signature="595:703" ph="select * fro... NewAddDay" />
+                <marker date="1514361065437" expanded="true" signature="752:964" ph="update NewAddDay... " />
+                <marker date="1514361065437" expanded="true" signature="1050:1138" ph="select COUNT... NewAddDay" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update</find>
       <find>.class</find>
       <find>mongo</find>
       <find>parameters</find>
@@ -196,6 +187,7 @@
       <find>averageLogin+</find>
       <find>secToDate</find>
       <find>date</find>
+      <find>loginCount</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -225,10 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/util/DbUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/UseMySql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SpringConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/NewAddWeek.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NewAddDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NewAddMon.java" />
         <option value="$PROJECT_DIR$/src/main/resources/newaddday.xml" />
@@ -273,9 +261,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddWeek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
       </list>
     </option>
   </component>
@@ -1037,6 +1029,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vova" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="newadd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="nettydemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1053,6 +1055,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="jsonTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
@@ -1334,7 +1344,7 @@
       <workItem from="1514109550628" duration="123000" />
       <workItem from="1514115629045" duration="1940000" />
       <workItem from="1514118250973" duration="487000" />
-      <workItem from="1514167721220" duration="87322000" />
+      <workItem from="1514167721220" duration="88603000" />
     </task>
     <servers />
   </component>
@@ -1371,7 +1381,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122454000" />
+    <option name="totallyTimeSpent" value="123735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="31" width="1754" height="1006" extended-state="0" />
@@ -1392,7 +1402,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16292799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24380165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24822696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25161707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1400,7 +1410,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2683215" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.321513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1424,12 +1434,21 @@
           <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="77" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="(float) ((loginCount*1.0) / dayCount)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>(float) ((loginCount*1.0) / dayCount)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>tmp3</expression-string>
         <language-id>JAVA</language-id>
@@ -1448,34 +1467,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="201" column="6" lean-forward="false" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/runner/RunWith.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <marker date="1513830312398" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1513830312398" expanded="false" signature="140:293" ph="..." />
-            <marker date="1513830312398" expanded="true" signature="295:358" ph="@{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.13.RELEASE/spring-test-4.3.13.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1691,14 +1682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/createTable">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/UseMySql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1821">
@@ -1752,17 +1735,6 @@
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="67" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1829,35 +1801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <marker date="1514361065437" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
-            <marker date="1514361065437" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
-            <marker date="1514361065437" expanded="true" signature="595:703" ph="select * fro... NewAddDay" />
-            <marker date="1514361065437" expanded="true" signature="752:964" ph="update NewAddDay... " />
-            <marker date="1514361065437" expanded="true" signature="1050:1138" ph="select COUNT... NewAddDay" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <marker date="1514361065473" expanded="true" signature="296:515" ph="insert into NewAddMon... " />
-            <marker date="1514361065473" expanded="true" signature="594:701" ph="select * fro... NewAddMon" />
-            <marker date="1514361065473" expanded="true" signature="594:709" ph="select * fro... NewAddMon" />
-            <marker date="1514361065473" expanded="true" signature="700:701" ph="select * fro... NewAddMon" />
-            <marker date="1514361065473" expanded="true" signature="758:970" ph="update NewAddMon... " />
-            <marker date="1514361065473" expanded="true" signature="1056:1144" ph="select COUNT... NewAddMon" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.7.RELEASE/spring-data-mongodb-1.10.7.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1890,14 +1833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1919,10 +1854,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/createTable">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1514361065437" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
+            <marker date="1514361065437" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
+            <marker date="1514361065437" expanded="true" signature="595:703" ph="select * fro... NewAddDay" />
+            <marker date="1514361065437" expanded="true" signature="752:964" ph="update NewAddDay... " />
+            <marker date="1514361065437" expanded="true" signature="1050:1138" ph="select COUNT... NewAddDay" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="85" column="164" lean-forward="false" selection-start-line="85" selection-start-column="164" selection-end-line="85" selection-end-column="164" />
+          <folding>
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="168" lean-forward="false" selection-start-line="12" selection-start-column="168" selection-end-line="12" selection-end-column="168" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <marker date="1514361065473" expanded="true" signature="296:515" ph="insert into NewAddMon... " />
+            <marker date="1514361065473" expanded="true" signature="594:701" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="594:709" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="700:701" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="758:970" ph="update NewAddMon... " />
+            <marker date="1514361065473" expanded="true" signature="1056:1144" ph="select COUNT... NewAddMon" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>

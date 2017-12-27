@@ -137,15 +137,15 @@ public class ManageGameInput {
         //处理完表之后，往表中增加数据。
         //更新日增表
         Integer dayCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp1);
-        NewAddDay updateDay = new NewAddDay(tmp1.getId(), uLoginDate, cid, gid, sid, newAddDayNum, activeDay, loginCount, loginCount / dayCount, allPlayerCount+newAddDayNum);
+        NewAddDay updateDay = new NewAddDay(tmp1.getId(), uLoginDate, cid, gid, sid, newAddDayNum, activeDay, loginCount, (float) ((loginCount*1.0) / dayCount), allPlayerCount+newAddDayNum);
         mys.utilSQL(updateDay, EnumSQL.UPDATE);
         //更新周增表
         Integer weekCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp2);
-        NewAddWeek updateWeek = new NewAddWeek(tmp2.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, loginCount / weekCount, allPlayerCount+newAddWeekNum);
+        NewAddWeek updateWeek = new NewAddWeek(tmp2.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, (float) ((loginCount*1.0) / weekCount), allPlayerCount+newAddWeekNum);
         mys.utilSQL(updateWeek, EnumSQL.UPDATE);
         //更新月增表
         Integer monthCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp3);
-        NewAddMon updateMon = new NewAddMon(tmp3.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, loginCount / monthCount, allPlayerCount+newAddMonNum);
+        NewAddMon updateMon = new NewAddMon(tmp3.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, (float) ((loginCount*1.0) / monthCount), allPlayerCount+newAddMonNum);
         mys.utilSQL(updateMon, EnumSQL.UPDATE);
 
 

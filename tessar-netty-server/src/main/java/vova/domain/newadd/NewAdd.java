@@ -15,7 +15,7 @@ public class NewAdd {
     private long newAddNum;
     private long activeNum;
     private long loginCount;
-    private long averageLogin;
+    private float averageLogin;
     private long allPlayerNum;
 
     public int getId() {
@@ -82,8 +82,27 @@ public class NewAdd {
         this.loginCount = loginCount;
     }
 
-    public long getAverageLogin() {
+
+    public NewAdd(int id, Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, float averageLogin, long allPlayerNum) {
+        this.id = id;
+        this.dateID = dateID;
+        this.cID = cID;
+        this.gID = gID;
+        this.sID = sID;
+        this.newAddNum = newAddNum;
+        this.activeNum = activeNum;
+        this.loginCount = loginCount;
+        this.averageLogin = averageLogin;
+        this.allPlayerNum = allPlayerNum;
+    }
+
+    public float getAverageLogin() {
+
         return averageLogin;
+    }
+
+    public void setAverageLogin(float averageLogin) {
+        this.averageLogin = averageLogin;
     }
 
     public void setAverageLogin(long averageLogin) {
@@ -102,16 +121,4 @@ public class NewAdd {
 
     }
 
-    public NewAdd(int id, Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
-        this.id = id;
-        this.dateID = dateID;
-        this.cID = cID;
-        this.gID = gID;
-        this.sID = sID;
-        this.newAddNum = newAddNum;
-        this.activeNum = activeNum;
-        this.loginCount = loginCount;
-        this.averageLogin = averageLogin;
-        this.allPlayerNum = allPlayerNum;
-    }
 }

@@ -10,7 +10,7 @@ public class NewAddWeek extends NewAdd{
     public NewAddWeek() {
     }
 
-    public NewAddWeek(int id, Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, long averageLogin, long allPlayerNum) {
+    public NewAddWeek(int id, Date dateID, String cID, String gID, String sID, long newAddNum, long activeNum, long loginCount, float averageLogin, long allPlayerNum) {
         super(id, dateID, cID, gID, sID, newAddNum, activeNum, loginCount, averageLogin, allPlayerNum);
     }
 }
