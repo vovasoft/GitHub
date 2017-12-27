@@ -1,5 +1,7 @@
 package vova.util;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -8,12 +10,22 @@ import java.util.Date;
  * @create: date 14:03 2017/12/26
  */
 public class Tools {
-   // static SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
-    public static long dateToSec(Date date){
+    static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    public static long dateToSecByFormat(Date date){
         if (date!=null){
             return date.getTime()/1000;
         }
         return -1;
+    }
+
+    public static Date secToDateByFormat(long sec) throws ParseException {
+        String date = sdf.format(new Date(sec * 1000));
+
+        return sdf.parse(date);
+    }
+
+    public static long dateToSec(Date date){
+        return date.getTime()/1000;
     }
 
     public static Date secToDate(long sec){

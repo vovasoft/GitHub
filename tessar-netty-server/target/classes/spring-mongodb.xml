@@ -33,6 +33,9 @@
     </bean>
 
     <!--bean id="userDao" class="com.wlsq.oauth.vova.dao.impl.IUserDao"/-->
+    <bean id = "useMySql" class="vova.dao.dbsql.UseMySql"/>
+    <bean id = "useMyMongo" class="vova.dao.dbmongo.UseMyMongo"/>
+    <bean id="manageGameInput" class="vova.dao.ManageGameInput"/>
 
 </beans>
 

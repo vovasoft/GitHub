@@ -16,7 +16,7 @@ public class Player {
 //    private String ucID;  //user channel create id
 //    private String gameID;
     private long lastdate;//
-    private String channel_from; //game channel create id
+    private String cid; //game channel create id
     private String gid;
     private String sub; //sid channel create id;
     private String sid;
@@ -53,13 +53,7 @@ public class Player {
         this.lastdate = lastdate;
     }
 
-    public String getChannel_from() {
-        return channel_from;
-    }
 
-    public void setChannel_from(String channel_from) {
-        this.channel_from = channel_from;
-    }
 
     public String getGid() {
         return gid;
@@ -89,11 +83,20 @@ public class Player {
 
     }
 
-    public Player(String uid, long regdate, long lastdate, String channel_from, String gid, String sub, String sid) {
+    public String getCid() {
+        return cid;
+    }
+
+    public void setCid(String cid) {
+        this.cid = cid;
+    }
+
+    public Player(String uid, long regdate, long lastdate, String cid, String gid, String sub, String sid) {
+
         this.uid = uid;
         this.regdate = regdate;
         this.lastdate = lastdate;
-        this.channel_from = channel_from;
+        this.cid = cid;
         this.gid = gid;
         this.sub = sub;
         this.sid = sid;

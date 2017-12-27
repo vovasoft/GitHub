@@ -22,7 +22,7 @@ import java.util.List;
  * @create: date 20:43 2017/12/25
  */
 
-@Component
+
 public class UseMyMongo {
 
     public UseMyMongo() {
@@ -64,16 +64,16 @@ public class UseMyMongo {
     }
 
     //Exist in one day
-    public boolean findDayInMongo(Player player) {
+    public boolean findDayInMongo(Player player) throws ParseException {
         String uid = player.getUid();
         String gid = player.getGid();
         String sid = player.getSid();
-        String cid = player.getChannel_from();
+        String cid = player.getCid();
         Date loginDate = Tools.secToDate(player.getLastdate());
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
-        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and(sid).is(sid).and("dayDate").is(loginDate));
+        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("lastdate").is(player.getLastdate()));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
             System.out.println("resPlayer is not exist!!!");
@@ -84,13 +84,13 @@ public class UseMyMongo {
         }
     }
     //Exist in one week
-    public boolean findWeekInMongo(Player player) {
+    public boolean findWeekInMongo(Player player) throws ParseException {
 
         String uid = player.getUid();
         Date loginDate = Tools.secToDate(player.getLastdate());
         String gid = player.getGid();
         String sid = player.getSid();
-        String cid = player.getChannel_from();
+        String cid = player.getCid();
         Calendar cRegister = Calendar.getInstance();
         cRegister.setTime(loginDate);
         cRegister.get(Calendar.WEEK_OF_YEAR);
@@ -101,7 +101,9 @@ public class UseMyMongo {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
-        query.addCriteria(Criteria.where("uid").is(uid).and("gid").and("cid").is(cid).is(gid).and(sid).is(sid).and("MonDate").gte(mondayOfDate).lte(sundayOfDate));
+        query.addCriteria(Criteria.where("uid").is(uid).and("gid").is(gid).and("cid").is(cid).and("sid")
+                .is(sid).and("lastdate").gte(Tools.dateToSec(mondayOfDate)).lte(Tools.dateToSec(sundayOfDate)));
+
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
             System.out.println("resPlayer is not exist!!!");
@@ -111,11 +113,11 @@ public class UseMyMongo {
         }
     }
     //Exist in one Month
-    public boolean findMonInMongo(Player player) {
+    public boolean findMonInMongo(Player player) throws ParseException {
 
         String uid = player.getUid();
         Date loginDate = Tools.secToDate(player.getLastdate());
-        String cid = player.getChannel_from();
+        String cid = player.getCid();
         String gid = player.getGid();
         String sid = player.getSid();
 
@@ -130,7 +132,8 @@ public class UseMyMongo {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
-        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and(sid).is(sid).and("MonDate").gte(firstMonthOfDate).lte(endMonthOfDate));
+        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid")
+                .is(sid).and("lastdate").gte(Tools.dateToSec(firstMonthOfDate)).lte(Tools.dateToSec(endMonthOfDate)));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
             System.out.println("Player is not exist!!!");

@@ -12,11 +12,13 @@
     </insert>
 
     <select id="findByObject" resultType="_NewAddMon">
-        select * from NewAddMon where dateID = #{dateID} AND cID = #{cID} AND gID = #{gID} AND sID = #{sID}
+        select * from NewAddMon where dateID = #{dateID}
+        AND cID = #{cID} AND gID = #{gID} AND sID = #{sID} limit 1
     </select>
 
     <update id="update">
-        update NewAddMon set newAddNum=newAddNum+#{newAddNum},activeNum=activeNum+#{activeNum},loginCount=loginCount+#{loginCount},averageLogin=averageLogin+#{averageLogin},allPlayerNum=allPlayerNum+#{allPlayerNum}
+        update NewAddMon set newAddNum=newAddNum+#{newAddNum},
+        activeNum=activeNum+#{activeNum},loginCount=loginCount+#{loginCount},averageLogin=#{averageLogin},allPlayerNum=#{allPlayerNum}
         where id=#{id}
     </update>
 

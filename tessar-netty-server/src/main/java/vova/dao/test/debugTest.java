@@ -8,6 +8,7 @@ import vova.dao.ManageGameInput;
 import vova.dao.dbmongo.MongoTest;
 
 
+import vova.dao.dbmongo.UseMyMongo;
 import vova.dao.dbsql.EnumSQL;
 import vova.dao.dbsql.UseMySql;
 import vova.domain.*;
@@ -69,10 +70,10 @@ public class debugTest {
     }
 
 
-    @Test
-    public void fun0(){
-        System.out.println(mgi);
-    }
+//    @Test
+//    public void fun0(){
+//        System.out.println(mgi);
+//    }
 
     @Test
     public void fun1() throws IOException, ClassNotFoundException {
@@ -90,6 +91,25 @@ public class debugTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void funFindSelect() throws IOException, ParseException {
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
+        UseMySql mys = (UseMySql) ac.getBean("useMySql");
+
+        SimpleDateFormat sdt = new SimpleDateFormat("yyyy-MM-dd");
+        Date thisday = new Date();
+        Date uLoginDate = Tools.secToDate(1514184954);
+        NewAddDay findSeedDay = new NewAddDay();
+        findSeedDay.setcID("ngBrazil");
+        findSeedDay.setgID("bloodstrke");
+        findSeedDay.setsID("0");
+        findSeedDay.setDateID( uLoginDate);
+
+        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
+        System.out.println(tmp1);
     }
 
     @Test

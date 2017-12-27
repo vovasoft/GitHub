@@ -1,5 +1,7 @@
 package vova.dao;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import vova.dao.dbmongo.UseMyMongo;
 import vova.dao.dbsql.UseMySql;
 import vova.dao.dbsql.EnumSQL;
@@ -26,15 +28,19 @@ public class ManageGameInput {
     public ManageGameInput() {
     }
 
-    @Autowired
-    UseMyMongo umm;
-    @Autowired
-    UseMySql mys;
-    public int HandPlayerDate(Player player) throws IOException {
+    //@Autowired
+//    UseMyMongo umm;
+    //@Autowired
+ //   UseMySql mys;
+    public int HandPlayerDate(Player player) throws IOException, ParseException {
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
+        UseMySql mys = (UseMySql) ac.getBean("useMySql");
+
         String uid = player.getUid();  //获取当前用户id
-        Date uLoginDate = Tools.secToDate(player.getLastdate());//获取登录日期
-        Date uRegDate = Tools.secToDate(player.getRegdate()); //获取注册信息
-        String cid = player.getChannel_from();
+        Date uLoginDate = Tools.secToDateByFormat(player.getLastdate());//获取登录日期
+        Date uRegDate = Tools.secToDateByFormat(player.getRegdate()); //获取注册信息
+        String cid = player.getCid();
         String gid = player.getGid();
         String sid = player.getSid();
 
@@ -56,15 +62,15 @@ public class ManageGameInput {
         //记录新增的数值
         int newAddDayNum = 0, newAddWeekNum = 0, newAddMonNum = 0;
 
-        if (uLoginDate.equals(uRegDate) && isExistDay) {
+        if (uLoginDate.equals(uRegDate) && !isExistDay) {
             System.out.println("注册和登录时间一致");
             newAddDayNum = 1;
         }
-        if (uLoginDate.equals(uRegDate) && isExistWeek) {
+        if (uLoginDate.equals(uRegDate) && !isExistWeek) {
             System.out.println("注册和登录时间一致");
             newAddWeekNum = 1;
         }
-        if (uLoginDate.equals(uRegDate) && isExistMon) {
+        if (uLoginDate.equals(uRegDate) && !isExistMon) {
             System.out.println("注册和登录时间一致");
             newAddMonNum = 1;
         }
@@ -78,7 +84,7 @@ public class ManageGameInput {
         findSeedDay.setsID(sid);
         findSeedDay.setDateID(thisday);
 
-        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, thisday);
+        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
         if (tmp1 == null) {    //新增表中行不存在则需要增加行
             NewAddDay newLine = new NewAddDay(0, uLoginDate,
                     cid,
@@ -86,7 +92,7 @@ public class ManageGameInput {
                     sid,
                     0, 0, 0, 0, 0);
             mys.utilSQL(newLine, EnumSQL.INSERT);
-            tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, thisday);
+            tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
         }
 
         //查询周表中是否存在该词条，并且周表中的日期是每周的第一个周一
@@ -103,7 +109,7 @@ public class ManageGameInput {
                     gid,
                     sid,
                     0, 0, 0, 0, 0);
-            mys.utilSQL(NewAddDay.class, EnumSQL.INSERT);
+            mys.utilSQL(newLine, EnumSQL.INSERT);
             tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
         }
 
@@ -113,7 +119,7 @@ public class ManageGameInput {
         findSeedM.setcID(cid);
         findSeedM.setgID(gid);
         findSeedM.setsID(sid);
-        findSeedM.setDateID(thisWeek);
+        findSeedM.setDateID(thisMonth);
         NewAddMon tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
 
         if (tmp3 == null) {//新增表中行不存在则需要增加行
@@ -122,7 +128,7 @@ public class ManageGameInput {
                     gid,
                     sid,
                     0, 0, 0, 0, 0);
-            mys.utilSQL(NewAddMon.class, EnumSQL.INSERT);
+            mys.utilSQL(newLine, EnumSQL.INSERT);
             tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
         }
         //计算玩家总数，计入到数据中
@@ -132,15 +138,15 @@ public class ManageGameInput {
         //更新日增表
         Integer dayCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp1);
         NewAddDay updateDay = new NewAddDay(tmp1.getId(), uLoginDate, cid, gid, sid, newAddDayNum, activeDay, loginCount, loginCount / dayCount, allPlayerCount+newAddDayNum);
-        mys.utilSQL(NewAddDay.class, EnumSQL.UPDATE, updateDay);
+        mys.utilSQL(updateDay, EnumSQL.UPDATE);
         //更新周增表
         Integer weekCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp2);
         NewAddWeek updateWeek = new NewAddWeek(tmp2.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, loginCount / weekCount, allPlayerCount+newAddWeekNum);
-        mys.utilSQL(NewAddWeek.class, EnumSQL.UPDATE, updateWeek);
+        mys.utilSQL(updateWeek, EnumSQL.UPDATE);
         //更新月增表
         Integer monthCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp3);
         NewAddMon updateMon = new NewAddMon(tmp3.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, loginCount / monthCount, allPlayerCount+newAddMonNum);
-        mys.utilSQL(NewAddMon.class, EnumSQL.UPDATE, updateMon);
+        mys.utilSQL(updateMon, EnumSQL.UPDATE);
 
 
         //原始数据存入mongodb

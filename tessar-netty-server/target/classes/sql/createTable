@@ -1,5 +1,5 @@
 
---以下是根据周期不同建立了三张新增表，用于新增，活跃等需求
+
 create table NewAddDay
 (id int PRIMARY KEY auto_increment
 ,dateID DATE

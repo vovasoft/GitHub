@@ -6,6 +6,8 @@ import com.google.gson.reflect.TypeToken;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import vova.dao.ManageGameInput;
@@ -25,6 +27,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
 import javax.sound.midi.Soundbank;
+import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
 
@@ -42,8 +45,6 @@ import static io.netty.handler.codec.rtsp.RtspHeaders.Names.CONNECTION;
  * @version Create in 上午12:24 2017/12/21
  */
 
-@Component
-@Configurable
 public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     StringBuilder sb = new StringBuilder();
     JSONArray jsonarray = new JSONArray();
@@ -68,8 +69,8 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         cause.printStackTrace();
     }
 
-    @Autowired
-    private ManageGameInput manageGameInput;
+//    @Autowired
+//    private ManageGameInput manageGameInput;
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) throws Exception {
@@ -104,9 +105,10 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             bb.release();
             ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
         } else if (flag.get(0).equals("game")) {
-            List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>() {
-            }.getType());
+            ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+            ManageGameInput manageGameInput= (ManageGameInput) ac.getBean("manageGameInput");
 
+            List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>(){}.getType());
             for (Player player : players) {
                 manageGameInput.HandPlayerDate(player);
             }

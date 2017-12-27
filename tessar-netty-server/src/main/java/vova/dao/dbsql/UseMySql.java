@@ -22,7 +22,6 @@ import java.util.Random;
  * @create: date 16:20 2017/12/21
  */
 
-@Component
 public class UseMySql {
     static String resoure = "batis-conf.xml";
 
@@ -33,11 +32,14 @@ public class UseMySql {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         String className = object.getClass().getSimpleName();
+        System.out.println(className);
         switch (operate) {
             case INSERT:
                 ss.insert(className + ".insert", object);
+                break;
             case UPDATE:
                 ss.insert(className + ".update", object);
+                break;
         }
         ss.commit();
         ss.close();
@@ -49,13 +51,16 @@ public class UseMySql {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         T res = null;
+        System.out.println(entityClass.getSimpleName());
         List<T> resList =null;
 
         switch (operate) {
             case SELECT:
                 res = ss.selectOne(entityClass.getSimpleName() + ".findByObject", object);
+                break;
             case GETCOUNT:
-                res = ss.selectOne(entityClass.getSimpleName() + ".findDayCount", object);
+                res = ss.selectOne(object.getClass().getSimpleName() + ".findDayCount", object);
+                break;
         }
         ss.commit();
         ss.close();
@@ -72,6 +77,7 @@ public class UseMySql {
         switch (operate) {
             case SELECTLIST:
                 resList = ss.selectList(entityClass.getSimpleName() + ".findByDate", date);
+                break;
         }
         ss.commit();
         ss.close();
