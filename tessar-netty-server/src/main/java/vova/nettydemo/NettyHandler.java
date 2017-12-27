@@ -81,10 +81,10 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         }
 
         String uri = msg.uri();
-        System.out.println("URI:" + uri);
-        System.out.println("suburi:" + uri.substring(0, 21));
+        //System.out.println("URI:" + uri);
+        //System.out.println("suburi:" + uri.substring(0, 21));
         if (!(uri.substring(0, 21)).equals("/tessar/statis/statis")) {
-            System.out.println("return error url");
+            //System.out.println("return error url");
             return;
         }
 
@@ -99,7 +99,7 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         ByteBuf bb = null;//Unpooled.copiedBuffer("OK".getBytes());
 
         if (flag==null){
-            System.out.println("error flag==null");
+            //System.out.println("error flag==null");
             bb=Unpooled.copiedBuffer("error flag==null".getBytes());
             response.content().writeBytes(bb);
             bb.release();
@@ -112,7 +112,7 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             for (Player player : players) {
                 manageGameInput.HandPlayerDate(player);
             }
-            System.out.println("done");
+            //System.out.println("done");
             bb=Unpooled.copiedBuffer("OK".getBytes());
             response.content().writeBytes(bb);
             bb.release();

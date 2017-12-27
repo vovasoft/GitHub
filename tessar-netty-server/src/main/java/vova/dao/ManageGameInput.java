@@ -36,7 +36,7 @@ public class ManageGameInput {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
-
+        System.out.println("Thread========================="+this);
         String uid = player.getUid();  //获取当前用户id
         Date uLoginDate = Tools.secToDateByFormat(player.getLastdate());//获取登录日期
         Date uRegDate = Tools.secToDateByFormat(player.getRegdate()); //获取注册信息
@@ -63,18 +63,18 @@ public class ManageGameInput {
         int newAddDayNum = 0, newAddWeekNum = 0, newAddMonNum = 0;
 
         if (uLoginDate.equals(uRegDate) && !isExistDay) {
-            System.out.println("注册和登录时间一致");
+            //System.out.println("注册和登录时间一致");
             newAddDayNum = 1;
         }
         if (uLoginDate.equals(uRegDate) && !isExistWeek) {
-            System.out.println("注册和登录时间一致");
+            //System.out.println("注册和登录时间一致");
             newAddWeekNum = 1;
         }
         if (uLoginDate.equals(uRegDate) && !isExistMon) {
-            System.out.println("注册和登录时间一致");
+            //System.out.println("注册和登录时间一致");
             newAddMonNum = 1;
         }
-
+        System.out.println("Thread========================="+this);
         //判断三个表是否存在当日当周当月词条，如果没有则insert
 
         Date thisday = uLoginDate;
@@ -96,6 +96,7 @@ public class ManageGameInput {
         }
 
         //查询周表中是否存在该词条，并且周表中的日期是每周的第一个周一
+
         Date thisWeek = Tools.getMondayOfDate(uLoginDate);
         NewAddWeek findSeedWeek = new NewAddWeek();
         findSeedWeek.setcID(cid);
@@ -112,7 +113,7 @@ public class ManageGameInput {
             mys.utilSQL(newLine, EnumSQL.INSERT);
             tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
         }
-
+        System.out.println("Thread========================="+this);
         //查询月表中是否存在该词条，并且月表中的日期是每月的第一天
         Date thisMonth = Tools.getFirstOfMonth(uLoginDate);
         NewAddMon findSeedM = new NewAddMon();
@@ -137,18 +138,23 @@ public class ManageGameInput {
         //处理完表之后，往表中增加数据。
         //更新日增表
         Integer dayCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp1);
-        NewAddDay updateDay = new NewAddDay(tmp1.getId(), uLoginDate, cid, gid, sid, newAddDayNum, activeDay, loginCount, (float) ((loginCount*1.0) / dayCount), allPlayerCount+newAddDayNum);
+        NewAddDay updateDay = new NewAddDay(tmp1.getId(), uLoginDate, cid, gid, sid, newAddDayNum,
+                activeDay, loginCount, (float) ((tmp1.getLoginCount()*1.0) / dayCount),allPlayerCount+newAddDayNum);
         mys.utilSQL(updateDay, EnumSQL.UPDATE);
+
         //更新周增表
         Integer weekCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp2);
-        NewAddWeek updateWeek = new NewAddWeek(tmp2.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, (float) ((loginCount*1.0) / weekCount), allPlayerCount+newAddWeekNum);
+        NewAddWeek updateWeek = new NewAddWeek(tmp2.getId(), uLoginDate, cid, gid, sid, newAddWeekNum,
+                activeWeek, loginCount, (float) ((tmp2.getLoginCount()*1.0) / weekCount), allPlayerCount+newAddWeekNum);
         mys.utilSQL(updateWeek, EnumSQL.UPDATE);
+
         //更新月增表
         Integer monthCount = (Integer) mys.utilSQL(Integer.class, EnumSQL.GETCOUNT, tmp3);
-        NewAddMon updateMon = new NewAddMon(tmp3.getId(), uLoginDate, cid, gid, sid, newAddWeekNum, activeWeek, loginCount, (float) ((loginCount*1.0) / monthCount), allPlayerCount+newAddMonNum);
+        NewAddMon updateMon = new NewAddMon(tmp3.getId(), uLoginDate, cid, gid, sid, newAddWeekNum,
+                activeWeek, loginCount, (float) ((tmp3.getLoginCount()*1.0) / monthCount), allPlayerCount+newAddMonNum);
         mys.utilSQL(updateMon, EnumSQL.UPDATE);
 
-
+        System.out.println("Thread========================="+this);
         //原始数据存入mongodb
         try {
             umm.insertMongo(player);

@@ -70,10 +70,7 @@ public class debugTest {
     }
 
 
-//    @Test
-//    public void fun0(){
-//        System.out.println(mgi);
-//    }
+
 
     @Test
     public void fun1() throws IOException, ClassNotFoundException {
@@ -167,7 +164,7 @@ public class debugTest {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         NewAddDay nn = new NewAddDay(0,sdf.parse("2017-11-02"),"cid2","gid1","sid1",123,2,1,3,2);
-        ss.insert("NewAddDay.insert",nn);
+        ss.insert("StayDay.insert",nn);
         ss.commit();
         ss.close();
     }
@@ -186,7 +183,7 @@ public class debugTest {
         nn.setgID("gid1");
         nn.setsID("sid1");
         nn.setDateID(sdf.parse("2017-11-2"));
-        NewAddDay res = ss.selectOne("NewAddDay.findByObject",nn);
+        NewAddDay res = ss.selectOne("StayDay.findByObject",nn);
         ss.commit();
         ss.close();
 
@@ -211,10 +208,10 @@ public class debugTest {
         nn.setAllPlayerNum(1);
         nn.setNewAddNum(1);
 
-        NewAddDay res = ss.selectOne("NewAddDay.findByObject",nn);
+        NewAddDay res = ss.selectOne("StayDay.findByObject",nn);
         nn.setId(res.getId());
         System.out.println("id:"+res.getId());
-        int ress =ss.update("NewAddDay.update",nn);
+        int ress =ss.update("StayDay.update",nn);
         ss.commit();
         ss.close();
 
