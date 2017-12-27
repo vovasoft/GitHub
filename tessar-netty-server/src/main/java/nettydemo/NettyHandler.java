@@ -3,6 +3,7 @@ package nettydemo;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import dao.ManageGameInput;
 import dao.dbmongo.UseMyMongo;
 import domain.Player;
 import io.netty.buffer.ByteBuf;
@@ -39,7 +40,9 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     JSONArray jsonarray = new JSONArray();
 
     @Autowired
-    UseMyMongo umm ;
+    UseMyMongo umm;
+    @Autowired
+    ManageGameInput mgi;
 
     public NettyHandler() {
         jsonarray.add(getJsonObj("name", "ar.sear.ocalplay"));
@@ -78,22 +81,38 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
         Map<String, List<String>> parame = decoder.parameters();
+        List<String> flag = parame.get("action");
+        String json = parame.get("Json").toString();
 
-        for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-            String json = entry.getValue().toString();
-            System.out.println("json:" + json);
-            List<Player> players = gson.fromJson(json,  new TypeToken<List<Player>>() {
+        if (flag==null){
+            System.out.println("error flag==null");
+            return;
+        } else if (flag.get(0) == "game") {
+            List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>() {
             }.getType());
 
-            //autoware 已经好使啦
-         //   UseMyMongo umm =new UseMyMongo();
             for (Player player : players) {
-                umm.insertMongo(player);
+                mgi.HandPlayerDate(player);
             }
-//            System.out.println(player);
             System.out.println("done");
+        } else if (flag.get(0) == "payment") {
+            //支付情况
         }
+
+//        for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
+//            System.out.println(entry.getKey() + " : " + entry.getValue());
+//            if (entry.getKey() == "action")
+//
+//                String json = entry.getValue().toString();
+//            System.out.println("json:" + json);
+//            List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>() {
+//            }.getType());
+//
+//            for (Player player : players) {
+//                umm.insertMongo(player);
+//            }
+//            System.out.println("done");
+//        }
 //        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
 //        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
 //        ByteBuf responseContentByteBuf = Unpooled.copiedBuffer(
@@ -105,7 +124,7 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 //        responseContentByteBuf.release();
 //        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);//
         FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
-        response.headers().set(CONTENT_TYPE,"text/html; charset=UTF-8");
+        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
         ByteBuf bb = Unpooled.copiedBuffer("OK".getBytes());
         response.content().writeBytes(bb);
         bb.release();

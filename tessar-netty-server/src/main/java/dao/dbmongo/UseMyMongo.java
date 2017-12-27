@@ -1,5 +1,8 @@
 package dao.dbmongo;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
 import domain.Player;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,6 +12,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 import util.Tools;
 
+import javax.swing.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -48,6 +52,20 @@ public class UseMyMongo {
 //    private String sub;
 //    private String sid;
 
+    //Find count of all players by ID distinct;
+    public int findPlayerCountInMongo(String collectionName,String id){
+        int res=0;
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
+        DBObject query = new BasicDBObject();
+        res=mongoTemplate.getCollection(collectionName).distinct(id, query).size();
+
+        System.out.println(res);
+
+        return res;
+    }
+
+    //Exist in one day
     public boolean findDayInMongo(Player player) {
         String uid = player.getUid();
         String gid = player.getGid();
@@ -67,7 +85,7 @@ public class UseMyMongo {
             return true;
         }
     }
-
+    //Exist in one week
     public boolean findWeekInMongo(Player player) {
 
         String uid = player.getUid();
@@ -94,7 +112,7 @@ public class UseMyMongo {
             return true;
         }
     }
-
+    //Exist in one Month
     public boolean findMonInMongo(Player player) {
 
         String uid = player.getUid();

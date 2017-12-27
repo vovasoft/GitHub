@@ -1,7 +1,7 @@
 package dao.test;
 
-import dao.AutoTest;
-import dao.ManageInput;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 import dao.SpringConfig;
 import dao.dbmongo.MongoTest;
 
@@ -19,10 +19,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.mapping.TextScore;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.test.context.ContextConfiguration;
@@ -189,14 +189,17 @@ public class debugTest {
 
         System.out.println("getcID::::"+ress);
     }
-    @Autowired AutoTest at;
     @Test
-    public void funManageInput() throws IOException {
+    public void findPlayerCountInMongo(){
+        long res=0;
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
+        DBObject query = new BasicDBObject();
+        int count=mongoTemplate.getCollection("player").distinct("uid", query).size();
 
+        System.out.println(count);
 
-        System.out.println(at);
     }
-
     @Test
     public void insertMongo() throws ParseException {
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
