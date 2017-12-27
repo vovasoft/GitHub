@@ -26,120 +26,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbmongo/UseMyMongo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="54" column="46" lean-forward="false" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+            <state relative-caret-position="442">
+              <caret line="71" column="43" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="43" />
               <folding>
-                <element signature="e#3307#3382#0" expanded="false" />
+                <element signature="e#4573#4648#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbmongo/MongoTest.java">
+      <file leaf-file-name="batis-conf.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autowired.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.jar!/org/springframework/beans/factory/annotation/Autowired.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/SpringConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="92" lean-forward="false" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-mongodb.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ManageGameInput.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="137" column="87" lean-forward="false" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
+            <state relative-caret-position="105">
+              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddDay.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+      <file leaf-file-name="debugTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#fun#0;class#debugTest#0" expanded="false" />
+                <element signature="e#2083#2084#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Testtt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/Testtt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="11" />
+              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
-                <marker date="1514290485215" expanded="true" signature="296:515" ph="insert into NewAddDay... " />
-                <marker date="1514290485215" expanded="true" signature="595:694" ph="select * fro... NewAddDay" />
-                <marker date="1514290485215" expanded="true" signature="743:972" ph="update NewAddDay... " />
-                <marker date="1514290485215" expanded="true" signature="1058:1146" ph="select COUNT... NewAddDay" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddMon.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml">
+      <file leaf-file-name="AA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/AA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1514290673942" expanded="true" signature="296:515" ph="insert into NewAddMon... " />
-                <marker date="1514290673942" expanded="true" signature="594:693" ph="select * fro... NewAddMon" />
-                <marker date="1514290673942" expanded="true" signature="692:693" ph="select * fro... NewAddMon" />
-                <marker date="1514290673942" expanded="true" signature="742:971" ph="update NewAddMon... " />
-                <marker date="1514290673942" expanded="true" signature="1057:1145" ph="select COUNT... NewAddMon" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-newaddWeek.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml">
+      <file leaf-file-name="NettyServerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <marker date="1514290673930" expanded="true" signature="297:518" ph="insert into NewAddDWeek... " />
-                <marker date="1514290673930" expanded="true" signature="598:699" ph="select * fro... NewAddDWeek" />
-                <marker date="1514290673930" expanded="true" signature="698:699" ph="select * fro... NewAddWeek" />
-                <marker date="1514290673930" expanded="true" signature="748:979" ph="update NewAddDWeek... " />
-                <marker date="1514290673930" expanded="true" signature="1065:1155" ph="select COUNT... NewAddDWeek" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryStringDecoder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/handler/codec/http/QueryStringDecoder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="92" column="37" lean-forward="false" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="395" column="10" lean-forward="false" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
+            <state relative-caret-position="-133">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,13 +148,13 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calendarRegister</find>
       <find>calendarLogin</find>
       <find>playTableData</find>
       <find>payTableDate</find>
@@ -185,6 +181,10 @@
       <find>dao.dbsql.UseMySql</find>
       <find>umm</find>
       <find>activeDay</find>
+      <find>spring</find>
+      <find>autow</find>
+      <find>ManageGameInput</find>
+      <find>public stat</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -212,16 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mysql-player.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/DbPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/AbstractBaseMongoTemplete.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mysql-playerExist.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/PlayerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/IPlayerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/EnumSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nettydemo/NettyServerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/User2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/QueryDate.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-User2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/MongoTestRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/User.java" />
@@ -255,14 +245,24 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/AutoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/test/TestMain.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/SpringConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mongodb.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ManageInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/test/debugTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ManageGameInput.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
+        <option value="$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/test/AA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/test/Testtt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java" />
       </list>
     </option>
   </component>
@@ -308,8 +308,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="15" />
+    <option name="x" value="119" />
+    <option name="y" value="5" />
     <option name="width" value="1732" />
     <option name="height" value="1006" />
   </component>
@@ -967,6 +967,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vova" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -975,24 +984,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="dbmongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="dbsql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1002,23 +994,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="nettydemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1077,7 +1053,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.debugTest.findPlayerCountInMongo">
+  <component name="RunManager" selected="JUnit.debugTest.fun0">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1085,14 +1061,71 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="NettyServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Testtt (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="nettydemo.*" />
+          <option name="PATTERN" value="vova.dao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="nettydemo.NettyServerTest" />
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.Testtt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="tessar-netty-server" />
+      <envs />
+    </configuration>
+    <configuration name="Testtt (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.dao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.Testtt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="tessar-netty-server" />
+      <envs />
+    </configuration>
+    <configuration name="Testtt (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.dao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.Testtt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="tessar-netty-server" />
+      <envs />
+    </configuration>
+    <configuration name="Testtt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.dao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.Testtt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1138,94 +1171,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="debugTest.findByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="debugTest.fun0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dao.test.*" />
+          <option name="PATTERN" value="vova.dao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="tessar-netty-server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.test" />
-      <option name="MAIN_CLASS_NAME" value="dao.test.debugTest" />
-      <option name="METHOD_NAME" value="findByKey" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="debugTest.findPlayerCountInMongo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tessar-netty-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.test" />
-      <option name="MAIN_CLASS_NAME" value="dao.test.debugTest" />
-      <option name="METHOD_NAME" value="findPlayerCountInMongo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="debugTest.funManageInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tessar-netty-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.test" />
-      <option name="MAIN_CLASS_NAME" value="dao.test.debugTest" />
-      <option name="METHOD_NAME" value="funManageInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="debugTest.updatedaytable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tessar-netty-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.test" />
-      <option name="MAIN_CLASS_NAME" value="dao.test.debugTest" />
-      <option name="METHOD_NAME" value="updatedaytable" />
+      <option name="PACKAGE_NAME" value="vova.dao.test" />
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.debugTest" />
+      <option name="METHOD_NAME" value="fun0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1279,19 +1237,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funManageInput" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.findPlayerCountInMongo" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.fun0" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Testtt" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Testtt (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Testtt (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Testtt (3)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.findPlayerCountInMongo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funManageInput" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.updatedaytable" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.findByKey" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.fun0" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Testtt" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Testtt (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Testtt (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Testtt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1320,47 +1278,47 @@
       <workItem from="1514109550628" duration="123000" />
       <workItem from="1514115629045" duration="1940000" />
       <workItem from="1514118250973" duration="487000" />
-      <workItem from="1514167721220" duration="71323000" />
+      <workItem from="1514167721220" duration="75202000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 00m 59s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 01m 29s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 01m 45s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 02m 08s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 02m 21s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NettyHandler_fun - 2017.12.27 at 12h 05m 03s.xml">
+      <configuration name="NettyHandler.fun" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="debugTest_findPlayerCountInMongo - 2017.12.27 at 10h 59m 13s.xml">
       <configuration name="debugTest.findPlayerCountInMongo" configurationId="JUnit" />
     </history-entry>
     <history-entry file="debugTest_findPlayerCountInMongo - 2017.12.27 at 10h 59m 39s.xml">
       <configuration name="debugTest.findPlayerCountInMongo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 39m 52s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
+    <history-entry file="debugTest_fun0 - 2017.12.27 at 12h 00m 08s.xml">
+      <configuration name="debugTest.fun0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 45m 54s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 46m 25s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 47m 23s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 48m 43s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 48m 57s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 49m 15s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="debugTest_funManageInput - 2017.12.26 at 20h 51m 12s.xml">
-      <configuration name="debugTest.funManageInput" configurationId="JUnit" />
+    <history-entry file="debugTest_fun0 - 2017.12.27 at 12h 19m 14s.xml">
+      <configuration name="debugTest.fun0" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106455000" />
+    <option name="totallyTimeSpent" value="110334000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="15" width="1732" height="1006" extended-state="0" />
+    <frame x="119" y="5" width="1732" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1380,13 +1338,13 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24888393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24822696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25161707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3470982" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39834514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1402,87 +1360,32 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="36" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="umm" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>umm</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/newadd/NewAddWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/QueryDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding>
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1229#1230#0" expanded="false" />
-            <element signature="e#1269#1270#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-User2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <marker date="1514189414602" expanded="true" signature="292:368" ph="insert into user2... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-player.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1514172000400" expanded="true" signature="295:463" ph="insert into player... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-playerExist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <marker date="1514172922234" expanded="true" signature="301:475" ph="insert into player_exist... " />
-            <marker date="1514172922234" expanded="true" signature="535:582" ph="update player_exist... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-User.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1514282634209" expanded="true" signature="289:348" ph="insert into user... " />
-            <marker date="1514282634209" expanded="true" signature="398:452" ph="update user... " />
-            <marker date="1514282634209" expanded="true" signature="526:559" ph="select * fro... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/util/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1491,7 +1394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/EnumSQL.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/EnumSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
@@ -1542,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1566,51 +1461,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/newadd/NewAdd.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
-            <element signature="e#417#418#0" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#503#504#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#821#822#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#919#920#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1047#1048#0" expanded="false" />
-            <element signature="e#1079#1080#0" expanded="false" />
-            <element signature="e#1127#1128#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1235#1236#0" expanded="false" />
-            <element signature="e#1283#1284#0" expanded="false" />
-            <element signature="e#1325#1326#0" expanded="false" />
-            <element signature="e#1360#1361#0" expanded="false" />
-            <element signature="e#1393#1394#0" expanded="false" />
-            <element signature="e#1443#1444#0" expanded="false" />
-            <element signature="e#1487#1488#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1559#1560#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1661#1662#0" expanded="false" />
-            <element signature="e#1698#1699#0" expanded="false" />
-            <element signature="e#1733#1734#0" expanded="false" />
-            <element signature="e#1787#1788#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#480#481#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#568#569#0" expanded="false" />
+            <element signature="e#610#611#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#676#677#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#770#771#0" expanded="false" />
+            <element signature="e#800#801#0" expanded="false" />
+            <element signature="e#826#827#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#894#895#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#950#951#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1208#1209#0" expanded="false" />
+            <element signature="e#1240#1241#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1330#1331#0" expanded="false" />
+            <element signature="e#1365#1366#0" expanded="false" />
+            <element signature="e#1398#1399#0" expanded="false" />
+            <element signature="e#1448#1449#0" expanded="false" />
+            <element signature="e#1492#1493#0" expanded="false" />
+            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#1564#1565#0" expanded="false" />
+            <element signature="e#1618#1619#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <element signature="e#1703#1704#0" expanded="false" />
+            <element signature="e#1738#1739#0" expanded="false" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1840#1841#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1688,26 +1583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/UseMySql.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/UseMySql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/JsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1776,25 +1655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
@@ -1818,24 +1679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/test/debugTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="197" column="78" lean-forward="false" selection-start-line="197" selection-start-column="78" selection-end-line="197" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/handler/codec/http/QueryStringDecoder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1852,16 +1695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nettydemo/NettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <element signature="e#3307#3382#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
@@ -1870,7 +1703,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbmongo/UseMyMongo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="54" column="46" lean-forward="false" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
@@ -1878,18 +1711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/dbmongo/MongoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/MongoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ManageGameInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="137" column="87" lean-forward="false" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1923,14 +1748,233 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="51">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
           <folding>
             <marker date="1514290673930" expanded="true" signature="297:518" ph="insert into NewAddDWeek... " />
             <marker date="1514290673930" expanded="true" signature="598:699" ph="select * fro... NewAddDWeek" />
             <marker date="1514290673930" expanded="true" signature="698:699" ph="select * fro... NewAddWeek" />
             <marker date="1514290673930" expanded="true" signature="748:979" ph="update NewAddDWeek... " />
             <marker date="1514290673930" expanded="true" signature="1065:1155" ph="select COUNT... NewAddDWeek" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1513830165484" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1513830165484" expanded="false" signature="140:225" ph="..." />
+            <marker date="1513830165484" expanded="false" signature="450:461" ph=" { " />
+            <marker date="1513830165484" expanded="false" signature="472:478" ph=" }" />
+            <marker date="1513830165484" expanded="true" signature="543:686" ph="{...}" />
+            <marker date="1513830165484" expanded="false" signature="768:779" ph=" { " />
+            <marker date="1513830165484" expanded="false" signature="810:816" ph=" }" />
+            <marker date="1513830165484" expanded="true" signature="920:1036" ph="{...}" />
+            <marker date="1513830165484" expanded="true" signature="1107:1154" ph="{...}" />
+            <marker date="1513830165484" expanded="true" signature="1240:1641" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/io/StringReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="486" column="48" lean-forward="false" selection-start-line="486" selection-start-column="38" selection-end-line="486" selection-end-column="48" />
+          <folding>
+            <marker date="1512972431639" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1512972431639" expanded="false" signature="139:1792" ph="..." />
+            <marker date="1512972431639" expanded="true" signature="2306:2313" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="3057:3254" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="3668:7235" ph="{...}" />
+            <marker date="1512972431639" expanded="false" signature="7267:7278" ph=" { " />
+            <marker date="1512972431639" expanded="false" signature="7299:7305" ph=" }" />
+            <marker date="1512972431639" expanded="false" signature="7359:7370" ph=" { " />
+            <marker date="1512972431639" expanded="false" signature="7402:7408" ph=" }" />
+            <marker date="1512972431639" expanded="false" signature="7445:7456" ph=" { " />
+            <marker date="1512972431639" expanded="false" signature="7483:7489" ph=" }" />
+            <marker date="1512972431639" expanded="false" signature="7520:7531" ph=" { " />
+            <marker date="1512972431639" expanded="false" signature="7552:7558" ph=" }" />
+            <marker date="1512972431639" expanded="true" signature="7651:8435" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="7754:8428" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="7821:8042" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="8123:8418" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="8527:9320" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="8629:9313" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="8695:8923" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="9004:9303" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="9376:9660" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="9762:10451" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="9886:10444" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="9953:10172" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="10253:10434" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="10553:10988" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="10601:10969" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="10686:10754" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="10825:10959" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="11100:12168" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="11153:12149" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="11243:11497" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="11573:12139" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="12230:14071" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="14170:14911" ph="{...}" />
+            <marker date="1512972431639" expanded="false" signature="14968:14979" ph=" { " />
+            <marker date="1512972431639" expanded="false" signature="15023:15029" ph=" }" />
+            <marker date="1512972431639" expanded="true" signature="15077:15186" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="15250:15397" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="15436:15566" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="15621:15769" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="15848:16053" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="16148:16407" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="16502:17195" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="17247:17405" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="17497:17753" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="17825:18153" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="18206:18341" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="18433:19058" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="19145:19276" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="19358:19599" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="19703:19953" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="20052:20246" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="20325:20707" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="20812:21716" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="21808:21944" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="22031:22145" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="22176:22331" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="22394:23223" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="22466:22477" ph="{}" />
+            <marker date="1512972431639" expanded="true" signature="22539:22715" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="22773:22958" ph="{...}" />
+            <marker date="1512972431639" expanded="true" signature="23030:23217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.jar!/org/springframework/beans/factory/annotation/Autowired.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/AA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="71" column="43" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="43" />
+          <folding>
+            <element signature="e#4573#4648#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="92" lean-forward="false" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/Testtt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fun#0;class#debugTest#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
           </folding>
         </state>
       </provider>
