@@ -36,6 +36,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
@@ -107,6 +108,22 @@ public class debugTest {
 
         NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
         System.out.println(tmp1);
+    }
+
+    @Test
+    public void funnumArrayToStr(){
+        int[] buf= new int[30];
+        String res=Tools.numArrayToStr(buf);
+        System.out.println(res);
+    }
+
+    @Test
+    public void funstrToNumArray(){
+        String str="1,3,5,67,2,1,2,4,6,7,12,4,1";
+        int [] res = Tools.strToNumArray(str,",");
+        for (int re : res) {
+            System.out.print(re+",");
+        }
     }
 
     @Test

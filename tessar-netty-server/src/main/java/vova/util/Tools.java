@@ -85,4 +85,26 @@ public class Tools {
         c.set(Calendar.DAY_OF_MONTH, c.getActualMaximum(Calendar.DAY_OF_MONTH));
         return c.getTime();
     }
+
+    //数字数组转字符串
+    public static String numArrayToStr(int[] intarr){
+        String res = "";
+        for (Object i : intarr) {
+            res=res+i+",";
+        }
+        return res.substring(0,res.length()-1);
+    }
+
+
+    //字符转转数字数组
+    public static int[] strToNumArray(String str,String split){
+        String[] subStrs = str.split(split);
+        int length =subStrs.length;
+        int[] res = new int[length];
+        for (int i=0;i<length;i++) {
+            res[i]= new Integer(subStrs[i]);
+        }
+        return  res;
+    }
+
 }
