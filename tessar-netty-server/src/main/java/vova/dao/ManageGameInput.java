@@ -6,6 +6,7 @@ import vova.dao.dbmongo.UseMyMongo;
 import vova.dao.dbsql.UseMySql;
 import vova.dao.dbsql.EnumSQL;
 import vova.domain.Player;
+import vova.domain.newadd.NewAdd;
 import vova.domain.newadd.NewAddDay;
 import vova.domain.newadd.NewAddMon;
 import vova.domain.newadd.NewAddWeek;
@@ -76,62 +77,65 @@ public class ManageGameInput {
         }
         System.out.println("Thread========================="+this);
         //判断三个表是否存在当日当周当月词条，如果没有则insert
+        NewAddDay tmp1= (NewAddDay) findOrCreate(uLoginDate,cid,gid,sid,mys,NewAddDay.class);
+        NewAddWeek tmp2= (NewAddWeek) findOrCreate(uLoginDate,cid,gid,sid,mys,NewAddWeek.class);
+        NewAddMon tmp3= (NewAddMon) findOrCreate(uLoginDate,cid,gid,sid,mys,NewAddMon.class);
 
-        Date thisday = uLoginDate;
-        NewAddDay findSeedDay = new NewAddDay();
-        findSeedDay.setcID(cid);
-        findSeedDay.setgID(gid);
-        findSeedDay.setsID(sid);
-        findSeedDay.setDateID(thisday);
-
-        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
-        if (tmp1 == null) {    //新增表中行不存在则需要增加行
-            NewAddDay newLine = new NewAddDay(0, uLoginDate,
-                    cid,
-                    gid,
-                    sid,
-                    0, 0, 0, 0, 0);
-            mys.utilSQL(newLine, EnumSQL.INSERT);
-            tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
-        }
+//        Date thisday = uLoginDate;
+//        NewAddDay findSeedDay = new NewAddDay();
+//        findSeedDay.setcID(cid);
+//        findSeedDay.setgID(gid);
+//        findSeedDay.setsID(sid);
+//        findSeedDay.setDateID(thisday);
+//
+//        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
+//        if (tmp1 == null) {    //新增表中行不存在则需要增加行
+//            NewAddDay newLine = new NewAddDay(0, uLoginDate,
+//                    cid,
+//                    gid,
+//                    sid,
+//                    0, 0, 0, 0, 0);
+//            mys.utilSQL(newLine, EnumSQL.INSERT);
+//            tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
+//        }
 
         //查询周表中是否存在该词条，并且周表中的日期是每周的第一个周一
 
-        Date thisWeek = Tools.getMondayOfDate(uLoginDate);
-        NewAddWeek findSeedWeek = new NewAddWeek();
-        findSeedWeek.setcID(cid);
-        findSeedWeek.setgID(gid);
-        findSeedWeek.setsID(sid);
-        findSeedWeek.setDateID(thisWeek);
-        NewAddWeek tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
-        if (tmp2 == null) {//新增表中行不存在则需要增加行
-            NewAddWeek newLine = new NewAddWeek(0, thisWeek,
-                    cid,
-                    gid,
-                    sid,
-                    0, 0, 0, 0, 0);
-            mys.utilSQL(newLine, EnumSQL.INSERT);
-            tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
-        }
-        System.out.println("Thread========================="+this);
-        //查询月表中是否存在该词条，并且月表中的日期是每月的第一天
-        Date thisMonth = Tools.getFirstOfMonth(uLoginDate);
-        NewAddMon findSeedM = new NewAddMon();
-        findSeedM.setcID(cid);
-        findSeedM.setgID(gid);
-        findSeedM.setsID(sid);
-        findSeedM.setDateID(thisMonth);
-        NewAddMon tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
-
-        if (tmp3 == null) {//新增表中行不存在则需要增加行
-            NewAddMon newLine = new NewAddMon(0, thisMonth,
-                    cid,
-                    gid,
-                    sid,
-                    0, 0, 0, 0, 0);
-            mys.utilSQL(newLine, EnumSQL.INSERT);
-            tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
-        }
+//        Date thisWeek = Tools.getMondayOfDate(uLoginDate);
+//        NewAddWeek findSeedWeek = new NewAddWeek();
+//        findSeedWeek.setcID(cid);
+//        findSeedWeek.setgID(gid);
+//        findSeedWeek.setsID(sid);
+//        findSeedWeek.setDateID(thisWeek);
+//        NewAddWeek tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
+//        if (tmp2 == null) {//新增表中行不存在则需要增加行
+//            NewAddWeek newLine = new NewAddWeek(0, thisWeek,
+//                    cid,
+//                    gid,
+//                    sid,
+//                    0, 0, 0, 0, 0);
+//            mys.utilSQL(newLine, EnumSQL.INSERT);
+//            tmp2 = (NewAddWeek) mys.utilSQL(NewAddWeek.class, EnumSQL.SELECT, findSeedWeek);
+//        }
+//
+//        //查询月表中是否存在该词条，并且月表中的日期是每月的第一天
+//        Date thisMonth = Tools.getFirstOfMonth(uLoginDate);
+//        NewAddMon findSeedM = new NewAddMon();
+//        findSeedM.setcID(cid);
+//        findSeedM.setgID(gid);
+//        findSeedM.setsID(sid);
+//        findSeedM.setDateID(thisMonth);
+//        NewAddMon tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
+//
+//        if (tmp3 == null) {//新增表中行不存在则需要增加行
+//            NewAddMon newLine = new NewAddMon(0, thisMonth,
+//                    cid,
+//                    gid,
+//                    sid,
+//                    0, 0, 0, 0, 0);
+//            mys.utilSQL(newLine, EnumSQL.INSERT);
+//            tmp3 = (NewAddMon) mys.utilSQL(NewAddMon.class, EnumSQL.SELECT, findSeedM);
+//        }
         //计算玩家总数，计入到数据中
 
         long allPlayerCount = umm.findPlayerCountInMongo("player","uid");
@@ -154,7 +158,6 @@ public class ManageGameInput {
                 activeWeek, loginCount, (float) ((tmp3.getLoginCount()*1.0) / monthCount), allPlayerCount+newAddMonNum);
         mys.utilSQL(updateMon, EnumSQL.UPDATE);
 
-        System.out.println("Thread========================="+this);
         //原始数据存入mongodb
         try {
             umm.insertMongo(player);
@@ -162,6 +165,30 @@ public class ManageGameInput {
             e.printStackTrace();
         }
         return -1;
+    }
+
+    //查找增表某行是否存在，如果不存在则插入一个
+    private  <T>NewAdd findOrCreate(Date uLoginDate, String cid, String gid, String sid, UseMySql mys,Class<T> entityClass) throws IOException {
+        Date thisDate = uLoginDate;
+
+        NewAdd findSeed = new NewAdd();
+        findSeed.setcID(cid);
+        findSeed.setgID(gid);
+        findSeed.setsID(sid);
+        findSeed.setDateID(thisDate);
+
+        NewAdd tmp1 = (NewAdd) mys.utilSQL(entityClass.getClass(), EnumSQL.SELECT, findSeed);
+        if (tmp1 == null) {    //新增表中行不存在则需要增加行
+            NewAddDay newLine = new NewAddDay(0, uLoginDate,
+                    cid,
+                    gid,
+                    sid,
+                    0, 0, 0, 0, 0);
+            mys.utilSQL(newLine, EnumSQL.INSERT);
+            tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeed);
+        }
+
+        return tmp1;
     }
 
 

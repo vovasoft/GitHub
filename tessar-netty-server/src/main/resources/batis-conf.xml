@@ -20,6 +20,9 @@
         <typeAlias type="vova.domain.newadd.NewAddDay" alias="_NewAddDay"/>
         <typeAlias type="vova.domain.newadd.NewAddWeek" alias="_NewAddWeek"/>
         <typeAlias type="vova.domain.newadd.NewAddMon" alias="_NewAddMon"/>
+        <typeAlias type="vova.domain.stayman.StayDay" alias="_StayDay"/>
+        <typeAlias type="vova.domain.stayman.StayWeek" alias="_StayWeek"/>
+        <typeAlias type="vova.domain.stayman.StayMon" alias="_StayMon"/>
     </typeAliases>
 
     <environments default="development">
@@ -33,14 +36,20 @@
             </dataSource>
         </environment>
     </environments>
+    <!-- 定义MYSQL映射配置文件 -->
     <mappers>
         <mapper resource="customermapper.xml"/>
         <mapper resource="ordermapper.xml"/>
         <mapper resource="mysql-User.xml"/>
         <mapper resource="mysql-User2.xml"/>
         <mapper resource="mysql-playerExist.xml"/>
+
         <mapper resource="mysql-newaddDay.xml"/>
         <mapper resource="mysql-newaddWeek.xml"/>
         <mapper resource="mysql-newaddMon.xml"/>
+
+        <mapper resource="mysql-StayDay.xml"/>
+        <mapper resource="mysql-StayWeek.xml"/>
+        <mapper resource="mysql-StayMon.xml"/>
     </mappers>
 </configuration>
