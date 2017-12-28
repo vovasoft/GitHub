@@ -64,16 +64,18 @@ public class UseMyMongo {
     }
 
     //Exist in one day
+    //这里的计算比较复杂，每个用户登录的时间以秒计算，算法中只能精确到天，数据库中的date没有小时，所以要手动控制一下时间区间
     public boolean findDayInMongo(Player player) throws ParseException {
         String uid = player.getUid();
         String gid = player.getGid();
         String sid = player.getSid();
         String cid = player.getCid();
-        Date loginDate = Tools.secToDate(player.getLastdate());
+        Date todayDate = Tools.secToDateByFormat(player.getLastdate());
+        long todayTime = todayDate.getTime()/1000;
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
-        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("lastdate").is(player.getLastdate()));
+        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("lastdate").gte(todayTime).lt(todayTime+(24*3600)));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
             System.out.println("resPlayer is not exist!!!");
@@ -87,7 +89,7 @@ public class UseMyMongo {
     public boolean findWeekInMongo(Player player) throws ParseException {
 
         String uid = player.getUid();
-        Date loginDate = Tools.secToDate(player.getLastdate());
+        Date loginDate = Tools.secToDateByFormat(player.getLastdate());
         String gid = player.getGid();
         String sid = player.getSid();
         String cid = player.getCid();
@@ -97,12 +99,14 @@ public class UseMyMongo {
 
         Date mondayOfDate = Tools.getMondayOfDate(loginDate);
         Date sundayOfDate = Tools.getSundayOfDate(loginDate);
+        System.out.println("mondayOfDate........."+mondayOfDate);
+        System.out.println("sundayOfDate........."+sundayOfDate);
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
         query.addCriteria(Criteria.where("uid").is(uid).and("gid").is(gid).and("cid").is(cid).and("sid")
-                .is(sid).and("lastdate").gte(Tools.dateToSec(mondayOfDate)).lte(Tools.dateToSec(sundayOfDate)));
+                .is(sid).and("lastdate").gte(Tools.dateToSec(mondayOfDate)).lt(Tools.dateToSec(sundayOfDate)+(24*3600)));
 
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
@@ -116,24 +120,21 @@ public class UseMyMongo {
     public boolean findMonInMongo(Player player) throws ParseException {
 
         String uid = player.getUid();
-        Date loginDate = Tools.secToDate(player.getLastdate());
+        Date loginDate = Tools.secToDateByFormat(player.getLastdate());
         String cid = player.getCid();
         String gid = player.getGid();
         String sid = player.getSid();
 
-
-        Calendar cRegister = Calendar.getInstance();
-        cRegister.setTime(loginDate);
-        cRegister.get(Calendar.WEEK_OF_YEAR);
-
-        Date firstMonthOfDate = Tools.getMondayOfDate(loginDate);
-        Date endMonthOfDate = Tools.getSundayOfDate(loginDate);
+        Date firstMonthOfDate = Tools.getFirstOfMonth(loginDate);
+        Date endMonthOfDate = Tools.getLastOfMonth(loginDate);
+        System.out.println("firtMonth........."+Tools.dateToSec(firstMonthOfDate));
+        System.out.println("endMonthOfDate........."+Tools.dateToSec(endMonthOfDate)+(24*3600));
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
         query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid")
-                .is(sid).and("lastdate").gte(Tools.dateToSec(firstMonthOfDate)).lte(Tools.dateToSec(endMonthOfDate)));
+                .is(sid).and("lastdate").gte(Tools.dateToSec(firstMonthOfDate)).lt(Tools.dateToSec(endMonthOfDate)+(24*3600)));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
             System.out.println("Player is not exist!!!");

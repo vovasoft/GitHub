@@ -26,79 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mysql-StayDay.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayDay.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="57" />
-              <folding>
-                <marker date="1514428017138" expanded="true" signature="474:583" ph="insert into StayDay... " />
-                <marker date="1514428017138" expanded="true" signature="661:767" ph="select * fro... StayDay" />
-                <marker date="1514428017138" expanded="true" signature="816:878" ph="update StayDay... " />
-                <marker date="1514428017138" expanded="true" signature="975:1061" ph="select COUNT... StayDay" />
-                <marker date="1514428017138" expanded="true" signature="1005:1061" ph="select COUNT... NewAddDay" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createTable" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/createTable">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="181" lean-forward="true" selection-start-line="2" selection-start-column="181" selection-end-line="2" selection-end-column="181" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql-StayWeek.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayWeek.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding>
-                <marker date="1514428055134" expanded="true" signature="295:307" ph="insert into NewAddDay... " />
-                <marker date="1514428055134" expanded="true" signature="295:405" ph="insert into StayWeek... " />
-                <marker date="1514428055134" expanded="true" signature="484:591" ph="select * fro... StayWeek" />
-                <marker date="1514428055134" expanded="true" signature="640:703" ph="update StayWeek... " />
-                <marker date="1514428055134" expanded="true" signature="800:887" ph="select COUNT... StayWeek" />
-                <marker date="1514428055134" expanded="true" signature="834:887" ph="select COUNT... NewAddDay" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="137" column="11" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="137" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAdd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+            <state relative-caret-position="504">
+              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#2113#2114#0" expanded="true" />
-                <element signature="e#2161#2162#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +41,55 @@
       <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <folding>
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="104" column="25" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+              <folding>
+                <element signature="e#4897#4972#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gson.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/com/google/gson/Gson.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="466" column="17" lean-forward="false" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleChannelInboundHandler.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +98,28 @@
       <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="51" />
+            <state relative-caret-position="-1085">
+              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlSession.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/EnumSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -127,25 +128,9 @@
       <file leaf-file-name="debugTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql-StayMon.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayMon.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding>
-                <marker date="1514428017173" expanded="true" signature="294:403" ph="insert into StayMon... " />
-                <marker date="1514428017173" expanded="true" signature="481:587" ph="select * fro... StayMon" />
-                <marker date="1514428017173" expanded="true" signature="636:698" ph="update StayMon... " />
-                <marker date="1514428017173" expanded="true" signature="795:881" ph="select COUNT... StayMon" />
-                <marker date="1514428017173" expanded="true" signature="828:881" ph="select COUNT... NewAddDay" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -164,10 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>query</find>
-      <find>,</find>
-      <find>+1</find>
-      <find>NewAddDWeek</find>
       <find>NewAddWeek</find>
       <find>mys</find>
       <find>where</find>
@@ -194,6 +175,10 @@
       <find>system.out</find>
       <find>System.out</find>
       <find>NewAddDay</find>
+      <find>Class</find>
+      <find>findPlayerCountInMongo</find>
+      <find>sec</find>
+      <find>firtMonth</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -208,9 +193,9 @@
       <replace />
       <replace>findByObject</replace>
       <replace>//System.out</replace>
-      <replace>StayWeek</replace>
       <replace>StayDay</replace>
       <replace>StayMon</replace>
+      <replace>StayWeek</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\GitHub\tessar-netty-server</dir>
@@ -254,12 +239,10 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/test/AA.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mongodb.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java" />
@@ -276,7 +259,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayMon.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayDay.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayWeek.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
       </list>
     </option>
@@ -323,10 +308,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="66" />
+    <option name="x" value="95" />
+    <option name="y" value="18" />
     <option name="width" value="1754" />
-    <option name="height" value="1006" />
+    <option name="height" value="978" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1143,7 +1128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.debugTest.funstrToNumArray">
+  <component name="RunManager" selected="Application.NettyServerTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1159,25 +1144,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="vova.nettydemo.NettyServerTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="tessar-netty-server" />
-      <envs />
-    </configuration>
-    <configuration name="Testtt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="vova.dao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="vova.dao.test.Testtt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1212,6 +1178,31 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="debugTest.findPlayerCountInMongo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.dao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tessar-netty-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="vova.dao.test" />
+      <option name="MAIN_CLASS_NAME" value="vova.dao.test.debugTest" />
+      <option name="METHOD_NAME" value="findPlayerCountInMongo" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -1339,19 +1330,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Testtt" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funFindSelect" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funnumArrayToStr" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.funstrToNumArray" />
+      <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funFindSelect" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.funnumArrayToStr" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funstrToNumArray" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.findPlayerCountInMongo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.debugTest.funstrToNumArray" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funnumArrayToStr" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funFindSelect" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Testtt" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funFindSelect" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.debugTest.findPlayerCountInMongo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.debugTest.funstrToNumArray" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.funnumArrayToStr" />
       </list>
     </recent_temporary>
   </component>
@@ -1380,31 +1371,31 @@
       <workItem from="1514109550628" duration="123000" />
       <workItem from="1514115629045" duration="1940000" />
       <workItem from="1514118250973" duration="487000" />
-      <workItem from="1514167721220" duration="99386000" />
+      <workItem from="1514167721220" duration="113872000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="debugTest_funnumArrayToStr - 2017.12.27 at 19h 40m 28s.xml">
-      <configuration name="debugTest.funnumArrayToStr" configurationId="JUnit" />
+    <history-entry file="debugTest_findPlayerCountInMongo - 2017.12.28 at 14h 37m 13s.xml">
+      <configuration name="debugTest.findPlayerCountInMongo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funnumArrayToStr - 2017.12.27 at 19h 40m 34s.xml">
-      <configuration name="debugTest.funnumArrayToStr" configurationId="JUnit" />
+    <history-entry file="debugTest_findPlayerCountInMongo - 2017.12.28 at 14h 42m 00s.xml">
+      <configuration name="debugTest.findPlayerCountInMongo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funnumArrayToStr - 2017.12.27 at 19h 41m 20s.xml">
-      <configuration name="debugTest.funnumArrayToStr" configurationId="JUnit" />
+    <history-entry file="debugTest_funFindSelect - 2017.12.28 at 14h 59m 44s.xml">
+      <configuration name="debugTest.funFindSelect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funnumArrayToStr - 2017.12.27 at 19h 42m 57s.xml">
-      <configuration name="debugTest.funnumArrayToStr" configurationId="JUnit" />
+    <history-entry file="debugTest_funFindSelect - 2017.12.28 at 15h 01m 05s.xml">
+      <configuration name="debugTest.funFindSelect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funnumArrayToStr - 2017.12.27 at 19h 45m 23s.xml">
-      <configuration name="debugTest.funnumArrayToStr" configurationId="JUnit" />
+    <history-entry file="debugTest_funFindSelect - 2017.12.28 at 15h 02m 19s.xml">
+      <configuration name="debugTest.funFindSelect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funstrToNumArray - 2017.12.27 at 19h 49m 15s.xml">
-      <configuration name="debugTest.funstrToNumArray" configurationId="JUnit" />
+    <history-entry file="debugTest_funFindSelect - 2017.12.28 at 15h 13m 29s.xml">
+      <configuration name="debugTest.funFindSelect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="debugTest_funstrToNumArray - 2017.12.27 at 19h 49m 34s.xml">
-      <configuration name="debugTest.funstrToNumArray" configurationId="JUnit" />
+    <history-entry file="debugTest_funFindSelect - 2017.12.28 at 15h 13m 58s.xml">
+      <configuration name="debugTest.funFindSelect" configurationId="JUnit" />
     </history-entry>
     <history-entry file="debugTest_funstrToNumArray - 2017.12.27 at 19h 50m 13s.xml">
       <configuration name="debugTest.funstrToNumArray" configurationId="JUnit" />
@@ -1417,15 +1408,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134518000" />
+    <option name="totallyTimeSpent" value="149004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="66" width="1754" height="1006" extended-state="0" />
+    <frame x="95" y="18" width="1754" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23167849" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22982885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1433,12 +1424,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.021841794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27068558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25768322" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24572127" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22255018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16706021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24822696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25161707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1446,7 +1437,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2245863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1462,21 +1453,9 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="94" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="(float) ((loginCount*1.0) / dayCount)" language="JAVA" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1503,30 +1482,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/Conffig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/AA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/Testtt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1654,22 +1609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="468" column="24" lean-forward="true" selection-start-line="468" selection-start-column="24" selection-end-line="468" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.7.RELEASE/spring-data-mongodb-1.10.7.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1737,16 +1676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="114" column="24" lean-forward="false" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
-          <folding>
-            <element signature="e#4897#4972#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1763,26 +1692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/MongoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/EnumSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1808,21 +1721,8 @@
         <state relative-caret-position="188">
           <caret line="2420" column="20" lean-forward="false" selection-start-line="2420" selection-start-column="20" selection-end-line="2420" selection-end-column="20" />
           <folding>
-            <element signature="e#94598#94599#0" expanded="true" />
-            <element signature="e#94636#94637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="105" column="9" lean-forward="false" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
-          <folding>
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#94598#94599#0" expanded="false" />
+            <element signature="e#94636#94637#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1964,35 +1864,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/io/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="148">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="3399" column="34" lean-forward="false" selection-start-line="3399" selection-start-column="34" selection-end-line="3399" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/EnumSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="51" />
+        <state relative-caret-position="-1085">
+          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/test/debugTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="137" column="11" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="137" selection-end-column="11" />
+        <state relative-caret-position="504">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="466" column="17" lean-forward="false" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="104" column="25" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+          <folding>
+            <element signature="e#4897#4972#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

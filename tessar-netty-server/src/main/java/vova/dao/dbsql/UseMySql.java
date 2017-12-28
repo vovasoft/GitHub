@@ -26,19 +26,17 @@ public class UseMySql {
     static String resoure = "batis-conf.xml";
 
     //   public  void insert() throws IOException {
-    public void utilSQL(Object object, EnumSQL operate) throws IOException {
+    public void utilSQL(Class clazz,Object object, EnumSQL operate) throws IOException {
      //   String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-        String className = object.getClass().getSimpleName();
-        System.out.println(className);
         switch (operate) {
             case INSERT:
-                ss.insert(className + ".insert", object);
+                ss.insert(clazz.getSimpleName() + ".insert", object);
                 break;
             case UPDATE:
-                ss.insert(className + ".update", object);
+                ss.insert(clazz.getSimpleName()  + ".update", object);
                 break;
         }
         ss.commit();

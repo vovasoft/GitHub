@@ -34,6 +34,7 @@ import vova.util.Tools;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.channels.ServerSocketChannel;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -85,7 +86,7 @@ public class debugTest {
 
         user.setAge(user.getAge()+1);
         try {
-            useMySql.utilSQL(user, EnumSQL.UPDATE);
+            useMySql.utilSQL(User.class,user, EnumSQL.UPDATE);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -98,16 +99,18 @@ public class debugTest {
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
 
         SimpleDateFormat sdt = new SimpleDateFormat("yyyy-MM-dd");
+        Date dd = sdt.parse("2017-12-28");
+        System.out.println(dd.getTime());
+        System.out.println(Tools.dateToSec(dd));
         Date thisday = new Date();
         Date uLoginDate = Tools.secToDate(1514184954);
-        NewAddDay findSeedDay = new NewAddDay();
-        findSeedDay.setcID("ngBrazil");
-        findSeedDay.setgID("bloodstrke");
-        findSeedDay.setsID("0");
-        findSeedDay.setDateID( uLoginDate);
+        System.out.println("----------------------------");
+        System.out.println(Tools.getFirstOfMonth(new Date(System.currentTimeMillis())));
+        System.out.println(Tools.getFirstOfMonth(dd));
 
-        NewAddDay tmp1 = (NewAddDay) mys.utilSQL(NewAddDay.class, EnumSQL.SELECT, findSeedDay);
-        System.out.println(tmp1);
+        System.out.println(Tools.getSundayOfDate(dd));
+
+
     }
 
     @Test

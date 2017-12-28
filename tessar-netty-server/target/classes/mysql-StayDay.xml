@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="StayDay">
+    <!-- 定义insert语句 -->
+
+    <!--private int id;-->
+    <!--private Date dateID;-->
+    <!--private String cID;-->
+    <!--private String gID;-->
+    <!--private String sID;-->
+    <!--String stayList;-->
+
+    <insert id="insert" useGeneratedKeys="false" keyProperty="id">
+        insert into StayDay (dateID,cID,gID,sID,stayList)
+        values (#{dateID},#{cID},#{gID},#{sID},#{stayList})
+    </insert>
+
+
+    <select id="findByObject" resultType="_StayDay">
+        select * from StayDay where dateID = #{dateID} AND cID = #{cID} AND gID = #{gID} AND sID = #{sID}  limit 1
+    </select>
+
+    <update id="update">
+        update StayDay set stayList=#{stayList}
+        where id=#{id}
+    </update>
+
+    <!--<select id="findDayCount" resultType="java.lang.Integer">-->
+        <!--select COUNT(dateID) from StayDay where cID = #{cID} AND gID = #{gID} AND sID = #{sID}-->
+    <!--</select>-->
+
+
+</mapper>
