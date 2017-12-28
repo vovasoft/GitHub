@@ -1,5 +1,8 @@
 package vova.domain.stayman;
 
+import org.springframework.context.annotation.Primary;
+
+import java.security.PrivateKey;
 import java.util.Date;
 
 /**
@@ -12,7 +15,8 @@ public class StayParent {
     private String cID;
     private String gID;
     private String sID;
-    String stayList;
+    private long newAddNum;
+    private String stayList;
 
     public int getId() {
         return id;
@@ -66,13 +70,22 @@ public class StayParent {
 
     }
 
-    public StayParent(int id, Date dateID, String cID, String gID, String sID, String stayList) {
+    public long getNewAddNum() {
+        return newAddNum;
+    }
+
+    public void setNewAddNum(long newAddNum) {
+        this.newAddNum = newAddNum;
+    }
+
+    public StayParent(int id, Date dateID, String cID, String gID, String sID, long newAddNum, String stayList) {
 
         this.id = id;
         this.dateID = dateID;
         this.cID = cID;
         this.gID = gID;
         this.sID = sID;
+        this.newAddNum = newAddNum;
         this.stayList = stayList;
     }
 }

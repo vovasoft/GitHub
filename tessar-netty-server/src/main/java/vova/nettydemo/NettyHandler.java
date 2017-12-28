@@ -99,7 +99,6 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         ByteBuf bb = null;//Unpooled.copiedBuffer("OK".getBytes());
 
         if (flag==null){
-            //System.out.println("error flag==null");
             bb=Unpooled.copiedBuffer("error flag==null".getBytes());
             response.content().writeBytes(bb);
             bb.release();

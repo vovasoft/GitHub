@@ -10,8 +10,8 @@ public class StayMon extends StayParent {
     public StayMon() {
     }
 
-    public StayMon(int id, Date dateID, String cID, String gID, String sID, String stayList) {
-        super(id, dateID, cID, gID, sID, stayList);
+    public StayMon(int id, Date dateID, String cID, String gID, String sID, long newAddNum, String stayList) {
+        super(id, dateID, cID, gID, sID, newAddNum, stayList);
     }
 
 }

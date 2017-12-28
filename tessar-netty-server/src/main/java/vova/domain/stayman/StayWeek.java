@@ -10,8 +10,8 @@ public class StayWeek extends StayParent {
     public StayWeek() {
     }
 
-    public StayWeek(int id, Date dateID, String cID, String gID, String sID, String stayList) {
-        super(id, dateID, cID, gID, sID, stayList);
+    public StayWeek(int id, Date dateID, String cID, String gID, String sID, long newAddNum, String stayList) {
+        super(id, dateID, cID, gID, sID, newAddNum, stayList);
     }
 
 }

@@ -2,6 +2,7 @@ package vova.dao.test;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
+import io.netty.handler.codec.TooLongFrameException;
 import org.springframework.beans.factory.annotation.Autowired;
 import vova.SpringConfig;
 import vova.dao.ManageGameInput;
@@ -14,6 +15,9 @@ import vova.dao.dbsql.UseMySql;
 import vova.domain.*;
 
 import vova.domain.newadd.NewAddDay;
+import vova.domain.stayman.StayDay;
+import vova.domain.stayman.StayMon;
+import vova.domain.stayman.StayWeek;
 import vova.domain.test.User;
 import vova.domain.test.User2;
 import org.apache.ibatis.io.Resources;
@@ -44,7 +48,7 @@ import java.util.TimeZone;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes= SpringConfig.class)
+@ContextConfiguration(classes = SpringConfig.class)
 public class debugTest {
 
 
@@ -66,12 +70,10 @@ public class debugTest {
 //
 //        useMySql.insert(pet);
 
-        User user = new User(1,"vova",123);
+        User user = new User(1, "vova", 123);
         vova.dao.dbsql.UseMySql useMySql = new vova.dao.dbsql.UseMySql();
         useMySql.insert(user);
     }
-
-
 
 
     @Test
@@ -80,13 +82,13 @@ public class debugTest {
 
 
         vova.dao.dbsql.UseMySql useMySql = new vova.dao.dbsql.UseMySql();
-        user = (User) useMySql.utilSQL(User.class, EnumSQL.SELECT,1);
+        user = (User) useMySql.utilSQL(User.class, EnumSQL.SELECT, 1);
 
-        System.out.println(user.getId()+",,,,,,,"+user.getName()+user.getAge());
+        System.out.println(user.getId() + ",,,,,,," + user.getName() + user.getAge());
 
-        user.setAge(user.getAge()+1);
+        user.setAge(user.getAge() + 1);
         try {
-            useMySql.utilSQL(User.class,user, EnumSQL.UPDATE);
+            useMySql.utilSQL(User.class, EnumSQL.UPDATE,user);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -114,21 +116,30 @@ public class debugTest {
     }
 
     @Test
-    public void funnumArrayToStr(){
-        int[] buf= new int[30];
-        String res=Tools.numArrayToStr(buf);
+    public void funnumArrayToStr() {
+        int[] buf = new int[30];
+        String res = Tools.numArrayToStr(buf);
         System.out.println(res);
     }
 
     @Test
-    public void funstrToNumArray(){
-        String str="1,3,5,67,2,1,2,4,6,7,12,4,1";
-        int [] res = Tools.strToNumArray(str,",");
+    public void funstrToNumArray() {
+        String str = "1,3,5,67,2,1,2,4,6,7,12,4,1";
+        int[] res = Tools.strToNumArray(str, ",");
         for (int re : res) {
-            System.out.print(re+",");
+            System.out.print(re + ",");
         }
     }
 
+    @Test
+    public void funcountTwoDateSpace() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date t1 = sdf.parse("2017-12-20");
+        Date t2 = sdf.parse("2019-1-1");
+
+        System.out.println(Tools.countTwoDateSpace(t1,t2,StayMon.class));
+
+    }
 
     @Test
     public void fun2() throws IOException, ParseException {
@@ -138,19 +149,20 @@ public class debugTest {
 //        String dstr="2017-11-25";
 
         Date date = new Date(System.currentTimeMillis());
-        User2 user2 = new User2(date,1,"name",11);
+        User2 user2 = new User2(date, 1, "name", 11);
         vova.dao.dbsql.UseMySql useMySql = new vova.dao.dbsql.UseMySql();
         useMySql.insert(user2);
     }
+
     @Test
     public void fun3() throws ParseException, IOException {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+8"));
 
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
-        String dstr="2017-11-25";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        String dstr = "2017-11-25";
 
         Date date2 = sdf.parse(dstr);
-        User2 user2 = new User2(date2,1,"name",11);
+        User2 user2 = new User2(date2, 1, "name", 11);
         vova.dao.dbsql.UseMySql useMySql = new vova.dao.dbsql.UseMySql();
         useMySql.insert(user2);
     }
@@ -159,7 +171,7 @@ public class debugTest {
     public void fun4() throws IOException, ClassNotFoundException {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+8"));
 
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
         vova.dao.dbsql.UseMySql useMySql = new vova.dao.dbsql.UseMySql();
         User2 user2 = (User2) useMySql.utilSQL(User2.class, EnumSQL.SELECT, "2017-11-25");
 
@@ -168,15 +180,16 @@ public class debugTest {
 
     @Test   //find List
     public void fun5() throws IOException, ClassNotFoundException {
-        QueryDate queryDate = new QueryDate("2017-5-12","2017-12-26");
+        QueryDate queryDate = new QueryDate("2017-5-12", "2017-12-26");
 
         vova.dao.dbsql.UseMySql useMySql = new UseMySql();
 
-        List<User2> ulist =useMySql.utilSQL(User2.class,EnumSQL.SELECTLIST,queryDate);
+        List<User2> ulist = useMySql.utilSQL(User2.class, EnumSQL.SELECTLIST, queryDate);
         for (User2 user2 : ulist) {
             System.out.println(user2.getDate());
         }
     }
+
     @Test   //find List
     public void funExtend() throws IOException, ClassNotFoundException, ParseException {
         String resoure = "batis-conf.xml";
@@ -184,11 +197,12 @@ public class debugTest {
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
-        NewAddDay nn = new NewAddDay(0,sdf.parse("2017-11-02"),"cid2","gid1","sid1",123,2,1,3,2);
-        ss.insert("StayDay.insert",nn);
+        NewAddDay nn = new NewAddDay(0, sdf.parse("2017-11-02"), "cid2", "gid1", "sid1", 123, 2, 1, 3, 2);
+        ss.insert("StayDay.insert", nn);
         ss.commit();
         ss.close();
     }
+
     //findByKey
     @Test   //find List
     public void findByKey() throws IOException, ClassNotFoundException, ParseException {
@@ -199,12 +213,12 @@ public class debugTest {
         NewAddDay nn = new NewAddDay();
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-      //  nn.setId(0);
+        //  nn.setId(0);
         nn.setcID("cid2");
         nn.setgID("gid1");
         nn.setsID("sid1");
         nn.setDateID(sdf.parse("2017-11-2"));
-        NewAddDay res = ss.selectOne("StayDay.findByObject",nn);
+        NewAddDay res = ss.selectOne("StayDay.findByObject", nn);
         ss.commit();
         ss.close();
 
@@ -229,32 +243,34 @@ public class debugTest {
         nn.setAllPlayerNum(1);
         nn.setNewAddNum(1);
 
-        NewAddDay res = ss.selectOne("StayDay.findByObject",nn);
+        NewAddDay res = ss.selectOne("StayDay.findByObject", nn);
         nn.setId(res.getId());
-        System.out.println("id:"+res.getId());
-        int ress =ss.update("StayDay.update",nn);
+        System.out.println("id:" + res.getId());
+        int ress = ss.update("StayDay.update", nn);
         ss.commit();
         ss.close();
 
-        System.out.println("getcID::::"+ress);
+        System.out.println("getcID::::" + ress);
     }
+
     @Test
-    public void findPlayerCountInMongo(){
-        long res=0;
+    public void findPlayerCountInMongo() {
+        long res = 0;
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         DBObject query = new BasicDBObject();
-        int count=mongoTemplate.getCollection("player").distinct("uid", query).size();
+        int count = mongoTemplate.getCollection("player").distinct("uid", query).size();
 
         System.out.println(count);
 
     }
+
     @Test
     public void insertMongo() throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
-        MongoTest customer1 = new MongoTest("vov1a","wang",sdf.parse("2018-05-17"));
-        MongoTest customer2 = new MongoTest("vov2a","wang",sdf.parse("2018-05-18"));
-        MongoTest customer3 = new MongoTest("vov3a","wang",sdf.parse("2018-05-21"));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        MongoTest customer1 = new MongoTest("vov1a", "wang", sdf.parse("2018-05-17"));
+        MongoTest customer2 = new MongoTest("vov2a", "wang", sdf.parse("2018-05-18"));
+        MongoTest customer3 = new MongoTest("vov3a", "wang", sdf.parse("2018-05-21"));
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
@@ -265,17 +281,17 @@ public class debugTest {
 
     @Test
     public void findMongo() throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
         query.addCriteria(Criteria.where("date").gt(sdf.parse("2018-05-13")).lt(sdf.parse("2018-05-17")));
         MongoTest mt = mongoTemplate.findOne(query, MongoTest.class);
         List<MongoTest> mtList = mongoTemplate.find(query, MongoTest.class);
-        System.out.println("date::::"+sdf.format(mt.date));
+        System.out.println("date::::" + sdf.format(mt.date));
 
         for (MongoTest test : mtList) {
-            System.out.println("for::::"+sdf.format(test.date));
+            System.out.println("for::::" + sdf.format(test.date));
         }
 
     }
@@ -322,7 +338,7 @@ public class debugTest {
 //    }
 
     @Test
-    public void weekDate(){
+    public void weekDate() {
         Date date = new Date(System.currentTimeMillis());
 
         System.out.println(Tools.getSundayOfDate(date));

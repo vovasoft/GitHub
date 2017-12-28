@@ -5,16 +5,10 @@
 <mapper namespace="StayDay">
     <!-- 定义insert语句 -->
 
-    <!--private int id;-->
-    <!--private Date dateID;-->
-    <!--private String cID;-->
-    <!--private String gID;-->
-    <!--private String sID;-->
-    <!--String stayList;-->
 
     <insert id="insert" useGeneratedKeys="false" keyProperty="id">
-        insert into StayDay (dateID,cID,gID,sID,stayList)
-        values (#{dateID},#{cID},#{gID},#{sID},#{stayList})
+        insert into StayDay (dateID,cID,gID,sID,newAddNum,stayList)
+        values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{stayList})
     </insert>
 
 

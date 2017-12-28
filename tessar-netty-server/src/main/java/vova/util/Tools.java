@@ -11,9 +11,10 @@ import java.util.Date;
  */
 public class Tools {
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    public static long dateToSecByFormat(Date date){
-        if (date!=null){
-            return date.getTime()/1000;
+
+    public static long dateToSecByFormat(Date date) {
+        if (date != null) {
+            return date.getTime() / 1000;
         }
         return -1;
     }
@@ -24,12 +25,12 @@ public class Tools {
         return sdf.parse(date);
     }
 
-    public static long dateToSec(Date date){
-        return date.getTime()/1000;
+    public static long dateToSec(Date date) {
+        return date.getTime() / 1000;
     }
 
-    public static Date secToDate(long sec){
-        return new Date(sec*1000);
+    public static Date secToDate(long sec) {
+        return new Date(sec * 1000);
     }
 
     /**
@@ -68,18 +69,18 @@ public class Tools {
     /**
      * 得到本月第一天
      */
-    public static Date getFirstOfMonth(Date date){
+    public static Date getFirstOfMonth(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.add(Calendar.MONTH, 0);
-        c.set(Calendar.DAY_OF_MONTH,1);//设置为1号,当前日期既为本月第一天
+        c.set(Calendar.DAY_OF_MONTH, 1);//设置为1号,当前日期既为本月第一天
         return c.getTime();
     }
 
     /**
      * 得到本月最后一天
      */
-    public static Date getLastOfMonth(Date date){
+    public static Date getLastOfMonth(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.set(Calendar.DAY_OF_MONTH, c.getActualMaximum(Calendar.DAY_OF_MONTH));
@@ -87,24 +88,67 @@ public class Tools {
     }
 
     //数字数组转字符串
-    public static String numArrayToStr(int[] intarr){
+    public static String numArrayToStr(int[] intarr) {
         String res = "";
         for (Object i : intarr) {
-            res=res+i+",";
+            res = res + i + ",";
         }
-        return res.substring(0,res.length()-1);
+        return res.substring(0, res.length() - 1);
     }
 
 
     //字符转转数字数组
-    public static int[] strToNumArray(String str,String split){
+    public static int[] strToNumArray(String str, String split) {
         String[] subStrs = str.split(split);
-        int length =subStrs.length;
+        int length = subStrs.length;
         int[] res = new int[length];
-        for (int i=0;i<length;i++) {
-            res[i]= new Integer(subStrs[i]);
+        for (int i = 0; i < length; i++) {
+            res[i] = new Integer(subStrs[i]);
         }
-        return  res;
+        return res;
+    }
+
+    /**
+     * 计算两个日期之间的间隔，单位是日，周，月
+     */
+
+    public static int countTwoDateSpace(Date dStart, Date dEnd, Class clazz) {
+        String clazzName = clazz.getSimpleName();
+        int res = 0;
+        Calendar cRegister = Calendar.getInstance();
+        Calendar cLogin = Calendar.getInstance();
+        if (clazzName.equals("StayDay")) {
+
+            cRegister.setTime(dStart);
+            cLogin.setTime(dEnd);
+
+            while (cRegister.before(cLogin)) {
+                res++;
+                cRegister.add(Calendar.DAY_OF_YEAR, 1);
+            }
+        } else if (clazzName.equals("StayWeek")) {
+            cRegister = Calendar.getInstance();
+            cRegister.setTime(dStart);
+
+            cLogin = Calendar.getInstance();
+            cLogin.setTime(dEnd);
+
+            while (cRegister.before(cLogin)) {
+                res++;
+                cRegister.add(Calendar.WEEK_OF_YEAR, 1);
+            }
+        } else if (clazzName.equals("StayMon")) {
+            cRegister = Calendar.getInstance();
+            cRegister.setTime(dStart);
+            cLogin = Calendar.getInstance();
+            cLogin.setTime(dEnd);
+
+            while (cRegister.before(cLogin)) {
+                res++;
+                cRegister.add(Calendar.MONTH, 1);
+            }
+        }
+        return res;
     }
 
 }

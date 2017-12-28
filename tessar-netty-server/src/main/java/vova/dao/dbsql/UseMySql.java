@@ -26,38 +26,38 @@ public class UseMySql {
     static String resoure = "batis-conf.xml";
 
     //   public  void insert() throws IOException {
-    public void utilSQL(Class clazz,Object object, EnumSQL operate) throws IOException {
-     //   String resoure = "batis-conf.xml";
+//    public void utilSQL(Class clazz,Object object, EnumSQL operate) throws IOException {
+//     //   String resoure = "batis-conf.xml";
+//        InputStream inputStream = Resources.getResourceAsStream(resoure);
+//        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
+//        SqlSession ss = sf.openSession();
+//        switch (operate) {
+//
+//        }
+//        ss.commit();
+//        ss.close();
+//    }
+
+    public  Object utilSQL(Class clazz, EnumSQL operate, Object object )throws IOException{
+    //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
+        Object res = null;
+        System.out.println(clazz.getSimpleName());
+
         switch (operate) {
+            case SELECT:
+                res = ss.selectOne(clazz.getSimpleName() + ".findByObject", object);
+                break;
+            case GETCOUNT:
+                res = ss.selectOne(object.getClass().getSimpleName() + ".findDayCount", object);
+                break;
             case INSERT:
                 ss.insert(clazz.getSimpleName() + ".insert", object);
                 break;
             case UPDATE:
                 ss.insert(clazz.getSimpleName()  + ".update", object);
-                break;
-        }
-        ss.commit();
-        ss.close();
-    }
-
-    public <T> Object utilSQL(Class<T> entityClass, EnumSQL operate, Object object )throws IOException{
-    //    String resoure = "batis-conf.xml";
-        InputStream inputStream = Resources.getResourceAsStream(resoure);
-        SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession ss = sf.openSession();
-        T res = null;
-        System.out.println(entityClass.getSimpleName());
-        List<T> resList =null;
-
-        switch (operate) {
-            case SELECT:
-                res = ss.selectOne(entityClass.getSimpleName() + ".findByObject", object);
-                break;
-            case GETCOUNT:
-                res = ss.selectOne(object.getClass().getSimpleName() + ".findDayCount", object);
                 break;
         }
         ss.commit();
