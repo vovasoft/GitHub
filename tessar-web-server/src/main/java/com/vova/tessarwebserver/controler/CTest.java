@@ -1,20 +1,15 @@
 package com.vova.tessarwebserver.controler;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.vova.tessarwebserver.dbmapper.NewAddDayMapper;
+import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
 import com.vova.tessarwebserver.domain.Player;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
-import org.hibernate.boot.jaxb.SourceType;
-import org.springframework.boot.SpringApplication;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author: Vova
@@ -26,7 +21,8 @@ import java.util.Map;
 @SpringBootApplication
 public class CTest {
 
-    private NewAddDayMapper newAddDayMapper;
+    @Autowired
+    private AllInOneMapper allInOneMapper;
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     @RequestMapping("/")
@@ -38,13 +34,19 @@ public class CTest {
     @ResponseBody Object fun(@RequestParam String app,@RequestParam String cid,@RequestParam String gid,
                @RequestParam String sid,@RequestParam String sDate,@RequestParam String eDate) throws ParseException {
 
-
-        List<NewAddDay> nadList= newAddDayMapper.findByState(cid,gid,sid,sdf.parse(sDate),sdf.parse(eDate));
+        List<NewAddDay> nadList= allInOneMapper.findCGSListByTimes(app,cid,gid,sid,sdf.parse(sDate),sdf.parse(eDate));
         for (NewAddDay newAddDay : nadList) {
             System.out.println(newAddDay.getDateID());
         }
 
-        return "lalalala";
+        return nadList;
+    }
+
+    @GetMapping("/getall")
+    @ResponseBody Object fun(@RequestParam String app,@RequestParam String sDate,@RequestParam String eDate) throws ParseException {
+
+        List<NewAddDay> nadList= allInOneMapper.findAllListByTimes(app,sdf.parse(sDate),sdf.parse(eDate));
+        return nadList;
     }
 
     @GetMapping("/test")
