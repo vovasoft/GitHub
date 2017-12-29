@@ -1,4 +1,4 @@
-package com.vova.webserver;
+package com.vova.tessarwebserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class WebserverApplicationTests {
+public class TessarWebServerApplicationTests {
 
 	@Test
 	public void contextLoads() {
