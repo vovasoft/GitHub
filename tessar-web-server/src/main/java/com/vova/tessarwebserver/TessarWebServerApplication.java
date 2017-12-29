@@ -1,6 +1,6 @@
 package com.vova.tessarwebserver;
 
-import com.vova.tessarwebserver.domain.CityMapper;
+import com.vova.tessarwebserver.dbmapper.CityMapper;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
