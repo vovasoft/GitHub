@@ -6,8 +6,8 @@ package com.vova.tessarwebserver.controler;
  */
 
 import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
-import com.vova.tessarwebserver.domain.Player;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
+import com.vova.tessarwebserver.domain.newadd.NewJson;
 import com.vova.tessarwebserver.domain.stayman.StayJson;
 import com.vova.tessarwebserver.domain.stayman.StayParent;
 import com.vova.tessarwebserver.util.Tools;
@@ -46,8 +46,12 @@ public class ControlerGame {
                @RequestParam String sid, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
         List<NewAddDay> nadList = null;
         nadList = allInOneMapper.findCGSNewAddListByTimes(app, cid, gid, sid, sdf.parse(sDate), sdf.parse(eDate));
-
-        return nadList;
+        ArrayList<NewJson> nj = new ArrayList<>();
+        for (int i=0;i<nadList.size();i++) {
+            NewAddDay nad = nadList.get(i);
+            nj.add(new NewJson(sdf.format(nad.getDateID()),nad.getNewAddNum(),nad.getActiveNum(),nad.getLoginCount(),nad.getAverageLogin(),nad.getAllPlayerNum()));
+        }
+        return nj;
     }
 
     @GetMapping("/getGameAll")
@@ -65,7 +69,8 @@ public class ControlerGame {
         List<StayParent> spList =  allInOneMapper.findCGSStayListByTimes(app, cid, gid, sid, sdf.parse(sDate), sdf.parse(eDate));
         ArrayList<StayJson> sj = new ArrayList<>();
         for (int i=0;i<spList.size();i++) {
-            sj.add(new StayJson(sdf.format(spList.get(i).getDateID()),spList.get(i).getNewAddNum(),Tools.strToNumArray(spList.get(i).getStayList(),",")));
+            StayParent sp = spList.get(i);
+            sj.add(new StayJson(sdf.format(sp.getDateID()),sp.getNewAddNum(),Tools.strToNumArray(sp.getStayList(),",")));
         }
 
         return sj;
