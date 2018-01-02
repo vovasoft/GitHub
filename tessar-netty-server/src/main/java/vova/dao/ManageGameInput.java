@@ -151,8 +151,8 @@ public class ManageGameInput {
     private int manageStayData(Date reginDate, Date lastDate,String cid, String gid, String sid, int newAddDayNum, int newAddWeekNum, int newAddMonNum , boolean dayExist, boolean weekExist, boolean MonExist,
                                          UseMySql mys, Class clazz) throws IOException {
         if (reginDate.equals(lastDate)) {
-            System.out.println("注册当天不需要处理留存");
-            return -1;
+            System.out.println("注册当天不需要处理留存,但需要新增");
+//            return -1;
         }
 
         //查找留存表是否有行，如果没有插入新行。
@@ -202,7 +202,7 @@ public class ManageGameInput {
         } else if (flag == 3) {
             tmp.setNewAddNum(tmp.getNewAddNum()+newAddMonNum);
         }
-
+        mys.utilSQL(clazz,EnumSQL.UPDATE,tmp);
         //得到tmp再对表进行更新
         String updateStr = tmp.getStayList();
         int [] updateInt = Tools.strToNumArray(updateStr,",");

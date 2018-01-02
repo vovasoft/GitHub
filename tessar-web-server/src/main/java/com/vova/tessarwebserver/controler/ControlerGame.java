@@ -1,5 +1,10 @@
 package com.vova.tessarwebserver.controler;
 
+/**
+ * @author: Vova
+ * @create: date 9:44 2018/1/2
+ */
+
 import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
 import com.vova.tessarwebserver.domain.Player;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
@@ -19,7 +24,8 @@ import java.util.List;
 
 @RestController
 @SpringBootApplication
-public class CTest {
+@RequestMapping("/app")
+public class ControlerGame {
 
     @Autowired
     private AllInOneMapper allInOneMapper;
@@ -30,27 +36,27 @@ public class CTest {
         return "Hello World!";
     }
 
-    @GetMapping("/get")
-    @ResponseBody Object fun(@RequestParam String app,@RequestParam String cid,@RequestParam String gid,
-               @RequestParam String sid,@RequestParam String sDate,@RequestParam String eDate) throws ParseException {
-
-        List<NewAddDay> nadList= allInOneMapper.findCGSListByTimes(app,cid,gid,sid,sdf.parse(sDate),sdf.parse(eDate));
-        for (NewAddDay newAddDay : nadList) {
-            System.out.println(newAddDay.getDateID());
-        }
+    @GetMapping("/getGameT")
+    @ResponseBody
+    Object fun(@RequestParam String app, @RequestParam String cid, @RequestParam String gid,
+               @RequestParam String sid, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
+        List<NewAddDay> nadList = null;
+        nadList = allInOneMapper.findCGSListByTimes(app, cid, gid, sid, sdf.parse(sDate), sdf.parse(eDate));
 
         return nadList;
     }
 
-    @GetMapping("/getall")
-    @ResponseBody Object fun(@RequestParam String app,@RequestParam String sDate,@RequestParam String eDate) throws ParseException {
+    @GetMapping("/getGameAll")
+    @ResponseBody
+    Object fun(@RequestParam String app, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
 
-        List<NewAddDay> nadList= allInOneMapper.findAllListByTimes(app,sdf.parse(sDate),sdf.parse(eDate));
+        List<NewAddDay> nadList = allInOneMapper.findAllListByTimes(app, sdf.parse(sDate), sdf.parse(eDate));
         return nadList;
     }
 
     @GetMapping("/test")
-    @ResponseBody Object fun2(){
+    @ResponseBody
+    Object fun2() {
         Player p = new Player();
 
         return p;

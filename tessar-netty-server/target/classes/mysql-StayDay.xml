@@ -17,7 +17,7 @@
     </select>
 
     <update id="update">
-        update StayDay set stayList=#{stayList}
+        update StayDay set stayList=#{stayList}, newAddNum=#{newAddNum}
         where id=#{id}
     </update>
 

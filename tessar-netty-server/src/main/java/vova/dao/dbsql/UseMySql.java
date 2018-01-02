@@ -57,7 +57,7 @@ public class UseMySql {
                 ss.insert(clazz.getSimpleName() + ".insert", object);
                 break;
             case UPDATE:
-                ss.insert(clazz.getSimpleName()  + ".update", object);
+                ss.update(clazz.getSimpleName()  + ".update", object);
                 break;
         }
         ss.commit();
