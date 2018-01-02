@@ -1,6 +1,7 @@
 package com.vova.tessarwebserver.dbmapper;
 
 
+import com.vova.tessarwebserver.domain.initdata.ChannelList;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
 import com.vova.tessarwebserver.domain.stayman.StayParent;
 import org.apache.ibatis.annotations.*;
@@ -39,6 +40,10 @@ public interface AllInOneMapper {
     @Select("select * from ${tableName} where cID = #{cid} AND gID = #{gid} AND sID = #{sid} AND dateID >= #{sDate} AND dateID <= #{eDate} ")
     List<StayParent> findCGSStayListByTimes(@Param("tableName") String tableName, @Param("cid") String cid, @Param("gid") String gid,
                                             @Param("sid") String sid, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+
+    //由于数据库中的接口一样，所以这里channellist代替其他两个表的表名
+    @Select("select * from ${tableName}")
+    List<ChannelList> findCGS(@Param("tableName") String tableName);
 
 }
 

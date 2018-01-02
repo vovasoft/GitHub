@@ -73,3 +73,19 @@ create table StayMon
 ,newAddNum INT
 ,stayList VARCHAR (64)
 );
+
+-- channel gameid serverid 列表
+create table channellist
+(id int PRIMARY KEY auto_increment
+,name VARCHAR (64)
+);
+
+create table gamelist
+(id int PRIMARY KEY auto_increment
+,name VARCHAR (64)
+);
+
+create table serverlist
+(id int PRIMARY KEY auto_increment
+,name VARCHAR (64)
+);

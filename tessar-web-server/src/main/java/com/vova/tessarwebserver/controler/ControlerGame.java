@@ -5,7 +5,12 @@ package com.vova.tessarwebserver.controler;
  * @create: date 9:44 2018/1/2
  */
 
+
 import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
+import com.vova.tessarwebserver.domain.initdata.ChannelList;
+import com.vova.tessarwebserver.domain.initdata.GameList;
+import com.vova.tessarwebserver.domain.initdata.InitJson;
+import com.vova.tessarwebserver.domain.initdata.ServerList;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
 import com.vova.tessarwebserver.domain.newadd.NewJson;
 import com.vova.tessarwebserver.domain.stayman.StayJson;
@@ -74,6 +79,35 @@ public class ControlerGame {
         }
 
         return sj;
+    }
+
+    @GetMapping("/getcms")//留存表的一些处理，其中需要返回json的时候，最好将留存字段改写成数组的形式，如下所示，最长的那行代码。
+    @ResponseBody
+    Object fun4() throws ParseException {
+        InitJson ij = new InitJson();
+        List<ChannelList> cl = allInOneMapper.findCGS("channellist");
+        ArrayList<String> str = new ArrayList<>();
+        for (ChannelList channelList : cl) {
+            str.add(channelList.getName());
+        }
+        ij.setcNames(str);
+
+        str = new ArrayList<>();
+        List<ChannelList> gl = allInOneMapper.findCGS("gamelist");
+        for (ChannelList channelList : gl) {
+            str.add(channelList.getName());
+        }
+        ij.setgNames(str);
+
+        List<ChannelList> sl = allInOneMapper.findCGS("serverlist");
+        str = new ArrayList<>();
+        for (ChannelList channelList : sl) {
+            str.add(channelList.getName());
+        }
+        ij.setsNames(str);
+
+        return  ij;
+
     }
 
 }
