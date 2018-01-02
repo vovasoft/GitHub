@@ -2,6 +2,7 @@ package com.vova.tessarwebserver.dbmapper;
 
 
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
+import com.vova.tessarwebserver.domain.stayman.StayParent;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.StatementType;
 
@@ -12,13 +13,6 @@ import java.util.List;
  * @author: Vova
  * @create: date 15:40 2017/12/29
  */
-
-@Mapper
-public interface AllInOneMapper {
-       @Select("select * from ${tableName} where cID = #{cid} AND gID = #{gid} AND sID = #{sid} AND dateID >= #{sDate} AND dateID <= #{eDate} ")
-
-
-//    //
 //    @Select("<script> " +
 //            "SELECT * " +
 //            "from ${tableName} " + "<where>" +
@@ -33,11 +27,19 @@ public interface AllInOneMapper {
 //            "</if> " +
 //            " </where> " +
 //            " </script> ")
-    List<NewAddDay> findCGSListByTimes(@Param("tableName") String tableName, @Param("cid") String cid, @Param("gid") String gid,
-                                       @Param("sid") String sid, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+@Mapper
+public interface AllInOneMapper {
+    @Select("select * from ${tableName} where cID = #{cid} AND gID = #{gid} AND sID = #{sid} AND dateID >= #{sDate} AND dateID <= #{eDate} ")
+    List<NewAddDay> findCGSNewAddListByTimes(@Param("tableName") String tableName, @Param("cid") String cid, @Param("gid") String gid,
+                                             @Param("sid") String sid, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
 
     @Select("select * from ${tableName} where dateID >= #{sDate} AND dateID <= #{eDate} ")
-    List<NewAddDay> findAllListByTimes(@Param("tableName") String tableName, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+    List<NewAddDay> findAllNewAddListByTimes(@Param("tableName") String tableName, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+
+    @Select("select * from ${tableName} where cID = #{cid} AND gID = #{gid} AND sID = #{sid} AND dateID >= #{sDate} AND dateID <= #{eDate} ")
+    List<StayParent> findCGSStayListByTimes(@Param("tableName") String tableName, @Param("cid") String cid, @Param("gid") String gid,
+                                            @Param("sid") String sid, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+
 }
 
 

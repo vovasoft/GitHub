@@ -32,7 +32,7 @@ public class TessarWebServerApplicationTests {
 		String gid="bloodstrke";
 		String sDate = "2001-09-25";
 		String eDate ="2001-09-28";
-		List<NewAddDay> nadList= allInOneMapper.findCGSListByTimes("NewAddWeek",cid,gid,sid,sdf.parse(sDate),sdf.parse(eDate));
+		List<NewAddDay> nadList= allInOneMapper.findCGSNewAddListByTimes("NewAddWeek",cid,gid,sid,sdf.parse(sDate),sdf.parse(eDate));
 		for (NewAddDay newAddDay : nadList) {
 			System.out.println(newAddDay.getDateID());
 		}
