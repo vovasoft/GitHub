@@ -89,3 +89,19 @@ create table serverlist
 (id int PRIMARY KEY auto_increment
 ,name VARCHAR (64)
 );
+
+--INSERT
+insert into channellist (name) value('aaaaaa');
+insert into channellist (name) value('bbbbbb');
+insert into channellist (name) value('cccccc');
+
+
+
+insert into gamelist (name) value('game1');
+insert into gamelist (name) value('game2');
+insert into gamelist (name) value('game3');
+
+
+insert into serverlist (name) value('s1');
+insert into serverlist (name) value('s2');
+insert into serverlist (name) value('s3');

@@ -7,10 +7,8 @@ package com.vova.tessarwebserver.controler;
 
 
 import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
-import com.vova.tessarwebserver.domain.initdata.ChannelList;
-import com.vova.tessarwebserver.domain.initdata.GameList;
+import com.vova.tessarwebserver.domain.initdata.SelectList;
 import com.vova.tessarwebserver.domain.initdata.InitJson;
-import com.vova.tessarwebserver.domain.initdata.ServerList;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
 import com.vova.tessarwebserver.domain.newadd.NewJson;
 import com.vova.tessarwebserver.domain.stayman.StayJson;
@@ -85,24 +83,24 @@ public class ControlerGame {
     @ResponseBody
     Object fun4() throws ParseException {
         InitJson ij = new InitJson();
-        List<ChannelList> cl = allInOneMapper.findCGS("channellist");
+        List<SelectList> cl = allInOneMapper.findCGS("channellist");
         ArrayList<String> str = new ArrayList<>();
-        for (ChannelList channelList : cl) {
-            str.add(channelList.getName());
+        for (SelectList selectList : cl) {
+            str.add(selectList.getName());
         }
         ij.setcNames(str);
 
         str = new ArrayList<>();
-        List<ChannelList> gl = allInOneMapper.findCGS("gamelist");
-        for (ChannelList channelList : gl) {
-            str.add(channelList.getName());
+        List<SelectList> gl = allInOneMapper.findCGS("gamelist");
+        for (SelectList selectList : gl) {
+            str.add(selectList.getName());
         }
         ij.setgNames(str);
 
-        List<ChannelList> sl = allInOneMapper.findCGS("serverlist");
+        List<SelectList> sl = allInOneMapper.findCGS("serverlist");
         str = new ArrayList<>();
-        for (ChannelList channelList : sl) {
-            str.add(channelList.getName());
+        for (SelectList selectList : sl) {
+            str.add(selectList.getName());
         }
         ij.setsNames(str);
 

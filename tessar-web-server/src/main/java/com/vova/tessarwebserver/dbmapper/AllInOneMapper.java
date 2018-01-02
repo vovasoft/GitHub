@@ -1,11 +1,10 @@
 package com.vova.tessarwebserver.dbmapper;
 
 
-import com.vova.tessarwebserver.domain.initdata.ChannelList;
+import com.vova.tessarwebserver.domain.initdata.SelectList;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
 import com.vova.tessarwebserver.domain.stayman.StayParent;
 import org.apache.ibatis.annotations.*;
-import org.apache.ibatis.mapping.StatementType;
 
 import java.util.Date;
 import java.util.List;
@@ -43,7 +42,7 @@ public interface AllInOneMapper {
 
     //由于数据库中的接口一样，所以这里channellist代替其他两个表的表名
     @Select("select * from ${tableName}")
-    List<ChannelList> findCGS(@Param("tableName") String tableName);
+    List<SelectList> findCGS(@Param("tableName") String tableName);
 
 }
 
