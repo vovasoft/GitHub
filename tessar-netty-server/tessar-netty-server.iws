@@ -26,128 +26,201 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sql.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
+      <file leaf-file-name="customermapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/customermapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="92" column="2" lean-forward="false" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryDate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/QueryDate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/initdata/ChannelList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="-113">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
+                <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
+                <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
+                <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
+                <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
+                <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
+                <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/initdata/GameList.java">
+      <file leaf-file-name="mysql-StayDay.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stay/mysql-StayDay.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="71" />
               <folding>
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
+                <marker date="1514872260144" expanded="true" signature="294:426" ph="insert into StayDay... " />
+                <marker date="1514872260144" expanded="true" signature="504:610" ph="select * fro... StayDay" />
+                <marker date="1514872260144" expanded="true" signature="659:745" ph="update StayDay... " />
+                <marker date="1514872260144" expanded="true" signature="842:928" ph="select COUNT... StayDay" />
+                <marker date="1514872260144" expanded="true" signature="872:928" ph="select COUNT... NewAddDay" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/initdata/ServerList.java">
+      <file leaf-file-name="PayAllShow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayAllShow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="13" selection-end-column="23" />
               <folding>
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1666#1667#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1780#1781#0" expanded="true" />
+                <element signature="e#1822#1823#0" expanded="true" />
+                <element signature="e#1865#1866#0" expanded="true" />
+                <element signature="e#1906#1907#0" expanded="true" />
+                <element signature="e#1972#1973#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2178#2179#0" expanded="true" />
+                <element signature="e#2236#2237#0" expanded="true" />
+                <element signature="e#2279#2280#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2384#2385#0" expanded="true" />
+                <element signature="e#2442#2443#0" expanded="true" />
+                <element signature="e#2488#2489#0" expanded="true" />
+                <element signature="e#2531#2532#0" expanded="true" />
+                <element signature="e#2706#2707#0" expanded="true" />
+                <element signature="e#2744#2745#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2858#2859#0" expanded="true" />
+                <element signature="e#2897#2898#0" expanded="true" />
+                <element signature="e#2934#2935#0" expanded="true" />
+                <element signature="e#2992#2993#0" expanded="true" />
+                <element signature="e#3044#3045#0" expanded="true" />
+                <element signature="e#3088#3089#0" expanded="true" />
+                <element signature="e#3129#3130#0" expanded="true" />
+                <element signature="e#3196#3197#0" expanded="true" />
+                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3290#3291#0" expanded="true" />
+                <element signature="e#3322#3323#0" expanded="true" />
+                <element signature="e#3370#3371#0" expanded="true" />
+                <element signature="e#3412#3413#0" expanded="true" />
+                <element signature="e#3449#3450#0" expanded="true" />
+                <element signature="e#3484#3485#0" expanded="true" />
+                <element signature="e#3538#3539#0" expanded="true" />
+                <element signature="e#3586#3587#0" expanded="true" />
+                <element signature="e#3627#3628#0" expanded="true" />
+                <element signature="e#3666#3667#0" expanded="true" />
+                <element signature="e#3728#3729#0" expanded="true" />
+                <element signature="e#3784#3785#0" expanded="true" />
+                <element signature="e#3821#3822#0" expanded="true" />
+                <element signature="e#3855#3856#0" expanded="true" />
+                <element signature="e#3908#3909#0" expanded="true" />
+                <element signature="e#3954#3955#0" expanded="true" />
+                <element signature="e#3994#3995#0" expanded="true" />
+                <element signature="e#4031#4032#0" expanded="true" />
+                <element signature="e#4090#4091#0" expanded="true" />
+                <element signature="e#4142#4143#0" expanded="true" />
+                <element signature="e#4175#4176#0" expanded="true" />
+                <element signature="e#4206#4207#0" expanded="true" />
+                <element signature="e#4252#4253#0" expanded="true" />
+                <element signature="e#4292#4293#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java">
+      <file leaf-file-name="PayMentDay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentDay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/MongoTest.java">
+      <file leaf-file-name="batis-conf.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="632">
+              <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mongodb.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mongodb.xml">
+      <file leaf-file-name="mysql-PayMentDay.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentDay.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+              <caret line="34" column="117" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="117" />
+              <folding>
+                <marker date="1514950244873" expanded="true" signature="272:1014" ph="insert into PayMentDay... " />
+                <marker date="1514950244873" expanded="true" signature="1095:1204" ph="select * fro... PayMentDay" />
+                <marker date="1514950244873" expanded="true" signature="1253:1854" ph="update PayMentDay... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql-PayMentWeek.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentWeek.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+              <folding>
+                <marker date="1514950354956" expanded="true" signature="298:1032" ph="insert into PayMentWeek... " />
+                <marker date="1514950354956" expanded="true" signature="1114:1224" ph="select * fro... PayMentWeek" />
+                <marker date="1514950354956" expanded="true" signature="1273:1875" ph="update PayMentWeek... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql-PayMentMon.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="45" selection-end-column="22" />
+              <folding>
+                <marker date="1514950330470" expanded="true" signature="297:1030" ph="insert into PayMentMon... " />
+                <marker date="1514950330470" expanded="true" signature="1111:1220" ph="select * fro... PayMentMon" />
+                <marker date="1514950330470" expanded="true" signature="1269:1870" ph="update PayMentMon... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayMentWeek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentWeek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="382" lean-forward="false" selection-start-line="12" selection-start-column="382" selection-end-line="12" selection-end-column="382" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayMentMon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentMon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="381" lean-forward="false" selection-start-line="12" selection-start-column="381" selection-end-line="12" selection-end-column="381" />
               <folding />
             </state>
           </provider>
@@ -167,7 +240,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findByid</find>
       <find>dao.dbsql.UseMySql</find>
       <find>activeDay</find>
       <find>spring</find>
@@ -195,8 +267,9 @@
       <find>firtMonth</find>
       <find>strToNumArray</find>
       <find>},</find>
-      <find>,</find>
       <find>channel_from</find>
+      <find>,</find>
+      <find>StayDay</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -215,6 +288,9 @@
       <replace>StayMon</replace>
       <replace>StayWeek</replace>
       <replace>cid</replace>
+      <replace>PayMentDay</replace>
+      <replace>PayMentWeek</replace>
+      <replace>PayMentMon</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\GitHub\tessar-netty-server</dir>
@@ -228,13 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mysql-User.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/EnumSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.Xml.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/AutoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/test/TestMain.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ManageInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/test/debugTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/dbmongo/UseMyMongo.java" />
@@ -258,7 +327,6 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddWeek.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/stayman/NewAddMon.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/batis-conf.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
@@ -272,13 +340,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayDay.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayMon.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysql-StayWeek.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/CGS/ChannelGameServers.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/createTable" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/initdata/ChannelList.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/initdata/GameList.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/initdata/ServerList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/sql.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
+        <option value="$PROJECT_DIR$/src/main/resources/batis-conf.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayAllShow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentDay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentMon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentWeek.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentDay.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentWeek.xml" />
       </list>
     </option>
   </component>
@@ -324,8 +400,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="199" />
-    <option name="y" value="47" />
+    <option name="x" value="43" />
+    <option name="y" value="3" />
     <option name="width" value="1754" />
     <option name="height" value="978" />
   </component>
@@ -1009,7 +1085,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="initdata" type="462c0819:PsiDirectoryNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
@@ -1026,22 +1102,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jsonTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
@@ -1069,20 +1129,23 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\tessar-netty-server\src\main\resources\newadd" />
+      <recent name="D:\GitHub\tessar-netty-server\src\main\resources\stay" />
       <recent name="D:\GitHub\tessar-netty-server\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vova.domain.payment" />
       <recent name="vova.domain.initdata" />
       <recent name="domain" />
       <recent name="dao.dbsql" />
       <recent name="dao.dbmongo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\tessar-netty-server\src\main\resources\payment" />
       <recent name="D:\GitHub\tessar-netty-server\src\main\resources" />
       <recent name="D:\GitHub\tessar-netty-server\src\main\java\vova\domain\stayman" />
       <recent name="D:\GitHub\tessar-netty-server\src\main\java\dao\dbmongo" />
       <recent name="D:\GitHub\tessar-netty-server\src\main\java\dao\dbmodel" />
-      <recent name="D:\GitHub\tessar-netty-server\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1344,7 +1407,7 @@
       <workItem from="1514528989395" duration="1229000" />
       <workItem from="1514533153206" duration="1508000" />
       <workItem from="1514540316214" duration="296000" />
-      <workItem from="1514858366863" duration="12344000" />
+      <workItem from="1514858366863" duration="18302000" />
     </task>
     <servers />
   </component>
@@ -1381,11 +1444,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176231000" />
+    <option name="totallyTimeSpent" value="182189000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="199" y="47" width="1754" height="978" extended-state="0" />
-    <editor active="true" />
+    <frame x="43" y="3" width="1754" height="978" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1394,14 +1456,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30141845" sideWeight="0.50472254" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121605664" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121605664" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25305623" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18358915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2231405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24822696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2514758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1475,59 +1537,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddMon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="167" lean-forward="false" selection-start-line="12" selection-start-column="167" selection-end-line="12" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="168" lean-forward="false" selection-start-line="12" selection-start-column="168" selection-end-line="12" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="2420" column="20" lean-forward="false" selection-start-line="2420" selection-start-column="20" selection-end-line="2420" selection-end-column="20" />
-          <folding>
-            <element signature="e#94598#94599#0" expanded="false" />
-            <element signature="e#94636#94637#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/io/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAddDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/jdk1.8.0_151/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="3399" column="34" lean-forward="false" selection-start-line="3399" selection-start-column="34" selection-end-line="3399" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
@@ -1591,13 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayDay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1640,7 +1642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddWeek.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newadd/mysql-newaddWeek.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="158" lean-forward="false" selection-start-line="18" selection-start-column="158" selection-end-line="18" selection-end-column="158" />
@@ -1655,7 +1657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddMon.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newadd/mysql-newaddMon.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
@@ -1666,29 +1668,6 @@
             <marker date="1514361065473" expanded="true" signature="700:701" ph="select * fro... NewAddMon" />
             <marker date="1514361065473" expanded="true" signature="758:970" ph="update NewAddMon... " />
             <marker date="1514361065473" expanded="true" signature="1056:1144" ph="select COUNT... NewAddMon" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customermapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
-            <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
-            <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
-            <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
-            <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
-            <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
           </folding>
         </state>
       </provider>
@@ -1709,7 +1688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-newaddDay.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newadd/mysql-newaddDay.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
@@ -1779,21 +1758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayDay.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="71" />
-          <folding>
-            <marker date="1514872260144" expanded="true" signature="294:426" ph="insert into StayDay... " />
-            <marker date="1514872260144" expanded="true" signature="504:610" ph="select * fro... StayDay" />
-            <marker date="1514872260144" expanded="true" signature="659:745" ph="update StayDay... " />
-            <marker date="1514872260144" expanded="true" signature="842:928" ph="select COUNT... StayDay" />
-            <marker date="1514872260144" expanded="true" signature="872:928" ph="select COUNT... NewAddDay" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayMon.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stay/mysql-StayMon.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
@@ -1807,7 +1772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-StayWeek.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stay/mysql-StayWeek.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -1819,14 +1784,6 @@
             <marker date="1514872260171" expanded="true" signature="847:934" ph="select COUNT... StayWeek" />
             <marker date="1514872260171" expanded="true" signature="881:934" ph="select COUNT... NewAddDay" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1950,6 +1907,202 @@
         <state relative-caret-position="452">
           <caret line="92" column="2" lean-forward="false" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/newadd/NewAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customermapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
+            <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
+            <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
+            <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
+            <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
+            <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stay/mysql-StayDay.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="71" />
+          <folding>
+            <marker date="1514872260144" expanded="true" signature="294:426" ph="insert into StayDay... " />
+            <marker date="1514872260144" expanded="true" signature="504:610" ph="select * fro... StayDay" />
+            <marker date="1514872260144" expanded="true" signature="659:745" ph="update StayDay... " />
+            <marker date="1514872260144" expanded="true" signature="842:928" ph="select COUNT... StayDay" />
+            <marker date="1514872260144" expanded="true" signature="872:928" ph="select COUNT... NewAddDay" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentMon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="381" lean-forward="false" selection-start-line="12" selection-start-column="381" selection-end-line="12" selection-end-column="381" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="382" lean-forward="false" selection-start-line="12" selection-start-column="382" selection-end-line="12" selection-end-column="382" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayAllShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2178#2179#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+            <element signature="e#2488#2489#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2744#2745#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2858#2859#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2934#2935#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3088#3089#0" expanded="true" />
+            <element signature="e#3129#3130#0" expanded="true" />
+            <element signature="e#3196#3197#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
+            <element signature="e#3370#3371#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
+            <element signature="e#3449#3450#0" expanded="true" />
+            <element signature="e#3484#3485#0" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+            <element signature="e#3586#3587#0" expanded="true" />
+            <element signature="e#3627#3628#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3728#3729#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
+            <element signature="e#3821#3822#0" expanded="true" />
+            <element signature="e#3855#3856#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#3954#3955#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4031#4032#0" expanded="true" />
+            <element signature="e#4090#4091#0" expanded="true" />
+            <element signature="e#4142#4143#0" expanded="true" />
+            <element signature="e#4175#4176#0" expanded="true" />
+            <element signature="e#4206#4207#0" expanded="true" />
+            <element signature="e#4252#4253#0" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentDay.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="117" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="117" />
+          <folding>
+            <marker date="1514950244873" expanded="true" signature="272:1014" ph="insert into PayMentDay... " />
+            <marker date="1514950244873" expanded="true" signature="1095:1204" ph="select * fro... PayMentDay" />
+            <marker date="1514950244873" expanded="true" signature="1253:1854" ph="update PayMentDay... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <marker date="1514950330470" expanded="true" signature="297:1030" ph="insert into PayMentMon... " />
+            <marker date="1514950330470" expanded="true" signature="1111:1220" ph="select * fro... PayMentMon" />
+            <marker date="1514950330470" expanded="true" signature="1269:1870" ph="update PayMentMon... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentWeek.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <marker date="1514950354956" expanded="true" signature="298:1032" ph="insert into PayMentWeek... " />
+            <marker date="1514950354956" expanded="true" signature="1114:1224" ph="select * fro... PayMentWeek" />
+            <marker date="1514950354956" expanded="true" signature="1273:1875" ph="update PayMentWeek... " />
+          </folding>
         </state>
       </provider>
     </entry>
