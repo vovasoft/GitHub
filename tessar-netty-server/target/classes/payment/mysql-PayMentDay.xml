@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PayMentDay">
+
+    <insert id="insert" useGeneratedKeys="false" keyProperty="id">
+        insert into PayMentDay (
+        dateID,
+        cId,
+        gId,
+        sId,
+        newAddNum,
+        newAddPayPlayerNum,
+        newAddPayAllMoney,
+        newAddPlayerARPPU,
+        newAddPayPlayerARPPU,
+        newPayPlayerNum,
+        newPayAllMoney,
+        averageNewPayMoney,
+        activeNum,
+        payPlayerNum,
+        todayAllPayMoney,
+        activeARPPU,
+        payPlayerARPPU,
+        allMoney
+      )
+        values (#{dateID},#{cId},#{gId},#{sId},#{newAddNum},#{newAddPayPlayerNum},#{newAddPayAllMoney},#{newAddPlayerARPPU},
+        #{newAddPayPlayerARPPU},#{newPayPlayerNum},#{newPayAllMoney},#{averageNewPayMoney},#{activeNum},
+        #{payPlayerNum},#{todayAllPayMoney},#{activeARPPU},#{payPlayerNum},#{allMoney})
+    </insert>
+
+
+    <select id="findByObject" resultType="_PayMentDay">
+        select * from PayMentDay where dateID = #{dateID} AND cId = #{cId} AND gId = #{gId} AND sId = #{sId}  limit 1
+    </select>
+
+    <update id="update">
+        update PayMentDay set newAddNum=#{newAddNum}, newAddPayPlayerNum=#{newAddPayPlayerNum},
+        newAddPayAllMoney=#{newAddPayAllMoney},newAddPlayerARPPU=#{newAddPlayerARPPU},newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},
+        newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},newPayPlayerNum=#{newPayPlayerNum},
+        newPayAllMoney=#{newPayAllMoney},averageNewPayMoney=#{averageNewPayMoney},activeNum=#{activeNum},
+        payPlayerNum=#{payPlayerNum},todayAllPayMoney=#{todayAllPayMoney},activeARPPU=#{activeARPPU},
+        payPlayerARPPU=#{payPlayerARPPU},allMoney=#{allMoney}
+        where id=#{id}
+    </update>
+
+    <!--<select id="findDayCount" resultType="java.lang.Integer">-->
+        <!--select COUNT(dateID) from PayMentDay where cID = #{cID} AND gID = #{gID} AND sID = #{sID}-->
+    <!--</select>-->
+
+
+</mapper>

@@ -13,6 +13,21 @@
 
 {"uid":012,"regdate":1516284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":013,"regdate":1517284954,"lastdate":1518284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"}
 
+
+
+ private String oid;                 //order id
+ private String gid;                 //game id
+ private String sid;                 //server id
+ private String uid;                 //user id
+ private String payType;             //
+ private String currency;            //币种
+ private float amount;               //支付金额
+ private long payTime;               //支付时间
+
+
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"gid","sid":"0","uid":"0001","payType":"64","currency":"USD","amount":12.4,"payTime":1513894954}
+
+
 ["id"]=>
   string(7) "2200659"
   ["order_id"]=>

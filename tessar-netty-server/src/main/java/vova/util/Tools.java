@@ -1,5 +1,6 @@
 package vova.util;
 
+import javax.security.auth.login.FailedLoginException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -149,6 +150,34 @@ public class Tools {
             }
         }
         return res;
+    }
+
+    /**
+     * 计算两个日期,第一个时间在第二个时间的周内
+     */
+    public static boolean checkDateInWeekDate(Date d1,Date d2){
+
+        Date mondayOfDate = Tools.getMondayOfDate(d2);
+        Date sundayOfDate = Tools.getSundayOfDate(d2);
+
+        if ((d1.equals(mondayOfDate)||d1.after(mondayOfDate))&&(d1.getTime()<sundayOfDate.getTime()+24*3600*1000)){
+            return true;
+        }
+
+        return false;
+    }
+
+
+    /**
+     * 计算两个日期,第一个时间在第二个时间的月内
+     */
+    public static boolean checkDateInMonDate(Date d1,Date d2){
+        Date firstMonthOfDate = Tools.getFirstOfMonth(d2);
+        Date endMonthOfDate = Tools.getLastOfMonth(d2);
+        if ((d1.equals(firstMonthOfDate)||d1.after(firstMonthOfDate))&&(d1.getTime()<endMonthOfDate.getTime()+24*3600*1000)){
+            return true;
+        }
+        return false;
     }
 
 }

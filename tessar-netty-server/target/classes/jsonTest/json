@@ -12,3 +12,57 @@
 {"uid":008,"regdate":1513884954,"lastdate":1513984954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":009,"regdate":1513984954,"lastdate":1514984954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":010,"regdate":1513084954,"lastdate":1515084954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":011,"regdate":1515849542,"lastdate":1516849542,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
 
 {"uid":012,"regdate":1516284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":013,"regdate":1517284954,"lastdate":1518284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"}
+
+
+
+ private String oid;                 //order id
+ private String gid;                 //game id
+ private String sid;                 //server id
+ private String uid;                 //user id
+ private String payType;             //
+ private String currency;            //币种
+ private float amount;               //支付金额
+ private long payTime;               //支付时间
+
+
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"gid","sid":"0","uid":"0001","payType":"64","currency":"USD","amount":12.4,"payTime":1513894954}
+
+
+["id"]=>
+  string(7) "2200659"
+  ["order_id"]=>
+  string(15) "PU-147625771879"
+  ["game_id"]=>
+  string(2) "39"
+  ["server_id"]=>
+  string(1) "1"
+  ["role_id"]=>
+  string(11) "10021063342"
+  ["user_id"]=>
+  string(11) "10021063342"
+  ["email"]=>
+  string(0) ""
+  ["fb_id"]=>
+  string(15) "303770143323994"
+  ["good_id"]=>
+  string(1) "0"
+  ["order_type"]=>
+  string(1) "2"
+  ["payment_type"]=>
+  string(2) "65"
+  ["currency"]=>
+  string(3) "BRL"
+  ["amount"]=>
+  string(4) "5.00"
+  ["game_money"]=>
+  string(6) "110.00"
+  ["present_gold"]=>
+  string(4) "0.00"
+  ["input_time"]=>
+  string(10) "1476257718"
+  ["checkout_time"]=>
+  string(10) "1476257718"
+  ["is_check"]=>
+  string(1) "0"
+  ["status"]=>
+  string(1) "0"

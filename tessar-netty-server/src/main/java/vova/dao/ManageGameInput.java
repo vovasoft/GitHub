@@ -33,7 +33,7 @@ public class ManageGameInput {
     public ManageGameInput() {
     }
 
-    public int HandPlayerDate(Player player) throws IOException, ParseException {
+    public int HandPlayerData(Player player) throws IOException, ParseException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");

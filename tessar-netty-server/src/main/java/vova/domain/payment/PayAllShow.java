@@ -14,22 +14,22 @@ public class PayAllShow {
     private String sId;
     private long newAddNum;                  //新增用户数
     private long newAddPayPlayerNum;         //新增用户付费数
-    private long newAddPayAllMoney;          //新增付费总额
+    private float newAddPayAllMoney;          //新增付费总额
     private float newAddPlayerARPPU;         //新增用户ARPPU
     private float newAddPayPlayerARPPU;      //新增用户的付费用户ARPPU
 
     private long newPayPlayerNum;            //首冲人数
-    private long newPayAllMoney;             //首冲总额
+    private float newPayAllMoney;             //首冲总额
 
     private float averageNewPayMoney;        //平均首冲
     private long activeNum;                  //活跃用户数
     private long payPlayerNum;               //付费用户数
-    private long todayAllPayMoney;           //日总付费
+    private float todayAllPayMoney;           //日总付费
 
     private float activeARPPU;               //活跃用户ARPPU
     private float payPlayerARPPU;            //付费用户ARPPU
 
-    private long allMoney;                   //累计付费
+    private float allMoney;                   //累计付费
 
     public int getId() {
         return id;
@@ -87,11 +87,11 @@ public class PayAllShow {
         this.newAddPayPlayerNum = newAddPayPlayerNum;
     }
 
-    public long getNewAddPayAllMoney() {
+    public float getNewAddPayAllMoney() {
         return newAddPayAllMoney;
     }
 
-    public void setNewAddPayAllMoney(long newAddPayAllMoney) {
+    public void setNewAddPayAllMoney(float newAddPayAllMoney) {
         this.newAddPayAllMoney = newAddPayAllMoney;
     }
 
@@ -119,11 +119,11 @@ public class PayAllShow {
         this.newPayPlayerNum = newPayPlayerNum;
     }
 
-    public long getNewPayAllMoney() {
+    public float getNewPayAllMoney() {
         return newPayAllMoney;
     }
 
-    public void setNewPayAllMoney(long newPayAllMoney) {
+    public void setNewPayAllMoney(float newPayAllMoney) {
         this.newPayAllMoney = newPayAllMoney;
     }
 
@@ -151,11 +151,11 @@ public class PayAllShow {
         this.payPlayerNum = payPlayerNum;
     }
 
-    public long getTodayAllPayMoney() {
+    public float getTodayAllPayMoney() {
         return todayAllPayMoney;
     }
 
-    public void setTodayAllPayMoney(long todayAllPayMoney) {
+    public void setTodayAllPayMoney(float todayAllPayMoney) {
         this.todayAllPayMoney = todayAllPayMoney;
     }
 
@@ -175,11 +175,11 @@ public class PayAllShow {
         this.payPlayerARPPU = payPlayerARPPU;
     }
 
-    public long getAllMoney() {
+    public float getAllMoney() {
         return allMoney;
     }
 
-    public void setAllMoney(long allMoney) {
+    public void setAllMoney(float allMoney) {
         this.allMoney = allMoney;
     }
 
@@ -187,7 +187,7 @@ public class PayAllShow {
 
     }
 
-    public PayAllShow(int id, Date dateID, String cId, String gId, String sId, long newAddNum, long newAddPayPlayerNum, long newAddPayAllMoney, float newAddPlayerARPPU, float newAddPayPlayerARPPU, long newPayPlayerNum, long newPayAllMoney, float averageNewPayMoney, long activeNum, long payPlayerNum, long todayAllPayMoney, float activeARPPU, float payPlayerARPPU, long allMoney) {
+    public PayAllShow(int id, Date dateID, String cId, String gId, String sId, long newAddNum, long newAddPayPlayerNum, float newAddPayAllMoney, float newAddPlayerARPPU, float newAddPayPlayerARPPU, long newPayPlayerNum, float newPayAllMoney, float averageNewPayMoney, long activeNum, long payPlayerNum, float todayAllPayMoney, float activeARPPU, float payPlayerARPPU, float allMoney) {
 
         this.id = id;
         this.dateID = dateID;

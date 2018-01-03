@@ -3,16 +3,10 @@ package vova.nettydemo;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import vova.dao.ManageGameInput;
-import vova.SpringConfig;
-import vova.dao.dbmongo.UseMyMongo;
+import vova.dao.ManagePayInput;
 import vova.domain.Player;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -23,11 +17,8 @@ import io.netty.handler.codec.http.*;
 
 import com.alibaba.fastjson.JSONArray;
 import io.netty.util.CharsetUtil;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import vova.domain.payment.PayReceive;
 
-import javax.sound.midi.Soundbank;
-import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
 
@@ -51,12 +42,12 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
 
 
-    public NettyHandler() {
-        jsonarray.add(getJsonObj("name", "ar.sear.ocalplay"));
-        jsonarray.add(getJsonObj("name", "ar.sear.ticket"));
-        jsonarray.add(getJsonObj("name", "ar.sear.tel"));
-        jsonarray.add(getJsonObj("name", "ar.sear.surehotel"));
-    }
+//    public NettyHandler() {
+//        jsonarray.add(getJsonObj("name", "ar.sear.ocalplay"));
+//        jsonarray.add(getJsonObj("name", "ar.sear.ticket"));
+//        jsonarray.add(getJsonObj("name", "ar.sear.tel"));
+//        jsonarray.add(getJsonObj("name", "ar.sear.surehotel"));
+//    }
 
     public JSONObject getJsonObj(String name, String value) {
         JSONObject jsonobj = new JSONObject();
@@ -109,15 +100,24 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
             List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>(){}.getType());
             for (Player player : players) {
-                manageGameInput.HandPlayerDate(player);
+                manageGameInput.HandPlayerData(player);
             }
             //System.out.println("done");
             bb=Unpooled.copiedBuffer("OK".getBytes());
             response.content().writeBytes(bb);
             bb.release();
             ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
-        } else if (flag.get(0) == "payment") {
+        } else if (flag.get(0).equals("pay")) {
             //支付情况
+            ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+            ManagePayInput mpi= (ManagePayInput) ac.getBean("managePayInput");
+            List<PayReceive> payReceiveList = gson.fromJson(json, new TypeToken<List<PayReceive>>(){}.getType());
+
+            for (PayReceive payReceive : payReceiveList) {
+                mpi.HandPayData(payReceive);
+            }
+
+
             bb=Unpooled.copiedBuffer("OK".getBytes());
             response.content().writeBytes(bb);
             bb.release();
