@@ -153,13 +153,13 @@ public class ManagePayInput {
         }
         //更新表结构  PayMent
 
-            //获取累计付费
+        //获取累计付费
         float allPayMoney = umm.findAllPayMoney(pmfk);
-        int res1 = updatePayTable(tmp1,mys,PayMentDay.class,newAddDayNum,newAddDayPayNum,newAddDayMoney,firstPayDayNum,firstPayDayMoney,activeDayNum,dayPayNum,dayPayMoney,allPayMoney);
-        int res2 = updatePayTable(tmp2,mys,PayMentWeek.class,newAddWeekNum,newAddWeekPayNum,newAddWeekMoney,firstPayWeekNum,firstPayWeekMoney,activeWeekNum,weekPayNum,weekPayMoney,allPayMoney);
-        int res3 = updatePayTable(tmp3,mys,PayMentMon.class,newAddMonNum,newAddMonPayNum,newAddMonMoney,firstPayMonNum,firstPayMonMoney,activeMonNum,MonPayNum,monPayMoney,allPayMoney);
-        
-        log.info("res1:"+res1+", res2:"+res2+", res3:"+res3);
+        int res1 = updatePayTable(tmp1, mys, PayMentDay.class, newAddDayNum, newAddDayPayNum, newAddDayMoney, firstPayDayNum, firstPayDayMoney, activeDayNum, dayPayNum, dayPayMoney, allPayMoney);
+        int res2 = updatePayTable(tmp2, mys, PayMentWeek.class, newAddWeekNum, newAddWeekPayNum, newAddWeekMoney, firstPayWeekNum, firstPayWeekMoney, activeWeekNum, weekPayNum, weekPayMoney, allPayMoney);
+        int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, monPayMoney, allPayMoney);
+
+        log.info("res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
 
         return 1;
     }
@@ -211,7 +211,7 @@ public class ManagePayInput {
                     cid,
                     gid,
                     sid,
-                    0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             mys.utilSQL(clazz, EnumSQL.INSERT, newLine);
             tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
         }
@@ -223,22 +223,22 @@ public class ManagePayInput {
                                int firstPayNum, float firstPayMoney, int activeNums,
                                int payNum, float payMoney, float allPayMoney) throws IOException {
         //原始信息
-        long newAddNum=newAdd;
-        long newAddPayPlayerNum=payAllShow.getNewAddPayPlayerNum()+newAddMoneyNum;
-        float newAddPayAllMoney=payAllShow.getNewAddPayAllMoney()+newAddMoney;
-        long newPayPlayerNum=payAllShow.getNewPayPlayerNum()+firstPayNum;
-        float newPayAllMoney=payAllShow.getNewPayAllMoney()+firstPayMoney;
-        long activeNum=activeNums;
-        long payPlayerNum=payAllShow.getPayPlayerNum()+payNum;
-        float todayAllPayMoney=payAllShow.getTodayAllPayMoney()+payMoney;
-        float allMoney=allPayMoney;
+        long newAddNum = newAdd;
+        long newAddPayPlayerNum = payAllShow.getNewAddPayPlayerNum() + newAddMoneyNum;
+        float newAddPayAllMoney = payAllShow.getNewAddPayAllMoney() + newAddMoney;
+        long newPayPlayerNum = payAllShow.getNewPayPlayerNum() + firstPayNum;
+        float newPayAllMoney = payAllShow.getNewPayAllMoney() + firstPayMoney;
+        long activeNum = activeNums;
+        long payPlayerNum = payAllShow.getPayPlayerNum() + payNum;
+        float todayAllPayMoney = payAllShow.getTodayAllPayMoney() + payMoney;
+        float allMoney = allPayMoney;
 
         //以下数据通过计算得出
-        float newAddPlayerARPPU=newAddNum!=0?newAddPayAllMoney/newAddNum:0;
-        float newAddPayPlayerARPPU=newAddPayPlayerNum!=0?newAddPayAllMoney/newAddPayPlayerNum:0;
-        float payPlayerARPPU=payPlayerNum!=0?todayAllPayMoney/payPlayerNum:0;
-        float activeARPPU=activeNum!=0?todayAllPayMoney/activeNum:0;
-        float averageNewPayMoney=payAllShow.getAverageNewPayMoney();
+        float newAddPlayerARPPU = newAddNum != 0 ? newAddPayAllMoney / newAddNum : 0;
+        float newAddPayPlayerARPPU = newAddPayPlayerNum != 0 ? newAddPayAllMoney / newAddPayPlayerNum : 0;
+        float payPlayerARPPU = payPlayerNum != 0 ? todayAllPayMoney / payPlayerNum : 0;
+        float activeARPPU = activeNum != 0 ? todayAllPayMoney / activeNum : 0;
+        float averageNewPayMoney = payAllShow.getAverageNewPayMoney();
 
         payAllShow.setNewAddNum(newAddNum);
         payAllShow.setNewAddPayAllMoney(newAddPayAllMoney);
@@ -255,23 +255,23 @@ public class ManagePayInput {
         payAllShow.setPayPlayerNum(payPlayerNum);
         payAllShow.setTodayAllPayMoney(todayAllPayMoney);
 
-        mys.utilSQL(clazz,EnumSQL.UPDATE,payAllShow);
+        mys.utilSQL(clazz, EnumSQL.UPDATE, payAllShow);
         return -1;
     }
-    @Test
-    public void testFun() throws IOException, ParseException {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
-        UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
-        UseMySql mys = (UseMySql) ac.getBean("useMySql");
-        Date payDate = Tools.secToDateByFormat(1513384954);
-        System.out.println(payDate);
-        PayAllShow newLine = new PayAllShow(2, payDate,
-                "ngBrazil",
-                "22222",
-                "0",
-               12122, 123,0,0,0,0,0,0,0,0,0,0,0,0);
-
-
-        mys.utilSQL(PayMentDay.class,EnumSQL.UPDATE,newLine);
-    }
+//    @Test
+//    public void testFun() throws IOException, ParseException {
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+//        UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
+//        UseMySql mys = (UseMySql) ac.getBean("useMySql");
+//        Date payDate = Tools.secToDateByFormat(1513384954);
+//        System.out.println(payDate);
+//        PayAllShow newLine = new PayAllShow(2, payDate,
+//                "ngBrazil",
+//                "22222",
+//                "0",
+//               12122, 123,0,0,0,0,0,0,0,0,0,0,0,0);
+//
+//
+//        mys.utilSQL(PayMentDay.class,EnumSQL.UPDATE,newLine);
+//    }
 }

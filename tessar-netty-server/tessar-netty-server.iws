@@ -32,8 +32,8 @@
       <file leaf-file-name="ManagePayInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+            <state relative-caret-position="653">
+              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayMentForKeep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PayMentForKeep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentForKeep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -56,6 +56,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="23" column="115" lean-forward="true" selection-start-line="23" selection-start-column="115" selection-end-line="23" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -185,20 +195,6 @@
                 <marker date="1515052771869" expanded="true" signature="272:1014" ph="insert into PayMentDay... " />
                 <marker date="1515052771869" expanded="true" signature="1095:1204" ph="select * fro... PayMentDay" />
                 <marker date="1515052771869" expanded="true" signature="1254:1889" ph="update PayMentDay... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql-PayMentMon.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="54" column="22" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="54" selection-end-column="22" />
-              <folding>
-                <marker date="1515047542612" expanded="true" signature="297:1030" ph="insert into PayMentMon... " />
-                <marker date="1515047542612" expanded="true" signature="1111:1220" ph="select * fro... PayMentMon" />
-                <marker date="1515047542612" expanded="true" signature="1269:1904" ph="update PayMentMon... " />
               </folding>
             </state>
           </provider>
@@ -342,7 +338,6 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
         <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentWeek.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayAllShow.java" />
@@ -352,8 +347,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/batis-conf.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/sql.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentDay.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentForKeep.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
       </list>
     </option>
   </component>
@@ -398,11 +394,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
+    <option name="y" value="45" />
+    <option name="width" value="1754" />
+    <option name="height" value="978" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1457,7 +1453,7 @@
       <workItem from="1514528989395" duration="1229000" />
       <workItem from="1514533153206" duration="1508000" />
       <workItem from="1514540316214" duration="296000" />
-      <workItem from="1514858366863" duration="61617000" />
+      <workItem from="1514858366863" duration="62144000" />
     </task>
     <servers />
   </component>
@@ -1494,7 +1490,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225504000" />
+    <option name="totallyTimeSpent" value="226031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1506,7 +1502,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="58" y="45" width="1754" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1518,12 +1514,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30141845" sideWeight="0.50472254" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3325893" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36430317" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07201889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24822696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2514758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1772,14 +1768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="114" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -1958,14 +1946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentMon.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -2002,16 +1982,6 @@
             <element signature="method#findDayPayInMongo#0;class#UseMyMongo#0" expanded="false" />
             <element signature="method#findMonPayInMongo#0;class#UseMyMongo#0" expanded="false" />
             <element signature="method#getPlayersListMongo#0;class#UseMyMongo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2127,6 +2097,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="107" column="156" lean-forward="false" selection-start-line="107" selection-start-column="156" selection-end-line="107" selection-end-column="156" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="23" column="115" lean-forward="true" selection-start-line="23" selection-start-column="115" selection-end-line="23" selection-end-column="115" />
           <folding />
         </state>
       </provider>
