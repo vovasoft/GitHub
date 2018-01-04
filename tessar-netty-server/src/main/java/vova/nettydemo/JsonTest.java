@@ -1,6 +1,7 @@
 package vova.nettydemo;
 
 import com.google.gson.Gson;
+import vova.dao.ManagePayInput;
 import vova.domain.test.User;
 import org.junit.Test;
 
@@ -17,5 +18,10 @@ public class JsonTest {
         Gson gson = new Gson();
         String jsonstr = gson .toJson(new User(12,"vova",123));
         System.out.println(jsonstr);
+    }
+    org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ManagePayInput.class);
+    @Test
+    public void funLog(){
+        log.info("aaaaaaaaaaaa");
     }
 }
