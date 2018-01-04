@@ -87,11 +87,7 @@ public class ManagePayInput {
             pmfk.setFirstPayTime(tmp.getFirstPayTime());
             pmfk.setCid(cid);
         }
-        try {
-            umm.insertMongo(pmfk);        //原始数据存入MongoDB
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+
 
 
         //计算web展示表的字段数据，分为日，周，月             1.计算新增和活跃，需要查找游戏平台数据
@@ -111,26 +107,28 @@ public class ManagePayInput {
         float newAddDayMoney = 0, newAddWeekMoney = 0, newAddMonMoney = 0;
         int newAddDayPayNum = 0, newAddWeekPayNum = 0, newAddMonPayNum = 0;
 
-        //日新增，判断支付日期和注册日期一致
-        if (payDate.equals(uRegDate)) {
-            newAddDayMoney += amount;          //新增付费总额
-            ++newAddDayPayNum;               //新增付费人数
-        }
-        //周新增，判断支付日期在注册日期的那个周
-        if (Tools.checkDateInWeekDate(payDate, uRegDate)) {
-            newAddWeekMoney += amount;//新增付费总额
-            ++newAddWeekPayNum;//新增付费人数
-        }
-        //月新增，判断支付日期在注册日期的那个月
-        if (Tools.checkDateInMonDate(payDate, uRegDate)) {
-            newAddMonMoney += amount;//新增付费总额
-            ++newAddMonPayNum;//新增付费人数
-        }
-
         //判断日首冲，周首冲，月首冲
         boolean firstPayDay = umm.findDayPayInMongo(pmfk);
         boolean firstPayWeek = umm.findWeekPayInMongo(pmfk);
         boolean firstPayMon = umm.findMonPayInMongo(pmfk);
+
+        //日新增，判断支付日期和注册日期一致
+        if (payDate.equals(uRegDate)) {
+            newAddDayMoney += amount;          //新增付费总额
+            newAddDayPayNum=firstPayDay?1:0;               //新增付费人数，人数需要判断是否重复
+        }
+        //周新增，判断支付日期在注册日期的那个周
+        if (Tools.checkDateInWeekDate(payDate, uRegDate)) {
+            newAddWeekMoney += amount;//新增付费总额
+            newAddWeekPayNum=firstPayWeek?1:0;//新增付费人数
+        }
+        //月新增，判断支付日期在注册日期的那个月
+        if (Tools.checkDateInMonDate(payDate, uRegDate)) {
+            newAddMonMoney += amount;//新增付费总额
+            newAddMonPayNum=firstPayMon?1:0;//新增付费人数
+        }
+
+
         //记录首冲用户
         int firstPayDayNum = firstPayDay ? 1 : 0, firstPayWeekNum = firstPayWeek ? 1 : 0, firstPayMonNum = firstPayMon ? 1 : 0;
         //记录首冲金额
@@ -141,7 +139,7 @@ public class ManagePayInput {
 
         //增加付费用户和付费金额
         int dayPayNum = 1, weekPayNum = 1, MonPayNum = 1;
-        float dayPayMoney = amount, weekPayMoney = amount, monPayMoney = amount;
+//        float dayPayMoney = amount, weekPayMoney = amount, monPayMoney = amount;
 
         //查询或新建  PayMent
         PayMentDay tmp1 = (PayMentDay) findOrCreate(payDate, cid, gid, sid, mys, PayMentDay.class);
@@ -150,14 +148,20 @@ public class ManagePayInput {
 
         if (tmp1 == null || tmp2 == null || tmp3 == null) {
             log.error("find or create error ,and someone is null");
+            return -1;
         }
-        //更新表结构  PayMent
 
+        try {
+            umm.insertMongo(pmfk);        //原始数据存入MongoDB
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return -1;
+        }
         //获取累计付费
         float allPayMoney = umm.findAllPayMoney(pmfk);
-        int res1 = updatePayTable(tmp1, mys, PayMentDay.class, newAddDayNum, newAddDayPayNum, newAddDayMoney, firstPayDayNum, firstPayDayMoney, activeDayNum, dayPayNum, dayPayMoney, allPayMoney);
-        int res2 = updatePayTable(tmp2, mys, PayMentWeek.class, newAddWeekNum, newAddWeekPayNum, newAddWeekMoney, firstPayWeekNum, firstPayWeekMoney, activeWeekNum, weekPayNum, weekPayMoney, allPayMoney);
-        int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, monPayMoney, allPayMoney);
+        int res1 = updatePayTable(tmp1, mys, PayMentDay.class, newAddDayNum, newAddDayPayNum, newAddDayMoney, firstPayDayNum, firstPayDayMoney, activeDayNum, dayPayNum, amount, allPayMoney);
+        int res2 = updatePayTable(tmp2, mys, PayMentWeek.class, newAddWeekNum, newAddWeekPayNum, newAddWeekMoney, firstPayWeekNum, firstPayWeekMoney, activeWeekNum, weekPayNum, amount, allPayMoney);
+        int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, amount, allPayMoney);
 
         log.info("res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
 
@@ -238,8 +242,8 @@ public class ManagePayInput {
         float newAddPayPlayerARPPU = newAddPayPlayerNum != 0 ? newAddPayAllMoney / newAddPayPlayerNum : 0;
         float payPlayerARPPU = payPlayerNum != 0 ? todayAllPayMoney / payPlayerNum : 0;
         float activeARPPU = activeNum != 0 ? todayAllPayMoney / activeNum : 0;
-        float averageNewPayMoney = payAllShow.getAverageNewPayMoney();
-
+        float averageNewPayMoney = newPayPlayerNum!=0?newPayAllMoney/newPayPlayerNum:0;
+        //以下进行表格构建
         payAllShow.setNewAddNum(newAddNum);
         payAllShow.setNewAddPayAllMoney(newAddPayAllMoney);
         payAllShow.setNewAddPayPlayerNum(newAddPayPlayerNum);

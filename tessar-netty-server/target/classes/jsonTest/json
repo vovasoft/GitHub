@@ -1,34 +1,49 @@
 
-{"uid":001,"regdate":1513284954,"lastdate":1513284954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":002,"regdate":1513294954,"lastdate":1513294954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":003,"regdate":1513384954,"lastdate":1513384954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":004,"regdate":1513484954,"lastdate":1513484954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json=
+{"uid":001,"regdate":1513284954,"lastdate":1513284954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":002,"regdate":1513294954,"lastdate":1513294954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":003,"regdate":1513384954,"lastdate":1513384954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":004,"regdate":1513484954,"lastdate":1513484954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":005,"regdate":1513584954,"lastdate":1513584954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":006,"regdate":1513684954,"lastdate":1513684954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":007,"regdate":1513784954,"lastdate":1513784954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":008,"regdate":1513884954,"lastdate":1513884954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":009,"regdate":1513984954,"lastdate":1513984954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":010,"regdate":1513084954,"lastdate":1513084954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":011,"regdate":1515849542,"lastdate":1515849542,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":012,"regdate":1516284954,"lastdate":1516284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":013,"regdate":1517284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":001,"regdate":1513284954,"lastdate":1513294954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":002,"regdate":1513294954,"lastdate":1513394954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":003,"regdate":1513384954,"lastdate":1513484954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":004,"regdate":1513484954,"lastdate":1513584954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":005,"regdate":1513584954,"lastdate":1513684954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":006,"regdate":1513684954,"lastdate":1513784954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":007,"regdate":1513784954,"lastdate":1513884954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":008,"regdate":1513884954,"lastdate":1513984954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":009,"regdate":1513984954,"lastdate":1514984954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":010,"regdate":1513084954,"lastdate":1515084954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":011,"regdate":1515849542,"lastdate":1516849542,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":012,"regdate":1516284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
+{"uid":013,"regdate":1517284954,"lastdate":1518284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"}
 
-{"uid":005,"regdate":1513584954,"lastdate":1513584954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":006,"regdate":1513684954,"lastdate":1513684954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":007,"regdate":1513784954,"lastdate":1513784954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":008,"regdate":1513884954,"lastdate":1513884954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
-
-{"uid":009,"regdate":1513984954,"lastdate":1513984954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":010,"regdate":1513084954,"lastdate":1513084954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":011,"regdate":1515849542,"lastdate":1515849542,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":012,"regdate":1516284954,"lastdate":1516284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
-
-{"uid":013,"regdate":1517284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":001,"regdate":1513284954,"lastdate":1513294954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":002,"regdate":1513294954,"lastdate":1513394954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":003,"regdate":1513384954,"lastdate":1513484954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
-
-{"uid":004,"regdate":1513484954,"lastdate":1513584954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":005,"regdate":1513584954,"lastdate":1513684954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":006,"regdate":1513684954,"lastdate":1513784954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":007,"regdate":1513784954,"lastdate":1513884954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
-
-{"uid":008,"regdate":1513884954,"lastdate":1513984954,"cid":"AAAAAAAA","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":009,"regdate":1513984954,"lastdate":1514984954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":010,"regdate":1513084954,"lastdate":1515084954,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":011,"regdate":1515849542,"lastdate":1516849542,"cid":"ngBrazil","gid":"bloodstrke","sub":"lp-fb","sid":"0"},
-
-{"uid":012,"regdate":1516284954,"lastdate":1517284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"},{"uid":013,"regdate":1517284954,"lastdate":1518284954,"cid":"CCCCC","gid":"bloodstrke","sub":"lp-fb","sid":"0"}
 
 
-
- private String oid;                 //order id
- private String gid;                 //game id
- private String sid;                 //server id
- private String uid;                 //user id
- private String payType;             //
- private String currency;            //币种
- private float amount;               //支付金额
- private long payTime;               //支付时间
-
-
-http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
-http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
-http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
+001首冲+新增+一天充值多次
 http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513284954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":112.4,"payTime":1513285954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":14.4,"payTime":1513286954}
+
+002首冲+多天充值
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"002","payType":"64","currency":"USD","amount":32.4,"payTime":1513294954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"002","payType":"64","currency":"USD","amount":42.4,"payTime":1513394954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"002","payType":"64","currency":"USD","amount":62.4,"payTime":1513494954}
+
+007不同渠道，首冲+多次充值
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"007","payType":"64","currency":"USD","amount":12.4,"payTime":1514294954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"007","payType":"64","currency":"USD","amount":14.4,"payTime":1515394954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"007","payType":"64","currency":"USD","amount":15.4,"payTime":1516494954}
+
 
 
 ["id"]=>
