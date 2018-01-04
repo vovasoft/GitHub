@@ -18,6 +18,8 @@ import vova.util.Tools;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author: Vova
@@ -32,7 +34,7 @@ public class ManagePayInput {
     public ManagePayInput() {
     }
 
-    public int HandPayData(PayReceive payReceive) throws ParseException, IOException {
+    public synchronized int HandPayData(PayReceive payReceive) throws ParseException, IOException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
@@ -136,7 +138,7 @@ public class ManagePayInput {
 
 
         //增加付费用户和付费金额
-        int dayPayNum = 1, weekPayNum = 1, MonPayNum = 1;
+        int dayPayNum = firstPayDay ? 1 : 0, weekPayNum = firstPayDay ? 1 : 0, MonPayNum = firstPayDay ? 1 : 0;
 //        float dayPayMoney = amount, weekPayMoney = amount, monPayMoney = amount;
 
         //查询或新建  PayMent
@@ -162,11 +164,12 @@ public class ManagePayInput {
         int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, amount, allPayMoney);
 
         log.info("res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
+        System.gc();
 
         return 1;
     }
 
-    private int[] getNewAddNumAndActiveNum(Date uLoginDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
+    private synchronized int[] getNewAddNumAndActiveNum(Date uLoginDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
         String clazzName = clazz.getSimpleName();
         int res[] = new int[2];
         Date thisDate = null;
@@ -192,35 +195,45 @@ public class ManagePayInput {
         }
     }
 
+
+    private static Lock lock = new ReentrantLock();// 锁对象
+
     private PayAllShow findOrCreate(Date payDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
-        String clazzName = clazz.getSimpleName();
-        Date thisDate = null;
-        if (clazzName.equals("PayMentDay")) {
-            thisDate = payDate;
-        } else if (clazzName.equals("PayMentMon")) {
-            thisDate = Tools.getFirstOfMonth(payDate);
-        } else if (clazzName.equals("PayMentWeek")) {
-            thisDate = Tools.getMondayOfDate(payDate);
+        lock.lock();
+        try {
+            String clazzName = clazz.getSimpleName();
+            Date thisDate = null;
+            if (clazzName.equals("PayMentDay")) {
+                thisDate = payDate;
+            } else if (clazzName.equals("PayMentMon")) {
+                thisDate = Tools.getFirstOfMonth(payDate);
+            } else if (clazzName.equals("PayMentWeek")) {
+                thisDate = Tools.getMondayOfDate(payDate);
+            }
+            PayAllShow findSeed = new PayAllShow();
+            findSeed.setcId(cid);
+            findSeed.setgId(gid);
+            findSeed.setsId(sid);
+            findSeed.setDateID(thisDate);
+            PayAllShow tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
+            if (tmp1 == null) {    //新增表中行不存在则需要增加行
+                PayAllShow newLine = new PayAllShow(0, thisDate,
+                        cid,
+                        gid,
+                        sid,
+                        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                mys.utilSQL(clazz, EnumSQL.INSERT, newLine);
+                tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
+            }
+            return tmp1;
+        }finally {
+            lock.unlock();
         }
-        PayAllShow findSeed = new PayAllShow();
-        findSeed.setcId(cid);
-        findSeed.setgId(gid);
-        findSeed.setsId(sid);
-        findSeed.setDateID(thisDate);
-        PayAllShow tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
-        if (tmp1 == null) {    //新增表中行不存在则需要增加行
-            PayAllShow newLine = new PayAllShow(0, thisDate,
-                    cid,
-                    gid,
-                    sid,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            mys.utilSQL(clazz, EnumSQL.INSERT, newLine);
-            tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
-        }
-        return tmp1;
+
+
     }
 
-    private int updatePayTable(PayAllShow payAllShow, UseMySql mys, Class clazz,
+    private synchronized int updatePayTable(PayAllShow payAllShow, UseMySql mys, Class clazz,
                                int newAdd, int newAddMoneyNum, float newAddMoney,
                                int firstPayNum, float firstPayMoney, int activeNums,
                                int payNum, float payMoney, float allPayMoney) throws IOException {

@@ -13,24 +13,24 @@ import java.util.Date;
 public class Tools {
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
-    public static long dateToSecByFormat(Date date) {
+    public static synchronized long dateToSecByFormat(Date date) {
         if (date != null) {
             return date.getTime() / 1000;
         }
         return -1;
     }
 
-    public static Date secToDateByFormat(long sec) throws ParseException {
+    public static synchronized Date secToDateByFormat(long sec) throws ParseException {
         String date = sdf.format(new Date(sec * 1000));
 
         return sdf.parse(date);
     }
 
-    public static long dateToSec(Date date) {
+    public static synchronized long dateToSec(Date date) {
         return date.getTime() / 1000;
     }
 
-    public static Date secToDate(long sec) {
+    public static synchronized Date secToDate(long sec) {
         return new Date(sec * 1000);
     }
 
@@ -39,7 +39,7 @@ public class Tools {
      *
      * @return yyyy-MM-dd
      */
-    public static Date getMondayOfDate(Date date) {
+    public static synchronized Date getMondayOfDate(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
 
@@ -56,7 +56,7 @@ public class Tools {
      *
      * @return yyyy-MM-dd
      */
-    public static Date getSundayOfDate(Date date) {
+    public static synchronized Date getSundayOfDate(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
 
@@ -70,7 +70,7 @@ public class Tools {
     /**
      * 得到本月第一天
      */
-    public static Date getFirstOfMonth(Date date) {
+    public static synchronized Date getFirstOfMonth(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.add(Calendar.MONTH, 0);
@@ -81,7 +81,7 @@ public class Tools {
     /**
      * 得到本月最后一天
      */
-    public static Date getLastOfMonth(Date date) {
+    public static synchronized Date getLastOfMonth(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.set(Calendar.DAY_OF_MONTH, c.getActualMaximum(Calendar.DAY_OF_MONTH));
@@ -89,7 +89,7 @@ public class Tools {
     }
 
     //数字数组转字符串
-    public static String numArrayToStr(int[] intarr) {
+    public static synchronized String numArrayToStr(int[] intarr) {
         String res = "";
         for (Object i : intarr) {
             res = res + i + ",";
@@ -99,7 +99,7 @@ public class Tools {
 
 
     //字符转转数字数组
-    public static int[] strToNumArray(String str, String split) {
+    public static synchronized int[] strToNumArray(String str, String split) {
         String[] subStrs = str.split(split);
         int length = subStrs.length;
         int[] res = new int[length];
@@ -113,7 +113,7 @@ public class Tools {
      * 计算两个日期之间的间隔，单位是日，周，月
      */
 
-    public static int countTwoDateSpace(Date dStart, Date dEnd, Class clazz) {
+    public static synchronized int countTwoDateSpace(Date dStart, Date dEnd, Class clazz) {
         String clazzName = clazz.getSimpleName();
         int res = 0;
         Calendar cRegister = Calendar.getInstance();

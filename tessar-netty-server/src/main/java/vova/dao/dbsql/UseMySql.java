@@ -38,13 +38,13 @@ public class UseMySql {
 //        ss.close();
 //    }
 
-    public  Object utilSQL(Class clazz, EnumSQL operate, Object object )throws IOException{
+    public synchronized Object utilSQL(Class clazz, EnumSQL operate, Object object )throws IOException{
     //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         Object res = null;
-        System.out.println(clazz.getSimpleName());
+        //system.out.println(clazz.getSimpleName());
 
         switch (operate) {
             case SELECT:
@@ -100,7 +100,7 @@ public class UseMySql {
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession ss = sf.openSession();
         String className = object.getClass().getName();
-        System.out.println("className:" + className);
+        //system.out.println("className:" + className);
 
 
         ss.insert(object.getClass().getSimpleName() + ".insert", object);
@@ -177,7 +177,7 @@ public class UseMySql {
         s.commit();
         s.close();
 
-        System.out.println(cnew.getName() + cnew.getAge());
+        //system.out.println(cnew.getName() + cnew.getAge());
     }
 
 
@@ -195,11 +195,11 @@ public class UseMySql {
 
         Customer cnew = o.getCustomer();
         if (cnew == null) {
-            System.out.println("null error");
+            //system.out.println("null error");
 
         } else {
 
-            System.out.println(o.getCustomer().getName());
+            //system.out.println(o.getCustomer().getName());
         }
     }
 
@@ -213,7 +213,7 @@ public class UseMySql {
 
         List<Order> orderList = c.getOrders();
         for (Order order : orderList) {
-            System.out.println(order.getPrice());
+            //system.out.println(order.getPrice());
         }
         s.commit();
         s.close();
@@ -227,7 +227,7 @@ public class UseMySql {
         SqlSession s = sf.openSession();
         List<Customer> list = s.selectList("customers.findAll");
         for (Customer customer : list) {
-            System.out.println(customer.getId() + " " + customer.getName() + " " + customer.getAge());
+            //system.out.println(customer.getId() + " " + customer.getName() + " " + customer.getAge());
         }
 
     }
