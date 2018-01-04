@@ -33,6 +33,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ManageGameInput {
 
     private static Lock lock = new ReentrantLock();// 锁对象
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ManagePayInput.class);
     public ManageGameInput() {
     }
 
@@ -111,7 +112,7 @@ public class ManageGameInput {
         int i1 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayDay.class);
         int i2 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayWeek.class);
         int i3 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayMon.class);
-        System.out.println(i1+"...."+i2+"..."+i3);
+        log.info("StayData done||"+"i1"+i1+",i2"+i2+",i3"+i3);
 
         //原始数据存入mongodb
         try {
@@ -160,7 +161,7 @@ public class ManageGameInput {
     private int manageStayData(Date reginDate, Date lastDate,String cid, String gid, String sid, int newAddDayNum, int newAddWeekNum, int newAddMonNum , boolean dayExist, boolean weekExist, boolean MonExist,
                                          UseMySql mys, Class clazz) throws IOException {
         if (reginDate.equals(lastDate)) {
-            System.out.println("注册当天不需要处理留存,但需要新增");
+            log.info("注册当天不需要处理留存,但需要新增");
 //            return -1;
         }
 

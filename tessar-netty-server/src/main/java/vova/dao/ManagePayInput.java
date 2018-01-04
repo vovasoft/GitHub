@@ -29,7 +29,7 @@ import java.util.concurrent.locks.ReentrantLock;
 //Big思路，能从游戏平台数据库找到的数据从那边找，然后算出这一次支付的细节信息，然后再找原始表，如果没有，新建一个。
 @Component
 public class ManagePayInput {
-    private static final transient org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ManagePayInput.class);
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ManagePayInput.class);
 
     public ManagePayInput() {
     }

@@ -46,6 +46,8 @@ http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001"
 
 
 
+
+支付能发送来的数据
 ["id"]=>
   string(7) "2200659"
   ["order_id"]=>
