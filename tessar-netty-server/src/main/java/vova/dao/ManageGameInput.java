@@ -21,6 +21,8 @@ import vova.util.Tools;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author: Vova
@@ -30,6 +32,7 @@ import java.util.Date;
 @Component
 public class ManageGameInput {
 
+    private static Lock lock = new ReentrantLock();// 锁对象
     public ManageGameInput() {
     }
 
@@ -121,31 +124,37 @@ public class ManageGameInput {
 
     //查找增表某行是否存在，如果不存在则插入一个  删除了<T>如果有问题再加
     private  NewAdd findOrCreate(Date uLoginDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
-        String clazzName = clazz.getSimpleName();
-        Date thisDate = null;
-        if (clazzName.equals("NewAddDay")) {
-            thisDate = uLoginDate;
-        } else if (clazzName.equals("NewAddMon")){
-            thisDate = Tools.getFirstOfMonth(uLoginDate);
-        } else if (clazzName.equals("NewAddWeek")) {
-            thisDate = Tools.getMondayOfDate(uLoginDate);
+        try {
+            lock.lock();
+            String clazzName = clazz.getSimpleName();
+            Date thisDate = null;
+            if (clazzName.equals("NewAddDay")) {
+                thisDate = uLoginDate;
+            } else if (clazzName.equals("NewAddMon")){
+                thisDate = Tools.getFirstOfMonth(uLoginDate);
+            } else if (clazzName.equals("NewAddWeek")) {
+                thisDate = Tools.getMondayOfDate(uLoginDate);
+            }
+            NewAdd findSeed = new NewAdd();
+            findSeed.setcID(cid);
+            findSeed.setgID(gid);
+            findSeed.setsID(sid);
+            findSeed.setDateID(thisDate);
+            NewAdd tmp1 = (NewAdd) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
+            if (tmp1 == null) {    //新增表中行不存在则需要增加行
+                NewAdd newLine = new NewAdd(0, thisDate,
+                        cid,
+                        gid,
+                        sid,
+                        0, 0, 0, 0, 0);
+                mys.utilSQL(clazz,EnumSQL.INSERT,newLine);
+                tmp1 = (NewAdd) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
+            }
+            return tmp1;
+        }finally {
+            lock.unlock();
         }
-        NewAdd findSeed = new NewAdd();
-        findSeed.setcID(cid);
-        findSeed.setgID(gid);
-        findSeed.setsID(sid);
-        findSeed.setDateID(thisDate);
-        NewAdd tmp1 = (NewAdd) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
-        if (tmp1 == null) {    //新增表中行不存在则需要增加行
-            NewAdd newLine = new NewAdd(0, thisDate,
-                    cid,
-                    gid,
-                    sid,
-                    0, 0, 0, 0, 0);
-            mys.utilSQL(clazz,EnumSQL.INSERT,newLine);
-            tmp1 = (NewAdd) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
-        }
-        return tmp1;
+
     }
 
     private int manageStayData(Date reginDate, Date lastDate,String cid, String gid, String sid, int newAddDayNum, int newAddWeekNum, int newAddMonNum , boolean dayExist, boolean weekExist, boolean MonExist,
