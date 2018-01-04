@@ -2,67 +2,67 @@
 create TABLE PayMentDay
 (id int PRIMARY KEY auto_increment
 ,dateID DATE
-,cID VARCHAR (64)
-,gID VARCHAR (64)
-,sID VARCHAR (64)
+,cId VARCHAR (64)
+,gId VARCHAR (64)
+,sId VARCHAR (64)
 ,newAddNum INT
 ,newAddPayPlayerNum INT
-,newAddPayAllMoney INT
-,newAddPlayerARPPU INT
-,newAddPayPlayerARPPU INT
+,newAddPayAllMoney FLOAT
+,newAddPlayerARPPU FLOAT
+,newAddPayPlayerARPPU FLOAT
 ,newPayPlayerNum INT
-,newPayAllMoney INT
-,averageNewPayMoney INT
+,newPayAllMoney FLOAT
+,averageNewPayMoney FLOAT
 ,activeNum INT
 ,payPlayerNum INT
-,todayAllPayMoney INT
+,todayAllPayMoney FLOAT
 ,activeARPPU INT
-,payPlayerARPPU INT
-,allMoney INT
+,payPlayerARPPU FLOAT
+,allMoney FLOAT
 );
 
 create TABLE PayMentWeek
 (id int PRIMARY KEY auto_increment
 ,dateID DATE
-,cID VARCHAR (64)
-,gID VARCHAR (64)
-,sID VARCHAR (64)
+,cId VARCHAR (64)
+,gId VARCHAR (64)
+,sId VARCHAR (64)
 ,newAddNum INT
 ,newAddPayPlayerNum INT
-,newAddPayAllMoney INT
-,newAddPlayerARPPU INT
-,newAddPayPlayerARPPU INT
+,newAddPayAllMoney FLOAT
+,newAddPlayerARPPU FLOAT
+,newAddPayPlayerARPPU FLOAT
 ,newPayPlayerNum INT
-,newPayAllMoney INT
-,averageNewPayMoney INT
+,newPayAllMoney FLOAT
+,averageNewPayMoney FLOAT
 ,activeNum INT
 ,payPlayerNum INT
-,todayAllPayMoney INT
+,todayAllPayMoney FLOAT
 ,activeARPPU INT
-,payPlayerARPPU INT
-,allMoney INT
+,payPlayerARPPU FLOAT
+,allMoney FLOAT
 );
 
 create TABLE PayMentMon
 (id int PRIMARY KEY auto_increment
 ,dateID DATE
-,cID VARCHAR (64)
-,gID VARCHAR (64)
-,sID VARCHAR (64)
+,cId VARCHAR (64)
+,gId VARCHAR (64)
+,sId VARCHAR (64)
 ,newAddNum INT
 ,newAddPayPlayerNum INT
-,newAddPayAllMoney INT
-,newAddPlayerARPPU INT
-,newAddPayPlayerARPPU INT
+,newAddPayAllMoney FLOAT
+,newAddPlayerARPPU FLOAT
+,newAddPayPlayerARPPU FLOAT
 ,newPayPlayerNum INT
-,newPayAllMoney INT
-,averageNewPayMoney INT
+,newPayAllMoney FLOAT
+,averageNewPayMoney FLOAT
 ,activeNum INT
 ,payPlayerNum INT
-,todayAllPayMoney INT
+,todayAllPayMoney FLOAT
 ,activeARPPU INT
-,payPlayerARPPU INT
-,allMoney INT
+,payPlayerARPPU FLOAT
+,allMoney FLOAT
 );
 
 -- 新增表

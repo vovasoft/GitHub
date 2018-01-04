@@ -25,7 +25,10 @@
  private long payTime;               //支付时间
 
 
-http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"gid","sid":"0","uid":"0001","payType":"64","currency":"USD","amount":12.4,"payTime":1513894954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513384954}
+http://192.168.1.110:9999/tessar/statis/statis?action=pay&json={"oid":"order001","gid":"bloodstrke","sid":"0","uid":"001","payType":"64","currency":"USD","amount":12.4,"payTime":1513284954}
 
 
 ["id"]=>

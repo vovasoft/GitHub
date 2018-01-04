@@ -2,6 +2,10 @@ package vova.dao.dbmongo;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
+import org.junit.Test;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationResults;
+import org.springframework.data.mongodb.core.aggregation.GroupOperation;
 import vova.domain.Player;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -10,13 +14,19 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 import vova.domain.payment.PayMentForKeep;
+import vova.domain.payment.PayMentWeek;
 import vova.util.Tools;
 
+import javax.print.Doc;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
+
+import static org.springframework.data.mongodb.core.aggregation.Aggregation.group;
+import static org.springframework.data.mongodb.core.aggregation.Aggregation.match;
 
 /**
  * @author: Vova
@@ -228,8 +238,6 @@ public class UseMyMongo {
         }
     }
 
-
-
     public PayMentForKeep findOnePayer(PayMentForKeep payMentForKeep) {
         String uid = payMentForKeep.getUid();
         String gid = payMentForKeep.getGid();
@@ -244,6 +252,29 @@ public class UseMyMongo {
 
         return pmfk;
 
+    }
+
+    //应该还有问题，有bug
+    public float findAllPayMoney(PayMentForKeep payMentForKeep){
+        String cid = payMentForKeep.getCid();
+        String gid = payMentForKeep.getGid();
+        String sid = payMentForKeep.getSid();
+        long date = payMentForKeep.getPayTime();
+
+
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
+        float total = 0;
+        Query query = new Query();
+        query.addCriteria(Criteria.where("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("payTime").lte(date));
+
+        List<PayMentForKeep> resList = mongoTemplate.find(query, PayMentForKeep.class);
+        for (PayMentForKeep mentForKeep : resList) {
+            total+=mentForKeep.getAmount();
+        }
+
+
+        return total;
     }
 
     public Player findOnePlayer(Player player) {

@@ -116,8 +116,6 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             for (PayReceive payReceive : payReceiveList) {
                 mpi.HandPayData(payReceive);
             }
-
-
             bb=Unpooled.copiedBuffer("OK".getBytes());
             response.content().writeBytes(bb);
             bb.release();

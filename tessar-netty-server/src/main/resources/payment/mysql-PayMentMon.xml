@@ -37,12 +37,21 @@
     </select>
 
     <update id="update">
-        update PayMentMon set newAddNum=#{newAddNum}, newAddPayPlayerNum=#{newAddPayPlayerNum},
-        newAddPayAllMoney=#{newAddPayAllMoney},newAddPlayerARPPU=#{newAddPlayerARPPU},newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},
-        newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},newPayPlayerNum=#{newPayPlayerNum},
-        newPayAllMoney=#{newPayAllMoney},averageNewPayMoney=#{averageNewPayMoney},activeNum=#{activeNum},
-        payPlayerNum=#{payPlayerNum},todayAllPayMoney=#{todayAllPayMoney},activeARPPU=#{activeARPPU},
-        payPlayerARPPU=#{payPlayerARPPU},allMoney=#{allMoney}
+        update PayMentMon set
+        newAddNum=#{newAddNum},
+        newAddPayPlayerNum=#{newAddPayPlayerNum},
+        newAddPayAllMoney=#{newAddPayAllMoney},
+        newAddPlayerARPPU=#{newAddPlayerARPPU},
+        newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},
+        newPayPlayerNum=#{newPayPlayerNum},
+        newPayAllMoney=#{newPayAllMoney},
+        averageNewPayMoney=#{averageNewPayMoney},
+        activeNum=#{activeNum},
+        payPlayerNum=#{payPlayerNum},
+        todayAllPayMoney=#{todayAllPayMoney},
+        activeARPPU=#{activeARPPU},
+        payPlayerARPPU=#{payPlayerARPPU},
+        allMoney=#{allMoney}
         where id=#{id}
     </update>
 

@@ -35,18 +35,28 @@
         select * from PayMentDay where dateID = #{dateID} AND cId = #{cId} AND gId = #{gId} AND sId = #{sId}  limit 1
     </select>
 
+
     <update id="update">
-        update PayMentDay set newAddNum=#{newAddNum}, newAddPayPlayerNum=#{newAddPayPlayerNum},
-        newAddPayAllMoney=#{newAddPayAllMoney},newAddPlayerARPPU=#{newAddPlayerARPPU},newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},
-        newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},newPayPlayerNum=#{newPayPlayerNum},
-        newPayAllMoney=#{newPayAllMoney},averageNewPayMoney=#{averageNewPayMoney},activeNum=#{activeNum},
-        payPlayerNum=#{payPlayerNum},todayAllPayMoney=#{todayAllPayMoney},activeARPPU=#{activeARPPU},
-        payPlayerARPPU=#{payPlayerARPPU},allMoney=#{allMoney}
+        update PayMentDay set
+        newAddNum=#{newAddNum},
+        newAddPayPlayerNum=#{newAddPayPlayerNum},
+        newAddPayAllMoney=#{newAddPayAllMoney},
+        newAddPlayerARPPU=#{newAddPlayerARPPU},
+        newAddPayPlayerARPPU=#{newAddPayPlayerARPPU},
+        newPayPlayerNum=#{newPayPlayerNum},
+        newPayAllMoney=#{newPayAllMoney},
+        averageNewPayMoney=#{averageNewPayMoney},
+        activeNum=#{activeNum},
+        payPlayerNum=#{payPlayerNum},
+        todayAllPayMoney=#{todayAllPayMoney},
+        activeARPPU=#{activeARPPU},
+        payPlayerARPPU=#{payPlayerARPPU},
+        allMoney=#{allMoney}
         where id=#{id}
     </update>
 
     <!--<select id="findDayCount" resultType="java.lang.Integer">-->
-        <!--select COUNT(dateID) from PayMentDay where cID = #{cID} AND gID = #{gID} AND sID = #{sID}-->
+    <!--select COUNT(dateID) from PayMentDay where cID = #{cID} AND gID = #{gID} AND sID = #{sID}-->
     <!--</select>-->
 
 
