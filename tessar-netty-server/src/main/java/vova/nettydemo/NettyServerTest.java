@@ -18,8 +18,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @version Create in 上午12:24 2017/12/21
  */
 
-
-
 public class NettyServerTest {
     private static final int SERVER_PORT = 9999;
     private static final String DEFAULT_URL = "/";

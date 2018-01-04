@@ -69,7 +69,7 @@ public class UseMyMongo {
         DBObject query = new BasicDBObject();
         res = mongoTemplate.getCollection(collectionName).distinct(id, query).size();
 
-        System.out.println(res);
+        //system.out.println(res);
 
         return res;
     }
@@ -89,10 +89,10 @@ public class UseMyMongo {
         query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("lastdate").gte(todayTime).lt(todayTime + (24 * 3600)));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
-            System.out.println("resPlayer is not exist!!!");
+            //system.out.println("resPlayer is not exist!!!");
             return false;
         } else {
-            System.out.println("resPlayer is exist!!!");
+            //system.out.println("resPlayer is exist!!!");
             return true;
         }
     }
@@ -111,8 +111,8 @@ public class UseMyMongo {
 
         Date mondayOfDate = Tools.getMondayOfDate(loginDate);
         Date sundayOfDate = Tools.getSundayOfDate(loginDate);
-        System.out.println("mondayOfDate........." + mondayOfDate);
-        System.out.println("sundayOfDate........." + sundayOfDate);
+        //system.out.println("mondayOfDate........." + mondayOfDate);
+        //system.out.println("sundayOfDate........." + sundayOfDate);
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
@@ -122,7 +122,7 @@ public class UseMyMongo {
 
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
-            System.out.println("resPlayer is not exist!!!");
+            //system.out.println("resPlayer is not exist!!!");
             return false;
         } else {
             return true;
@@ -140,8 +140,8 @@ public class UseMyMongo {
 
         Date firstMonthOfDate = Tools.getFirstOfMonth(loginDate);
         Date endMonthOfDate = Tools.getLastOfMonth(loginDate);
-        System.out.println("firtMonth........." + Tools.dateToSec(firstMonthOfDate));
-        System.out.println("endMonthOfDate........." + Tools.dateToSec(endMonthOfDate) + (24 * 3600));
+        //system.out.println("firtMonth........." + Tools.dateToSec(firstMonthOfDate));
+        //system.out.println("endMonthOfDate........." + Tools.dateToSec(endMonthOfDate) + (24 * 3600));
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
@@ -150,7 +150,7 @@ public class UseMyMongo {
                 .is(sid).and("lastdate").gte(Tools.dateToSec(firstMonthOfDate)).lt(Tools.dateToSec(endMonthOfDate) + (24 * 3600)));
         Player resPlayer = mongoTemplate.findOne(query, Player.class);
         if (resPlayer == null) {
-            System.out.println("Player is not exist!!!");
+            //system.out.println("Player is not exist!!!");
             return false;
         } else {
             return true;
@@ -174,10 +174,10 @@ public class UseMyMongo {
         query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid).and("payTime").gte(todayTime).lt(todayTime + (24 * 3600)));
         PayMentForKeep res = mongoTemplate.findOne(query, PayMentForKeep.class);
         if (res == null) {
-            System.out.println("None Exist from Day");
+            //system.out.println("None Exist from Day");
             return true;
         } else {
-            System.out.println("False First pay");
+            //system.out.println("False First pay");
             return false;
         }
     }
@@ -203,10 +203,10 @@ public class UseMyMongo {
 
         PayMentForKeep res = mongoTemplate.findOne(query, PayMentForKeep.class);
         if (res == null) {
-            System.out.println("None Exist from week");
+            //system.out.println("None Exist from week");
             return true;
         } else {
-            System.out.println("False First pay");
+            //system.out.println("False First pay");
             return false;
         }
     }
@@ -220,8 +220,8 @@ public class UseMyMongo {
 
         Date firstMonthOfDate = Tools.getFirstOfMonth(loginDate);
         Date endMonthOfDate = Tools.getLastOfMonth(loginDate);
-        System.out.println("firtMonth........." + Tools.dateToSec(firstMonthOfDate));
-        System.out.println("endMonthOfDate........." + Tools.dateToSec(endMonthOfDate) + (24 * 3600));
+        //system.out.println("firtMonth........." + Tools.dateToSec(firstMonthOfDate));
+        //system.out.println("endMonthOfDate........." + Tools.dateToSec(endMonthOfDate) + (24 * 3600));
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
@@ -230,10 +230,10 @@ public class UseMyMongo {
                 .is(sid).and("payTime").gte(Tools.dateToSec(firstMonthOfDate)).lt(Tools.dateToSec(endMonthOfDate) + (24 * 3600)));
         PayMentForKeep res = mongoTemplate.findOne(query, PayMentForKeep.class);
         if (res == null) {
-            System.out.println("None Exist from Month");
+            //system.out.println("None Exist from Month");
             return true;
         } else {
-            System.out.println("False First pay");
+            //system.out.println("False First pay");
             return false;
         }
     }
@@ -301,10 +301,10 @@ public class UseMyMongo {
         query.addCriteria(Criteria.where("channel_from").is(cID));
         MongoTest mt = mongoTemplate.findOne(query, MongoTest.class);
         List<MongoTest> mtList = mongoTemplate.find(query, MongoTest.class);
-        System.out.println("date::::" + sdf.format(mt.date));
+        //system.out.println("date::::" + sdf.format(mt.date));
 
         for (MongoTest test : mtList) {
-            System.out.println("for::::" + sdf.format(test.date));
+            //system.out.println("for::::" + sdf.format(test.date));
         }
     }
 }

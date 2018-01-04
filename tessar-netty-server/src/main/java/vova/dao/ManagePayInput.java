@@ -15,11 +15,9 @@ import vova.domain.newadd.NewAddMon;
 import vova.domain.newadd.NewAddWeek;
 import vova.domain.payment.*;
 import vova.util.Tools;
-
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
-
 
 /**
  * @author: Vova
