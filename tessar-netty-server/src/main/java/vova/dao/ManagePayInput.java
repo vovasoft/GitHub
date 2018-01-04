@@ -87,7 +87,6 @@ public class ManagePayInput {
             pmfk.setFirstPayTime(tmp.getFirstPayTime());
             pmfk.setCid(cid);
         }
-        pmfk.show();
         try {
             umm.insertMongo(pmfk);        //原始数据存入MongoDB
         } catch (ParseException e) {

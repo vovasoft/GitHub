@@ -6,7 +6,6 @@ package vova.domain.payment;
  */
 //That's class for save db for payment http
 public class PayMentForKeep {
-    private int id;
     private String uid;                 //用户id
     private String cid;                 //channelID 渠道id
     private String gid;                 //game id
@@ -16,14 +15,6 @@ public class PayMentForKeep {
     private float amount;               //支付金额
     private long firstPayTime;          //首充时间
     private long payTime;               //本次支付时间
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUid() {
         return uid;
@@ -103,7 +94,6 @@ public class PayMentForKeep {
 
     public void show() {
         System.out.println(
-                "id:" + id +
                         ", uid:" + uid +
                         ", cid:" + cid +
                         ", gid:" + gid +
@@ -115,9 +105,7 @@ public class PayMentForKeep {
                         ", payTime:" + payTime);
     }
 
-    public PayMentForKeep(int id, String uid, String cid, String gid, String sid, String payType, String currency, float amount, long firstPayTime, long payTime) {
-
-        this.id = id;
+    public PayMentForKeep( String uid, String cid, String gid, String sid, String payType, String currency, float amount, long firstPayTime, long payTime) {
         this.uid = uid;
         this.cid = cid;
         this.gid = gid;
