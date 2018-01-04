@@ -12,10 +12,6 @@
     </properties>
     <!-- 定义类别名 -->
     <typeAliases>
-        <!--<typeAlias type="vova.domain.test.Customer" alias="_Customer"/>-->
-        <!--<typeAlias type="vova.domain.test.Order" alias="_Order"/>-->
-        <!--<typeAlias type="vova.domain.test.User" alias="_User"/>-->
-        <!--<typeAlias type="vova.domain.test.User2" alias="_User2"/>-->
         <typeAlias type="vova.domain.newadd.NewAddDay" alias="_NewAddDay"/>
         <typeAlias type="vova.domain.newadd.NewAddWeek" alias="_NewAddWeek"/>
         <typeAlias type="vova.domain.newadd.NewAddMon" alias="_NewAddMon"/>
@@ -41,12 +37,6 @@
     </environments>
     <!-- 定义MYSQL映射配置文件 -->
     <mappers>
-        <!--<mapper resource="customermapper.xml"/>-->
-        <!--<mapper resource="ordermapper.xml"/>-->
-        <!--<mapper resource="mysql-User.xml"/>-->
-        <!--<mapper resource="mysql-User2.xml"/>-->
-        <!--<mapper resource="mysql-playerExist.xml"/>-->
-
         <mapper resource="newadd/mysql-newaddDay.xml"/>
         <mapper resource="newadd/mysql-newaddWeek.xml"/>
         <mapper resource="newadd/mysql-newaddMon.xml"/>

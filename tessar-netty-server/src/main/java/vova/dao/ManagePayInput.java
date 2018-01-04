@@ -35,6 +35,7 @@ public class ManagePayInput {
     }
 
     public int HandPayData(PayReceive payReceive) throws ParseException, IOException {
+        log.info("Begin Job for Pay Data: thread--"+Thread.currentThread());
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
@@ -165,7 +166,7 @@ public class ManagePayInput {
 
         log.info("res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
         System.gc();
-
+        log.info("End Job for Pay Data: thread--"+Thread.currentThread());
         return 1;
     }
 
