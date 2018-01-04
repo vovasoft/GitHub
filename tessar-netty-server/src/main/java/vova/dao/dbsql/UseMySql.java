@@ -38,7 +38,7 @@ public class UseMySql {
 //        ss.close();
 //    }
 
-    public synchronized Object utilSQL(Class clazz, EnumSQL operate, Object object )throws IOException{
+    public Object utilSQL(Class clazz, EnumSQL operate, Object object )throws IOException{
     //    String resoure = "batis-conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resoure);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);

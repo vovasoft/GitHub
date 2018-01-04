@@ -34,7 +34,7 @@ public class ManagePayInput {
     public ManagePayInput() {
     }
 
-    public synchronized int HandPayData(PayReceive payReceive) throws ParseException, IOException {
+    public int HandPayData(PayReceive payReceive) throws ParseException, IOException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
@@ -169,7 +169,7 @@ public class ManagePayInput {
         return 1;
     }
 
-    private synchronized int[] getNewAddNumAndActiveNum(Date uLoginDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
+    private int[] getNewAddNumAndActiveNum(Date uLoginDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
         String clazzName = clazz.getSimpleName();
         int res[] = new int[2];
         Date thisDate = null;
@@ -233,7 +233,7 @@ public class ManagePayInput {
 
     }
 
-    private synchronized int updatePayTable(PayAllShow payAllShow, UseMySql mys, Class clazz,
+    private int updatePayTable(PayAllShow payAllShow, UseMySql mys, Class clazz,
                                int newAdd, int newAddMoneyNum, float newAddMoney,
                                int firstPayNum, float firstPayMoney, int activeNums,
                                int payNum, float payMoney, float allPayMoney) throws IOException {
@@ -273,20 +273,5 @@ public class ManagePayInput {
         mys.utilSQL(clazz, EnumSQL.UPDATE, payAllShow);
         return -1;
     }
-//    @Test
-//    public void testFun() throws IOException, ParseException {
-//        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
-//        UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
-//        UseMySql mys = (UseMySql) ac.getBean("useMySql");
-//        Date payDate = Tools.secToDateByFormat(1513384954);
-//        System.out.println(payDate);
-//        PayAllShow newLine = new PayAllShow(2, payDate,
-//                "ngBrazil",
-//                "22222",
-//                "0",
-//               12122, 123,0,0,0,0,0,0,0,0,0,0,0,0);
-//
-//
-//        mys.utilSQL(PayMentDay.class,EnumSQL.UPDATE,newLine);
-//    }
+
 }

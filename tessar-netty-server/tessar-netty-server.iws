@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" line="289" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f533203e-833e-4755-afbb-64e38ea37f59" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="ManagePayInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="111" />
+            <state relative-caret-position="2404">
+              <caret line="275" column="0" lean-forward="true" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getNewAddNumAndActiveNum#0;class#ManagePayInput#0" expanded="false" />
@@ -53,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="batis-conf.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="batis-conf.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/batis-conf.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -78,16 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-138">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NettyServerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -129,11 +116,21 @@
       <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="2669">
               <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
                 <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UseMySql.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2886">
+              <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -264,14 +261,14 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentForKeep.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
         <option value="$PROJECT_DIR$/src/main/resources/batis-conf.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java" />
       </list>
     </option>
   </component>
@@ -317,8 +314,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="136" />
-    <option name="y" value="41" />
+    <option name="x" value="222" />
+    <option name="y" value="23" />
     <option name="width" value="1595" />
     <option name="height" value="923" />
   </component>
@@ -1012,16 +1009,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vova" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tessar-netty-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tessar-netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vova" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1386,7 +1373,7 @@
       <workItem from="1514528989395" duration="1229000" />
       <workItem from="1514533153206" duration="1508000" />
       <workItem from="1514540316214" duration="296000" />
-      <workItem from="1514858366863" duration="76848000" />
+      <workItem from="1514858366863" duration="76949000" />
     </task>
     <servers />
   </component>
@@ -1423,7 +1410,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240735000" />
+    <option name="totallyTimeSpent" value="240836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1435,7 +1422,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="41" width="1595" height="923" extended-state="0" />
+    <frame x="222" y="23" width="1595" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2052,24 +2039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2504">
-          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding>
-            <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -2094,18 +2063,6 @@
         <state relative-caret-position="218">
           <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getNewAddNumAndActiveNum#0;class#ManagePayInput#0" expanded="false" />
-            <element signature="method#updatePayTable#0;class#ManagePayInput#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2153,6 +2110,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2404">
+          <caret line="275" column="0" lean-forward="true" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getNewAddNumAndActiveNum#0;class#ManagePayInput#0" expanded="false" />
+            <element signature="method#updatePayTable#0;class#ManagePayInput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2669">
+          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2886">
+          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding />
         </state>
       </provider>
