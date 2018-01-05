@@ -1,7 +1,6 @@
-package vova.dao;
+package vova.dao.manager;
 
 
-import javafx.scene.chart.PieChart;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import vova.dao.dbmongo.UseMyMongo;
@@ -15,7 +14,6 @@ import vova.domain.newadd.NewAddWeek;
 import org.springframework.stereotype.Component;
 import vova.domain.stayman.StayDay;
 import vova.domain.stayman.StayMon;
-import vova.domain.stayman.StayParent;
 import vova.domain.stayman.StayWeek;
 import vova.util.Tools;
 import java.io.IOException;
@@ -109,9 +107,9 @@ public class ManageGameInput {
         mys.utilSQL(NewAddMon.class, EnumSQL.UPDATE,updateMon);
 
         //处理留存逻辑
-        int i1 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayDay.class);
-        int i2 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayWeek.class);
-        int i3 = manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,newAddWeekNum,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayMon.class);
+        int i1 = ManageStay.manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddDayNum,isExistDay,isExistWeek,isExistMon,mys, StayDay.class);
+        int i2 = ManageStay.manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddWeekNum,isExistDay,isExistWeek,isExistMon,mys, StayWeek.class);
+        int i3 = ManageStay.manageStayData(uRegDate, uLoginDate,cid,gid,sid,newAddMonNum,isExistDay,isExistWeek,isExistMon,mys, StayMon.class);
         log.info("StayData done||"+"i1"+i1+",i2"+i2+",i3"+i3);
 
         //原始数据存入mongodb
@@ -158,72 +156,4 @@ public class ManageGameInput {
 
     }
 
-    private int manageStayData(Date reginDate, Date lastDate,String cid, String gid, String sid, int newAddDayNum, int newAddWeekNum, int newAddMonNum , boolean dayExist, boolean weekExist, boolean MonExist,
-                                         UseMySql mys, Class clazz) throws IOException {
-        if (reginDate.equals(lastDate)) {
-            log.info("注册当天不需要处理留存,但需要新增");
-//            return -1;
-        }
-
-        //查找留存表是否有行，如果没有插入新行。
-        StayParent findSeed = new StayParent();
-        String clazzName = clazz.getSimpleName();
-        int flag=0;
-        String stayStr="";
-        Date thisDate = null;
-
-        if (clazzName.equals("StayDay")) {
-            if (dayExist) return -2;                     //当本日登录过一次，将不再记录，避免重复计算
-            stayStr=Tools.numArrayToStr(new int[30]);    //初始化数据字段
-            thisDate = reginDate;
-            flag=1;
-        } else if (clazzName.equals("StayMon")){
-            if (MonExist) return -2;
-            stayStr=Tools.numArrayToStr(new int[8]);
-            thisDate = Tools.getFirstOfMonth(reginDate);
-            flag=2;
-        } else if (clazzName.equals("StayWeek")) {
-            if (weekExist) return -2;
-            stayStr=Tools.numArrayToStr(new int[4]);
-            thisDate = Tools.getMondayOfDate(reginDate);
-            flag=3;
-        }
-
-        findSeed.setcID(cid);
-        findSeed.setgID(gid);
-        findSeed.setsID(sid);
-        findSeed.setDateID(thisDate);
-        StayParent tmp = (StayParent) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);  //表的第一位为注册时间，一个注册记录当天注册用户的留存情况
-
-        if (tmp == null) {
-            StayParent sp = new StayParent(0, thisDate,
-                    cid,
-                    gid,
-                    sid,
-                    0,
-                    stayStr);
-            mys.utilSQL(clazz,EnumSQL.INSERT,sp);
-            tmp=(StayParent) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
-        }
-        if (flag == 1) {
-            tmp.setNewAddNum(tmp.getNewAddNum()+newAddDayNum);
-        }else if (flag ==2){
-            tmp.setNewAddNum(tmp.getNewAddNum()+newAddWeekNum);
-        } else if (flag == 3) {
-            tmp.setNewAddNum(tmp.getNewAddNum()+newAddMonNum);
-        }
-        mys.utilSQL(clazz,EnumSQL.UPDATE,tmp);
-        //得到tmp再对表进行更新
-        String updateStr = tmp.getStayList();
-        int [] updateInt = Tools.strToNumArray(updateStr,",");
-        int index = Tools.countTwoDateSpace(reginDate,lastDate,clazz);
-        if (index == 0) {
-            return -1;
-        }
-        updateInt[index-1]++;
-        tmp.setStayList(Tools.numArrayToStr(updateInt));
-        mys.utilSQL(clazz,EnumSQL.UPDATE,tmp);
-
-        return 1;
-    }
 }

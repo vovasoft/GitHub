@@ -1,6 +1,5 @@
 package vova.util;
 
-import javax.security.auth.login.FailedLoginException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -11,6 +10,8 @@ import java.util.Date;
  * @create: date 14:03 2017/12/26
  */
 public class Tools {
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Tools.class);
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     public static synchronized long dateToSecByFormat(Date date) {
@@ -118,7 +119,7 @@ public class Tools {
         int res = 0;
         Calendar cRegister = Calendar.getInstance();
         Calendar cLogin = Calendar.getInstance();
-        if (clazzName.equals("StayDay")) {
+        if (clazzName.equals("StayDay")||clazzName.equals("StayPayDay")) {
 
             cRegister.setTime(dStart);
             cLogin.setTime(dEnd);
@@ -127,7 +128,7 @@ public class Tools {
                 res++;
                 cRegister.add(Calendar.DAY_OF_YEAR, 1);
             }
-        } else if (clazzName.equals("StayWeek")) {
+        } else if (clazzName.equals("StayWeek")||clazzName.equals("StayPayWeek")) {
             cRegister = Calendar.getInstance();
             cRegister.setTime(dStart);
 
@@ -138,7 +139,7 @@ public class Tools {
                 res++;
                 cRegister.add(Calendar.WEEK_OF_YEAR, 1);
             }
-        } else if (clazzName.equals("StayMon")) {
+        } else if (clazzName.equals("StayMon")||clazzName.equals("StayPayMon")) {
             cRegister = Calendar.getInstance();
             cRegister.setTime(dStart);
             cLogin = Calendar.getInstance();
@@ -179,5 +180,7 @@ public class Tools {
         }
         return false;
     }
+
+
 
 }

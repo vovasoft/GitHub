@@ -1,7 +1,6 @@
-package vova.dao;
+package vova.dao.manager;
 
 
-import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
@@ -14,6 +13,9 @@ import vova.domain.newadd.NewAddDay;
 import vova.domain.newadd.NewAddMon;
 import vova.domain.newadd.NewAddWeek;
 import vova.domain.payment.*;
+import vova.domain.staypay.StayPayDay;
+import vova.domain.staypay.StayPayMon;
+import vova.domain.staypay.StayPayWeek;
 import vova.util.Tools;
 import java.io.IOException;
 import java.text.ParseException;
@@ -39,6 +41,7 @@ public class ManagePayInput {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         UseMyMongo umm = (UseMyMongo) ac.getBean("useMyMongo");
         UseMySql mys = (UseMySql) ac.getBean("useMySql");
+        ac=null;
         float amount = payReceive.getAmount();
         String uid = payReceive.getUid();
         String gid = payReceive.getGid();
@@ -50,6 +53,7 @@ public class ManagePayInput {
         long payTime = payReceive.getPayTime();
 
         Date payDate = Tools.secToDateByFormat(payTime);
+        Date firstPayDate = null;
 
         Player tmpPlayer = new Player();
         tmpPlayer.setUid(uid);
@@ -57,6 +61,7 @@ public class ManagePayInput {
         tmpPlayer.setGid(gid);
 
         Player player = umm.findOnePlayer(tmpPlayer);
+        tmpPlayer=null;
         if (player == null) {
             System.out.println("error player not exist");
             return -1;
@@ -88,8 +93,7 @@ public class ManagePayInput {
             pmfk.setFirstPayTime(tmp.getFirstPayTime());
             pmfk.setCid(cid);
         }
-
-
+        firstPayDate = Tools.secToDateByFormat(pmfk.getFirstPayTime());
 
         //计算web展示表的字段数据，分为日，周，月             1.计算新增和活跃，需要查找游戏平台数据
         //新增和活跃
@@ -152,21 +156,36 @@ public class ManagePayInput {
             return -1;
         }
 
-        try {
-            umm.insertMongo(pmfk);        //原始数据存入MongoDB
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return -1;
-        }
+
         //获取累计付费
         float allPayMoney = umm.findAllPayMoney(pmfk);
         int res1 = updatePayTable(tmp1, mys, PayMentDay.class, newAddDayNum, newAddDayPayNum, newAddDayMoney, firstPayDayNum, firstPayDayMoney, activeDayNum, dayPayNum, amount, allPayMoney);
         int res2 = updatePayTable(tmp2, mys, PayMentWeek.class, newAddWeekNum, newAddWeekPayNum, newAddWeekMoney, firstPayWeekNum, firstPayWeekMoney, activeWeekNum, weekPayNum, amount, allPayMoney);
         int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, amount, allPayMoney);
 
-        log.info("res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
+        log.info("获取累计付费/n res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
         System.gc();
+
+        //处理留存逻辑
+        log.info("Stay---Day_NEWADD:"+newAddDayPayNum);
+        log.info("Stay---WEE_NEWADD:"+newAddWeekPayNum);
+        log.info("Stay---MON_NEWADD:"+newAddMonPayNum);
+        res1 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddDayPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayDay.class);
+        res2 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddWeekPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayWeek.class);
+        res3 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddMonPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayMon.class);
+
+        log.info("处理留存逻辑/n res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
+
         log.info("End Job for Pay Data: thread--"+Thread.currentThread());
+
+        try {
+            umm.insertMongo(pmfk);        //原始数据存入MongoDB
+            pmfk = null;
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return -1;
+        }
+
         return 1;
     }
 
@@ -196,7 +215,6 @@ public class ManagePayInput {
         }
     }
 
-
     private static Lock lock = new ReentrantLock();// 锁对象
 
     private PayAllShow findOrCreate(Date payDate, String cid, String gid, String sid, UseMySql mys, Class clazz) throws IOException {
@@ -224,6 +242,7 @@ public class ManagePayInput {
                         sid,
                         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 mys.utilSQL(clazz, EnumSQL.INSERT, newLine);
+                newLine=null;
                 tmp1 = (PayAllShow) mys.utilSQL(clazz, EnumSQL.SELECT, findSeed);
             }
             return tmp1;
@@ -238,6 +257,7 @@ public class ManagePayInput {
                                int newAdd, int newAddMoneyNum, float newAddMoney,
                                int firstPayNum, float firstPayMoney, int activeNums,
                                int payNum, float payMoney, float allPayMoney) throws IOException {
+
         //原始信息
         long newAddNum = newAdd;
         long newAddPayPlayerNum = payAllShow.getNewAddPayPlayerNum() + newAddMoneyNum;
@@ -274,5 +294,7 @@ public class ManagePayInput {
         mys.utilSQL(clazz, EnumSQL.UPDATE, payAllShow);
         return -1;
     }
+
+
 
 }

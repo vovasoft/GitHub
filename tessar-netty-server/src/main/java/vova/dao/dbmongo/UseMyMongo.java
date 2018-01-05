@@ -246,7 +246,7 @@ public class UseMyMongo {
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
         MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
         Query query = new Query();
-        query.addCriteria(Criteria.where("uid").is(uid).and("gid").is(gid).and("sid"));
+        query.addCriteria(Criteria.where("uid").is(uid).and("gid").is(gid).and("sid").is(sid));
 
         PayMentForKeep pmfk = mongoTemplate.findOne(query, PayMentForKeep.class);
 

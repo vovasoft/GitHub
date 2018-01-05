@@ -21,7 +21,9 @@
         <typeAlias type="vova.domain.payment.PayMentDay" alias="_PayMentDay"/>
         <typeAlias type="vova.domain.payment.PayMentWeek" alias="_PayMentWeek"/>
         <typeAlias type="vova.domain.payment.PayMentMon" alias="_PayMentMon"/>
-
+        <typeAlias type="vova.domain.staypay.StayPayDay" alias="_StayPayDay"/>
+        <typeAlias type="vova.domain.staypay.StayPayMon" alias="_StayPayMon"/>
+        <typeAlias type="vova.domain.staypay.StayPayWeek" alias="_StayPayWeek"/>
     </typeAliases>
 
     <environments default="development">
@@ -40,9 +42,12 @@
         <mapper resource="newadd/mysql-newaddDay.xml"/>
         <mapper resource="newadd/mysql-newaddWeek.xml"/>
         <mapper resource="newadd/mysql-newaddMon.xml"/>
-        <mapper resource="stay/mysql-StayDay.xml"/>
-        <mapper resource="stay/mysql-StayWeek.xml"/>
-        <mapper resource="stay/mysql-StayMon.xml"/>
+        <mapper resource="stayMan/mysql-StayDay.xml"/>
+        <mapper resource="stayMan/mysql-StayWeek.xml"/>
+        <mapper resource="stayMan/mysql-StayMon.xml"/>
+        <mapper resource="stayPay/mysql-StayPayDay.xml"/>
+        <mapper resource="stayPay/mysql-StayPayWeek.xml"/>
+        <mapper resource="stayPay/mysql-StayPayMon.xml"/>
         <mapper resource="payment/mysql-PayMentDay.xml"/>
         <mapper resource="payment/mysql-PayMentWeek.xml"/>
         <mapper resource="payment/mysql-PayMentMon.xml"/>

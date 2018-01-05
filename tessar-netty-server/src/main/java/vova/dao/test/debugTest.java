@@ -2,10 +2,9 @@ package vova.dao.test;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
-import io.netty.handler.codec.TooLongFrameException;
 import org.springframework.beans.factory.annotation.Autowired;
 import vova.SpringConfig;
-import vova.dao.ManageGameInput;
+import vova.dao.manager.ManageGameInput;
 import vova.dao.dbmongo.MongoTest;
 
 
@@ -15,9 +14,7 @@ import vova.dao.dbsql.UseMySql;
 import vova.domain.*;
 
 import vova.domain.newadd.NewAddDay;
-import vova.domain.stayman.StayDay;
 import vova.domain.stayman.StayMon;
-import vova.domain.stayman.StayWeek;
 import vova.domain.test.User;
 import vova.domain.test.User2;
 import org.apache.ibatis.io.Resources;
@@ -38,10 +35,8 @@ import vova.util.Tools;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.channels.ServerSocketChannel;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;

@@ -140,6 +140,37 @@ create table StayMon
 ,stayList VARCHAR (64)
 );
 
+
+create table StayPayDay
+(id int PRIMARY KEY auto_increment
+,dateID DATE
+,cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,stayList VARCHAR (220)
+);
+
+create table StayPayWeek
+(id int PRIMARY KEY auto_increment
+,dateID DATE
+,cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,stayList VARCHAR (128)
+);
+
+create table StayPayMon
+(id int PRIMARY KEY auto_increment
+,dateID DATE
+,cID VARCHAR (64)
+,gID VARCHAR (64)
+,sID VARCHAR (64)
+,newAddNum INT
+,stayList VARCHAR (64)
+);
+
 -- channel gameid serverid 列表
 create table channellist
 (id int PRIMARY KEY auto_increment

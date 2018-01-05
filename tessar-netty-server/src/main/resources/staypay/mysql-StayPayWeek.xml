@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="StayPayWeek">
+    <!-- 定义insert语句 -->
+
+
+    <insert id="insert" useGeneratedKeys="false" keyProperty="id">
+        insert into StayPayWeek (dateID,cID,gID,sID,newAddNum,stayList)
+        values (#{dateID},#{cID},#{gID},#{sID},#{newAddNum},#{stayList})
+    </insert>
+
+
+    <select id="findByObject" resultType="_StayPayWeek">
+        select * from StayPayWeek where dateID = #{dateID} AND cID = #{cID} AND gID = #{gID} AND sID = #{sID}  limit 1
+    </select>
+
+    <update id="update">
+        update StayPayWeek set stayList=#{stayList}, newAddNum=#{newAddNum}
+        where id=#{id}
+    </update>
+
+
+
+</mapper>

@@ -2,7 +2,7 @@ package vova;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import vova.dao.ManageGameInput;
+import vova.dao.manager.ManageGameInput;
 import vova.dao.dbmongo.UseMyMongo;
 import vova.dao.dbsql.UseMySql;
 

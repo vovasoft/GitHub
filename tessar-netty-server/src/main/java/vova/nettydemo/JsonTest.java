@@ -1,7 +1,7 @@
 package vova.nettydemo;
 
 import com.google.gson.Gson;
-import vova.dao.ManagePayInput;
+import vova.dao.manager.ManagePayInput;
 import vova.domain.test.User;
 import org.junit.Test;
 
@@ -23,5 +23,10 @@ public class JsonTest {
     @Test
     public void funLog(){
         log.info("aaaaaaaaaaaa");
+    }
+
+    @Test
+    public void funJsonScript(){
+        ;
     }
 }
