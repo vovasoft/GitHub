@@ -112,34 +112,37 @@ public class ManagePayInput {
         float newAddDayMoney = 0, newAddWeekMoney = 0, newAddMonMoney = 0;
         int newAddDayPayNum = 0, newAddWeekPayNum = 0, newAddMonPayNum = 0;
 
-        //判断日首冲，周首冲，月首冲
+        //判断日首次冲，周首次冲，月首次冲
         boolean firstPayDay = umm.findDayPayInMongo(pmfk);
         boolean firstPayWeek = umm.findWeekPayInMongo(pmfk);
         boolean firstPayMon = umm.findMonPayInMongo(pmfk);
 
+        //判断从来没有充过值，是第一次充值用户；
+        boolean neverPay = umm.findNeverPayInMongo(pmfk);
+
         //日新增，判断支付日期和注册日期一致
         if (payDate.equals(uRegDate)) {
             newAddDayMoney += amount;          //新增付费总额
-            newAddDayPayNum=firstPayDay?1:0;               //新增付费人数，人数需要判断是否重复
+            newAddDayPayNum=firstPayDay&&neverPay?1:0;               //新增付费人数，人数需要判断是否重复
         }
         //周新增，判断支付日期在注册日期的那个周
         if (Tools.checkDateInWeekDate(payDate, uRegDate)) {
             newAddWeekMoney += amount;//新增付费总额
-            newAddWeekPayNum=firstPayWeek?1:0;//新增付费人数
+            newAddWeekPayNum=firstPayWeek&&neverPay?1:0;//新增付费人数
         }
         //月新增，判断支付日期在注册日期的那个月
         if (Tools.checkDateInMonDate(payDate, uRegDate)) {
             newAddMonMoney += amount;//新增付费总额
-            newAddMonPayNum=firstPayMon?1:0;//新增付费人数
+            newAddMonPayNum=firstPayMon&&neverPay?1:0;//新增付费人数
         }
 
 
-        //记录首冲用户
-        int firstPayDayNum = firstPayDay ? 1 : 0, firstPayWeekNum = firstPayWeek ? 1 : 0, firstPayMonNum = firstPayMon ? 1 : 0;
+        //记录首冲用户数，之前没有充过值
+        int firstPayDayNum = firstPayDay&&neverPay ? 1 : 0, firstPayWeekNum = firstPayWeek&&neverPay ? 1 : 0, firstPayMonNum = firstPayMon&&neverPay ? 1 : 0;
         //记录首冲金额
-        float firstPayDayMoney = firstPayDay ? amount : 0;
-        float firstPayWeekMoney = firstPayWeek ? amount : 0;
-        float firstPayMonMoney = firstPayMon ? amount : 0;
+        float firstPayDayMoney = firstPayDay&&neverPay ? amount : 0;
+        float firstPayWeekMoney = firstPayWeek&&neverPay ? amount : 0;
+        float firstPayMonMoney = firstPayMon&&neverPay ? amount : 0;
 
 
         //增加付费用户和付费金额
@@ -164,15 +167,12 @@ public class ManagePayInput {
         int res3 = updatePayTable(tmp3, mys, PayMentMon.class, newAddMonNum, newAddMonPayNum, newAddMonMoney, firstPayMonNum, firstPayMonMoney, activeMonNum, MonPayNum, amount, allPayMoney);
 
         log.info("获取累计付费/n res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
-        System.gc();
+
 
         //处理留存逻辑
-        log.info("Stay---Day_NEWADD:"+newAddDayPayNum);
-        log.info("Stay---WEE_NEWADD:"+newAddWeekPayNum);
-        log.info("Stay---MON_NEWADD:"+newAddMonPayNum);
-        res1 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddDayPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayDay.class);
-        res2 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddWeekPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayWeek.class);
-        res3 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,newAddMonPayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayMon.class);
+        res1 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,firstPayDayNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayDay.class);
+        res2 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,firstPayWeekNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayWeek.class);
+        res3 = ManageStay.manageStayData(firstPayDate,payDate,cid,gid,sid,firstPayMonNum,!firstPayDay,!firstPayWeek,!firstPayMon,mys, StayPayMon.class);
 
         log.info("处理留存逻辑/n res1:" + res1 + ", res2:" + res2 + ", res3:" + res3);
 

@@ -29,36 +29,33 @@
       <file leaf-file-name="ManagePayInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+            <state relative-caret-position="2690">
+              <caret line="181" column="32" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getNewAddNumAndActiveNum#0;class#ManagePayInput#0" expanded="false" />
-                <element signature="method#findOrCreate#0;class#ManagePayInput#0" expanded="false" />
-                <element signature="method#updatePayTable#0;class#ManagePayInput#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageStay.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StayPayDay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/staypay/StayPayDay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManageStay.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+            <state relative-caret-position="204">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="145" column="12" lean-forward="true" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -89,18 +86,8 @@
       <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/util/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -116,24 +103,39 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NettyServerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UseMyMongo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="240" column="64" lean-forward="true" selection-start-line="240" selection-start-column="64" selection-end-line="240" selection-end-column="64" />
+            <state relative-caret-position="116">
+              <caret line="159" column="38" lean-forward="false" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="38" />
               <folding>
                 <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
+                <element signature="method#findDayInMongo#0;class#UseMyMongo#0" expanded="false" />
+                <element signature="method#findWeekInMongo#0;class#UseMyMongo#0" expanded="false" />
+                <element signature="method#findMonInMongo#0;class#UseMyMongo#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StayParent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayParent.java">
+      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="21">
+              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <element signature="e#4853#4928#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>System.out</find>
-      <find>NewAddDay</find>
       <find>Class</find>
       <find>findPlayerCountInMongo</find>
       <find>sec</find>
@@ -182,6 +182,8 @@
       <find>StayDay</find>
       <find>StayMon</find>
       <find>&quot;StayWeek&quot;</find>
+      <find>lock</find>
+      <find>newpayplayernum</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -208,9 +210,9 @@
       <replace>//system.out</replace>
       <replace>Mon</replace>
       <replace>//system.out.pr</replace>
-      <replace>StayPayWeek</replace>
       <replace>StayPayDay</replace>
       <replace>StayPayMon</replace>
+      <replace>StayPayWeek</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\GitHub\tessar-netty-server</dir>
@@ -224,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/vova/domain/stayman/NewAddMon.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayParent.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayMon.java" />
@@ -249,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentWeek.java" />
         <option value="$PROJECT_DIR$/src/main/resources/payment/mysql-PayMentDay.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/payment/PayMentForKeep.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbsql/UseMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/domain/staypay/StayPay.java" />
@@ -269,12 +269,14 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageStay.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
       </list>
     </option>
   </component>
@@ -320,10 +322,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="45" />
+    <option name="x" value="65" />
     <option name="width" value="1766" />
-    <option name="height" value="1038" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1367,7 +1368,7 @@
       <workItem from="1514528989395" duration="1229000" />
       <workItem from="1514533153206" duration="1508000" />
       <workItem from="1514540316214" duration="296000" />
-      <workItem from="1514858366863" duration="92007000" />
+      <workItem from="1514858366863" duration="97492000" />
     </task>
     <servers />
   </component>
@@ -1404,7 +1405,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255894000" />
+    <option name="totallyTimeSpent" value="261379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1416,24 +1417,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="45" width="1766" height="1038" extended-state="0" />
+    <frame x="65" y="0" width="1766" height="1021" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15261959" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15251799" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30141845" sideWeight="0.50472254" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40091115" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23228803" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17057444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20398593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24776785" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2514758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1461,15 +1462,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java</url>
-          <line>20</line>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java</url>
@@ -1863,16 +1858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding>
-            <element signature="e#4853#4928#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.19.Final/netty-all-4.1.19.Final.jar!/io/netty/channel/nio/NioEventLoopGroup.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1883,14 +1868,6 @@
             <element signature="e#872#873#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2068,14 +2045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/staypay/StayPayDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/stayman/StayParent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -2089,37 +2058,6 @@
         <state relative-caret-position="224">
           <caret line="145" column="12" lean-forward="true" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="240" column="64" lean-forward="true" selection-start-line="240" selection-start-column="64" selection-end-line="240" selection-end-column="64" />
-          <folding>
-            <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getNewAddNumAndActiveNum#0;class#ManagePayInput#0" expanded="false" />
-            <element signature="method#findOrCreate#0;class#ManagePayInput#0" expanded="false" />
-            <element signature="method#updatePayTable#0;class#ManagePayInput#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2139,16 +2077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/SpringConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -2164,6 +2092,73 @@
           <folding>
             <element signature="e#624#625#0" expanded="true" />
             <element signature="e#640#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="159" column="38" lean-forward="false" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="38" />
+          <folding>
+            <element signature="method#findPlayerCountInMongo#0;class#UseMyMongo#0" expanded="false" />
+            <element signature="method#findDayInMongo#0;class#UseMyMongo#0" expanded="false" />
+            <element signature="method#findWeekInMongo#0;class#UseMyMongo#0" expanded="false" />
+            <element signature="method#findMonInMongo#0;class#UseMyMongo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#4853#4928#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/domain/staypay/StayPayDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2690">
+          <caret line="181" column="32" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

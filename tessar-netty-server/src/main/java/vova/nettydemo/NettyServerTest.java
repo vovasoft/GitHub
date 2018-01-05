@@ -25,7 +25,7 @@ public class NettyServerTest {
     public void start(final String ip) throws Exception
     {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup(4);
+        EventLoopGroup workerGroup = new NioEventLoopGroup(1);
         try
         {
             ServerBootstrap b = new ServerBootstrap();

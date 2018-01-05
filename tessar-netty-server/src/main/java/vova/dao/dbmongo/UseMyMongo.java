@@ -157,6 +157,26 @@ public class UseMyMongo {
         }
     }
 
+    public boolean findNeverPayInMongo(PayMentForKeep payMentForKeep){
+        String uid = payMentForKeep.getUid();
+        String gid = payMentForKeep.getGid();
+        String sid = payMentForKeep.getSid();
+        String cid = payMentForKeep.getCid();
+
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        MongoTemplate mongoTemplate = (MongoTemplate) ac.getBean("mongoTemplate");
+        Query query = new Query();
+        query.addCriteria(Criteria.where("uid").is(uid).and("cid").is(cid).and("gid").is(gid).and("sid").is(sid));
+        PayMentForKeep res = mongoTemplate.findOne(query, PayMentForKeep.class);
+        if (res == null) {
+            //system.out.println("None Exist from Day");
+            return true;
+        } else {
+            //system.out.println("False First pay");
+            return false;
+        }
+    }
+
     //ExistPay in one day week mon
     //这里的计算更复杂，每个用户登录的时间以秒计算，算法中只能精确到天，数据库中的date没有小时，所以要手动控制一下时间区间
     //记录当天是否新增付费
