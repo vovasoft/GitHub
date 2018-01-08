@@ -77,7 +77,7 @@ public class ManageStay {
                 String updateStr = tmp.getStayList();
                 int[] updateInt = Tools.strToNumArray(updateStr, ",");
                 int index = Tools.countTwoDateSpace(firstDate, lastDate, clazz);
-                if (index == 0 && index - 1 < updateInt.length) {
+                if (index == 0 || index - 1 > updateInt.length-1) {
                     return -1;
                 }
                 updateInt[index - 1]++;

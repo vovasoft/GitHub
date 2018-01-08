@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManagePayInput.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ManagePayInput.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="181" column="32" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="149" column="82" lean-forward="true" selection-start-line="149" selection-start-column="82" selection-end-line="149" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +51,8 @@
       <file leaf-file-name="ManageStay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="3" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="383">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +73,11 @@
       <file leaf-file-name="JsonTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="65" selection-end-column="9" />
               <folding>
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +86,8 @@
       <file leaf-file-name="ManageGameInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="57" />
+            <state relative-caret-position="-1367">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,8 +96,8 @@
       <file leaf-file-name="json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="64" selection-end-column="126" />
+            <state relative-caret-position="289">
+              <caret line="104" column="124" lean-forward="false" selection-start-line="104" selection-start-column="124" selection-end-line="104" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -106,7 +106,7 @@
       <file leaf-file-name="NettyServerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="227">
               <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
               <folding />
             </state>
@@ -128,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NettyHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="139" column="31" lean-forward="false" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="31" />
+            <state relative-caret-position="146">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,8 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Class</find>
-      <find>findPlayerCountInMongo</find>
       <find>sec</find>
       <find>firtMonth</find>
       <find>strToNumArray</find>
@@ -182,6 +180,8 @@
       <find>&quot;StayWeek&quot;</find>
       <find>lock</find>
       <find>newpayplayernum</find>
+      <find>&quot;`</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>cRegister</replace>
@@ -211,6 +211,7 @@
       <replace>StayPayDay</replace>
       <replace>StayPayMon</replace>
       <replace>StayPayWeek</replace>
+      <replace>\&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\GitHub\tessar-netty-server</dir>
@@ -267,14 +268,14 @@
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManagePayInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/ManageGameInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/util/Tools.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/dbmongo/UseMyMongo.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jsonTest/json" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java" />
       </list>
     </option>
   </component>
@@ -320,10 +321,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
-    <option name="y" value="18" />
-    <option name="width" value="1766" />
-    <option name="height" value="968" />
+    <option name="x" value="9" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1161,6 +1162,56 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="JsonTest.funHTTP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.nettydemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tessar-netty-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="vova.nettydemo" />
+      <option name="MAIN_CLASS_NAME" value="vova.nettydemo.JsonTest" />
+      <option name="METHOD_NAME" value="funHTTP" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JsonTest.funJsonScript" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="vova.nettydemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tessar-netty-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="vova.nettydemo" />
+      <option name="MAIN_CLASS_NAME" value="vova.nettydemo.JsonTest" />
+      <option name="METHOD_NAME" value="funJsonScript" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="JsonTest.funLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1211,31 +1262,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="UseMyMongo.funTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="vova.dao.dbmongo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tessar-netty-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="vova.dao.dbmongo" />
-      <option name="MAIN_CLASS_NAME" value="vova.dao.dbmongo.UseMyMongo" />
-      <option name="METHOD_NAME" value="funTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1245,31 +1271,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="debugTest.funcountTwoDateSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="vova.dao.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tessar-netty-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="vova.dao.test" />
-      <option name="MAIN_CLASS_NAME" value="vova.dao.test.debugTest" />
-      <option name="METHOD_NAME" value="funcountTwoDateSpace" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -1323,18 +1324,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.debugTest.funcountTwoDateSpace" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UseMyMongo.funTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ManagePayInput.testFun" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JsonTest.funLog" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ManagePayInput.testFun" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JsonTest.funLog" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JsonTest.funJsonScript" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JsonTest.funHTTP" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.NettyServerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JsonTest.funLog" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ManagePayInput.testFun" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UseMyMongo.funTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.debugTest.funcountTwoDateSpace" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JsonTest.funHTTP" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JsonTest.funJsonScript" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JsonTest.funLog" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ManagePayInput.testFun" />
       </list>
     </recent_temporary>
   </component>
@@ -1368,28 +1369,28 @@
       <workItem from="1514533153206" duration="1508000" />
       <workItem from="1514540316214" duration="296000" />
       <workItem from="1514858366863" duration="99615000" />
-      <workItem from="1515375962135" duration="328000" />
+      <workItem from="1515375962135" duration="5705000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JsonTest_funLog - 2018.01.04 at 20h 11m 27s.xml">
-      <configuration name="JsonTest.funLog" configurationId="JUnit" />
+    <history-entry file="JsonTest_funHTTP - 2018.01.08 at 10h 29m 35s.xml">
+      <configuration name="JsonTest.funHTTP" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 47m 39s.xml">
-      <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
+    <history-entry file="JsonTest_funJsonScript - 2018.01.08 at 10h 08m 03s.xml">
+      <configuration name="JsonTest.funJsonScript" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 49m 30s.xml">
-      <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
+    <history-entry file="JsonTest_funJsonScript - 2018.01.08 at 10h 08m 40s.xml">
+      <configuration name="JsonTest.funJsonScript" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 50m 17s.xml">
-      <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
+    <history-entry file="JsonTest_funJsonScript - 2018.01.08 at 10h 11m 49s.xml">
+      <configuration name="JsonTest.funJsonScript" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 51m 12s.xml">
-      <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
+    <history-entry file="JsonTest_funJsonScript - 2018.01.08 at 10h 17m 45s.xml">
+      <configuration name="JsonTest.funJsonScript" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 51m 48s.xml">
-      <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
+    <history-entry file="JsonTest_funJsonScript - 2018.01.08 at 10h 18m 16s.xml">
+      <configuration name="JsonTest.funJsonScript" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ManagePayInput_testFun - 2018.01.04 at 15h 53m 54s.xml">
       <configuration name="ManagePayInput.testFun" configurationId="JUnit" />
@@ -1405,7 +1406,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263830000" />
+    <option name="totallyTimeSpent" value="269207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1417,38 +1418,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="18" width="1766" height="968" extended-state="0" />
+    <frame x="9" y="30" width="1890" height="1015" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38830408" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30141845" sideWeight="0.50472254" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24752475" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2877193" sideWeight="0.49527746" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2063306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18306011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16989248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24776785" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2514758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35990888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2760234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1509901" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27068558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24776785" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1466,20 +1467,8 @@
           <properties />
           <option name="timeStamp" value="133" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="141" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1561,6 +1550,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="e#1074#1075#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1160#1161#0" expanded="false" />
+            <element signature="e#1191#1192#0" expanded="false" />
+            <element signature="e#1220#1221#0" expanded="false" />
+            <element signature="e#1262#1263#0" expanded="false" />
+            <element signature="e#1298#1299#0" expanded="false" />
+            <element signature="e#1328#1329#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1392#1393#0" expanded="false" />
+            <element signature="e#1422#1423#0" expanded="false" />
+            <element signature="e#1452#1453#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1602#1603#0" expanded="false" />
+            <element signature="e#1640#1641#0" expanded="false" />
+            <element signature="e#1670#1671#0" expanded="false" />
+            <element signature="e#1704#1705#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="false" />
+            <element signature="e#1784#1785#0" expanded="false" />
+            <element signature="e#1826#1827#0" expanded="false" />
+            <element signature="e#1869#1870#0" expanded="false" />
+            <element signature="e#1910#1911#0" expanded="false" />
+            <element signature="e#1976#1977#0" expanded="false" />
+            <element signature="e#2036#2037#0" expanded="false" />
+            <element signature="e#2079#2080#0" expanded="false" />
+            <element signature="e#2119#2120#0" expanded="false" />
+            <element signature="e#2184#2185#0" expanded="false" />
+            <element signature="e#2242#2243#0" expanded="false" />
+            <element signature="e#2285#2286#0" expanded="false" />
+            <element signature="e#2325#2326#0" expanded="false" />
+            <element signature="e#2390#2391#0" expanded="false" />
+            <element signature="e#2448#2449#0" expanded="false" />
+            <element signature="e#2494#2495#0" expanded="false" />
+            <element signature="e#2537#2538#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2750#2751#0" expanded="false" />
+            <element signature="e#2810#2811#0" expanded="false" />
+            <element signature="e#2864#2865#0" expanded="false" />
+            <element signature="e#2904#2905#0" expanded="false" />
+            <element signature="e#2941#2942#0" expanded="false" />
+            <element signature="e#3000#3001#0" expanded="false" />
+            <element signature="e#3052#3053#0" expanded="false" />
+            <element signature="e#3096#3097#0" expanded="false" />
+            <element signature="e#3137#3138#0" expanded="false" />
+            <element signature="e#3204#3205#0" expanded="false" />
+            <element signature="e#3264#3265#0" expanded="false" />
+            <element signature="e#3298#3299#0" expanded="false" />
+            <element signature="e#3330#3331#0" expanded="false" />
+            <element signature="e#3378#3379#0" expanded="false" />
+            <element signature="e#3420#3421#0" expanded="false" />
+            <element signature="e#3457#3458#0" expanded="false" />
+            <element signature="e#3492#3493#0" expanded="false" />
+            <element signature="e#3546#3547#0" expanded="false" />
+            <element signature="e#3594#3595#0" expanded="false" />
+            <element signature="e#3636#3637#0" expanded="false" />
+            <element signature="e#3675#3676#0" expanded="false" />
+            <element signature="e#3738#3739#0" expanded="false" />
+            <element signature="e#3794#3795#0" expanded="false" />
+            <element signature="e#3831#3832#0" expanded="false" />
+            <element signature="e#3865#3866#0" expanded="false" />
+            <element signature="e#3918#3919#0" expanded="false" />
+            <element signature="e#3964#3965#0" expanded="false" />
+            <element signature="e#4004#4005#0" expanded="false" />
+            <element signature="e#4041#4042#0" expanded="false" />
+            <element signature="e#4100#4101#0" expanded="false" />
+            <element signature="e#4152#4153#0" expanded="false" />
+            <element signature="e#4186#4187#0" expanded="false" />
+            <element signature="e#4217#4218#0" expanded="false" />
+            <element signature="e#4264#4265#0" expanded="false" />
+            <element signature="e#4304#4305#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1568,6 +1633,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="107" column="156" lean-forward="false" selection-start-line="107" selection-start-column="156" selection-end-line="107" selection-end-column="156" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1582,6 +1648,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <marker date="1515047542628" expanded="true" signature="298:1032" ph="insert into PayMentWeek... " />
+            <marker date="1515047542628" expanded="true" signature="1114:1224" ph="select * fro... PayMentWeek" />
+            <marker date="1515047542628" expanded="true" signature="1273:1909" ph="update PayMentWeek... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1589,6 +1660,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514361065473" expanded="true" signature="296:515" ph="insert into NewAddMon... " />
+            <marker date="1514361065473" expanded="true" signature="594:701" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="594:709" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="700:701" ph="select * fro... NewAddMon" />
+            <marker date="1514361065473" expanded="true" signature="758:970" ph="update NewAddMon... " />
+            <marker date="1514361065473" expanded="true" signature="1056:1144" ph="select COUNT... NewAddMon" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1611,6 +1690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3869">
           <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,6 +1705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1639,6 +1720,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2138">
           <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1653,6 +1735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,6 +1767,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514282634209" expanded="true" signature="289:348" ph="insert into user... " />
+            <marker date="1514282634209" expanded="true" signature="398:452" ph="update user... " />
+            <marker date="1514282634209" expanded="true" signature="526:559" ph="select * fro... user" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1691,6 +1779,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514189414602" expanded="true" signature="292:368" ph="insert into user2... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1698,6 +1789,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <marker date="1515052771869" expanded="true" signature="272:1014" ph="insert into PayMentDay... " />
+            <marker date="1515052771869" expanded="true" signature="1095:1204" ph="select * fro... PayMentDay" />
+            <marker date="1515052771869" expanded="true" signature="1254:1889" ph="update PayMentDay... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1705,6 +1801,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1515047542612" expanded="true" signature="297:1030" ph="insert into PayMentMon... " />
+            <marker date="1515047542612" expanded="true" signature="1111:1220" ph="select * fro... PayMentMon" />
+            <marker date="1515047542612" expanded="true" signature="1269:1904" ph="update PayMentMon... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1712,6 +1813,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513854607845" expanded="true" signature="294:349" ph="insert into playerinfo... " />
+            <marker date="1513854607845" expanded="true" signature="398:457" ph="update customers... " />
+            <marker date="1513854607845" expanded="true" signature="505:543" ph="delete from customers... " />
+            <marker date="1513854607845" expanded="true" signature="616:656" ph="select * fro... customers" />
+            <marker date="1513854607845" expanded="true" signature="729:752" ph="select * fro... customers" />
+            <marker date="1513854607845" expanded="true" signature="994:1212" ph="select c.id customers" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1719,6 +1828,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514172000400" expanded="true" signature="295:463" ph="insert into player... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1726,6 +1838,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514172922234" expanded="true" signature="301:475" ph="insert into player_exist... " />
+            <marker date="1514172922234" expanded="true" signature="535:582" ph="update player_exist... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1748,6 +1864,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1515119654275" expanded="true" signature="297:432" ph="insert into StayPayDay... " />
+            <marker date="1515119654275" expanded="true" signature="513:622" ph="select * fro... StayPayDay" />
+            <marker date="1515119654275" expanded="true" signature="671:760" ph="update StayPayDay... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1755,6 +1876,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1515119654225" expanded="true" signature="297:432" ph="insert into StayPayMon... " />
+            <marker date="1515119654225" expanded="true" signature="513:622" ph="select * fro... StayPayMon" />
+            <marker date="1515119654225" expanded="true" signature="671:760" ph="update StayPayMon... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1762,6 +1888,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1515119654245" expanded="true" signature="298:434" ph="insert into StayPayWeek... " />
+            <marker date="1515119654245" expanded="true" signature="516:626" ph="select * fro... StayPayWeek" />
+            <marker date="1515119654245" expanded="true" signature="675:765" ph="update StayPayWeek... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1795,30 +1926,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="64" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/SpringConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1843,47 +1955,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/JsonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="181" column="32" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="65" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="227">
           <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageGameInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1367">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManageStay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vova/nettydemo/NettyHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="139" column="31" lean-forward="false" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="31" />
+        <state relative-caret-position="146">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jsonTest/json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="104" column="124" lean-forward="false" selection-start-line="104" selection-start-column="124" selection-end-line="104" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vova/dao/manager/ManagePayInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="149" column="82" lean-forward="true" selection-start-line="149" selection-start-column="82" selection-end-line="149" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
