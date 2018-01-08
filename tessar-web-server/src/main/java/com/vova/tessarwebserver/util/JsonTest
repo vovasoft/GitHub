@@ -1,0 +1,71 @@
+
+
+获取channel GameID ServerID的List，以数组表示
+
+http://192.168.1.110:9898/app/getCGS
+{"cNames":["vova","aaaaaa","aaaaaa","bbbbbb","cccccc"],"gNames":["game1","game2","game3"],"sNames":[]}
+=========================================================
+获取Game统计信息其中参数（注意key中没有双引号）
+app：需要请求的数据库名（newaddday天，newaddweek周,newaddmon月）
+cid 渠道ID
+gid 游戏ID
+sid 服务器ID
+sDate 筛选开始时间 yyyy-MM-dd
+eDate 筛选结束时间 yyyy-MM-dd
+
+http://192.168.1.110:9898/app/getGameDate?app=newaddday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-5&eDate=2017-12-19
+返回Json
+    [{"dateID":"2017-12-05","newAddNum":4,"activeNum":4,"loginCount":4,"averageLogin":0.133333,"allPlayerNum":95},
+    {"dateID":"2017-12-06","newAddNum":4,"activeNum":4,"loginCount":4,"averageLogin":0.133333,"allPlayerNum":96},
+    {"dateID":"2017-12-07","newAddNum":4,"activeNum":4,"loginCount":4,"averageLogin":0.133333,"allPlayerNum":97},
+    {"dateID":"2017-12-08","newAddNum":4,"activeNum":4,"loginCount":4,"averageLogin":0.133333,"allPlayerNum":98},
+    {"dateID":"2017-12-09","newAddNum":4,"activeNum":10,"loginCount":10,"averageLogin":0.0877193,"allPlayerNum":99},
+    {"dateID":"2017-12-10","newAddNum":3,"activeNum":6,"loginCount":6,"averageLogin":0.0638298,"allPlayerNum":99},
+    {"dateID":"2017-12-11","newAddNum":3,"activeNum":5,"loginCount":6,"averageLogin":0.0555556,"allPlayerNum":99},
+    {"dateID":"2017-12-12","newAddNum":3,"activeNum":4,"loginCount":4,"averageLogin":0.0392157,"allPlayerNum":99},
+    {"dateID":"2017-12-13","newAddNum":3,"activeNum":5,"loginCount":5,"averageLogin":0.0588235,"allPlayerNum":99},
+    {"dateID":"2017-12-14","newAddNum":3,"activeNum":6,"loginCount":7,"averageLogin":0.0625,"allPlayerNum":99},
+    {"dateID":"2017-12-15","newAddNum":3,"activeNum":6,"loginCount":7,"averageLogin":0.0625,"allPlayerNum":99},
+    {"dateID":"2017-12-16","newAddNum":3,"activeNum":3,"loginCount":3,"averageLogin":0.1,"allPlayerNum":76},
+    {"dateID":"2017-12-17","newAddNum":3,"activeNum":8,"loginCount":8,"averageLogin":0.0714286,"allPlayerNum":99},
+    {"dateID":"2017-12-18","newAddNum":3,"activeNum":8,"loginCount":8,"averageLogin":0.0714286,"allPlayerNum":99},
+    {"dateID":"2017-12-19","newAddNum":3,"activeNum":4,"loginCount":4,"averageLogin":0.102564,"allPlayerNum":99}]
+
+
+=========================================================
+留存数据获取
+app：需要请求的数据库名（stayday，stayweek,staymon）
+cid 渠道ID
+gid 游戏ID
+sid 服务器ID
+sDate 筛选开始时间 yyyy-MM-dd
+eDate 筛选结束时间 yyyy-MM-dd
+URL = http://192.168.1.110:9898/app/getStayDate?app=stayday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-5&eDate=2017-12-5
+
+返回Json
+    [{"dateID":"2017-12-05","newAddNum":4,"stayList":[0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0]}]
+
+支付数据获取
+app：需要请求的数据库名（paymentday，paymentweek,paymentmon）
+cid 渠道ID
+gid 游戏ID
+sid 服务器ID
+sDate 筛选开始时间 yyyy-MM-dd
+eDate 筛选结束时间 yyyy-MM-dd
+http://192.168.1.110:9898/pay/getPayDate?app=paymentday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-17&eDate=2017-12-19
+返回Json
+    [{"dateID":"2017-12-17","newAddNum":3,"newAddPayPlayerNum":1,"newAddPayAllMoney":2.5,"newAddPlayerARPPU":0.833333,"newAddPayPlayerARPPU":2.5,"newPayPlayerNum":5,"newPayAllMoney":176.0,"averageNewPayMoney":35.2,"activeNum":8,"payPlayerNum":6,"todayAllPayMoney":219.0,"activeARPPU":27.0,"payPlayerARPPU":36.5,"allMoney":749.0},
+    {"dateID":"2017-12-18","newAddNum":3,"newAddPayPlayerNum":1,"newAddPayAllMoney":4.0,"newAddPlayerARPPU":1.33333,"newAddPayPlayerARPPU":4.0,"newPayPlayerNum":2,"newPayAllMoney":17.0,"averageNewPayMoney":8.5,"activeNum":8,"payPlayerNum":5,"todayAllPayMoney":113.0,"activeARPPU":14.0,"payPlayerARPPU":22.6,"allMoney":982.0},
+    {"dateID":"2017-12-19","newAddNum":3,"newAddPayPlayerNum":0,"newAddPayAllMoney":0.0,"newAddPlayerARPPU":0.0,"newAddPayPlayerARPPU":0.0,"newPayPlayerNum":2,"newPayAllMoney":77.0,"averageNewPayMoney":38.5,"activeNum":4,"payPlayerNum":3,"todayAllPayMoney":115.5,"activeARPPU":29.0,"payPlayerARPPU":38.5,"allMoney":987.0}]
+
+支付留存数据获取
+app：需要请求的数据库名（staypayday，staypayweek,staypaymon）
+cid 渠道ID
+gid 游戏ID
+sid 服务器ID
+sDate 筛选开始时间 yyyy-MM-dd
+eDate 筛选结束时间 yyyy-MM-dd
+http://192.168.1.110:9898/pay/getPayStayDate?app=staypayday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-17&eDate=2017-12-19
+    [{"dateID":"2017-12-17","newAddNum":5,"stayList":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]},
+    {"dateID":"2017-12-18","newAddNum":2,"stayList":[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]},
+    {"dateID":"2017-12-19","newAddNum":2,"stayList":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]

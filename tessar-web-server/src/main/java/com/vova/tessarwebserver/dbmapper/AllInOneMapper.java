@@ -1,8 +1,10 @@
 package com.vova.tessarwebserver.dbmapper;
 
 
+import com.vova.tessarwebserver.domain.User;
 import com.vova.tessarwebserver.domain.initdata.SelectList;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
+import com.vova.tessarwebserver.domain.payment.PayAllShow;
 import com.vova.tessarwebserver.domain.stayman.StayParent;
 import org.apache.ibatis.annotations.*;
 
@@ -43,6 +45,20 @@ public interface AllInOneMapper {
     //由于数据库中的接口一样，所以这里channellist代替其他两个表的表名
     @Select("select * from ${tableName}")
     List<SelectList> findCGS(@Param("tableName") String tableName);
+
+    //
+    @Select("select * from ${tableName} where cID = #{cid} AND gID = #{gid} AND sID = #{sid} AND dateID >= #{sDate} AND dateID <= #{eDate} ")
+    List<PayAllShow> findCGSPayAllShowByTimes(@Param("tableName") String tableName, @Param("cid") String cid, @Param("gid") String gid,
+                                              @Param("sid") String sid, @Param("sDate") Date sDate, @Param("eDate") Date eDate);
+
+    @Select("select * from user where name = #{name}")
+    List<User> findUserList(@Param("name") String name);
+
+    @Select("select * from user where name = #{name} and passwd=#{passwd}")
+    List<User> checkUser(@Param("name") String name,@Param("passwd") String passwd);
+
+    @Insert("insert into user (name,passwd) values(#{name},#{passwd})")
+    int insertUser(@Param("name") String name, @Param("passwd") String passwd);
 
 }
 

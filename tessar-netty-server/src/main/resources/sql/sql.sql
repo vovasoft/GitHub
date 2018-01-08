@@ -1,3 +1,10 @@
+CREATE TABLE `user` (
+  id int PRIMARY KEY auto_increment,
+  name varchar(20) NOT NULL,
+  passwd varchar(255) NOT NULL
+);
+
+
 -- 支付表
 create TABLE PayMentDay
 (id int PRIMARY KEY auto_increment

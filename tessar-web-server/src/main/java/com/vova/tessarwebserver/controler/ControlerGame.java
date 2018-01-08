@@ -10,7 +10,7 @@ import com.vova.tessarwebserver.dbmapper.AllInOneMapper;
 import com.vova.tessarwebserver.domain.initdata.SelectList;
 import com.vova.tessarwebserver.domain.initdata.InitJson;
 import com.vova.tessarwebserver.domain.newadd.NewAddDay;
-import com.vova.tessarwebserver.domain.newadd.NewJson;
+import com.vova.tessarwebserver.domain.newadd.NewAddJson;
 import com.vova.tessarwebserver.domain.stayman.StayJson;
 import com.vova.tessarwebserver.domain.stayman.StayParent;
 import com.vova.tessarwebserver.util.Tools;
@@ -30,45 +30,48 @@ import java.util.List;
 
 
 @RestController
-@SpringBootApplication
+//@SpringBootApplication
 @RequestMapping("/app")
 public class ControlerGame {
 
     @Autowired
     private AllInOneMapper allInOneMapper;
-    static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+  //  static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     @RequestMapping("/")
     String home() {
         return "Hello World!";
     }
 
-    @GetMapping("/getGameT")
+    //getGameDate
+    @GetMapping("/getGameDate")
     @ResponseBody
-    Object fun1(@RequestParam String app, @RequestParam String cid, @RequestParam String gid,
+    Object getGameDate(@RequestParam String app, @RequestParam String cid, @RequestParam String gid,
                @RequestParam String sid, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
         List<NewAddDay> nadList = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         nadList = allInOneMapper.findCGSNewAddListByTimes(app, cid, gid, sid, sdf.parse(sDate), sdf.parse(eDate));
-        ArrayList<NewJson> nj = new ArrayList<>();
+        ArrayList<NewAddJson> nj = new ArrayList<>();
         for (int i=0;i<nadList.size();i++) {
             NewAddDay nad = nadList.get(i);
-            nj.add(new NewJson(sdf.format(nad.getDateID()),nad.getNewAddNum(),nad.getActiveNum(),nad.getLoginCount(),nad.getAverageLogin(),nad.getAllPlayerNum()));
+            nj.add(new NewAddJson(sdf.format(nad.getDateID()),nad.getNewAddNum(),nad.getActiveNum(),nad.getLoginCount(),nad.getAverageLogin(),nad.getAllPlayerNum()));
         }
         return nj;
     }
 
     @GetMapping("/getGameAll")
     @ResponseBody
-    Object fun2(@RequestParam String app, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
-
+    Object getGameAll(@RequestParam String app, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         List<NewAddDay> nadList = allInOneMapper.findAllNewAddListByTimes(app, sdf.parse(sDate), sdf.parse(eDate));
         return nadList;
     }
 
-    @GetMapping("/getStayT")//留存表的一些处理，其中需要返回json的时候，最好将留存字段改写成数组的形式，如下所示，最长的那行代码。
+    @GetMapping("/getStayDate")//留存表的一些处理，其中需要返回json的时候，最好将留存字段改写成数组的形式，如下所示，最长的那行代码。
     @ResponseBody
-    Object fun3(@RequestParam String app, @RequestParam String cid, @RequestParam String gid,
+    Object getStayDate(@RequestParam String app, @RequestParam String cid, @RequestParam String gid,
                 @RequestParam String sid, @RequestParam String sDate, @RequestParam String eDate) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         List<StayParent> spList =  allInOneMapper.findCGSStayListByTimes(app, cid, gid, sid, sdf.parse(sDate), sdf.parse(eDate));
         ArrayList<StayJson> sj = new ArrayList<>();
         for (int i=0;i<spList.size();i++) {
@@ -79,9 +82,9 @@ public class ControlerGame {
         return sj;
     }
 
-    @GetMapping("/getcms")//留存表的一些处理，其中需要返回json的时候，最好将留存字段改写成数组的形式，如下所示，最长的那行代码。
+    @GetMapping("/getCGS")//留存表的一些处理，其中需要返回json的时候，最好将留存字段改写成数组的形式，如下所示，最长的那行代码。
     @ResponseBody
-    Object fun4() throws ParseException {
+    Object getCGS() {
         InitJson ij = new InitJson();
         List<SelectList> cl = allInOneMapper.findCGS("channellist");
         ArrayList<String> str = new ArrayList<>();

@@ -5,7 +5,221 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-12-22T13:24:35Z</updated>
+  <updated>2018-01-03T07:41:00Z</updated>
+  <entry>
+    <title>This Week in Spring (7th Anniversary Edition) - January 2nd, 2017</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/01/03/this-week-in-spring-7th-anniversary-edition-january-2nd-2017" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-01-03:3135</id>
+    <updated>2018-01-03T07:41:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I hope you had a wonderful, safe and fruitful new year celebration. &lt;/p&gt;
+&lt;p&gt;This is the first roundup of the new year and so it is also the &lt;em&gt;7th year anniversary&lt;/em&gt; of my starting this column. Every Tuesday, without fail (come holiday, sick-day, flights or frights!), since the first week of January 2011, I&amp;rsquo;ve put together this roundup and it has been, and continues to be, an honor. As usual, I&amp;rsquo;m always happy to have feedback and suggestions from you, the most amazing community ever! Don&amp;rsquo;t hesitate to reach me on &lt;a href="http://twitter.com/Starbuxman"&gt;Twitter (@starbuxman)&lt;/a&gt; &lt;a href="mailto:josh@joshlong.com"&gt;or by email&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Over time, the content covered in this blog has changed. I include things that the Spring ecosystem encompasses like NoSQL/big-data, cloud computing, web application discussions, Java in general, testing, and even some discussions of agile and culture. It&amp;rsquo;s a growing, living thing because Spring is itself an dynamic and organic project. I&amp;rsquo;ve started doing screencasts - eleven videos at a time for a &amp;ldquo;season&amp;rdquo; - called &lt;em&gt;Spring Tips&lt;/em&gt; for a couple of years now, too. These join my books, training videos, talks, blogs, podcasts, and social media as avenues by which I try to bring Spring to an ever growing, inquiring and inspiring community. It&amp;rsquo;s such a privilege to work on something that I love and share that passion with others who also love it. Thank YOU. &lt;/p&gt;
+&lt;p&gt;Now, as usual, we&amp;rsquo;ve got a &lt;em&gt;lot&lt;/em&gt; to cover, so let&amp;rsquo;s get to it.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check out &lt;a href="https://pivotal.io/customers/corelogic"&gt;CoreLogics&amp;rsquo;s Spring Cloud Data Flow-based case-study&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud ninja Ryan Baxter &lt;a href="https://spring.io/blog/2017/12/28/spring-cloud-dalston-sr5-released"&gt;just announced Spring Cloud Dalston SR5&lt;/a&gt;. There&amp;rsquo;s a lot to love here so get the bits now.&lt;/li&gt;
+  &lt;li&gt;this &lt;em&gt;really&lt;/em&gt; detailed look on &lt;em&gt;The Curious Developer&lt;/em&gt; blog at &lt;a href="https://thecuriousdev.org/new-in-spring-boot-2/"&gt;some of the new features in Spring Boot 2.0&lt;/a&gt; is well-worth your attention. Great read.&lt;/li&gt;
+  &lt;li&gt;This seems interesting - &lt;a href="https://www.marcobehler.com/episodes/91-what-s-new-in-spring-5-the-webflux-framework"&gt;Marco Behler has a video introducing Spring WebFlux&lt;/a&gt;, the reactive web runtime for Spring Framework 5.0.&lt;/li&gt;
+  &lt;li&gt;The Cloud Foundry Foundation Security Team &lt;a href="https://cloudfoundry.org/cve-2018-1190/"&gt;has released a fix&lt;/a&gt; for a cross-site scripting CVE on Cloud Foundry. Upgrade now!&lt;/li&gt;
+  &lt;li&gt;I liked Oded Shopen&amp;rsquo;s post looking at &lt;a href="https://medium.com/@odedia/comparing-kubernetes-to-pivotal-cloud-foundry-a-developers-perspective-6d40a911f257?_lrsc=2e6b583d-0c94-4ae5-b3ef-f227b036f03d"&gt;Kubernetes versus Cloud Foundry, from a developer&amp;rsquo;s perspective&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I liked &lt;a href="https://dzone.com/articles/creating-a-reactive-restful-web-service-using-spri-1"&gt;this post by Ashes Sarin&lt;/a&gt; that looks at how to build a reactive Spring WebFlux application that talks to reactive Spring Data MongoDB.&lt;/li&gt;
+  &lt;li&gt;Dan Baskette linked to a really nice project by Brian McClain that sets &lt;a href="https://github.com/BrianMMcClain/riff-demos"&gt;up the Pivotal serverless platform Project Riff for you&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Want to &lt;a href="https://twitter.com/christzolov/status/947057883170201600?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension"&gt;use SQL-queries with the Apache Geode in-memory data-grid&lt;/a&gt;? Check out this talk from SpringOne Platform 2017 by Christian Tzolov&lt;/li&gt;
+  &lt;li&gt;Tristan Perry put together &lt;a href="https://www.tristanperry.com/java8/spring/2017/12/23/java8-spring-cloud-microservice-demo.html"&gt;a nice Spring Cloud microservices tutorial&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I noticed that the good Dr. Syer has a &lt;a href="https://github.com/dsyer/auth-server-client"&gt;useful example of how an OAuth authorization server could be a client of itself&lt;/a&gt;, which it might need to be if the node is also a gateway.&lt;/li&gt;
+  &lt;li&gt;I love this roundup of the new features in the Java &lt;a href="https://mahmoudanouti.wordpress.com/2017/12/23/what-is-project-amber-in-java/"&gt;Project Amber&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/tomoTaka01/eureka-feign"&gt;This&lt;/a&gt; is a cool Spring Boot and Eureka + Feign example.&lt;/li&gt;
+  &lt;li&gt;It was nice to see Java again take home the top prize for programming languages in 2017, &lt;a href="https://www.infoworld.com/article/3244262/application-development/2017-the-year-in-programming-languages.html"&gt;according to this InfoWorld article&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I loved Victor Grazi&amp;rsquo;s amazing article &lt;a href="https://www.infoq.com/articles/Microservices-SpringBoot"&gt;on building microservices with Spring Boot and Spring Cloud&lt;/a&gt;. This is well worth a read.&lt;/li&gt;
+  &lt;li&gt;My fellow test-obsesses Spring fans should check out JUnit and Spring Test lead Sam Brannen&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?time_continue=20&amp;v=h0Idcz71Aog"&gt;SpringOne Platform 2017 talk on testing with JUnit 5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Kevin Van Houtte did a nice job in this post &lt;a href="https://ordina-jworks.github.io/microservices/2017/12/30/Secure-your-architecture-part2.html"&gt;&lt;em&gt;Securing your cloud-native microservice architecture in Spring&lt;/em&gt;&lt;/a&gt;- on the Ordina JWorks blog.&lt;/li&gt;
+  &lt;li&gt;Hello Jiccup! Check out this &lt;a href="https://github.com/creactiviti/spring-boot-starter-jiccup"&gt;Spring Boot integration with Jiccup&lt;/a&gt;, a Clojure inspired HTML rendering library.&lt;/li&gt;
+  &lt;li&gt;In this week&amp;rsquo;s &lt;a href="https://soundcloud.com/pivotal-insights/getting-hands-on-with-cqrs-and-event-sourcing-ep-41"&gt;episode of the &lt;em&gt;Pivotal Insights&lt;/em&gt; podcast&lt;/a&gt;, Jeff and Dormain are joined by Pivotal Senior Solutions Architect Ben Wilcock for a deep dive into building microservices applications using the command query responsibility segregation, or CQRS, architectural pattern and event sourcing.&lt;/li&gt;
+  &lt;li&gt;Meunster, Germany! I am &lt;a href="https://twitter.com/jug_ms/status/946743989339869185?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension"&gt;looking forward to presenting at your Java User Group&lt;/a&gt; on &lt;em&gt;Cloud Native (Reactive) Java&lt;/em&gt; on 10 January, 2018!&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;Java Code Geeks&amp;rsquo;s&lt;/em&gt; Abhimanyu Prasad &lt;a href="https://www.javacodegeeks.com/2017/12/microservices-implementation-example-spring-boot.html"&gt;has an amazing post on implementating Spring Cloud for microservices&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Solingen, Germany! &lt;a href="https://twitter.com/codecentric/status/938383043424870400?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension"&gt;Spring is coming&lt;/a&gt;! I&amp;rsquo;ll be speaking for an afternoon &lt;a href="https://www.eventbrite.de/e/meet-the-experts-cloud-native-java-day-with-josh-long-tickets-40870596053"&gt;for this special Codecentric event. Register now!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring community member Michael Simons did &lt;a href="http://info.michael-simons.eu/2017/12/28/use-keycloak-with-your-spring-boot-2-application/"&gt;a great job introducing how to use Keycloak with Spring Boot 2-based applications&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I love &lt;a href="https://www.ivm.at/ivm-news/393-what-the-agile-test-automation-part-2"&gt;this interview with &amp;ldquo;the king of the test automation,&amp;rdquo; Pivotal&amp;rsquo;s own Marcin Grzejszczak&lt;/a&gt;, about the Spring Cloud Pipelines project.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://cloudfoundry.org/data-driven-management-ensures-high-efficiency-in-the-healthcare-sector/"&gt;Data driven management ensures high efficiency in the healthcare sector&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out this talk from Spring Boot ninja Madhura Bhave and Pivotal marketing maestro Pieter Humphrey on &lt;a href="https://cloudfoundry.org/video-java-microservices-scale-cloud-foundry/"&gt;Java microservices at scale with Cloud Foundry&lt;/a&gt; from the Cloud Foundry Summit Silicon Valley 2017.&lt;/li&gt;
+  &lt;li&gt;This is another great talk from Cloud Foundry Summit 2017 &lt;a href="https://cloudfoundry.org/video-windows-server-containers-cloud-foundry/"&gt;on windows server containers and Cloud Foundry&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Dalston.SR5 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/28/spring-cloud-dalston-sr5-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Ryan Baxter</name>
+    </author>
+    <id>tag:spring.io,2017-12-27:3132</id>
+    <updated>2017-12-28T00:25:49Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that the Service Release 5 (SR5) of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Dalston&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href="http://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-dependencies/Dalston.SR5/"&gt;Maven Central&lt;/a&gt;. You can check out the Dalston &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Dalston-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-the-dalston-release-train" class="anchor" name="notable-changes-in-the-dalston-release-train"&gt;&lt;/a&gt;Notable Changes in the Dalston Release Train&lt;/h2&gt;&lt;h3&gt;&lt;a href="#spring-cloud-contract" class="anchor" name="spring-cloud-contract"&gt;&lt;/a&gt;Spring Cloud Contract&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-contract/milestone/22?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-cloudfoundry" class="anchor" name="spring-cloud-cloudfoundry"&gt;&lt;/a&gt;Spring Cloud Cloudfoundry&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-cloudfoundry/milestone/7?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-sleuth" class="anchor" name="spring-cloud-sleuth"&gt;&lt;/a&gt;Spring Cloud Sleuth&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/milestone/35?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-consul" class="anchor" name="spring-cloud-consul"&gt;&lt;/a&gt;Spring Cloud Consul&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-consul/milestone/24?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-config" class="anchor" name="spring-cloud-config"&gt;&lt;/a&gt;Spring Cloud Config&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/38?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-zookeeper" class="anchor" name="spring-cloud-zookeeper"&gt;&lt;/a&gt;Spring Cloud Zookeeper&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-zookeeper/milestone/16?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-netflix" class="anchor" name="spring-cloud-netflix"&gt;&lt;/a&gt;Spring Cloud Netflix&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-netflix/milestone/51?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-commons" class="anchor" name="spring-cloud-commons"&gt;&lt;/a&gt;Spring Cloud Commons&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/milestone/35?closed=1"&gt;Bug Fixes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The following modules were updated as part of Dalston.SR5:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Module &lt;/th&gt;
+      &lt;th&gt;Version &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
+      &lt;td&gt;1.1.5.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Cloudfoundry &lt;/td&gt;
+      &lt;td&gt;1.1.1.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Task &lt;/td&gt;
+      &lt;td&gt;1.1.2.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Sleuth &lt;/td&gt;
+      &lt;td&gt;1.2.6.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
+      &lt;td&gt;1.2.3.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Stream &lt;/td&gt;
+      &lt;td&gt;Chelsea.SR2 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Aws &lt;/td&gt;
+      &lt;td&gt;1.2.1.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Security &lt;/td&gt;
+      &lt;td&gt;1.2.1.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
+      &lt;td&gt;1.3.1.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
+      &lt;td&gt;1.3.4.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Zookeeper &lt;/td&gt;
+      &lt;td&gt;1.1.3.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
+      &lt;td&gt;1.3.6.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Vault &lt;/td&gt;
+      &lt;td&gt;1.0.2.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Commons &lt;/td&gt;
+      &lt;td&gt;1.2.5.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Boot &lt;/td&gt;
+      &lt;td&gt;1.5.9.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;&lt;br/&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+    &amp;lt;dependencies&amp;gt;&#xD;
+        &amp;lt;dependency&amp;gt;&#xD;
+            &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+            &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+            &amp;lt;version&amp;gt;Dalston.SR5&amp;lt;/version&amp;gt;&#xD;
+            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+        &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-client&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;buildscript {&#xD;
+    dependencies {&#xD;
+        classpath &amp;quot;io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE&amp;quot;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
+&#xD;
+dependencyManagement {&#xD;
+    imports {&#xD;
+        mavenBom &amp;#39;org.springframework.cloud:spring-cloud-dependencies:Dalston.SR5&amp;#39;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&amp;#39;&#xD;
+    ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
+  <entry>
+    <title>This Year in Spring - 2017</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/27/this-year-in-spring-2017" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-12-27:3133</id>
+    <updated>2017-12-27T02:30:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another, albeit very special, installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This is the last installment before 2018 and so we&amp;rsquo;ll take the opportunity to review, as we always do in the last installment of the year, this very exciting year in Spring and its ecosystem.&lt;/p&gt;
+&lt;p&gt;Let me, on behalf of the Spring and larger Pivotal team, to be the first to wish you and yours a heartfelt happy and safe New Year! Let&amp;rsquo;s first look at some of the major trends that defined 2017. We&amp;rsquo;ve got a lot to cover!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Spring Framework 5 and Reactive Programming&lt;/em&gt; - this year we released Spring Framework 5.0. This release is &lt;em&gt;huge&lt;/em&gt; - packed to the gills with new features including support for Java EE 8, Java SE 9 and - of course - reactive programming based on Project Reactor and the fully-reactive new web runtime called Spring WebFlux. The web runtime supports a Spring MVC-like component model as well as a new handler model (called functional reactive endpoints) and a new, fully reactive HTTP client called &lt;code&gt;WebClient&lt;/code&gt;. Spring Framework 5&amp;rsquo;s reactive support, as impressive as it is, is only the beginning. Spring Framework 5.0 is the foundation for reactive data access support in Spring Data Kay, for reactive security integration in Spring Security 5.0 and for reactive messaging in Spring Cloud Stream. All of these will bubble up to Spring Boot 2.0 which in turn lays the foundation for Spring Cloud Finchley. Both will debut in GA form in 2018. The release of our reactive programming support dovetails nicely with our first-class Kotlin support which debuted in Spring Framework 5 and has extended to a handful of other projects, notably the brand new Spring Cloud Gateway project which will also debut in Spring Cloud Finchley.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;PCF 2.0&lt;/em&gt; - &lt;a href="https://content.pivotal.io/blog/achieving-escape-velocity-with-pivotal-cloud-foundry-2-0"&gt;Pivotal Cloud Foundry 2.0 has been released!&lt;/a&gt;. This is a big release for us. It marks an important fork in the road. We envision PCF as being a universal cloud that supports functions/serverless, containers and higher order applications. We&amp;rsquo;ll support serverless and functions using &lt;a href="http://projectriff.io"&gt;Project Riff&lt;/a&gt; in what we&amp;rsquo;re calling &lt;em&gt;Pivotal Function Service&lt;/em&gt; (PFS). We support containers - ideal for stateful workloads like Apache Spark or ElasticSearch - in the Pivotal Container Service (PKS). We support stateless, 12-factor applications using &lt;em&gt;Pivotal Application Service&lt;/em&gt; (PAS). I love &lt;a href="https://www.youtube.com/watch?v=_uB5bBsMZIk&amp;list=PLgGXSWYM2FpNsGhB97BHwYJ3IawAB6ocD"&gt;this look at PCF 2.0 from CTO Onsi Fakhouri&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;SpringOne Platform 2017&lt;/em&gt; - this year&amp;rsquo;s developer conference was bigger and better than ever! We had close to 3,000 people turn up at this show. We had users of every stripe tell the story of their journeys to production. &lt;a href="https://www.youtube.com/watch?v=_uB5bBsMZIk&amp;list=PLgGXSWYM2FpNsGhB97BHwYJ3IawAB6ocD"&gt;Check out all the technical talks and testimonials from the SpringOne Platform 2017 YouTube playlist where you&amp;rsquo;ll find hundreds of videos for your binge-watching enjoyment&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Functions-as-a-service or serverless&lt;/em&gt; - this year saw us enter the serverless fray in earnest, first &lt;a href="https://spring.io/blog/2017/07/05/introducing-spring-cloud-function"&gt;with Spring Cloud Function&lt;/a&gt; and then &lt;a href="https://projectriff.io/"&gt;Project Riff&lt;/a&gt; which will underpin the Pivotal Function Service in Pivotal Cloud Foundry 2.0.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Pivotal Container Service (PKS)&lt;/em&gt; - we knew last year that when we announced, in cooperation with Google, the support for managing Kubernetes using BOSH as part &lt;a href="https://pivotal.io/partners/kubo"&gt;of Project Kubo&lt;/a&gt;, that it would resonate. This year we&amp;rsquo;ve seen &lt;a href="https://pivotal.io/platform/pivotal-container-service"&gt;that partnership and growth skyrocket&lt;/a&gt; as the Pivotal Container Service (PKS).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And now, let&amp;rsquo;s run through some of the happenings in this last week of 2017! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tool Suite lead Martin Lippert &lt;a href="https://spring.io/blog/2017/12/22/spring-tool-suite-3-9-2-released"&gt;just announced Spring Tool Suite 3.9.2&lt;/a&gt; which includdes updates to Eclipse Oxygen 2, new support for JDK9 and JUnit 5, and it supports installing STS 4 Public Beta features as early-access add-ons.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://content.pivotal.io/blog/achieving-escape-velocity-with-pivotal-cloud-foundry-2-0"&gt;Pivotal Cloud Foundry 2.0 has just been released&lt;/a&gt;. PCF 2.0 positions Cloud Foundry as a unified platform support different types of workloads. If you want to run containers, functions or applications, PCF will be the place to do it.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch &lt;a href="https://spring.io/blog/2017/12/20/spring-security-saml-1-0-3-release"&gt;just announced Spring Security SAML 1.0.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This &lt;a href="https://github.com/spring-cloud/spring-cloud-commons/commit/a2ffa9a9e0c0d7e7d00e2e0bc51307581a92c73d"&gt;latest change&lt;/a&gt; to Spring Cloud Finchley will autoconfigure service-registry aware load-balancing with the reactive &lt;code&gt;WebClient&lt;/code&gt; in Spring WebFlux, just as Spring Cloud has always done for the &lt;code&gt;RestTemplate&lt;/code&gt; in the Spring MVC world.&lt;/li&gt;
+  &lt;li&gt;Speaking of IBM DeveloperWorks, I can&amp;rsquo;t beleive I failed to include this roundup on &lt;a href="https://www.ibm.com/developerworks/library/j-whats-new-in-spring-framework-5-theedom/"&gt;all the latest and greatest in Spring Framework 5&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;IntelliJ IDEA 2017.3 has a lot of new features &lt;a href="https://blog.jetbrains.com/idea/2017/11/whats-new-in-intellij-idea-2017-3-for-spring-boot/"&gt;for Spring and Spring Boot applications&lt;/a&gt;. It now features built in support for Spring Boot 2.0 Actuator endpoints. It is now able to detect Spring Boot-configured Spring MVC contexts, and it now has initial support for Spring Cloud-based &lt;code&gt;bootstrap.properties&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;This is an oldie-but-a-goodie from the Okta&amp;rsquo;s Matt Raible on how to &lt;a href="https://developer.okta.com/blog/2017/06/15/build-microservices-architecture-spring-boot"&gt;build a microservices application using Spring Cloud&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Framework 5.0 &lt;a href="https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-5.x"&gt;integrates nicely with a number of Java EE 8 APIs&lt;/a&gt;, including the JSON Binding API. &lt;a href="https://www.ibm.com/developerworks/java/library/j-javaee8-json-binding-4/index.html"&gt;Here&amp;rsquo;s a nice article on IBM&amp;rsquo;s DeveloperWorks on the JSON Binding API&amp;rsquo;s use&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;This talk, by Michael Pl?d from the Spring I/O 2016 conference in beautiful Barcelona, is a great &lt;a href="https://www.youtube.com/watch?v=SpQzWtqulhM&amp;feature=youtu.be"&gt;look at advanced caching use-cases with Spring&lt;/a&gt;. It&amp;rsquo;s an oldie-but-a-goodie and came up recently.&lt;/li&gt;
+  &lt;li&gt;I loved this video introducing Atomist &lt;a href="https://vimeo.com/247562710"&gt;from Atomist co-founders Rod Johnson and Christian Dupuis&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Pivotal ninja Luke Shannon tweeted out how to make &lt;a href="https://twitter.com/lukewshannon/status/943559005531787268?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension"&gt;Lombok work with the beta Spring Tool Suite 4&lt;/a&gt; release when using Linux.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tool Suite 3.9.2 released</title>
     <link rel="alternate" href="https://spring.io/blog/2017/12/22/spring-tool-suite-3-9-2-released" />
@@ -954,128 +1168,6 @@ StreamDefinition streamDefinition = Stream.builder(dataFlowOperations)
 &lt;p&gt;Please try it out, share your feedback, and consider contributing to the project!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Integration 5.0 GA Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/29/spring-integration-5-0-ga-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2017-11-28:3113</id>
-    <updated>2017-11-29T13:41:32Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the Spring Integration team I am pleased to announce that the GA release for the Spring Integration 5.0 version (&lt;code&gt;5.0.0.RELEASE&lt;/code&gt;) is now available.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;It can be downloaded from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;compile "org.springframework.integration:spring-integration-core:5.0.0.RELEASE"&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;First of all, special thanks to all community members for their ongoing active contributions to the framework!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Several &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;amp;version=16196"&gt;JIRAs&lt;/a&gt; (and some GitHub issues), since the previously announced &lt;a href="https://spring.io/blog/2017/11/01/spring-integration-5-0-release-candidate-1-available"&gt;RC1&lt;/a&gt;, are included in this release, mostly bug fixes from early adopters and Reference Manual improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Well, this was a long story (almost 17 months) to come to this next generation for the Framework and here are some highlights of the major features:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The Spring Framework &lt;code&gt;5.0&lt;/code&gt; code base with more reach functionality via Java 8 features;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Upgrade to the latest Spring projects dependencies with some new functionality from there;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Java DSL is now included into the Core project with a bunch of improvements and more organic Java 8 integration and code base;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Reactive Streams support via &lt;code&gt;FluxMessageChannel&lt;/code&gt;, &lt;code&gt;ReactiveStreamsConsumer&lt;/code&gt; and direct &lt;code&gt;org.reactivestreams.Subscriber&lt;/code&gt; implementation in the &lt;code&gt;AbstractMessageHandler&lt;/code&gt;;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;New Spring WebFlux module with full Reactive support for requests and replies;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;New Spring Integration Testing Framework with the &lt;code&gt;@SpringIntegrationTest&lt;/code&gt; and &lt;code&gt;MockIntegration&lt;/code&gt; features;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;- Significant performance boost for most POJO EIP method invocations.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For a complete list of changes in &lt;code&gt;5.0&lt;/code&gt;, also see the &lt;a href="http://docs.spring.io/spring-integration/docs/5.0.0.RELEASE/reference/html/whats-new.html"&gt;What&amp;#8217;s New&lt;/a&gt; chapter in the reference manual.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In addition we have released maintenance &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;amp;version=16347"&gt;4.3.13&lt;/a&gt; version with a bunch of important bug fixes and improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock important"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Important&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-I along with most of my colleagues on the Spring team will be at &lt;a href="https://springoneplatform.io"&gt;Spring One Platform&lt;/a&gt; speaking about these new features in Spring Integration.
-Please, &lt;a href="https://springoneplatform.io/sessions/spring-integration-5-0-whats-new"&gt;meet me&lt;/a&gt; there to hear about these amazing features from first hands!
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Any feedback, feature ideas, critics, bug reports and questions are welcome via appropriate communication channels:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-integration/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/INT"&gt;JIRA&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.adoc"&gt;Contributing&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-integration"&gt;Chat&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Spring Cloud Gateway</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/29/spring-tips-spring-cloud-gateway" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2017-11-28:3107</id>
-    <updated>2017-11-29T00:18:00Z</updated>
-    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we&amp;rsquo;ll look at the new API gateway project, Spring Cloud Gateway, to support edge service requirements like rate limiting, circuit breakers, proxying, and more.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TwVtlNX-2Hs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring AMQP 1.7.5 and 2.0.1 Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/28/spring-amqp-1-7-5-and-2-0-1-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2017-11-28:3112</id>
-    <updated>2017-11-28T19:16:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, I&amp;#8217;m pleased to announce &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=16350"&gt;1.7.5&lt;/a&gt; and &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=16384"&gt;2.0.1&lt;/a&gt; maintenance releases of Spring AMQP.
-They are available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;These versions are mostly bug fixes and recommended for everyone to upgrade.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The version &lt;code&gt;2.0.1&lt;/code&gt; is a foundation for the upcoming Spring Boot &lt;code&gt;2.0 M7&lt;/code&gt; release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Thanks to all the community contributors for various feedback and pull requests.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We hope to see you at &lt;a href="https://springoneplatform.io"&gt;SpringOne Platform&lt;/a&gt; next week. It will be packed with many Spring talks, opportunities to learn about the latest and greatest features and of course some previews about what we&amp;#8217;re planning to do next.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-amqp/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/AMQP"&gt;JIRA&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-amqp/blob/master/CONTRIBUTING.adoc"&gt;Contributing&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-amqp"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-amqp"&gt;Chat&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>

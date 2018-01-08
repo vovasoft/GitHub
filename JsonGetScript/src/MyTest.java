@@ -41,6 +41,7 @@ public class MyTest {
             while ((line = in.readLine()) != null) {
                 result += line;
             }
+            System.out.println(result);
         } catch (Exception e) {
             System.out.println("发送GET请求出现异常！" + e);
             e.printStackTrace();
@@ -89,6 +90,12 @@ public class MyTest {
         }
     }
 
+    public static void testWebServerThread(){
+       for (int i=0;i<10000;i++) {
+           funHTTP("http://192.168.1.110:9898/app/getGameDate?app=newaddday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-5&eDate=2017-12-19");
+       }
+    }
+
 
     public static void pay() throws ParseException {
         String url = "http://192.168.1.110:9999/tessar/statis/statis?action=pay&json=";
@@ -108,9 +115,15 @@ public class MyTest {
 //        createUpdate();
 //        createUpdate();
 //        createUpdate();
-        pay();
-        pay();
+
+//        pay();
+//        pay();
         //打印登录情况
+
+        long startTime = System.currentTimeMillis();
+        testWebServerThread();
+
+        System.out.println((System.currentTimeMillis() - startTime)/1000.0);
 
     }
 }

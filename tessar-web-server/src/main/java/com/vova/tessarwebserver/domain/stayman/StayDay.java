@@ -6,7 +6,7 @@ import java.util.Date;
  * @author: Vova
  * @create: date 11:20 2017/12/26
  */
-public class StayDay extends StayParent {
+public class StayDay extends StayParent{
     public StayDay() {
     }
 
