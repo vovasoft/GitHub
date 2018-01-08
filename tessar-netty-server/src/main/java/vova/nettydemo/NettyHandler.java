@@ -41,7 +41,6 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     JSONArray jsonarray = new JSONArray();
 
 
-
 //    public NettyHandler() {
 //        jsonarray.add(getJsonObj("name", "ar.sear.ocalplay"));
 //        jsonarray.add(getJsonObj("name", "ar.sear.ticket"));
@@ -71,13 +70,17 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             return;
         }
 
+
         String uri = msg.uri();
-        //System.out.println("URI:" + uri);
-        //System.out.println("suburi:" + uri.substring(0, 21));
+        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
+        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
+
         if (!(uri.substring(0, 21)).equals("/tessar/statis/statis")) {
             //System.out.println("return error url");
+            ResponseString(ctx,response,"error uri is wrong");
             return;
         }
+
 
         Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
@@ -85,15 +88,10 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         List<String> flag = parame.get("action");
         String json = parame.get("json").toString();
 
-        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
-        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
         ByteBuf bb = null;//Unpooled.copiedBuffer("OK".getBytes());
 
         if (flag==null){
-            bb=Unpooled.copiedBuffer("error flag==null".getBytes());
-            response.content().writeBytes(bb);
-            bb.release();
-            ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+            ResponseString(ctx, response, "action is none");
         } else if (flag.get(0).equals("game")) {
             ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
             ManageGameInput manageGameInput= (ManageGameInput) ac.getBean("manageGameInput");
@@ -102,11 +100,7 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             for (Player player : players) {
                 manageGameInput.HandPlayerData(player);
             }
-            //System.out.println("done");
-            bb=Unpooled.copiedBuffer("OK".getBytes());
-            response.content().writeBytes(bb);
-            bb.release();
-            ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+            ResponseString(ctx, response, "OK");
         } else if (flag.get(0).equals("pay")) {
             //支付情况
             ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
@@ -116,37 +110,11 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             for (PayReceive payReceive : payReceiveList) {
                 mpi.HandPayData(payReceive);
             }
-            bb=Unpooled.copiedBuffer("OK".getBytes());
-            response.content().writeBytes(bb);
-            bb.release();
-            ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+            ResponseString(ctx, response, "OK");
         }
 
-//        for (Map.Entry<String, List<String>> entry : parame.entrySet()) {
-//            System.out.println(entry.getKey() + " : " + entry.getValue());
-//            if (entry.getKey() == "action")
-//
-//                String json = entry.getValue().toString();
-//            System.out.println("json:" + json);
-//            List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>() {
-//            }.getType());
-//
-//            for (Player player : players) {
-//                umm.insertMongo(player);
-//            }
-//            System.out.println("done");
-//        }
-//        FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK); // 响应
-//        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
-//        ByteBuf responseContentByteBuf = Unpooled.copiedBuffer(
-//                JSON.toJSONString(jsonarray, SerializerFeature.DisableCircularReferenceDetect)
-//                        .getBytes(Charset.forName("utf-8")));
-//        response.headers().set("Access-Control-Allow-Origin", "*"); // 跨域
-//        response.headers().set(CONTENT_LENGTH, responseContentByteBuf.readableBytes());
-//        response.content().writeBytes(responseContentByteBuf);
-//        responseContentByteBuf.release();
-//        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
     }
+
 
     //获取请求的内容
     private String parseJosnRequest(FullHttpRequest request) {
@@ -167,6 +135,14 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             response.headers().set(CONNECTION, KEEP_ALIVE);
         }
         ctx.writeAndFlush(response);
+    }
+
+    private void ResponseString(ChannelHandlerContext ctx,FullHttpResponse response, String Str) {
+        response.headers().set(CONTENT_TYPE, "text/html; charset=UTF-8");
+        ByteBuf bb = Unpooled.copiedBuffer(Str.getBytes());
+        response.content().writeBytes(bb);
+        bb.release();
+        ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
     }
 
 }
