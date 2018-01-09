@@ -64,9 +64,9 @@ public class MyTest {
         String url = "http://192.168.1.110:9999/tessar/statis/statis?action=game&json=";
         String str = "";
         //打印注册用户
-        for (int i=1;i<100;i++){
-            regInt = Tools.dateToSec(sdf.parse("2017-12-"+(i%30)));
-            str = "{\"uid\":00"+i+",\"regdate\":"+regInt+",\"lastdate\":"+regInt+",\"cid\":\"ngBrazil\",\"gid\":\"bloodstrke\",\"sub\":\"lp-fb\",\"sid\":\"0\"}";
+        for (int i=1;i<=7;i++){
+            regInt = Tools.dateToSec(sdf.parse("2017-12-1"));
+            str = "{\"uid\":00"+i+",\"regdate\":"+regInt+",\"lastdate\":"+(regInt+5000000)+",\"cid\":\"ngBrazil\",\"gid\":\"bloodstrke\",\"sub\":\"lp-fb\",\"sid\":\"0\"}";
             System.out.println(url+str);
             funHTTP(url+str);
         }
@@ -81,9 +81,10 @@ public class MyTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         long regInt =0;
         System.out.println(url);
-        for (int i=1;i<100;i++){
+        for (int i=1;i<=5;i++){
             int r = (int) (Math.random()*100);
-            regInt = Tools.dateToSec(sdf.parse("2017-12-"+(i%30)));
+            System.out.println("r:"+r);
+            regInt = Tools.dateToSec(sdf.parse("2017-12-1"));
             String str = "{\"uid\":00"+i+",\"regdate\":"+regInt+",\"lastdate\":"+(regInt+(r*80000))+",\"cid\":\"ngBrazil\",\"gid\":\"bloodstrke\",\"sub\":\"lp-fb\",\"sid\":\"0\"}";
             System.out.println(url+str);
             funHTTP(url+str);
@@ -91,7 +92,7 @@ public class MyTest {
     }
 
     public static void testWebServerThread(){
-       for (int i=0;i<10000;i++) {
+       for (int i=0;i<10;i++) {
            funHTTP("http://192.168.1.110:9898/app/getGameDate?app=newaddday&cid=ngBrazil&gid=bloodstrke&sid=0&sDate=2017-12-5&eDate=2017-12-19");
        }
     }
@@ -102,7 +103,7 @@ public class MyTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         long regInt =0;
         System.out.println(url);
-        for (int i=1;i<100;i++){
+        for (int i=1;i<10;i++){
             int r = (int) (Math.random()*50);
             regInt = Tools.dateToSec(sdf.parse("2017-12-"+(i%30)));
             String str = "{\"oid\":\"order001\",\"gid\":\"bloodstrke\",\"sid\":\"0\",\"uid\":\"00"+i+"\",\"payType\":\"64\",\"currency\":\"USD\",\"amount\":"+(1+r*1.5)+",\"payTime\":"+(regInt+(r*40000))+"}";
@@ -121,8 +122,11 @@ public class MyTest {
         //打印登录情况
 
         long startTime = System.currentTimeMillis();
-        testWebServerThread();
-
+    //    testWebServerThread();
+        createPlayer();
+//        createUpdate();
+//        createUpdate();
+//        createUpdate();
         System.out.println((System.currentTimeMillis() - startTime)/1000.0);
 
     }

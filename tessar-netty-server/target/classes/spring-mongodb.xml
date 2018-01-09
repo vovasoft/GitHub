@@ -11,8 +11,34 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context-2.5.xsd
             http://www.springframework.org/schema/data/repository
-            http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd
-       ">
+            http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd">
+
+    <!--<context:property-placeholder location="classpath:/redis.properties"/>-->
+    <!---->
+    <!--<bean id="jedisConnectionFactory"-->
+          <!--class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">-->
+        <!--<property name="hostName" value="${redis.host}"/>-->
+        <!--<property name="port" value="${redis.port}"/>-->
+        <!--<property name="password" value="${redis.password}"/>-->
+        <!--&lt;!&ndash;<property name="poolConfig" ref="poolConfig"/>&ndash;&gt;-->
+    <!--</bean>-->
+    <!--<bean id="jedisQueueListener" class="vova.demo.QueueListener"/>-->
+    <!--<bean id="jedisQueue" class="vova.demo.RedisQueue" destroy-method="destroy">-->
+        <!--<property name="redisTemplate" ref="jedisTemplate"></property>-->
+        <!--<property name="key" value="user:queue"></property>-->
+        <!--<property name="listener" ref="jedisQueueListener"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; redis操作模板 &ndash;&gt;-->
+    <!--<bean id="jedisTemplate" class="org.springframework.data.redis.core.RedisTemplate">-->
+        <!--<property name="connectionFactory" ref="jedisConnectionFactory"/>-->
+        <!--<property name="keySerializer">-->
+            <!--<bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>-->
+        <!--</property>-->
+        <!--<property name="valueSerializer">-->
+            <!--<bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 
     <!-- Default bean name is 'dbmongo' -->
@@ -33,10 +59,10 @@
     </bean>
 
     <!--bean id="userDao" class="com.wlsq.oauth.vova.dao.impl.IUserDao"/-->
-    <bean id = "useMySql" class="vova.dao.dbsql.UseMySql"/>
-    <bean id = "useMyMongo" class="vova.dao.dbmongo.UseMyMongo"/>
-    <bean id=  "manageGameInput" class="vova.dao.manager.ManageGameInput"/>
-    <bean id=  "managePayInput" class="vova.dao.manager.ManagePayInput"/>
+    <bean id="useMySql" class="vova.dao.dbsql.UseMySql"/>
+    <bean id="useMyMongo" class="vova.dao.dbmongo.UseMyMongo"/>
+    <bean id="manageGameInput" class="vova.dao.manager.ManageGameInput"/>
+    <bean id="managePayInput" class="vova.dao.manager.ManagePayInput"/>
 
 </beans>
 

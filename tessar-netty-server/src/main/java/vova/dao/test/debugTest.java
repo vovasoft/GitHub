@@ -3,6 +3,7 @@ package vova.dao.test;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import vova.SpringConfig;
 import vova.dao.manager.ManageGameInput;
 import vova.dao.dbmongo.MongoTest;
@@ -219,6 +220,17 @@ public class debugTest {
 
         System.out.println("getcID::::");
     }
+
+    @Test
+    public void getAndPutTest() {
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
+        RedisTemplate redisTemplate = (RedisTemplate) ac.getBean("jedisTemplate");
+
+        redisTemplate.opsForHash().put("user", "age", "20");
+        Object object = redisTemplate.opsForHash().get("user", "age");
+        System.out.println(object);
+    }
+
 
     @Test   //find List
     public void updatedaytable() throws IOException, ClassNotFoundException, ParseException {

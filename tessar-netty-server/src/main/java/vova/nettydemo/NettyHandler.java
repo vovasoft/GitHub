@@ -5,6 +5,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.data.redis.core.RedisTemplate;
+import redis.clients.jedis.Jedis;
 import vova.dao.manager.ManageGameInput;
 import vova.dao.manager.ManagePayInput;
 import vova.domain.Player;
@@ -81,7 +83,6 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
             return;
         }
 
-
         Gson gson = new Gson();
         QueryStringDecoder decoder = new QueryStringDecoder(msg.uri());
         Map<String, List<String>> parame = decoder.parameters();
@@ -95,7 +96,6 @@ public class NettyHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         } else if (flag.get(0).equals("game")) {
             ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mongodb.xml");
             ManageGameInput manageGameInput= (ManageGameInput) ac.getBean("manageGameInput");
-
             List<Player> players = gson.fromJson(json, new TypeToken<List<Player>>(){}.getType());
             for (Player player : players) {
                 manageGameInput.HandPlayerData(player);
